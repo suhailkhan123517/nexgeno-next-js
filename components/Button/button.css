@@ -1,0 +1,46 @@
+.button {
+  background-size: 300%;
+  cursor: pointer;
+  z-index: 1;
+  background: linear-gradient(90deg, #4158d0, #f441a5);
+}
+
+.button:hover {
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #4158d0, #f441a5, #ffcc70, #4158d0);
+  background-size: 400%;
+  transition: 1s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.button:hover::before {
+  filter: blur(10px);
+  visibility: visible;
+  opacity: 1;
+}
+
+.button:active {
+  background: linear-gradient(90deg, #4158d0, #f441a5, #ffcc70, #4158d0);
+}
