@@ -8,31 +8,18 @@
 .counter div h1 {
   font-size: 48px;
   font-weight: bold;
-  color: white;
-  background: repeating-linear-gradient(
-    -45deg,
-    red 0%,
-    yellow 7.14%,
-    rgb(0, 255, 0) 14.28%,
-    rgb(0, 255, 255) 21.4%,
-    cyan 28.56%,
-    blue 35.7%,
-    magenta 42.84%,
-    red 50%
-  );
-  background-size: 600vw 600vw;
+  background-color: #7f75fc;
+  background-image: linear-gradient(to right, #5c93c4, #cf67be) !important;
+  background-size: 100%;
+  -webkit-box-decoration-break: clone;
+  -webkit-background-clip: text !important;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  animation: slide 10s linear infinite forwards;
-}
-
-@keyframes slide {
-  0% {
-    background-position-x: 0%;
-  }
-  100% {
-    background-position-x: 600vw;
-  }
+  -moz-text-fill-color: transparent;
+  box-decoration-break: clone;
+  background-attachment: scroll;
+  background-position: 0 0;
+  background-repeat: repeat;
 }
 
 .counter div h2 {

@@ -33,19 +33,18 @@ export default function Services() {
                 <p>{item.desc}...</p>
                 <Button
                   title="Learn More"
-                  url="#"
+                  url={item.url}
                   bgblack="bg-black"
                   hover=""
                 />
               </div>
             ))}
           </div>
-          <Button title="View All Services" url="#" bgblack="bg-black" />
-          {/* <div
-            className="blur"
-            style={{ background: "rgb(238 210 255)" }}
-          ></div>
-          <div className="blur_2" style={{ background: "#72eba8" }}></div> */}
+          <Button
+            title="View All Services"
+            url="/services"
+            bgblack="bg-black"
+          />
         </div>
       </div>
     </>

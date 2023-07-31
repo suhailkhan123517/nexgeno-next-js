@@ -1,0 +1,28 @@
+.contact {
+  background-image: linear-gradient(90deg, #3d9ec5, #cf67be);
+}
+
+.iconContact i {
+  font-size: 30px;
+}
+
+.formContainer form {
+  margin-top: -13rem;
+  box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.03);
+}
+
+.formContainer form input,
+.formContainer form textarea {
+  border: none;
+  outline: none;
+  padding: 5px 0;
+  border-bottom: 1px solid #bbb;
+}
+
+.content_container {
+  margin-bottom: 20px;
+}
+
+.content_row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.185);
+}

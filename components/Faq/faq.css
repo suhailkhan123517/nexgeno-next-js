@@ -1,0 +1,62 @@
+.accordion {
+  margin: 0px auto 50px;
+}
+
+.accordion li {
+  list-style: none;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion label::before {
+  content: "+";
+  font-size: 30px;
+  font-weight: 600;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+  border-radius: 50%;
+  color: #333;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.accordion .content {
+  padding: 0 30px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 400px;
+  padding: 10px 10px 20px 30px;
+  margin-bottom: 20px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.accordion input[type="radio"]:checked + label::before {
+  content: "-";
+}

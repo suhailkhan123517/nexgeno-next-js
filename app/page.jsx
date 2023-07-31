@@ -5,7 +5,10 @@ import Client from "@/components/client/Client";
 import Counter from "@/components/Counter/Counter";
 import Technology from "@/components/Technology/Technology";
 import Portfolio from "@/components/Portfolio/Portfolio";
-import Footer from "@/components/Footer/Footer";
+import Industries from "@/components/Industries/Industries";
+import News from "@/components/News/News";
+import Testimonial from "@/components/Testimonial/Testimonial";
+import Contact from "@/components/Contact/Contact";
 
 export default function Home() {
   return (
@@ -16,8 +19,11 @@ export default function Home() {
       <Services />
       <Counter />
       <Technology />
-      {/* <Portfolio /> */}
-      <Footer />
+      <Portfolio />
+      <Industries />
+      <News />
+      <Testimonial />
+      <Contact />
     </>
   );
 }

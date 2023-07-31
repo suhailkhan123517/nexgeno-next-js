@@ -25,16 +25,16 @@ export default function Counter() {
                 )}
                 +
               </h1>
-              <h2>Total Project Complete</h2>
+              <h2>Project Delivers</h2>
             </div>
             <div>
               <h1>
                 {counterOn && (
-                  <CountUp start={0} end={1000} duration={2} delay={0} />
+                  <CountUp start={0} end={3000} duration={2} delay={0} />
                 )}
                 +
               </h1>
-              <h2>Active Client</h2>
+              <h2>Happy Clients</h2>
             </div>
             <div>
               <h1>
@@ -48,11 +48,11 @@ export default function Counter() {
             <div>
               <h1>
                 {counterOn && (
-                  <CountUp start={0} end={120} duration={2} delay={0} />
+                  <CountUp start={0} end={45} duration={2} delay={0} />
                 )}
                 +
               </h1>
-              <h2>Clients Testimonial</h2>
+              <h2>Dedicated Employees</h2>
             </div>
           </div>
         </div>

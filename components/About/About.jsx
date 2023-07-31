@@ -33,7 +33,7 @@ export default function About() {
               commitment to empowering developers, make us the partner you need
               to succeed
             </p>
-            <Button url="#" title="Read More" button="button" />
+            <Button url="/about" title="Read More" button="button" />
           </div>
         </div>
       </div>

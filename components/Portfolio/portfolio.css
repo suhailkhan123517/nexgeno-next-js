@@ -1,0 +1,17 @@
+.portfolio {
+  background: linear-gradient(-45deg, #012354, #29adcd, #012354, #29adcd);
+  background-size: 400% 400%;
+  animation: animateHome 8s ease infinite;
+}
+
+@keyframes animateHome {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

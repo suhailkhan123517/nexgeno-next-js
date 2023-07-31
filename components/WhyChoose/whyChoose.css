@@ -1,0 +1,12 @@
+.whyChoose {
+  background: #fffbfd;
+}
+
+.iconContainer {
+  background: linear-gradient(
+    to right,
+    rgba(163, 189, 255, 0.15),
+    rgba(219, 198, 250, 0.15),
+    rgba(255, 181, 202, 0.15)
+  );
+}

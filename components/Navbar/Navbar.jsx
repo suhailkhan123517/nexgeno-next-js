@@ -26,7 +26,7 @@ export default function Navbar() {
               <nav className="menu">
                 <ul className="menu_main">
                   <li className="children">
-                    <Link href="#">
+                    <Link href="/services">
                       Services <i className="fa fa-chevron-down" />
                     </Link>
                     <div className="sub_menu mega column_4">
@@ -34,27 +34,45 @@ export default function Navbar() {
                         <h4 className="title">Offering</h4>
                         <ul>
                           <li>
-                            <Link href="#"> Application Development </Link>
+                            <Link href="/services/web">
+                              {" "}
+                              Application Development{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Digital Transformation </Link>
+                            <Link href="/services/digital">
+                              {" "}
+                              Digital Transformation{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Front-end Development </Link>
+                            <Link href="/services/frontend">
+                              {" "}
+                              Front-end Development{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Product Prototyping </Link>
+                            <Link href="/services/product">
+                              {" "}
+                              Product Prototyping{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> E-Commerce Deployment </Link>
+                            <Link href="/services/ecommerce">
+                              {" "}
+                              E-Commerce Deployment{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#">
+                            <Link href="/services/cloud">
                               Cloud Solutions AWS, Azure & Google
                             </Link>
                           </li>
                           <li>
-                            <Link href="#"> Mobile App Development </Link>
+                            <Link href="/services/mobile">
+                              {" "}
+                              Mobile App Development{" "}
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -62,28 +80,43 @@ export default function Navbar() {
                         <h4 className="title">Industries</h4>
                         <ul>
                           <li>
-                            <Link href="#"> Education / E-Learning </Link>
+                            <Link href="/services/education">
+                              {" "}
+                              Education / E-Learning{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Retail </Link>
+                            <Link href="/services/retail"> Retail </Link>
                           </li>
                           <li>
-                            <Link href="#"> Logistics & Distribution </Link>
+                            <Link href="/services/logistics">
+                              {" "}
+                              Logistics & Distribution{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> FinTech </Link>
+                            <Link href="/services/fintech"> FinTech </Link>
                           </li>
                           <li>
-                            <Link href="#"> Manufacturing </Link>
+                            <Link href="/services/manufacturing">
+                              {" "}
+                              Manufacturing{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Events </Link>
+                            <Link href="/services/events"> Events </Link>
                           </li>
                           <li>
-                            <Link href="#"> Recruitment </Link>
+                            <Link href="/services/recruitment">
+                              {" "}
+                              Recruitment{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Real Estate </Link>
+                            <Link href="/services/realestate">
+                              {" "}
+                              Real Estate{" "}
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -91,28 +124,49 @@ export default function Navbar() {
                         <h4 className="title">Industries</h4>
                         <ul>
                           <li>
-                            <Link href="#"> Restaurant </Link>
+                            <Link href="/services/restaurants">
+                              {" "}
+                              Restaurant{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Health Care </Link>
+                            <Link href="/services/healthcare">
+                              {" "}
+                              Health Care{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Hospitality </Link>
+                            <Link href="/services/hospitality">
+                              {" "}
+                              Hospitality{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Pharmaceutical </Link>
+                            <Link href="/services/pharmaceutical">
+                              {" "}
+                              Pharmaceutical{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Electronics </Link>
+                            <Link href="/services/electronics">
+                              {" "}
+                              Electronics{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Travel & Tours </Link>
+                            <Link href="/services/travel">
+                              {" "}
+                              Travel & Tours{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Service Provider </Link>
+                            <Link href="/services/serviceprovider">
+                              {" "}
+                              Service Provider{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Hospitals </Link>
+                            <Link href="/services/hospitals"> Hospitals </Link>
                           </li>
                         </ul>
                       </div>
@@ -120,10 +174,16 @@ export default function Navbar() {
                         <h4 className="title">Service Models</h4>
                         <ul>
                           <li>
-                            <Link href="#"> Delivery Models </Link>
+                            <Link href="/services/deliverymodel">
+                              {" "}
+                              Delivery Models{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Engagement Models </Link>
+                            <Link href="/services/engagement">
+                              {" "}
+                              Engagement Models{" "}
+                            </Link>
                           </li>
                           <Button title="Enquire Now" url="#" button="button" />
                         </ul>
@@ -131,7 +191,7 @@ export default function Navbar() {
                     </div>
                   </li>
                   <li className="children">
-                    <Link href="#">
+                    <Link href="/hiredeveloper">
                       Hire Developer <i className="fa fa-chevron-down" />
                     </Link>
                     <div className="sub_menu mega column_4">
@@ -139,16 +199,28 @@ export default function Navbar() {
                         <h4 className="title">Hire Web Developers</h4>
                         <ul>
                           <li>
-                            <Link href="#"> Hire PHP Developers </Link>
+                            <Link href="/hiredeveloper/php">
+                              {" "}
+                              Hire PHP Developers{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Hire Laravel Developers </Link>
+                            <Link href="/hiredeveloper/laravel">
+                              {" "}
+                              Hire Laravel Developers{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Hire CodeIgniter Developers </Link>
+                            <Link href="/hiredeveloper/codeIgniter">
+                              {" "}
+                              Hire CodeIgniter Developers{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Hire ExpressJS Developers </Link>
+                            <Link href="/hiredeveloper/express">
+                              {" "}
+                              Hire ExpressJS Developers{" "}
+                            </Link>
                           </li>
                         </ul>
                         <h4 className="title">
@@ -156,13 +228,22 @@ export default function Navbar() {
                         </h4>
                         <ul>
                           <li>
-                            <Link href="#"> Hire Ionic Developers </Link>
+                            <Link href="/hiredeveloper/ionic">
+                              {" "}
+                              Hire Ionic Developers{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Hire React Native Developers </Link>
+                            <Link href="/hiredeveloper/reactnative">
+                              {" "}
+                              Hire React Native Developers{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Hire PWA Developers </Link>
+                            <Link href="/hiredeveloper/pwa">
+                              {" "}
+                              Hire PWA Developers{" "}
+                            </Link>
                           </li>
 
                           <Button title="Enquire Now" url="#" button="button" />
@@ -172,13 +253,22 @@ export default function Navbar() {
                         <h4 className="title">Hire Mobile Developers</h4>
                         <ul>
                           <li>
-                            <Link href="#"> Hire iOS Developers </Link>
+                            <Link href="/hiredeveloper/ios">
+                              {" "}
+                              Hire iOS Developers{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Hire Android Developers </Link>
+                            <Link href="/hiredeveloper/android">
+                              {" "}
+                              Hire Android Developers{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Hire Flutter Developers </Link>
+                            <Link href="/hiredeveloper/flutter">
+                              {" "}
+                              Hire Flutter Developers{" "}
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -186,10 +276,16 @@ export default function Navbar() {
                         <h4 className="title">Hire Frontend Developers</h4>
                         <ul>
                           <li>
-                            <Link href="#"> Hire Angular Developers </Link>
+                            <Link href="/hiredeveloper/angular">
+                              {" "}
+                              Hire Angular Developers{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Hire React JS Developers </Link>
+                            <Link href="/hiredeveloper/react">
+                              {" "}
+                              Hire React JS Developers{" "}
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -197,23 +293,35 @@ export default function Navbar() {
                         <h4 className="title">Hire Open Source Developers</h4>
                         <ul>
                           <li>
-                            <Link href="#"> Hire WordPress Developers </Link>
+                            <Link href="/hiredeveloper/wordpress">
+                              {" "}
+                              Hire WordPress Developers{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Hire Shopify Developers </Link>
+                            <Link href="/hiredeveloper/shopify">
+                              {" "}
+                              Hire Shopify Developers{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Hire Magento Developers </Link>
+                            <Link href="/hiredeveloper/magento">
+                              {" "}
+                              Hire Magento Developers{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Hire OpenCart Developers </Link>
+                            <Link href="/hiredeveloper/opencart">
+                              {" "}
+                              Hire OpenCart Developers{" "}
+                            </Link>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </li>
                   <li className="children">
-                    <Link href="#">
+                    <Link href="/solution">
                       Solution <i className="fa fa-chevron-down" />
                     </Link>
                     <div className="sub_menu mega column_4">
@@ -221,18 +329,24 @@ export default function Navbar() {
                         <h4 className="title">Customized Solutions</h4>
                         <ul>
                           <li>
-                            <Link href="#"> School management </Link>
+                            <Link href="/solution/school">
+                              {" "}
+                              School management{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Tailor Billing Application </Link>
+                            <Link href="/solution/tailor">
+                              {" "}
+                              Tailor Billing Application{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#">
+                            <Link href="/solution/recruitment">
                               Recruitment billing application
                             </Link>
                           </li>
                           <li>
-                            <Link href="#"> CRM application </Link>
+                            <Link href="/solution/crm"> CRM application </Link>
                           </li>
                         </ul>
                       </div>
@@ -240,33 +354,25 @@ export default function Navbar() {
                         <h4 className="title">Customized Solutions</h4>
                         <ul>
                           <li>
-                            <Link href="#"> Billing application </Link>
+                            <Link href="/solution/billing">
+                              {" "}
+                              Billing application{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Point of Sale </Link>
+                            <Link href="/solution/pos"> Point of Sale </Link>
                           </li>
                           <li>
-                            <Link href="#"> Multi restaurant management </Link>
+                            <Link href="/solution/restaurant">
+                              {" "}
+                              Multi restaurant management{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Car rental system </Link>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="list_item">
-                        <h4 className="title">Customized Solutions</h4>
-                        <ul>
-                          <li>
-                            <Link href="#"> Hrms payroll system </Link>
-                          </li>
-                          <li>
-                            <Link href="#"> Online food ordering system </Link>
-                          </li>
-                          <li>
-                            <Link href="#"> Hospital management system </Link>
-                          </li>
-                          <li>
-                            <Link href="#"> Job portal </Link>
+                            <Link href="/solution/car">
+                              {" "}
+                              Car rental system{" "}
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -274,13 +380,48 @@ export default function Navbar() {
                         <h4 className="title">Customized Solutions</h4>
                         <ul>
                           <li>
-                            <Link href="#"> Lawyer booking solution </Link>
+                            <Link href="/solution/hrms">
+                              {" "}
+                              Hrms payroll system{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Chat application </Link>
+                            <Link href="/solution/onlinefood">
+                              {" "}
+                              Online food ordering system{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Hotel booking system </Link>
+                            <Link href="/solution/hospital">
+                              {" "}
+                              Hospital management system{" "}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/solution/job"> Job portal </Link>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="list_item">
+                        <h4 className="title">Customized Solutions</h4>
+                        <ul>
+                          <li>
+                            <Link href="/solution/lawyer">
+                              {" "}
+                              Lawyer booking solution{" "}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/solution/chat">
+                              {" "}
+                              Chat application{" "}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/solution/hotel">
+                              {" "}
+                              Hotel booking system{" "}
+                            </Link>
                           </li>
                           <Button title="Enquire Now" url="#" button="button" />
                         </ul>

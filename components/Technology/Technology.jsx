@@ -10,13 +10,13 @@ export default function Technology() {
     <>
       <div className="container m-auto py-12">
         <h2 className="text-pink-600 text-center"># IT TECHNOLOGY</h2>
-        <h1 className="text-center text-blue-950 font-bold text-3xl py-4">
+        <h1 className="text-center text-blue-950 font-bold text-3xl py-4 mb-5">
           We Deliver Solution With Goal Of Trusting Relationships
         </h1>
         <div className="grid  grid-cols-10 place-items-center">
           {technologiesIcons.map((item) => (
-            <div key={item.id} className="mb-8">
-              <Link href="#">
+            <div key={item.id} className="my-8">
+              <Link href={item.url}>
                 <Image
                   src={item.img}
                   alt={item.title}
@@ -29,7 +29,7 @@ export default function Technology() {
           ))}
         </div>
         <div className="grid place-items-center mt-7">
-          <Button url="#" title="View More" button="button" />
+          <Button url="/technology" title="View More" button="button" />
         </div>
       </div>
     </>

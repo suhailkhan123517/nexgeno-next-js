@@ -1,0 +1,19 @@
+.btn_title {
+  background: linear-gradient(90deg, #3d9ec5 0, #cf67be 67%);
+}
+
+.news {
+  background: linear-gradient(180deg, #3d9ec5 0, #cf67be 67%);
+
+  /* background-color: rgba(255, 228, 196, 0.322); */
+}
+
+/* .news::before {
+  background: linear-gradient(180deg, #3d9ec5 0, #cf67be 67%);
+  content: "";
+  height: 121.4%;
+  left: -15%;
+  position: absolute;
+  top: 0;
+  width: 43%;
+} */
