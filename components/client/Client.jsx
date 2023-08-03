@@ -5,7 +5,7 @@ import React from "react";
 export default function Client() {
   return (
     <>
-      <div className="container m-auto mt-10">
+      <div className="container m-auto mb-12">
         <div className="grid grid-cols-6 place-items-center">
           {clientLogo.map((item) => (
             <Image

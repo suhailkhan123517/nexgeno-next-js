@@ -38,7 +38,7 @@ export default function Category({ params }) {
                 {item.desc}
               </p>
               <div>
-                <Button url="#" title="Get In Touch" button="button" />
+                <Button url="/inquiry" title="Get In Touch" button="button" />
               </div>
             </div>
             <Image src={item.img} alt="web" width={500} height={500} />

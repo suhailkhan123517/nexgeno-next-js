@@ -16,8 +16,7 @@ export default function News() {
             <div className="imgContainer">
               <Image
                 src="/images/blog.jpg"
-                width={500}
-                height={600}
+                fill={true}
                 alt="Nexgeno Blog Image"
                 className="image"
               />
@@ -34,7 +33,10 @@ export default function News() {
                   Discover exciting career opportunities in tech with our
                   dynamic team...
                 </p>
-                <Link href="#" className="font-semibold text-pink-400">
+                <Link
+                  href="/inquiry"
+                  className="readLink font-semibold text-pink-400"
+                >
                   Read More
                 </Link>
               </div>
@@ -48,7 +50,10 @@ export default function News() {
                 <p className="text-gray-700">
                   Revolutionize your business with our cloud-based solutions...
                 </p>
-                <Link href="#" className="font-semibold text-pink-400">
+                <Link
+                  href="/solution"
+                  className=" readLink font-semibold text-pink-400"
+                >
                   Read More
                 </Link>
               </div>
@@ -63,7 +68,10 @@ export default function News() {
                   Get access to a range of skilled developers, including web,
                   mobile...
                 </p>
-                <Link href="#" className="font-semibold text-pink-400">
+                <Link
+                  href="/hiredeveloper"
+                  className="font-semibold text-pink-400 readLink"
+                >
                   Read More
                 </Link>
               </div>
@@ -78,7 +86,10 @@ export default function News() {
                   Our tech blog offers the latest insights, trends, and best
                   practices in the industry...
                 </p>
-                <Link href="#" className="font-semibold text-pink-400">
+                <Link
+                  href="/blog"
+                  className="font-semibold text-pink-400 readLink"
+                >
                   Read More
                 </Link>
               </div>

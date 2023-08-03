@@ -1,0 +1,11 @@
+.certificate {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.imgCertificate {
+  width: 700px;
+  height: 500px;
+  position: relative;
+}

@@ -1,0 +1,21 @@
+.contact {
+  background: linear-gradient(-45deg, #3d9ec5, #cf67be);
+}
+
+.iconBox i {
+  font-size: 80px;
+}
+
+.form_field textarea,
+.form_field input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  height: auto;
+  outline: none;
+  padding-left: 10px;
+}
+
+.location_box {
+  background: linear-gradient(90deg, #6a8ec333 33.85%, #9e79c000);
+  border: 1px solid #dbf3f1;
+}

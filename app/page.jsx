@@ -9,13 +9,15 @@ import Industries from "@/components/Industries/Industries";
 import News from "@/components/News/News";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import Contact from "@/components/Contact/Contact";
+import Video from "@/components/video/Video";
 
 export default function Home() {
   return (
     <>
+      <Video />
       <Hero />
-      <About />
       <Client />
+      <About />
       <Services />
       <Counter />
       <Technology />

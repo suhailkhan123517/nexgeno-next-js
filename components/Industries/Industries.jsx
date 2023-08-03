@@ -16,7 +16,7 @@ export default function Industries() {
           {industriesIcons.map((item) => (
             <Link
               key={item.id}
-              href="#"
+              href={item.url}
               className="flex flex-col gap-3 items-center my-3"
             >
               <Image

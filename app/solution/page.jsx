@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import "./solution.css";
 import { solution } from "@/utils/data";
+import Button from "@/components/Button/Button";
 
 export default function Solution() {
   return (
@@ -24,6 +25,9 @@ export default function Solution() {
                 <h1 className="text-2xl font-semibold py-5">{item.title}</h1>
                 <p className="line-clamp-3">{item.desc}</p>
               </Link>
+              <div className="py-5">
+                <Button url={item.url} title="Learn More" button="button" />
+              </div>
             </div>
           ))}
         </div>

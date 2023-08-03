@@ -13,12 +13,13 @@ export default function Navbar() {
             <div className="header_item item_left">
               <div className="logo">
                 <Link href="/">
-                  <Image
-                    src="/images/logo.png"
-                    width={200}
-                    height={200}
-                    alt="Nexgeno Logo"
-                  />
+                  <div className="logo">
+                    <Image
+                      src="/images/logo.png"
+                      alt="Nexgeno Logo"
+                      fill={true}
+                    />
+                  </div>
                 </Link>
               </div>
             </div>
@@ -185,7 +186,11 @@ export default function Navbar() {
                               Engagement Models{" "}
                             </Link>
                           </li>
-                          <Button title="Enquire Now" url="#" button="button" />
+                          <Button
+                            title="Enquire Now"
+                            url="/inquiry"
+                            button="button"
+                          />
                         </ul>
                       </div>
                     </div>
@@ -246,7 +251,11 @@ export default function Navbar() {
                             </Link>
                           </li>
 
-                          <Button title="Enquire Now" url="#" button="button" />
+                          <Button
+                            title="Enquire Now"
+                            url="/inquiry"
+                            button="button"
+                          />
                         </ul>
                       </div>
                       <div className="list_item">
@@ -423,7 +432,11 @@ export default function Navbar() {
                               Hotel booking system{" "}
                             </Link>
                           </li>
-                          <Button title="Enquire Now" url="#" button="button" />
+                          <Button
+                            title="Enquire Now"
+                            url="/inquiry"
+                            button="button"
+                          />
                         </ul>
                       </div>
                     </div>
@@ -485,16 +498,19 @@ export default function Navbar() {
                             <Link href="/about"> About Us </Link>
                           </li>
                           <li>
-                            <Link href="#"> Development Methodology </Link>
+                            <Link href="/methodology">
+                              {" "}
+                              Development Methodology{" "}
+                            </Link>
                           </li>
                           <li>
-                            <Link href="#"> Certifications </Link>
+                            <Link href="/certifications"> Certifications </Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link href="#"> Career </Link>
-                          </li>
+                          </li> */}
                           <li>
-                            <Link href="#"> Contact Us </Link>
+                            <Link href="/contact"> Contact Us </Link>
                           </li>
                         </ul>
                       </div>
@@ -502,20 +518,25 @@ export default function Navbar() {
                         <h4 className="title">Insights</h4>
                         <ul>
                           <li>
-                            <Link href="#"> FAQs </Link>
+                            <Link href="/faq"> FAQs </Link>
                           </li>
-                          <Button title="Enquire Now" url="#" button="button" />
+                          <Button
+                            title="Enquire Now"
+                            url="/inquiry"
+                            button="button"
+                          />
                         </ul>
                       </div>
                       <div className="list_item">
                         <h4 className="title">Certificate</h4>
                         <Link href="#">
-                          <Image
-                            src="/images/certificate.png"
-                            width={400}
-                            height={400}
-                            alt="Nexgeno Portfolio"
-                          />
+                          <div className="imgC">
+                            <Image
+                              src="/images/certificate.png"
+                              fill={true}
+                              alt="Nexgeno Portfolio"
+                            />
+                          </div>
                         </Link>
                       </div>
                     </div>
@@ -524,7 +545,7 @@ export default function Navbar() {
               </nav>
             </div>
             <div className="header_item item_right flex justify-end">
-              <Button url="#" title="Let's Talk" button="button" />
+              <Button url="/inquiry" title="Let's Talk" button="button" />
             </div>
           </div>
         </div>

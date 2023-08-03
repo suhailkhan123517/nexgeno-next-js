@@ -1,4 +1,4 @@
-.card {
+/* .card {
   background: rgb(169, 190, 231);
   background: linear-gradient(
     337deg,
@@ -29,27 +29,61 @@
     rgba(241, 216, 251, 1) 0%,
     rgba(217, 247, 255, 1) 100%
   );
+} */
+
+.link_learn {
+  font: 25px;
+  display: inline-block;
+  position: relative;
 }
 
-.blur {
+.link_learn::after {
+  content: "";
   position: absolute;
-  width: 32rem;
-  height: 20rem;
-  border-radius: 50%;
-  background: #edd0ff;
-  z-index: -9;
-  top: 0;
-  right: 0;
-  filter: blur(72px);
-}
-.blur_2 {
-  position: absolute;
-  width: 32rem;
-  height: 20rem;
-  border-radius: 50%;
-  background: #72eba8;
-  z-index: -9;
-  top: 50%;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
   left: 0;
-  filter: blur(72px);
+  background-color: #cf67be;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.link_learn:hover {
+  color: #cf67be;
+}
+
+.link_learn:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.service {
+  color: white;
+}
+
+.service:before {
+  -webkit-animation: service 5s ease infinite;
+  animation: service 5s ease infinite;
+  background: linear-gradient(-45deg, #3d9ec5, #cf67be);
+  background-size: 400% 400%;
+  background-size: contain;
+  content: "";
+  height: 400px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #d4f0ff;
+}
+
+.servicesImg {
+  width: 80px;
+  height: 80px;
+  position: relative;
 }

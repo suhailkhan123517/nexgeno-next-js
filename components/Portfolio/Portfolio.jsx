@@ -21,7 +21,7 @@ export default function Portfolio() {
             Improve & Enhance the Tech Projects
           </h1>
           <Swiper
-            slidesPerView={3}
+            slidesPerView={3.2}
             spaceBetween={30}
             freeMode={true}
             modules={[FreeMode]}

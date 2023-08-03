@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import "./servicePage.css";
 import Link from "next/link";
+import Button from "@/components/Button/Button";
 
 export default function Services() {
   return (
@@ -22,8 +23,11 @@ export default function Services() {
                   <Image src={item.img} alt={item.title} fill={true} />
                 </div>
                 <h1 className="text-2xl font-semibold py-5">{item.title}</h1>
-                <p className="line-clamp-3">{item.des}</p>
+                <p className="line-clamp-3 leading-8">{item.des}</p>
               </Link>
+              <div className="py-5">
+                <Button url={item.url} title="Learn More" button="button" />
+              </div>
             </div>
           ))}
         </div>

@@ -6,11 +6,11 @@ export default function Process() {
   return (
     <>
       <div className="container m-auto py-10 text-center">
-        <h1 className="text-3xl font-semibold  py-5 ">Process &apos; s</h1>
+        <h1 className="text-3xl font-semibold  py-5 ">Process&apos;s</h1>
         <p className="">
           At Nexgeno, we believe that this custom web application development
           process allows us to deliver high-quality, user-friendly web solutions
-          that meet our clients &apos; unique needs.
+          that meet our client&apos;s unique needs.
         </p>
         <div className="imgLine mt-10 relative">
           <Image
