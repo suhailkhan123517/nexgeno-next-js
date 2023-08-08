@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       <div className="container m-auto pb-10 leading-relaxed">
-        <div className="grid grid-cols-2">
+        <div className="grid lg:grid-cols-2 lg:gap-0 grid-cols-1 gap-5">
           <div className="aboutImg">
             <Image src="/images/about.jpeg" fill={true} alt="Nexgeno Image" />
           </div>

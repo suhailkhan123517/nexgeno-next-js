@@ -1052,3 +1052,24 @@ export const faq = [
       " While a website is a collection of web pages that provide information or promote a business, a web application is a software application that runs on a web browser and provides interactive functionality. Web applications are typically more complex and require more advanced development skills than websites.",
   },
 ];
+
+export const caseStudy = [
+  {
+    id: 1,
+    title: "AbayaDesigner",
+    img: "/images/website/abaya_desk_1.png",
+    url: "/casestudy/abayadesigner",
+  },
+  {
+    id: 2,
+    title: "V2 Technologies",
+    img: "/images/website/v_desk_1.png",
+    url: "/casestudy/thev2technologies",
+  },
+  {
+    id: 3,
+    title: "KUC Edibles",
+    img: "/images/website/krips_desk_1.png",
+    url: "/casestudy/kucedibles",
+  },
+];

@@ -1,0 +1,31 @@
+.desk_img {
+  width: 100%;
+  height: 380px;
+  position: relative;
+}
+
+.mob_img {
+  width: 100px;
+  height: 200px;
+  position: relative;
+}
+
+.img_hover:hover .mob_img {
+  transform: translateY(-15px);
+}
+
+.mob_img {
+  box-shadow: 0 13px 13px -10px rgba(0, 0, 0, 0.06),
+    0px 25px 40px rgba(0, 0, 0, 0.24);
+  transition: all 0.5s ease-in-out;
+}
+
+.heading_underline::after {
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  background: linear-gradient(to right, #3d9ec5 0, #cf67be 67%);
+  position: absolute;
+}

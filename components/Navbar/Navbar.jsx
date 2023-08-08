@@ -464,7 +464,7 @@ export default function Navbar() {
                       </div>
                       <div className="list_item">
                         <h4 className="title">Case Study</h4>
-                        <Link href="#">
+                        <Link href="/casestudy">
                           <Image
                             src="/images/casestudy.png"
                             width={300}
@@ -475,7 +475,7 @@ export default function Navbar() {
                       </div>
                       <div className="list_item">
                         <h4 className="title">Portfolio</h4>
-                        <Link href="#">
+                        <Link href="/portfolio">
                           <Image
                             src="/images/portfolio.png"
                             width={300}
@@ -544,7 +544,7 @@ export default function Navbar() {
                 </ul>
               </nav>
             </div>
-            <div className="header_item item_right flex justify-end">
+            <div className="header_item item_right">
               <Button url="/inquiry" title="Let's Talk" button="button" />
             </div>
           </div>

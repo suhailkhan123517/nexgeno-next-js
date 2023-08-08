@@ -10,6 +10,7 @@ import News from "@/components/News/News";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import Contact from "@/components/Contact/Contact";
 import Video from "@/components/video/Video";
+import Head from "next/head";
 
 export default function Home() {
   return (

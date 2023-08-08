@@ -27,9 +27,9 @@ export default function News() {
                   Career
                 </p>
                 <h1 className="text-xl">
-                  Join Our Innovative Team and Build Your Career in Tech
+                  Join Our Team and Build Your Career in Tech
                 </h1>
-                <p className="text-gray-700">
+                <p className="text-gray-700 line-clamp-2">
                   Discover exciting career opportunities in tech with our
                   dynamic team...
                 </p>
@@ -47,7 +47,7 @@ export default function News() {
                 <h1 className="text-xl">
                   Cloud-Based Solutions for Modern Businesses
                 </h1>
-                <p className="text-gray-700">
+                <p className="text-gray-700 line-clamp-2">
                   Revolutionize your business with our cloud-based solutions...
                 </p>
                 <Link
@@ -64,7 +64,7 @@ export default function News() {
                 <h1 className="text-xl">
                   Build Your Dream Team with Our Expert Developers
                 </h1>
-                <p className="text-gray-700">
+                <p className="text-gray-700 line-clamp-2">
                   Get access to a range of skilled developers, including web,
                   mobile...
                 </p>
@@ -82,7 +82,7 @@ export default function News() {
                 <h1 className="text-xl">
                   Stay Ahead of the Curve with Our Tech Blog
                 </h1>
-                <p className="text-gray-700">
+                <p className="text-gray-700 line-clamp-2">
                   Our tech blog offers the latest insights, trends, and best
                   practices in the industry...
                 </p>
