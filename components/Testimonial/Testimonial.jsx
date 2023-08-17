@@ -4,24 +4,27 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { FreeMode, Pagination } from "swiper/modules";
+import { FreeMode } from "swiper/modules";
 
 import { testimonialReview } from "@/utils/data";
 import "./testimonial.css";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Testimonial() {
   return (
     <>
       <div className="container m-auto py-14">
         <h2 className="text-center text-pink-600 py-3"># OUR TESTIMONIAL</h2>
-        <h1 className="text-center text-3xl font-semibold text-blue-950 ">
+        <h1 className="text-center sm:text-3xl  text-xl font-semibold text-blue-950 ">
           Clients Happy with Our IT Solutions.
         </h1>
         <Swiper
           breakpoints={{
-            640: {
+            230: {
+              slidesPerView: 1.2,
+              spaceBetween: 10,
+            },
+            420: {
               slidesPerView: 2.3,
               spaceBetween: 10,
             },
@@ -60,8 +63,10 @@ export default function Testimonial() {
                       </div>
                     </div>
                     <div className="center">
-                      <h1 className="text-lg font-medium pb-2">{name}</h1>
-                      <p className="scroll-smooth no-scrollbar overflow-y-auto h-32">
+                      <h1 className="sm:text-lg font-medium text-base pb-2">
+                        {name}
+                      </h1>
+                      <p className="scroll-smooth no-scrollbar overflow-y-auto h-32 sm:text-base  text-sm ">
                         {desc}
                       </p>
                     </div>

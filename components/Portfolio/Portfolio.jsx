@@ -17,12 +17,30 @@ export default function Portfolio() {
       <div className="portfolio py-4 text-white">
         <div className="container m-auto my-12">
           <h2 className="text-center pb-5"> # RECENTLY COMPLETED WORK </h2>
-          <h1 className="text-center pb-12 text-3xl font-semibold">
+          <h1 className="text-center lg:pb-12 md:pb-8 pb-4 md:text-3xl sm:text-2xl text-xl font-semibold">
             Improve & Enhance the Tech Projects
           </h1>
           <Swiper
-            slidesPerView={3.2}
-            spaceBetween={30}
+            breakpoints={{
+              230: {
+                slidesPerView: 1.2,
+                spaceBetween: 10,
+              },
+              420: {
+                slidesPerView: 2.3,
+                spaceBetween: 10,
+              },
+              768: {
+                slidesPerView: 2.9,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 3.2,
+                spaceBetween: 30,
+              },
+            }}
+            slidesPerView={2.3}
+            spaceBetween={10}
             freeMode={true}
             modules={[FreeMode]}
             className="mySwiper my-5"
@@ -30,14 +48,14 @@ export default function Portfolio() {
             {portfolioSlider.map((item) => (
               <SwiperSlide key={item.id}>
                 <Link href="#">
-                  <Image
-                    src={item.img}
-                    alt={item.title}
-                    width={400}
-                    height={200}
-                  />
-                  <h1 className="text-2xl font-medium pt-4">{item.title}</h1>
-                  <p>{item.desc}</p>
+                  <div className="relative w-[100%] h-[200px]">
+                    <Image src={item.img} alt={item.title} fill={true} />
+                  </div>
+
+                  <h1 className="lg:text-2xl  text-lg font-medium lg:pt-4 pt-2">
+                    {item.title}
+                  </h1>
+                  <p className="text-[12px]">{item.desc}</p>
                 </Link>
               </SwiperSlide>
             ))}

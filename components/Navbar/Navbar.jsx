@@ -9,7 +9,7 @@ export default function Navbar() {
     <>
       <header className="header block w-full relative z-1 py-2">
         <div className="container mx-auto">
-          <div className="row items-center flex flex-wrap">
+          <div className="row items-center flex  justify-between">
             <div className="header_item item_left">
               <div className="logo">
                 <Link href="/">
@@ -23,7 +23,7 @@ export default function Navbar() {
                 </Link>
               </div>
             </div>
-            <div className="header_item item_center flex justify-center">
+            <div className="header_item item_center flex">
               <nav className="menu">
                 <ul className="menu_main">
                   <li className="children">
@@ -36,14 +36,12 @@ export default function Navbar() {
                         <ul>
                           <li>
                             <Link href="/services/web">
-                              {" "}
-                              Application Development{" "}
+                              Application Development
                             </Link>
                           </li>
                           <li>
                             <Link href="/services/digital">
-                              {" "}
-                              Digital Transformation{" "}
+                              Digital Transformation
                             </Link>
                           </li>
                           <li>
@@ -228,60 +226,6 @@ export default function Navbar() {
                             </Link>
                           </li>
                         </ul>
-                        <h4 className="title">
-                          Hire Cross-Platform Developers
-                        </h4>
-                        <ul>
-                          <li>
-                            <Link href="/hiredeveloper/ionic">
-                              {" "}
-                              Hire Ionic Developers{" "}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/hiredeveloper/reactnative">
-                              {" "}
-                              Hire React Native Developers{" "}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/hiredeveloper/pwa">
-                              {" "}
-                              Hire PWA Developers{" "}
-                            </Link>
-                          </li>
-
-                          <Button
-                            title="Enquire Now"
-                            url="/inquiry"
-                            button="button"
-                          />
-                        </ul>
-                      </div>
-                      <div className="list_item">
-                        <h4 className="title">Hire Mobile Developers</h4>
-                        <ul>
-                          <li>
-                            <Link href="/hiredeveloper/ios">
-                              {" "}
-                              Hire iOS Developers{" "}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/hiredeveloper/android">
-                              {" "}
-                              Hire Android Developers{" "}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/hiredeveloper/flutter">
-                              {" "}
-                              Hire Flutter Developers{" "}
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="list_item">
                         <h4 className="title">Hire Frontend Developers</h4>
                         <ul>
                           <li>
@@ -325,6 +269,59 @@ export default function Navbar() {
                               Hire OpenCart Developers{" "}
                             </Link>
                           </li>
+                        </ul>
+                      </div>
+                      <div className="list_item">
+                        <h4 className="title">
+                          Hire Cross-Platform Developers
+                        </h4>
+                        <ul>
+                          <li>
+                            <Link href="/hiredeveloper/ionic">
+                              {" "}
+                              Hire Ionic Developers{" "}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/hiredeveloper/reactnative">
+                              {" "}
+                              Hire React Native Developers{" "}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/hiredeveloper/pwa">
+                              {" "}
+                              Hire PWA Developers{" "}
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="list_item">
+                        <h4 className="title">Hire Mobile Developers</h4>
+                        <ul>
+                          <li>
+                            <Link href="/hiredeveloper/ios">
+                              {" "}
+                              Hire iOS Developers{" "}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/hiredeveloper/android">
+                              {" "}
+                              Hire Android Developers{" "}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/hiredeveloper/flutter">
+                              {" "}
+                              Hire Flutter Developers{" "}
+                            </Link>
+                          </li>
+                          <Button
+                            title="Enquire Now"
+                            url="/inquiry"
+                            button="button"
+                          />
                         </ul>
                       </div>
                     </div>
@@ -462,27 +459,32 @@ export default function Navbar() {
                           <h3 className="text-xl font-bold pt-3">Anil Garg</h3>
                         </Link>
                       </div>
-                      <div className="list_item">
+                      <div className="list_item text-center">
                         <h4 className="title">Case Study</h4>
                         <Link href="/casestudy">
-                          <Image
-                            src="/images/casestudy.png"
-                            width={300}
-                            height={300}
-                            alt="Nexgeno CaseStudy"
-                          />
+                          <div className="relative h-52 w-72">
+                            <Image
+                              src="/images/casestudy.png"
+                              fill={true}
+                              alt="Nexgeno CaseStudy"
+                            />
+                          </div>
                         </Link>
+                        <Button title="View" url="/casestudy" button="button" />
                       </div>
-                      <div className="list_item">
+                      <div className="list_item text-center">
                         <h4 className="title">Portfolio</h4>
                         <Link href="/portfolio">
-                          <Image
-                            src="/images/portfolio.png"
-                            width={300}
-                            height={300}
-                            alt="Nexgeno Portfolio"
-                          />
+                          <div className="relative h-52 w-72">
+                            <Image
+                              src="/images/portfolio.png"
+                              fill={true}
+                              alt="Nexgeno Portfolio"
+                            />
+                          </div>
                         </Link>
+
+                        <Button title="View" url="/portfolio" button="button" />
                       </div>
                     </div>
                   </li>
@@ -541,10 +543,13 @@ export default function Navbar() {
                       </div>
                     </div>
                   </li>
+                  <li>
+                    <Link href="/contact">Contact Us</Link>
+                  </li>
                 </ul>
               </nav>
             </div>
-            <div className="header_item item_right">
+            <div className="header_item item_right flex justify-end">
               <Button url="/inquiry" title="Let's Talk" button="button" />
             </div>
           </div>

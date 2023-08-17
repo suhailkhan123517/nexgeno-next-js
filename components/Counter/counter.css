@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .counter div h1 {
@@ -25,4 +26,31 @@
   font-size: 24px;
   font-weight: bold;
   color: rgb(105, 103, 103);
+}
+
+@media screen and (max-width: 767px) {
+  .counter div h1 {
+    font-size: 38px;
+  }
+  .counter div h2 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .counter div h1 {
+    font-size: 38px;
+  }
+  .counter div h2 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .counter div h1 {
+    font-size: 44px;
+  }
+  .counter div h2 {
+    font-size: 16px;
+  }
 }

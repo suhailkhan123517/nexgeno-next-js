@@ -26,3 +26,12 @@
 .content_row {
   border-bottom: 1px solid rgba(255, 255, 255, 0.185);
 }
+
+@media screen and (max-width: 767px) {
+  .formContainer form {
+    margin-top: 0rem;
+  }
+  .iconContact i {
+    font-size: 20px;
+  }
+}

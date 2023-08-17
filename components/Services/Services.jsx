@@ -10,14 +10,14 @@ export default function Services() {
     <>
       <div className="service py-10 text-center relative   rounded-2xl">
         <div className="container m-auto ">
-          <h2 className="font-normal  text-xl mt-6">
+          <h2 className="font-normal  lg:text-xl text-base sm:mt-6">
             # SERVICES WE ARE PROVIDED
           </h2>
-          <h1 className="font-semibold text-4xl mt-5 pb-10">
+          <h1 className="font-semibold lg:text-4xl  text-2xl lg:mt-5 mt-2 pb-10">
             Our Design Development Services
           </h1>
 
-          <div className="grid  grid-cols-2 lg:grid-cols-4 mb-10 gap-4">
+          <div className="grid  sm:grid-cols-2  grid-cols-1  lg:grid-cols-4 mb-10 gap-4">
             {servicesCard.map((item) => (
               <div
                 key={item.id}

@@ -1,38 +1,4 @@
-/* .card {
-  background: rgb(169, 190, 231);
-  background: linear-gradient(
-    337deg,
-    rgba(169, 190, 231, 1) 0%,
-    rgba(133, 254, 248, 1) 100%
-  );
-}
-.card:nth-child(2) {
-  background: rgb(196, 211, 240);
-  background: linear-gradient(
-    337deg,
-    rgba(196, 211, 240, 1) 0%,
-    rgba(254, 240, 230, 1) 57%
-  );
-}
-.card:nth-child(3) {
-  background: rgb(251, 252, 160);
-  background: linear-gradient(
-    322deg,
-    rgba(251, 252, 160, 1) 12%,
-    rgba(175, 250, 191, 1) 100%
-  );
-}
-.card:nth-child(4) {
-  background: rgb(241, 216, 251);
-  background: linear-gradient(
-    270deg,
-    rgba(241, 216, 251, 1) 0%,
-    rgba(217, 247, 255, 1) 100%
-  );
-} */
-
 .link_learn {
-  font: 25px;
   display: inline-block;
   position: relative;
 }

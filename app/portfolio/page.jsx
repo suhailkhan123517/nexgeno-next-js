@@ -10,8 +10,12 @@ export default function Portfolio() {
       <div className="portfolio_p bg-black text-white mt-16">
         <div className="container m-auto py-10">
           <div className="flex pb-8 justify-between items-center flex-row">
-            <Button url="#" title="Get a Free Quote Now" button="button" />
-            <Button url="#" title="View More" button="button" />
+            <Button
+              url="/inquiry"
+              title="Get a Free Quote Now"
+              button="button"
+            />
+            <Button url="/portfolios" title="View More" button="button" />
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="img_hover mb-5 relative pr-20">

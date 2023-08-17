@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="http://localhost:3000/images/favicon.jpg"
+          content="http://localhost:3000/images/logo.png"
         />
         <meta property="og:url" content="https://nexgeno.in/" />
         <meta property="og:type" content="website" />
@@ -88,7 +88,7 @@ export default function RootLayout({ children }) {
           name="twitter:description"
           content="At Nexgeno Technology Pvt Ltd, we are dedicated to providing professional web designing and development services."
         />
-        <meta name="twitter:image" content="https://example.com/image.jpg" />
+        <meta name="twitter:image" content="https://example.com/im" />
         {/* <!-- Canonical tag --> */}
         <script
           type="application/ld+json"

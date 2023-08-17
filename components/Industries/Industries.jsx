@@ -1,7 +1,6 @@
 import { industriesIcons } from "@/utils/data";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import Button from "../Button/Button";
 
 export default function Industries() {
@@ -9,24 +8,28 @@ export default function Industries() {
     <>
       <div className="container m-auto py-10">
         <h2 className="text-center text-pink-600 py-3"># INDUSTRIES</h2>
-        <h1 className="text-center text-3xl font-semibold text-blue-950 pb-7">
+        <h1 className="text-center lg:text-3xl md:text-2xl text-xl font-semibold text-blue-950 pb-7">
           Serving Our Clients Across Diverse Industries
         </h1>
-        <div className="industries  grid grid-cols-6 place-items-center gap-6 py-7">
+        <div className="industries  grid sm:grid-cols-6 grid-cols-3 place-items-center gap-6 py-7">
           {industriesIcons.map((item) => (
             <Link
               key={item.id}
               href={item.url}
               className="flex flex-col gap-3 items-center my-3"
             >
-              <Image
-                className="hover:scale-125 ease-in-out duration-300"
-                src={item.img}
-                alt={item.title}
-                width={60}
-                height={60}
-              />
-              <p>{item.title}</p>
+              <div className="relative lg:w-[68px] lg:h-[60px] w-[50px] h-[46px] ">
+                <Image
+                  className="hover:scale-125 ease-in-out duration-300"
+                  src={item.img}
+                  alt={item.title}
+                  fill={true}
+                />
+              </div>
+
+              <p className="text-center py-3 lg:text-sm text-[9px]">
+                {item.title}
+              </p>
             </Link>
           ))}
         </div>

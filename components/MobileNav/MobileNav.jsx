@@ -262,11 +262,6 @@ export default function MobileNav() {
                             <li>
                               <a href="/industries/hospitals.htm">Hospitals</a>
                             </li>
-                            <li className="mb-5">
-                              <h6 className="solution_button">
-                                Ask Specialist
-                              </h6>
-                            </li>
                           </ul>
                         </div>
                       </li>
@@ -315,16 +310,9 @@ export default function MobileNav() {
                                 Engagement Models
                               </a>
                             </li>
-                            <li>
-                              <h6 className="solution_button">
-                                Ask Specialist
-                              </h6>
-                            </li>
+                            <li></li>
                           </ul>
                         </div>
-                      </li>
-                      <li>
-                        <h6 className="solution_button">Ask Specialist</h6>
                       </li>
                     </ul>
                   </div>

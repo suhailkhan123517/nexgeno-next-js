@@ -1073,3 +1073,193 @@ export const caseStudy = [
     url: "/casestudy/kucedibles",
   },
 ];
+
+export const filterServices = [
+  {
+    id: 3,
+    name: "E-Commerce",
+  },
+  {
+    id: 4,
+    name: "Application Development",
+  },
+  {
+    id: 5,
+    name: "Portal Website",
+  },
+  {
+    id: 6,
+    name: "Market Place",
+  },
+  {
+    id: 7,
+    name: "Landing page",
+  },
+  {
+    id: 10,
+    name: "PSD To React Js",
+  },
+  {
+    id: 8,
+    name: "PSD To HTML",
+  },
+  {
+    id: 9,
+    name: "PSD To Wordpress",
+  },
+
+  {
+    id: 11,
+    name: "Figma Design",
+  },
+  {
+    id: 12,
+    name: "Responsive design",
+  },
+  {
+    id: 13,
+    name: "Redesign Website",
+  },
+  {
+    id: 14,
+    name: "Web Security",
+  },
+  {
+    id: 15,
+    name: "Google Page Speed",
+  },
+  {
+    id: 16,
+    name: "Websites Maintenance",
+  },
+];
+
+export const filterIndustries = [
+  {
+    id: 2,
+    name: "Education / E-Learning",
+  },
+  {
+    id: 3,
+    name: "Retail",
+  },
+  {
+    id: 4,
+    name: "Logistics & Distribution",
+  },
+  {
+    id: 5,
+    name: "FinTech",
+  },
+  {
+    id: 6,
+    name: "Manufacturing",
+  },
+  {
+    id: 7,
+    name: "Events",
+  },
+  {
+    id: 8,
+    name: "Recruitment",
+  },
+  {
+    id: 9,
+    name: "Real Estate",
+  },
+  {
+    id: 10,
+    name: "Restaurants",
+  },
+  {
+    id: 11,
+    name: "Health Care",
+  },
+  {
+    id: 12,
+    name: "Hospitality",
+  },
+  {
+    id: 13,
+    name: "Pharmaceutical",
+  },
+  {
+    id: 14,
+    name: "Electronics",
+  },
+  {
+    id: 15,
+    name: "Travel Tours",
+  },
+  {
+    id: 16,
+    name: "Service Provider",
+  },
+  {
+    id: 17,
+    name: "Hospitals",
+  },
+  {
+    id: 19,
+    name: "Catalog",
+  },
+  {
+    id: 20,
+    name: "Foods",
+  },
+  {
+    id: 21,
+    name: "Fashion",
+  },
+  {
+    id: 23,
+    name: "Jewellery",
+  },
+  {
+    id: 24,
+    name: "Clothes",
+  },
+];
+
+export const filterTechnology = [
+  {
+    id: 1,
+    name: "Next Js",
+  },
+  {
+    id: 1,
+    name: "MERN Stack",
+  },
+  {
+    id: 1,
+    name: "React Js",
+  },
+  {
+    id: 2,
+    name: "Node js",
+  },
+  {
+    id: 3,
+    name: "Java Script",
+  },
+  {
+    id: 4,
+    name: "Yii framework",
+  },
+  {
+    id: 5,
+    name: "CodeIgniter",
+  },
+  {
+    id: 6,
+    name: "Wordpress",
+  },
+  {
+    id: 7,
+    name: "Woocommerce",
+  },
+  {
+    id: 7,
+    name: "Laravel",
+  },
+];

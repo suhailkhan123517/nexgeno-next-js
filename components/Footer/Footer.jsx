@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <>
       <div className="container m-auto my-20">
-        <div className="grid grid-cols-4 gap-4 ">
+        <div className="grid sm:grid-cols-4 grid-cols-1 gap-4 ">
           <div className="footer_head">
             <h1 className="title_footer text-xl font-semibold ">
               Development Services
@@ -390,9 +390,11 @@ export default function Footer() {
         </div>
       </div>
       <div className="bottom_footer">
-        <div className="container m-auto py-5 grid grid-cols-3 place-items-center gap-5">
+        <div className="container m-auto py-5 grid sm:grid-cols-3 grid-cols-1 place-items-center sm:gap-5 gap-2">
           <div>
-            <p>©2023 NexGeno Technology Private Limited.</p>
+            <p className="sm:text-base  text-sm">
+              ©2023 NexGeno Technology Private Limited.
+            </p>
           </div>
           <div>
             <Image
@@ -403,8 +405,12 @@ export default function Footer() {
             />
           </div>
           <div className="flex gap-5">
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">Terms & Condition</Link>
+            <Link className="sm:text-base  text-sm" href="#">
+              Privacy Policy
+            </Link>
+            <Link className="sm:text-base  text-sm" href="#">
+              Terms & Condition
+            </Link>
           </div>
         </div>
       </div>
