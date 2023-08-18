@@ -9,7 +9,7 @@ export default function Button({ url, bgblack, title, button }) {
         className={`${button} ${bgblack}  no-underline relative border-none text-lg font-medium text-white py-2 px-6 rounded-md`}
         href={url}
       >
-        {title}
+        {title} <i className="fa fa-arrow-right"></i>
       </Link>
     </>
   );

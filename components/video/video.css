@@ -6,3 +6,9 @@
   height: 100%;
   z-index: -1;
 }
+
+@media screen and (max-width: 767px) {
+  .background-video {
+    top: 100px;
+  }
+}

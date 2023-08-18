@@ -7,7 +7,7 @@ import Button from "../Button/Button";
 export default function Navbar() {
   return (
     <>
-      <header className="header block w-full relative z-1 py-2">
+      <header className="header block w-full relative z-1">
         <div className="container mx-auto">
           <div className="row items-center flex  justify-between">
             <div className="header_item item_left">
@@ -135,7 +135,7 @@ export default function Navbar() {
                             </Link>
                           </li>
                           <li>
-                            <Link href="/services/hospitality">
+                            <Link href="/services/healthcare">
                               {" "}
                               Hospitality{" "}
                             </Link>

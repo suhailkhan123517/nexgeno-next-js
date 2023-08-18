@@ -8,7 +8,7 @@ export default function Contact() {
       <div className="contact py-12  md:mt-28 mt-0">
         <div className="container m-auto">
           <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
-            <div className="content text-white flex flex-col gap-10 md:px-16 px-5">
+            <div className="content text-white flex flex-col gap-10 md:pr-16 pr-5">
               <div className="flex content_row items-start gap-5">
                 <div className="iconContact">
                   <i className="fa fa-map mt-2" aria-hidden="true"></i>

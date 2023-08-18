@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import "./footer.css";
 import Image from "next/image";
+import Whatsapp from "../Whatsapp/Whatsapp";
 
 export default function Footer() {
   return (
@@ -414,6 +415,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <Whatsapp />
     </>
   );
 }

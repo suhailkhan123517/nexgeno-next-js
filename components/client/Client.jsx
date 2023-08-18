@@ -6,7 +6,7 @@ export default function Client() {
   return (
     <>
       <div className="container m-auto mb-12 md:mt-0 mt-10">
-        <div className="grid md:grid-cols-6 md:gap-0  grid-cols-2  place-items-center">
+        <div className="grid md:grid-cols-6 md:gap-0  grid-cols-3  place-items-center">
           {clientLogo.map((item) => (
             <div
               key={item.id}

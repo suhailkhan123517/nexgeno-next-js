@@ -11,12 +11,12 @@ export default function Industries() {
         <h1 className="text-center lg:text-3xl md:text-2xl text-xl font-semibold text-blue-950 pb-7">
           Serving Our Clients Across Diverse Industries
         </h1>
-        <div className="industries  grid sm:grid-cols-6 grid-cols-3 place-items-center gap-6 py-7">
+        <div className="industries  grid sm:grid-cols-6 grid-cols-4 place-items-center gap-6 sm:py-7 py-3">
           {industriesIcons.map((item) => (
             <Link
               key={item.id}
               href={item.url}
-              className="flex flex-col gap-3 items-center my-3"
+              className="flex flex-col sm:gap-3 items-center sm:my-3"
             >
               <div className="relative lg:w-[68px] lg:h-[60px] w-[50px] h-[46px] ">
                 <Image
@@ -27,14 +27,14 @@ export default function Industries() {
                 />
               </div>
 
-              <p className="text-center py-3 lg:text-sm text-[9px]">
+              <p className="text-center py-3 font-semibold lg:text-sm text-[9px]">
                 {item.title}
               </p>
             </Link>
           ))}
         </div>
         <div className="grid place-items-center pt-5">
-          <Button url="#" title="View More" button="button" />
+          <Button url="/industries" title="View More" button="button" />
         </div>
       </div>
     </>

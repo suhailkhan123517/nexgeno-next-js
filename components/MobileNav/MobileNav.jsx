@@ -1,6 +1,8 @@
 import React from "react";
 import "./MobileNav.css";
 import Image from "next/image";
+import Button from "../Button/Button";
+import Link from "next/link";
 
 export default function MobileNav() {
   return (
@@ -8,14 +10,12 @@ export default function MobileNav() {
       <div className="mobilenav">
         <div className="wrapper">
           <nav>
-            <div className="logo">
-              <Image
-                src="/images/logo.png"
-                width={200}
-                height={200}
-                alt="Nexgeno Logo"
-              />
-            </div>
+            <Link href="/">
+              <div className="logo relative w-[170px] h-[43px]">
+                <Image src="/images/logo.png" fill={true} alt="Nexgeno Logo" />
+              </div>
+            </Link>
+
             <input
               type="checkbox"
               id="menu"
@@ -29,9 +29,6 @@ export default function MobileNav() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="#000"
-                // stroke-width="2"
-                // stroke-linecap="butt"
-                // stroke-linejoin="arcs"
               >
                 <line x1="3" y1="12" x2="21" y2="12"></line>
                 <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -48,9 +45,6 @@ export default function MobileNav() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="#000000"
-                    // stroke-width="2"
-                    // stroke-linecap="butt"
-                    // stroke-linejoin="arcs"
                   >
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -78,9 +72,6 @@ export default function MobileNav() {
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="#000000"
-                          // stroke-width="2"
-                          // stroke-linecap="butt"
-                          // stroke-linejoin="arcs"
                         >
                           <path d="M19 12H6M12 5l-7 7 7 7" />
                         </svg>
@@ -110,9 +101,6 @@ export default function MobileNav() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="#000000"
-                                // stroke-width="2"
-                                // stroke-linecap="butt"
-                                // stroke-linejoin="arcs"
                               >
                                 <path d="M19 12H6M12 5l-7 7 7 7" />
                               </svg>
@@ -121,37 +109,37 @@ export default function MobileNav() {
                           </div>
                           <ul>
                             <li>
-                              <a href="/services/web-application-development.htm">
+                              <a href="/services/web">
                                 Application Development
                               </a>
                             </li>
                             <li>
-                              <a href="/services/digital-transhtmlFormation.htm">
+                              <a href="/services/digital">
                                 Digital TranshtmlFormation
                               </a>
                             </li>
                             <li>
-                              <a href="/services/frontend-development.htm">
+                              <a href="/services/frontend">
                                 Front-end Development
                               </a>
                             </li>
                             <li>
-                              <a href="/services/product-prototyping.htm">
+                              <a href="/services/product">
                                 Product Prototyping
                               </a>
                             </li>
                             <li>
-                              <a href="/services/ecommerce-deployment.htm">
+                              <a href="/services/ecommerce">
                                 Ecommerce Deployment
                               </a>
                             </li>
                             <li>
-                              <a href="/services/cloud-solutions.htm">
+                              <a href="/services/cloud">
                                 Cloud Solutions AWS, Azure & Google{" "}
                               </a>
                             </li>
                             <li>
-                              <a href="/services/mobile-app-development.htm">
+                              <a href="/services/mobile">
                                 Mobile App Development
                               </a>
                             </li>
@@ -180,9 +168,6 @@ export default function MobileNav() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="#000000"
-                                // stroke-width="2"
-                                // stroke-linecap="butt"
-                                // stroke-linejoin="arcs"
                               >
                                 <path d="M19 12H6M12 5l-7 7 7 7" />
                               </svg>
@@ -191,76 +176,62 @@ export default function MobileNav() {
                           </div>
                           <ul>
                             <li>
-                              <a href="/industries/educationl-earning.htm">
+                              <a href="/services/education">
                                 Education / E-Learning
                               </a>
                             </li>
                             <li>
-                              <a href="/industries/retail.htm">Retail</a>
+                              <a href="/services/retail">Retail</a>
                             </li>
                             <li>
-                              <a href="/industries/logistics-distribution.htm">
+                              <a href="/services/logistics">
                                 Logistics & Distribution
                               </a>
                             </li>
                             <li>
-                              <a href="/industries/finTECH.htm">FinTECH</a>
+                              <a href="/services/fintech">FinTECH</a>
                             </li>
                             <li>
-                              <a href="/industries/manufacturing.htm">
+                              <a href="/services/manufacturing">
                                 Manufacturing
                               </a>
                             </li>
                             <li>
-                              <a href="/industries/events.htm">Events</a>
+                              <a href="/services/events">Events</a>
                             </li>
                             <li>
-                              <a href="/industries/recruitment.htm">
-                                Recruitment
-                              </a>
+                              <a href="/services/recruitment">Recruitment</a>
                             </li>
                             <li>
-                              <a href="/industries/real-estate.htm">
-                                Real Estate
-                              </a>
+                              <a href="/services/realestate">Real Estate</a>
                             </li>
                             <li>
-                              <a href="/industries/restaurent.htm">
-                                Restaurant
-                              </a>
+                              <a href="/services/restaurants">Restaurant</a>
                             </li>
                             <li>
-                              <a href="/industries/healthcare.htm">
-                                Health Care
-                              </a>
+                              <a href="/services/healthcare">Health Care</a>
                             </li>
                             <li>
-                              <a href="/industries/hospitality.htm">
-                                Hospitality
-                              </a>
+                              <a href="/services/healthcare">Hospitality</a>
                             </li>
                             <li>
-                              <a href="/industries/pharmaceutical.htm">
+                              <a href="/services/pharmaceutical">
                                 Pharmaceutical
                               </a>
                             </li>
                             <li>
-                              <a href="/industries/eloctronics.htm">
-                                Electronics
-                              </a>
+                              <a href="/services/electronics">Electronics</a>
                             </li>
                             <li>
-                              <a href="/industries/travel-tours.htm">
-                                Travel & Tours
-                              </a>
+                              <a href="/services/travel">Travel & Tours</a>
                             </li>
                             <li>
-                              <a href="/industries/service-provider.htm">
+                              <a href="/services/serviceprovider">
                                 Service Provider
                               </a>
                             </li>
                             <li>
-                              <a href="/industries/hospitals.htm">Hospitals</a>
+                              <a href="/services/hospitals">Hospitals</a>
                             </li>
                           </ul>
                         </div>
@@ -290,9 +261,6 @@ export default function MobileNav() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="#000000"
-                                // stroke-width="2"
-                                // stroke-linecap="butt"
-                                // stroke-linejoin="arcs"
                               >
                                 <path d="M19 12H6M12 5l-7 7 7 7" />
                               </svg>
@@ -301,12 +269,12 @@ export default function MobileNav() {
                           </div>
                           <ul>
                             <li>
-                              <a href="/industries/delivery-models.htm">
+                              <a href="/services/deliverymodel">
                                 Delivery Models
                               </a>
                             </li>
                             <li>
-                              <a href="/industries/engagementmodels.htm">
+                              <a href="/services/engagement">
                                 Engagement Models
                               </a>
                             </li>
@@ -339,9 +307,6 @@ export default function MobileNav() {
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="#000000"
-                          // stroke-width="2"
-                          // stroke-linecap="butt"
-                          // stroke-linejoin="arcs"
                         >
                           <path d="M19 12H6M12 5l-7 7 7 7" />
                         </svg>
@@ -374,9 +339,6 @@ export default function MobileNav() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="#000000"
-                                // stroke-width="2"
-                                // stroke-linecap="butt"
-                                // stroke-linejoin="arcs"
                               >
                                 <path d="M19 12H6M12 5l-7 7 7 7" />
                               </svg>
@@ -385,22 +347,22 @@ export default function MobileNav() {
                           </div>
                           <ul>
                             <li>
-                              <a href="/hiredeveloper/hire-php-developers.htm">
+                              <a href="/hiredeveloper/php">
                                 Hire PHP Developers
                               </a>
                             </li>
                             <li>
-                              <a href="/hiredeveloper/hire-laravel-developers.htm">
+                              <a href="/hiredeveloper/laravel">
                                 Hire Laravel Developers
                               </a>
                             </li>
                             <li>
-                              <a href="/hiredeveloper/hire-codeigniter-developers.htm">
+                              <a href="/hiredeveloper/codeIgniter">
                                 Hire CodeIgniter Developers
                               </a>
                             </li>
                             <li>
-                              <a href="/hiredeveloper/hire-expressjs-developer-expert.htm">
+                              <a href="/hiredeveloper/express">
                                 Hire ExpressJS Developers
                               </a>
                             </li>
@@ -433,9 +395,6 @@ export default function MobileNav() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="#000000"
-                                // stroke-width="2"
-                                // stroke-linecap="butt"
-                                // stroke-linejoin="arcs"
                               >
                                 <path d="M19 12H6M12 5l-7 7 7 7" />
                               </svg>
@@ -444,17 +403,17 @@ export default function MobileNav() {
                           </div>
                           <ul>
                             <li>
-                              <a href="/hiredeveloper/hire-iphone-app-developers.htm">
+                              <a href="/hiredeveloper/ios">
                                 Hire iOS Developers
                               </a>
                             </li>
                             <li>
-                              <a href="/hiredeveloper/hire-android-app-developers.htm">
+                              <a href="/hiredeveloper/android">
                                 Hire Android Developers
                               </a>
                             </li>
                             <li>
-                              <a href="/hiredeveloper/hire-flutter-developers.htm">
+                              <a href="/hiredeveloper/flutter">
                                 Hire Flutter Developers
                               </a>
                             </li>
@@ -487,9 +446,6 @@ export default function MobileNav() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="#000000"
-                                // stroke-width="2"
-                                // stroke-linecap="butt"
-                                // stroke-linejoin="arcs"
                               >
                                 <path d="M19 12H6M12 5l-7 7 7 7" />
                               </svg>
@@ -498,12 +454,12 @@ export default function MobileNav() {
                           </div>
                           <ul>
                             <li>
-                              <a href="/hiredeveloper/hire-angular-js-developer.htm">
+                              <a href="/hiredeveloper/angular">
                                 Hire Angular Developers
                               </a>
                             </li>
                             <li>
-                              <a href="/hiredeveloper/hire-reactjs-developers.htm">
+                              <a href="/hiredeveloper/react">
                                 Hire React JS Developers
                               </a>
                             </li>
@@ -536,9 +492,6 @@ export default function MobileNav() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="#000000"
-                                // stroke-width="2"
-                                // stroke-linecap="butt"
-                                // stroke-linejoin="arcs"
                               >
                                 <path d="M19 12H6M12 5l-7 7 7 7" />
                               </svg>
@@ -547,22 +500,22 @@ export default function MobileNav() {
                           </div>
                           <ul>
                             <li>
-                              <a href="/hiredeveloper/hire-wordpress-developers.htm">
+                              <a href="/hiredeveloper/wordpress">
                                 Hire WordPress Developers
                               </a>
                             </li>
                             <li>
-                              <a href="/hiredeveloper/hire-shopify-developer-designer-india.htm">
+                              <a href="/hiredeveloper/shopify">
                                 Hire Shopify Developers
                               </a>
                             </li>
                             <li>
-                              <a href="/hiredeveloper/hire-magento-developers.htm">
+                              <a href="/hiredeveloper/magento">
                                 Hire Magento Developers
                               </a>
                             </li>
                             <li>
-                              <a href="/hiredeveloper/hire-opencart-developers.htm">
+                              <a href="/hiredeveloper/opencart">
                                 Hire OpenCart Developers
                               </a>
                             </li>
@@ -595,9 +548,6 @@ export default function MobileNav() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="#000000"
-                                // stroke-width="2"
-                                // stroke-linecap="butt"
-                                // stroke-linejoin="arcs"
                               >
                                 <path d="M19 12H6M12 5l-7 7 7 7" />
                               </svg>
@@ -606,17 +556,17 @@ export default function MobileNav() {
                           </div>
                           <ul>
                             <li>
-                              <a href="/hiredeveloper/hire-Ionic-developers.htm">
+                              <a href="/hiredeveloper/ionic">
                                 Hire Ionic Developers
                               </a>
                             </li>
                             <li>
-                              <a href="/hiredeveloper/hire-reactNative-developers.htm">
+                              <a href="/hiredeveloper/reactnative">
                                 Hire React Native Developers
                               </a>
                             </li>
                             <li>
-                              <a href="/hiredeveloper/hire-PWA-developers.htm">
+                              <a href="/hiredeveloper/pwa">
                                 Hire PWA Developers
                               </a>
                             </li>
@@ -647,9 +597,6 @@ export default function MobileNav() {
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="#000000"
-                          // stroke-width="2"
-                          // stroke-linecap="butt"
-                          // stroke-linejoin="arcs"
                         >
                           <path d="M19 12H6M12 5l-7 7 7 7" />
                         </svg>
@@ -682,9 +629,6 @@ export default function MobileNav() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="#000000"
-                                // stroke-width="2"
-                                // stroke-linecap="butt"
-                                // stroke-linejoin="arcs"
                               >
                                 <path d="M19 12H6M12 5l-7 7 7 7" />
                               </svg>
@@ -693,87 +637,67 @@ export default function MobileNav() {
                           </div>
                           <ul>
                             <li>
-                              <a href="/solution/school-management.htm">
-                                School management
-                              </a>
+                              <a href="/solution/school">School management</a>
                             </li>
                             <li>
-                              <a href="/solution/tailor-billing-pplication.htm">
+                              <a href="/solution/tailor">
                                 Tailor Billing Application
                               </a>
                             </li>
 
                             <li>
-                              <a href="/solution/recruitment-billing-application.htm">
+                              <a href="/solution/recruitment">
                                 Recruitment billing application
                               </a>
                             </li>
                             <li>
-                              <a href="/solution/crm.htm">CRM application</a>
+                              <a href="/solution/crm">CRM application</a>
                             </li>
                             <li>
-                              <a href="/solution/billing-application.htm">
+                              <a href="/solution/billing">
                                 Billing application
                               </a>
                             </li>
                             <li>
-                              <a href="/solution/pos.htm">POS</a>
+                              <a href="/solution/pos">POS</a>
                             </li>
                             <li>
-                              <a href="/solution/restaurant.htm">
+                              <a href="/solution/restaurant">
                                 Multi restaurant management
                               </a>
                             </li>
                             <li>
-                              <a href="/solution/car-rental-system.htm">
-                                Car rental system
-                              </a>
+                              <a href="/solution/car">Car rental system</a>
                             </li>
                             <li>
-                              <a href="/solution/hrms-payroll-system.htm">
-                                Hrms payroll system
-                              </a>
+                              <a href="/solution/hrms">Hrms payroll system</a>
                             </li>
                             <li>
-                              <a href="/solution/online-food-ordering-system.htm">
+                              <a href="/solution/onlinefood">
                                 Online food ordering system
                               </a>
                             </li>
                             <li>
-                              <a href="/solution/hospital-management-system.htm">
+                              <a href="/solution/hospital">
                                 Hospital management system
                               </a>
                             </li>
                             <li>
-                              <a href="/solution/job-portal.htm">Job portal</a>
+                              <a href="/solution/job">Job portal</a>
                             </li>
                             <li>
-                              <a href="/solution/lawyer-booking-solution.htm">
+                              <a href="/solution/lawyer">
                                 Lawyer booking solution
                               </a>
                             </li>
                             <li>
-                              <a href="/solution/chat-application.htm">
-                                Chat application
-                              </a>
+                              <a href="/solution/chat">Chat application</a>
                             </li>
                             <li>
-                              <a href="/solution/hotel-booking-system.htm">
-                                Hotel booking system
-                              </a>
-                            </li>
-                            <li className="mb-5">
-                              <h6 className="solution_button">
-                                Get a Custom Solution Now
-                              </h6>
+                              <a href="/solution/hotel">Hotel booking system</a>
                             </li>
                           </ul>
                         </div>
-                      </li>
-                      <li>
-                        <h6 className="solution_button">
-                          Get a Custom Solution Now
-                        </h6>
                       </li>
                     </ul>
                   </div>
@@ -797,9 +721,6 @@ export default function MobileNav() {
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="#000000"
-                          // stroke-width="2"
-                          // stroke-linecap="butt"
-                          // stroke-linejoin="arcs"
                         >
                           <path d="M19 12H6M12 5l-7 7 7 7" />
                         </svg>
@@ -807,14 +728,14 @@ export default function MobileNav() {
                       <span>Our Work</span>
                     </div>
                     <ul>
-                      <li>
+                      {/* <li>
                         <a href="/">Testimonial</a>
+                      </li> */}
+                      <li>
+                        <a href="/casestudy">Case Study</a>
                       </li>
                       <li>
-                        <a href="/casestudy.htm">Case Study</a>
-                      </li>
-                      <li>
-                        <a href="/portfolio-list.htm">Portfolio</a>
+                        <a href="/portfolio">Portfolio</a>
                       </li>
                     </ul>
                   </div>
@@ -838,9 +759,6 @@ export default function MobileNav() {
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="#000000"
-                          // stroke-width="2"
-                          // stroke-linecap="butt"
-                          // stroke-linejoin="arcs"
                         >
                           <path d="M19 12H6M12 5l-7 7 7 7" />
                         </svg>
@@ -870,9 +788,6 @@ export default function MobileNav() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="#000000"
-                                // stroke-width="2"
-                                // stroke-linecap="butt"
-                                // stroke-linejoin="arcs"
                               >
                                 <path d="M19 12H6M12 5l-7 7 7 7" />
                               </svg>
@@ -881,22 +796,20 @@ export default function MobileNav() {
                           </div>
                           <ul>
                             <li>
-                              <a href="/about-us.htm">About Us</a>
+                              <a href="/about">About Us</a>
                             </li>
 
                             <li>
-                              <a href="/devmethology.htm">
-                                Development Methodology
-                              </a>
+                              <a href="/methodology">Development Methodology</a>
                             </li>
                             <li>
-                              <a href="/certifications.htm">Certifications</a>
+                              <a href="/certifications">Certifications</a>
                             </li>
-                            <li>
+                            {/* <li>
                               <a href="/career.htm">Career</a>
-                            </li>
+                            </li> */}
                             <li>
-                              <a href="/contact.htm">Contact Us</a>
+                              <a href="/contact">Contact Us</a>
                             </li>
                           </ul>
                         </div>
@@ -923,9 +836,6 @@ export default function MobileNav() {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="#000000"
-                                // stroke-width="2"
-                                // stroke-linecap="butt"
-                                // stroke-linejoin="arcs"
                               >
                                 <path d="M19 12H6M12 5l-7 7 7 7" />
                               </svg>
@@ -934,7 +844,7 @@ export default function MobileNav() {
                           </div>
                           <ul>
                             <li>
-                              <a href="/faq.htm">FAQs</a>
+                              <a href="/faq">FAQs</a>
                             </li>
                           </ul>
                         </div>
@@ -942,6 +852,12 @@ export default function MobileNav() {
                     </ul>
                   </div>
                 </li>
+                <li>
+                  <a href="/contact">Contact</a>
+                </li>
+                <div className="mt-5 ml-3">
+                  <Button url="/inquiry" title="Let's Talk" button="button" />
+                </div>
               </ul>
             </div>
           </nav>

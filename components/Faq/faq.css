@@ -60,3 +60,17 @@ input[type="radio"] {
 .accordion input[type="radio"]:checked + label::before {
   content: "-";
 }
+
+@media screen and (max-width: 767px) {
+  .accordion {
+    margin: 0px auto 0px;
+  }
+
+  .accordion li label {
+    font-size: 15px;
+  }
+
+  .accordion .content p {
+    font-size: 12px;
+  }
+}

@@ -61,7 +61,7 @@ export default function Portfolio() {
             ))}
           </Swiper>
           <div className="grid place-items-center pt-5">
-            <Button url="#" title="View More" button="button" />
+            <Button url="/portfolio" title="View More" button="button" />
           </div>
         </div>
       </div>

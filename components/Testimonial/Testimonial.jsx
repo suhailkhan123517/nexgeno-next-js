@@ -9,6 +9,7 @@ import { FreeMode } from "swiper/modules";
 import { testimonialReview } from "@/utils/data";
 import "./testimonial.css";
 import Link from "next/link";
+import Button from "../Button/Button";
 
 export default function Testimonial() {
   return (
@@ -70,17 +71,15 @@ export default function Testimonial() {
                         {desc}
                       </p>
                     </div>
-                    <div className="bottom mt-3 ">
-                      <Link href="#" className="text-blue-600">
-                        View
-                      </Link>
-                    </div>
                   </div>
                 </div>
               </SwiperSlide>
             );
           })}
         </Swiper>
+        <div className="grid place-items-center pt-5">
+          <Button url="#" title="View More" button="button" />
+        </div>
       </div>
     </>
   );
