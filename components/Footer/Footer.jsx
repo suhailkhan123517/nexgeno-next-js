@@ -7,7 +7,7 @@ import Whatsapp from "../Whatsapp/Whatsapp";
 export default function Footer() {
   return (
     <>
-      <div className="container m-auto my-20">
+      <div className="container m-auto md:my-20 ">
         <div className="grid sm:grid-cols-4 grid-cols-1 gap-4 ">
           <div className="footer_head">
             <h1 className="title_footer text-xl font-semibold ">

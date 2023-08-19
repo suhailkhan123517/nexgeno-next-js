@@ -25,7 +25,6 @@ const getData = (cat) => {
 
 export default function Category({ params }) {
   const data = getData(params.category);
-  const { faq1, ans1, faq2, ans2 } = data;
   return (
     <>
       {data.map((item) => (
