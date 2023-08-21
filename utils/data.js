@@ -538,7 +538,7 @@ export const allServices = [
   },
   {
     id: 26,
-    title: "Chatbot Services by nexgeno",
+    title: "Chatbot Services",
     des: "Chatbot services have become increasingly popular in recent years due to their ability to automate customer support and improve response ",
     img: "/images/chat_s.webp",
     url: "/services/chatbot",
@@ -593,7 +593,7 @@ export const hireDeveloper = [
     id: 6,
     title: "Android Developers",
     desc: " Looking for skilled Android developers to join our team at Nexgeno Technology! We are a fast-growing software development company based in Mumbai, delivering innovative software solutions to clients across various industries.",
-    img: "/images/android_h.jpg",
+    img: "/images/android_h.png",
     url: "/hiredeveloper/android",
   },
   {
@@ -734,14 +734,14 @@ export const solution = [
   },
   {
     id: 10,
-    title: "Online food ordering system",
+    title: "Online food ordering",
     desc: "Our cloud-based online food ordering system offers a simple and efficient way for your customers to order and pay for their favorite dishes. Manage your restaurant operations seamlessly and enhance customer satisfaction with our cutting-edge solution.",
     img: "/images/onlinefood_so.jpg",
     url: "/solution/onlinefood",
   },
   {
     id: 11,
-    title: "Hospital management system",
+    title: "Hospital management",
     desc: "Simplify your hospital management with our cloud-based solution. Streamline operations, improve patient care, and enhance decision-making.",
     img: "/images/hospital_so.jpg",
     url: "/solution/hospital",

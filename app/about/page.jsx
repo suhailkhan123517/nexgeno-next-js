@@ -5,7 +5,7 @@ import "./about.css";
 export default function About() {
   return (
     <>
-      <div className="aboutUs">
+      <div className="relative w-[100%] md:h-[250px] h-[160px]">
         <Image
           src="/images/about_bg.jpg"
           alt="about background images Nexgeno"
@@ -13,9 +13,9 @@ export default function About() {
           className="object-cover"
         />
       </div>
-      <div className="container m-auto my-16">
-        <div className="flex items-center">
-          <div className="flex-1">
+      <div className="container m-auto md:my-16 ">
+        <div className="grid md:grid-cols-2 grid-cols-1">
+          <div className="order-last md:order-first">
             <h1 className="text-3xl font-bold text-blue-950 mb-5">
               About Agency
             </h1>
@@ -33,8 +33,8 @@ export default function About() {
               approach to every project.
             </p>
           </div>
-          <div className="flex-1 ">
-            <div className="aboutImage">
+          <div className="">
+            <div className="relative w-[100%] lg:h-[400px] md:h-[330px] h-[275px]">
               <Image
                 src="/images/about_us.jpg"
                 alt="Nexgeno About Us Image"

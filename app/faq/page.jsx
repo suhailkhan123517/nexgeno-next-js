@@ -6,7 +6,7 @@ export default function FaqMain() {
   return (
     <>
       <div className="my-20">
-        <div className="container m-auto md:py-10 pt-10 md:pt-0">
+        <div className="container m-auto md:py-10 sm:pt-10 md:pt-0">
           <h1 className="text-center text-blue-950 md:text-3xl text-xl font-bold">
             Frequently Asked Questions
           </h1>

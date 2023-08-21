@@ -391,19 +391,14 @@ export default function Footer() {
         </div>
       </div>
       <div className="bottom_footer">
-        <div className="container m-auto py-5 grid sm:grid-cols-3 grid-cols-1 place-items-center sm:gap-5 gap-2">
+        <div className="container m-auto py-2 sm:py-5 grid sm:grid-cols-3 grid-cols-1 place-items-center sm:gap-5 gap-2">
           <div>
             <p className="sm:text-base  text-sm">
               ©2023 NexGeno Technology Private Limited.
             </p>
           </div>
-          <div>
-            <Image
-              src="/images/logo.png"
-              alt="Nexgeno Logo"
-              width={200}
-              height={100}
-            />
+          <div className="relative w-[200px] h-[50px]">
+            <Image src="/images/logo.png" alt="Nexgeno Logo" fill={true} />
           </div>
           <div className="flex gap-5">
             <Link className="sm:text-base  text-sm" href="#">

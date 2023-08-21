@@ -19,3 +19,9 @@
   background: linear-gradient(90deg, #6a8ec333 33.85%, #9e79c000);
   border: 1px solid #dbf3f1;
 }
+
+@media screen and (max-width: 639px) {
+  .iconBox i {
+    font-size: 50px;
+  }
+}

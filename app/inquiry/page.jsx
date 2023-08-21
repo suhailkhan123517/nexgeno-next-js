@@ -8,26 +8,28 @@ import Testimonial from "@/components/Testimonial/Testimonial";
 export default function Inquiry() {
   return (
     <>
-      <div className="inquiry my-16">
+      <div className="inquiry sm:my-16">
         <div className="container py-10 mx-auto">
-          <div className="grid grid-cols-2 px-10 py-5   gap-4">
+          <div className="grid lg:grid-cols-2 grid-cols-1 sm:px-10 py-5   gap-4">
             <div>
               <h1 className="text-center text-4xl font-medium py-5">
                 Get in touch
               </h1>
-              <p className="pr-10 py-5 text-xl">
+              <p className="sm:pr-10 py-5 sm:text-xl text-lg">
                 Please fill in the form and our <br /> representative will get
                 back to you.
               </p>
               {inquiry.map((item) => (
-                <div key={item.id} className="data_inquiry py-5">
-                  <h1 className="text-3xl py-3 font-semibold">{item.title}</h1>
-                  <p className="text-lg">{item.desc}</p>
+                <div key={item.id} className="data_inquiry py-2 sm:py-5">
+                  <h1 className="text-xl sm:text-3xl py-3 font-semibold">
+                    {item.title}
+                  </h1>
+                  <p className="sm:text-lg">{item.desc}</p>
                 </div>
               ))}
             </div>
-            <div className="flex justify-center w-full">
-              <form className="flex rounded-lg p-10 shadow-2xl flex-col w-9/12 gap-8">
+            <div className="lg:flex lg:justify-center w-full mt-10 lg:mt-0">
+              <form className="flex rounded-lg sm:p-10 p-4 shadow-2xl flex-col  sm:gap-8 gap-4">
                 <input
                   className="py-2 border-b-2 border-gray-300 outline-none"
                   type="text"
