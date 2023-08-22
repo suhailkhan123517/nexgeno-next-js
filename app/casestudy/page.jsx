@@ -12,7 +12,7 @@ export default function CaseStudy() {
           <h1 className="text-center text-4xl font-normal">Work</h1>
           <div className="grid md:grid-cols-2 grid-cols-1 py-10 gap-5">
             {caseStudy.map((item) => (
-              <div key={item.id} className="caseBox">
+              <div key={item.id} className="caseBox mb-10 ">
                 <Link href={item.url}>
                   <p className="">UX DESIGN</p>
                   <h1 className="pb-2 text-2xl font-normal">{item.title}</h1>

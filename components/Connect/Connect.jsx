@@ -5,15 +5,15 @@ import "./connect.css";
 export default function Connect() {
   return (
     <>
-      <div className="connect py-10  text-white">
+      <div className="connect py-16  text-white">
         <div className="container m-auto">
           <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
-            <div className="col-span-2 lg:p-10">
-              <h1 className="md:text-3xl text-2xl font-semibold py-5 md:leading-10 leading-8  ">
+            <div className="col-span-2 ">
+              <h1 className="text-[28px] mb-2  font-bold md:leading-[44px] leading-8  ">
                 Are you ready to take your business to the next level with a
                 custom web application?
               </h1>
-              <p className="py-3 leading-8 text-md">
+              <p className="py-3 text-[16px] leading-[28px]">
                 Contact us today to schedule a consultation with our expert
                 team. We will work with you to understand your unique business
                 needs and develop a solution that meets your specific
@@ -22,7 +22,7 @@ export default function Connect() {
                 and secure web applications. Contact us now to get started!
               </p>
             </div>
-            <div className="grid md:place-items-center max-w-max">
+            <div className="flex items-center justify-end">
               <Button url="#" title="Get Connect" bgblack="bg-black" />
             </div>
           </div>

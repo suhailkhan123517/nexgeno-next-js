@@ -26,12 +26,15 @@ export default function WhyChoose() {
                   height={80}
                 />
               </div>
-              <h1 className="py-4 xl:text-xl text-lg font-semibold text-gray-800 ">
+              <h1 className="py-4 text-[18px] font-semibold text-gray-800 ">
                 Expertise and Experience
               </h1>
               <p className="leading-8 text-gray-700 line-clamp-2">
                 With over 11 years of experience in web application development,
-                our team of
+                our team of skilled developers has the expertise to deliver
+                cutting-edge web solutions to businesses of all sizes and
+                industries. We use the latest technologies and best practices to
+                ensure that our solutions are innovative, intuitive, and secure.
               </p>
             </div>
             <div className="text-center">
@@ -43,12 +46,16 @@ export default function WhyChoose() {
                   height={80}
                 />
               </div>
-              <h1 className="py-4 xl:text-xl text-lg font-semibold text-gray-800 ">
+              <h1 className="py-4 text-[18px] font-semibold text-gray-800 ">
                 Customized Solutions
               </h1>
               <p className="leading-8 text-gray-700 line-clamp-2">
                 At Nexgeno, we understand that every business has unique needs.
-                That why we
+                That's why we take the time to understand your business and
+                develop customized web solutions that are tailored to your
+                specific requirements. Our agile development methodology ensures
+                that we can quickly iterate on our solutions to ensure that they
+                meet your needs and exceed your expectations.
               </p>
             </div>
             <div className="text-center">
@@ -60,17 +67,21 @@ export default function WhyChoose() {
                   height={80}
                 />
               </div>
-              <h1 className="py-4 xl:text-xl text-lg font-semibold text-gray-800 ">
+              <h1 className="py-4 text-[18px] font-semibold text-gray-800 ">
                 Quality and Attention to Detail
               </h1>
               <p className="leading-8 text-gray-700 line-clamp-2">
-                We believe that quality should never be compromised. That why we
-                pay
+                We believe that quality should never be compromised. That's why
+                we pay meticulous attention to detail throughout the web
+                application development process to ensure that our solutions are
+                of the highest quality. We follow industry-standard security
+                protocols to ensure that your web application is always
+                protected against cyber threats.
               </p>
             </div>
           </div>
-          <div className="flex justify-center md:flex-row flex-col items-center gap-8">
-            <div className="text-center  px-10">
+          <div className="flex justify-center md:flex-row flex-col items-center px-28 ">
+            <div className="text-center flex-[33%]  px-8">
               <div className="iconContainer w-32 h-32 rounded-full mx-auto leading grid place-items-center">
                 <Image
                   src="/images/communication.png"
@@ -79,15 +90,18 @@ export default function WhyChoose() {
                   height={80}
                 />
               </div>
-              <h1 className="py-4 xl:text-xl text-lg font-semibold text-gray-800 ">
+              <h1 className="py-4 text-[18px] font-semibold text-gray-800 ">
                 Communication and Collaboration
               </h1>
               <p className="leading-8 text-gray-700 line-clamp-2">
                 We believe that communication and collaboration are key to the
-                success of any
+                success of any project. That's why we work closely with our
+                clients to ensure that we are always on the same page. We
+                provide regular updates and feedback throughout the development
+                process to ensure that our solutions meet your needs.
               </p>
             </div>
-            <div className="text-center  px-10">
+            <div className="text-center flex-[33%]  px-8">
               <div className="iconContainer w-32 h-32 rounded-full mx-auto leading grid place-items-center">
                 <Image
                   src="/images/satisfaction.png"
@@ -96,12 +110,15 @@ export default function WhyChoose() {
                   height={80}
                 />
               </div>
-              <h1 className="py-4 xl:text-xl text-lg font-semibold text-gray-800 ">
+              <h1 className="py-4 text-[18px] font-semibold text-gray-800 ">
                 Customer Satisfaction
               </h1>
               <p className="leading-8 text-gray-700 line-clamp-2">
-                At Nexgeno, we are committed to our clients success. We believe
-                that our
+                At Nexgeno, we are committed to our clients' success. We believe
+                that our success is tied to yours, which is why we always go
+                above and beyond to ensure that our clients are satisfied with
+                our services. We take pride in our work and are dedicated to
+                providing exceptional customer service.
               </p>
             </div>
           </div>

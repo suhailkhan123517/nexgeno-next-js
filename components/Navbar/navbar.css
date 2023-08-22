@@ -71,7 +71,7 @@
 
 .header .menu > ul > li .sub_menu.mega > .list_item > ul > li {
   display: block;
-  line-height: 35px;
+  line-height: 30px;
 }
 
 .header .menu > ul > li .sub_menu.mega > .list_item > ul > li > a {
@@ -79,6 +79,7 @@
   color: black;
   font-weight: 500;
   line-height: 25px;
+  font-size: 15px;
 }
 
 .header .menu > ul > li .sub_menu.column_4 {

@@ -1,19 +1,19 @@
 import Image from "next/image";
-import React from "react";
 import "./services.css";
 import Button from "../Button/Button";
 import { servicesCard } from "@/utils/data";
 import Link from "next/link";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Services() {
   return (
     <>
-      <div className="service py-10 text-center relative   rounded-2xl">
+      <div className="service py-10 text-center relative">
         <div className="container m-auto ">
-          <h2 className="font-normal  lg:text-xl text-base sm:mt-6">
+          <h2 className="font-normal   lg:text-[16px] md:text-[14px] text-[12px] mb-4">
             # SERVICES WE ARE PROVIDED
           </h2>
-          <h1 className="font-semibold lg:text-4xl  text-2xl lg:mt-5 mt-2 pb-10">
+          <h1 className="lg:text-[30px] sm:text-[25px] text-[20px]  sm:leading-0 leading-[30px]  font-semibold mb-[30px] ">
             Our Design Development Services
           </h1>
 
@@ -21,18 +21,21 @@ export default function Services() {
             {servicesCard.map((item) => (
               <div
                 key={item.id}
-                className="card flex justify-between p-7 items-center shadow-lg bg-white text-black text-center flex-col  gap-4 rounded-xl"
+                className="card flex justify-between py-[25px] px-[10px] items-center shadow-lg bg-white text-[#444] text-center flex-col  gap-4 rounded-xl"
               >
                 <div className="servicesImg">
                   <Image src={item.icon} alt={item.title} fill={true} />
                 </div>
 
-                <h1 className="font-semibold text-xl">{item.title}</h1>
-                <p>{item.desc}...</p>
-                <Link href={item.url} className="link_learn font-bold">
-                  Learn More
-                  <span>
-                    <i className="fa fa-arrow-right ml-2"></i>
+                <h1 className="font-semibold text-[18px] leading-[25px] ">
+                  {item.title}
+                </h1>
+                <p className="line-clamp-4 text-[14px] leading-[24px]">
+                  {item.desc}...
+                </p>
+                <Link href={item.url} className="link_learn ">
+                  <span className="flex items-center font-normal gap-3 text-[#333]">
+                    Learn More <AiOutlineArrowRight />
                   </span>
                 </Link>
               </div>

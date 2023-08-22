@@ -1,3 +1,8 @@
 .imgConPro {
   background: #ebf2ff;
 }
+
+.process {
+  background-image: url("/procces_line.png");
+  background-repeat: no-repeat;
+}

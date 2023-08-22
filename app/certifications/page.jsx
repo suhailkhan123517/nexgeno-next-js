@@ -1,6 +1,4 @@
 import Image from "next/image";
-import React from "react";
-import "./certificate.css";
 
 export default function Certificate() {
   return (
@@ -16,7 +14,7 @@ export default function Certificate() {
         <h1 className="sm:text-3xl text-xl text-blue-950 font-semibold  py-5">
           Certificate
         </h1>
-        <div className="relative w-[100%] sm:w-[90%] xl:h-[700px] lg:h-[600px] md:h-[500px] sm:h-[400px] h-[200px]">
+        <div className="relative md:w-[641px] md:h-[452px] sm:w-[400px] sm:h-[282px] w-[300px] h-[180px]">
           <Image
             src="/images/certificate.png"
             alt="nexgeno certificate"

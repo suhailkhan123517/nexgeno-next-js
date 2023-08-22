@@ -23,7 +23,7 @@ export default function Navbar() {
                 </Link>
               </div>
             </div>
-            <div className="header_item item_center flex">
+            <div className="header_item item_center justify-center flex">
               <nav className="menu">
                 <ul className="menu_main">
                   <li className="children">
@@ -63,15 +63,19 @@ export default function Navbar() {
                             </Link>
                           </li>
                           <li>
-                            <Link href="/services/cloud">
-                              Cloud Solutions AWS, Azure & Google
-                            </Link>
+                            <Link href="/services/cloud">Cloud Solutions</Link>
                           </li>
                           <li>
                             <Link href="/services/mobile">
                               {" "}
                               Mobile App Development{" "}
                             </Link>
+                          </li>
+                          <li>
+                            <Link href="/services">Web Consulting</Link>
+                          </li>
+                          <li>
+                            <Link href="/services">Website Security</Link>
                           </li>
                         </ul>
                       </div>
@@ -184,11 +188,13 @@ export default function Navbar() {
                               Engagement Models{" "}
                             </Link>
                           </li>
-                          <Button
-                            title="Enquire Now"
-                            url="/inquiry"
-                            button="button"
-                          />
+                          <div className="mt-10">
+                            <Button
+                              title="Enquire Now"
+                              url="/inquiry"
+                              button="button"
+                            />
+                          </div>
                         </ul>
                       </div>
                     </div>
@@ -317,11 +323,13 @@ export default function Navbar() {
                               Hire Flutter Developers{" "}
                             </Link>
                           </li>
-                          <Button
-                            title="Enquire Now"
-                            url="/inquiry"
-                            button="button"
-                          />
+                          <div className="mt-8">
+                            <Button
+                              title="Enquire Now"
+                              url="/inquiry"
+                              button="button"
+                            />
+                          </div>
                         </ul>
                       </div>
                     </div>
@@ -429,11 +437,13 @@ export default function Navbar() {
                               Hotel booking system{" "}
                             </Link>
                           </li>
-                          <Button
-                            title="Enquire Now"
-                            url="/inquiry"
-                            button="button"
-                          />
+                          <div className="mt-4">
+                            <Button
+                              title="Enquire Now"
+                              url="/inquiry"
+                              button="button"
+                            />
+                          </div>
                         </ul>
                       </div>
                     </div>
@@ -511,9 +521,6 @@ export default function Navbar() {
                           {/* <li>
                             <Link href="#"> Career </Link>
                           </li> */}
-                          <li>
-                            <Link href="/contact"> Contact Us </Link>
-                          </li>
                         </ul>
                       </div>
                       <div className="list_item">
@@ -522,11 +529,13 @@ export default function Navbar() {
                           <li>
                             <Link href="/faq"> FAQs </Link>
                           </li>
-                          <Button
-                            title="Enquire Now"
-                            url="/inquiry"
-                            button="button"
-                          />
+                          <div className="mt-6">
+                            <Button
+                              title="Enquire Now"
+                              url="/inquiry"
+                              button="button"
+                            />
+                          </div>
                         </ul>
                       </div>
                       <div className="list_item">

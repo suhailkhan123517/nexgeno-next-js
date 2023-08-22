@@ -3,16 +3,24 @@
 }
 
 .iconBox i {
-  font-size: 80px;
+  font-size: 36px;
+}
+
+.form_field label {
+  font-size: 17px;
+  color: #444;
+  font-weight: 600;
 }
 
 .form_field textarea,
 .form_field input {
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccccccc2;
   height: auto;
   outline: none;
   padding-left: 10px;
+  font-size: 17px;
+  color: #444;
 }
 
 .location_box {

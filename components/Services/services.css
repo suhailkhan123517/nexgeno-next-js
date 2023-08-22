@@ -15,7 +15,7 @@
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.link_learn:hover {
+.link_learn:hover span {
   color: #cf67be;
 }
 

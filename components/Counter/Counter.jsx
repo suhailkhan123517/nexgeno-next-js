@@ -13,7 +13,7 @@ export default function Counter() {
         onExit={() => setCounterOn(false)}
       >
         <div className="container m-auto sm:my-24 my-10">
-          <h1 className="lg:text-4xl sm:text-3xl text-xl sm:my-14 my-5 font-bold text-blue-950 text-center">
+          <h1 className="lg:text-3xl sm:text-3xl text-xl sm:my-14 my-5 font-semibold text-blue-950 text-center">
             Our Agency in Numbers
           </h1>
           <div className="grid counter md:grid-cols-4 grid-cols-2 gap-4 place-items-center">

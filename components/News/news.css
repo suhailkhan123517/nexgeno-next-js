@@ -1,9 +1,22 @@
-.btn_title {
-  background: linear-gradient(90deg, #3d9ec5 0, #cf67be 67%);
+.news {
+  background-image: url("/news_bg.png");
+  background-size: cover;
+  box-shadow: inset 1000px 1000px 1000px 1000px #f4f4f4f7;
+  position: relative;
 }
 
-.news {
+.news::before {
   background: linear-gradient(180deg, #3d9ec5 0, #cf67be 67%);
+  content: "";
+  left: -15%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 43%;
+}
+
+.btn_title {
+  background: linear-gradient(90deg, #3d9ec5 0, #cf67be 67%);
 }
 
 .readLink {

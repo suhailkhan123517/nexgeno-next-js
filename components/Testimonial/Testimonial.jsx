@@ -47,12 +47,17 @@ export default function Testimonial() {
             const avtar = name.charAt(0);
             return (
               <SwiperSlide className="cardContainer" key={id}>
-                <div className="py-7">
+                <div className="py-8">
                   <div className="card p-5 rounded-xl shadow-xl">
                     <div className="head flex flex-row justify-between items-center pb-2">
                       <div className="flex flex-row gap-2 ">
-                        <div className="w-8 h-8 rounded-full avtar  text-white flex justify-center items-center">
-                          <p className="text-2xl font-semibold ">{avtar}</p>
+                        <div className="flex items-center gap-2">
+                          <div className="w-8 h-8 rounded-full avtar  text-white flex justify-center items-center">
+                            <p className="text-2xl font-semibold ">{avtar}</p>
+                          </div>
+                          <h1 className=" font-medium text-[15px] pb-2 mt-1">
+                            {name}
+                          </h1>
                         </div>
                       </div>
                       <div className="star_rating text-yellow-500 flex flex-row gap-1 items-center">
@@ -64,10 +69,7 @@ export default function Testimonial() {
                       </div>
                     </div>
                     <div className="center">
-                      <h1 className="sm:text-lg font-medium text-base pb-2">
-                        {name}
-                      </h1>
-                      <p className="scroll-smooth no-scrollbar overflow-y-auto h-32 sm:text-base  text-sm ">
+                      <p className="scroll-smooth no-scrollbar overflow-y-auto h-32 text-[14px] ">
                         {desc}
                       </p>
                     </div>
@@ -77,7 +79,7 @@ export default function Testimonial() {
             );
           })}
         </Swiper>
-        <div className="grid place-items-center pt-5">
+        <div className="grid place-items-center pt-2">
           <Button url="#" title="View More" button="button" />
         </div>
       </div>

@@ -3,7 +3,7 @@ export const servicesCard = [
     id: 1,
     icon: "/images/app.png",
     title: "Mobile Application",
-    desc: "Application development refers to the process of designing, creating, and testing software",
+    desc: "Application development refers to the process of designing, creating, and testing software applications for use on various platforms such as desktop computers, mobile devices, and the web. This process involves coding, debugging, and continuous improvement to meet user requirements and deliver optimal performance.",
     url: "/services/mobile",
   },
 
@@ -11,7 +11,7 @@ export const servicesCard = [
     id: 3,
     icon: "/images/Digitalicon.png",
     title: "Digital Transformation",
-    desc: "Digital transformation refers to the process of leveraging digital technologies and innovations",
+    desc: "Digital transformation refers to the process of leveraging digital technologies and innovations to fundamentally change how organizations operate, interact with customers, and deliver value. It involves adopting new business models, redesigning processes, and embracing emerging technologies to enhance efficiency, productivity, and customer experiences while remaining agile and competitive in the digital age.",
     url: "/services/digital",
   },
 
@@ -19,7 +19,7 @@ export const servicesCard = [
     id: 2,
     icon: "/images/front.png",
     title: "Front-end Development",
-    desc: "Front-end Development is a crucial aspect of any modern digital project It involves creating a user-friendly",
+    desc: "Front-end development is a crucial aspect of any modern digital project. It involves creating a user-friendly and engaging interface that enhances user experiences and drives business outcomes. Our team of experienced front-end developers can help you create a visually appealing and functional website or application using the latest technologies and best practices in the industry, ensuring your online presence is optimized for success.",
     url: "/services/web",
   },
 
@@ -27,7 +27,7 @@ export const servicesCard = [
     id: 4,
     icon: "/images/producticon.png",
     title: "Product Prototyping",
-    desc: "Product prototyping is the process of creating a functional or non-functional model of a product",
+    desc: "Product prototyping is the process of creating a functional or non-functional model of a product, typically using low-cost materials or software. This allows designers and developers to test and refine the product's features and usability before investing in full-scale production. Prototyping can help identify flaws, improve functionality, and provide valuable feedback that can inform the final design and development stages, ultimately leading to a more successful product launch.",
     url: "/services/product",
   },
 ];

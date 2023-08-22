@@ -8,7 +8,7 @@ export default function Industries() {
     <>
       <div className="container m-auto py-10">
         <h2 className="text-center text-pink-600 py-3"># INDUSTRIES</h2>
-        <h1 className="text-center lg:text-3xl md:text-2xl text-xl font-semibold text-blue-950 pb-7">
+        <h1 className="text-center lg:text-3xl md:text-2xl text-xl font-semibold text-blue-950 pb-3">
           Serving Our Clients Across Diverse Industries
         </h1>
         <div className="industries  grid sm:grid-cols-6 grid-cols-4 place-items-center gap-6 sm:py-7 py-3">
@@ -16,9 +16,9 @@ export default function Industries() {
             <Link
               key={item.id}
               href={item.url}
-              className="flex flex-col sm:gap-3 items-center sm:my-3"
+              className="flex flex-col sm:gap-3 py-3 items-center"
             >
-              <div className="relative lg:w-[68px] lg:h-[60px] w-[50px] h-[46px] ">
+              <div className="relative lg:w-[50px] lg:h-[50px] w-[50px] h-[46px] ">
                 <Image
                   className="hover:scale-125 ease-in-out duration-300"
                   src={item.img}
@@ -27,7 +27,7 @@ export default function Industries() {
                 />
               </div>
 
-              <p className="text-center py-3 font-semibold lg:text-sm text-[9px]">
+              <p className="text-center font-medium lg:text-sm text-[9px]">
                 {item.title}
               </p>
             </Link>
