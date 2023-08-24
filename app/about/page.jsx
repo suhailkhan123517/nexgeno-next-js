@@ -34,7 +34,7 @@ export default function About() {
             </p>
           </div>
           <div className="">
-            <div className="relative w-[100%] lg:h-[400px] md:h-[330px] h-[275px]">
+            <div className="relative w-[100%] lg:h-[400px] md:h-[330px] h-[200px]">
               <Image
                 src="/images/about_us.jpg"
                 alt="Nexgeno About Us Image"

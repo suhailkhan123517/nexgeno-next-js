@@ -28,13 +28,13 @@ export default function Category({ params }) {
   return (
     <>
       {data.map((item) => (
-        <div key={item.id} className="container m-auto my-20">
-          <div className="grid grid-cols-2 grid-5 py-10 place-items-center">
-            <div className="flex flex-col gap-10 pr-20">
-              <h1 className="text-4xl leading-normal font-semibold text-blue-950">
+        <div key={item.id} className="container m-auto lg:my-20 my-10">
+          <div className="grid lg:grid-cols-2 grid-cols-1 grid-5  py-10 place-items-center">
+            <div className="flex order-last lg:order-first flex-col md:gap-6 gap-4 mt-10  lg:mt-0 lg:pr-10">
+              <h1 className="sm:text-[41px] sm:leading-[62px] text-[27px] leading-[40px] font-semibold text-blue-950">
                 {item.title}
               </h1>
-              <p className="text-xl leading-9 text-gray-700 line-clamp-4">
+              <p className="sm:text-[18px] text-[16px] sm:leading-[34px] leading-[30px] text-gray-700 line-clamp-4 mb-2">
                 {item.desc}
               </p>
               <div>

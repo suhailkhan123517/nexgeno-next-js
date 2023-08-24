@@ -6,19 +6,19 @@ import Button from "../Button/Button";
 export default function Industries() {
   return (
     <>
-      <div className="container m-auto py-10">
+      <div className="container m-auto sm:py-14 py-7">
         <h2 className="text-center text-pink-600 py-3 text-[16px]">
           # INDUSTRIES
         </h2>
         <h1 className="text-center lg:text-[30px] md:text-[25px] text-[20px] leading-[30px] font-semibold text-blue-950 pb-3">
           Serving Our Clients Across Diverse Industries
         </h1>
-        <div className="industries  grid sm:grid-cols-6 grid-cols-4 place-items-center gap-6 sm:py-7 py-3">
+        <div className="industries  grid sm:grid-cols-6 grid-cols-4 place-items-center sm:gap-6 gap-2 sm:py-7 py-3">
           {industriesIcons.map((item) => (
             <Link
               key={item.id}
               href={item.url}
-              className="flex flex-col sm:gap-3 py-3 items-center"
+              className="flex flex-col sm:gap-3 gap-1 py-3 items-center"
             >
               <div className="relative lg:w-[50px] lg:h-[50px] w-[50px] h-[46px] ">
                 <Image
@@ -29,13 +29,13 @@ export default function Industries() {
                 />
               </div>
 
-              <p className="text-center font-medium lg:text-sm text-[9px]">
+              <p className="text-center font-medium lg:text-sm text-[11px]">
                 {item.title}
               </p>
             </Link>
           ))}
         </div>
-        <div className="grid place-items-center pt-5">
+        <div className="grid place-items-center sm:pt-5">
           <Button url="/industries" title="View More" button="button" />
         </div>
       </div>

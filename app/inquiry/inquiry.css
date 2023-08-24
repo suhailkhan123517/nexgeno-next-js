@@ -1,3 +1,8 @@
 .data_inquiry {
   border-bottom: 1px solid lightgray;
 }
+
+.inquiry {
+  background-image: url("/images/inquiry.jpg");
+  background-size: cover;
+}

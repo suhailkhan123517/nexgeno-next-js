@@ -19,7 +19,7 @@ export default function Hiredeveloper() {
               key={item.id}
             >
               <Link href={item.url}>
-                <div className="relative w-[100%] xl:h-[280px] h-[200px]">
+                <div className="relative w-[100%] xl:h-[250px] h-[180px]">
                   <Image src={item.img} alt={item.title} fill={true} />
                 </div>
                 <h1 className="xl:text-2xl text-xl font-semibold py-5">

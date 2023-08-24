@@ -7,12 +7,12 @@ import { caseStudy } from "@/utils/data";
 export default function CaseStudy() {
   return (
     <>
-      <div className="caseStudy text-white md:my-16 ">
-        <div className="container py-10 m-auto ">
+      <div className="caseStudy text-white mt-16 sm:pt-14 pt-7">
+        <div className="container m-auto ">
           <h1 className="text-center text-4xl font-normal">Work</h1>
-          <div className="grid md:grid-cols-2 grid-cols-1 py-10 gap-5">
+          <div className="grid md:grid-cols-2 grid-cols-1 sm:py-14 py-7  gap-5">
             {caseStudy.map((item) => (
-              <div key={item.id} className="caseBox mb-10 ">
+              <div key={item.id} className="caseBox ">
                 <Link href={item.url}>
                   <p className="">UX DESIGN</p>
                   <h1 className="pb-2 text-2xl font-normal">{item.title}</h1>

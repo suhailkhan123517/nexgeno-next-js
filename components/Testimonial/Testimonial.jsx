@@ -14,8 +14,8 @@ import Button from "../Button/Button";
 export default function Testimonial() {
   return (
     <>
-      <div className="container m-auto py-14">
-        <h2 className="text-center text-pink-600 py-3"># OUR TESTIMONIAL</h2>
+      <div className="container m-auto sm:py-14 py-7">
+        <h2 className="text-center text-pink-600 pb-3"># OUR TESTIMONIAL</h2>
         <h1 className="text-center sm:text-3xl  text-xl font-semibold text-blue-950 ">
           Clients Happy with Our IT Solutions.
         </h1>
@@ -40,7 +40,7 @@ export default function Testimonial() {
           }}
           freeMode={true}
           modules={[FreeMode]}
-          className="mySwiper my-5"
+          className="mySwiper sm:my-5"
         >
           {testimonialReview.map((item) => {
             const { id, name, desc } = item;
@@ -79,7 +79,7 @@ export default function Testimonial() {
             );
           })}
         </Swiper>
-        <div className="grid place-items-center pt-2">
+        <div className="grid place-items-center sm:pt-2">
           <Button url="/testimonial" title="View More" button="button" />
         </div>
       </div>

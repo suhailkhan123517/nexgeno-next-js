@@ -139,7 +139,7 @@ export default function Navbar() {
                             </Link>
                           </li>
                           <li>
-                            <Link href="/services/healthcare">
+                            <Link href="/services/hospitality">
                               {" "}
                               Hospitality{" "}
                             </Link>
@@ -518,9 +518,9 @@ export default function Navbar() {
                           <li>
                             <Link href="/certifications"> Certifications </Link>
                           </li>
-                          {/* <li>
-                            <Link href="#"> Career </Link>
-                          </li> */}
+                          <li>
+                            <Link href="/career"> Career </Link>
+                          </li>
                         </ul>
                       </div>
                       <div className="list_item">
@@ -541,7 +541,7 @@ export default function Navbar() {
                       <div className="list_item">
                         <h4 className="title">Certificate</h4>
                         <Link href="#">
-                          <div className="imgC">
+                          <div className="relative w-full h-[300px]">
                             <Image
                               src="/images/certificate.png"
                               fill={true}

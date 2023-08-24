@@ -8,7 +8,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 export default function Services() {
   return (
     <>
-      <div className="service py-10 text-center relative">
+      <div className="service sm:py-14 py-7  text-center relative">
         <div className="container m-auto ">
           <h2 className="font-normal   lg:text-[16px] md:text-[14px] text-[12px] mb-4">
             # SERVICES WE ARE PROVIDED

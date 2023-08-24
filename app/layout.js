@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import MobileNav from "@/components/MobileNav/MobileNav";
 import Footer from "@/components/Footer/Footer";
 import Script from "next/script";
+import { ToasterProvider } from "@/providers/toast-providers";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -115,6 +116,7 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+        <ToasterProvider />
         <Navbar />
         <MobileNav />
         {children}

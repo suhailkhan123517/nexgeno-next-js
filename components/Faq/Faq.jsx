@@ -4,7 +4,7 @@ import "./faq.css";
 export default function Faq({ faq1, ans1, faq2, ans2 }) {
   return (
     <>
-      <div className="container m-auto md:py-10 pt-10 md:pt-0">
+      <div className="container m-auto md:pt-10 pt-10 md:pt-0">
         <h1 className="text-center text-blue-950 md:text-3xl text-xl font-bold">
           Frequently Asked Questions
         </h1>

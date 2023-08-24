@@ -11,43 +11,46 @@ export default function Inquiry() {
       <div className="inquiry sm:my-16">
         <div className="container py-10 mx-auto">
           <div className="grid lg:grid-cols-2 grid-cols-1 sm:px-10 py-5   gap-4">
-            <div>
+            <div className="text-[#444]">
               <h1 className="text-center text-4xl font-medium py-5">
                 Get in touch
               </h1>
-              <p className="sm:pr-10 py-5 sm:text-xl text-lg">
+              <p className="sm:pr-10 py-5 sm:text-2xl text-lg">
                 Please fill in the form and our <br /> representative will get
                 back to you.
               </p>
               {inquiry.map((item) => (
                 <div key={item.id} className="data_inquiry py-2 sm:py-5">
-                  <h1 className="text-xl sm:text-3xl py-3 font-semibold">
+                  <h1 className="text-xl sm:text-3xl py-3 font-medium">
                     {item.title}
                   </h1>
-                  <p className="sm:text-lg">{item.desc}</p>
+                  <p className="sm:text-base">{item.desc}</p>
                 </div>
               ))}
             </div>
-            <div className="lg:flex lg:justify-center w-full mt-10 lg:mt-0">
-              <form className="flex rounded-lg sm:p-10 p-4 shadow-2xl flex-col  sm:gap-8 gap-4">
+            <div className="lg:flex lg:justify-center md:pl-10 w-full mt-10 lg:mt-0">
+              <form className=" bg-white flex rounded-lg sm:p-10 w-full p-4 shadow-2xl flex-col  sm:gap-8 gap-4">
                 <input
-                  className="py-2 border-b-2 border-gray-300 outline-none"
+                  className="py-2 border-b border-gray-300 outline-none text-[15px]"
                   type="text"
                   placeholder="Your Name*"
                 />
                 <input
-                  className="py-2 border-b-2 border-gray-300 outline-none"
+                  className="py-2 border-b border-gray-300 outline-none text-[15px]"
                   type="text"
                   placeholder="Your Email*"
                 />
                 <input
-                  className="py-2 border-b-2 border-gray-300 outline-none"
+                  className="py-2 border-b border-gray-300 outline-none text-[15px]"
                   type="text"
                   placeholder="Your Mobile*"
                 />
 
                 <div className="w-full flex flex-col gap-2">
-                  <label htmlFor="country" className="text-gray-500">
+                  <label
+                    htmlFor="country"
+                    className="text-gray-500 text-[15px]"
+                  >
                     Interested Service
                   </label>
                   <div className="w-full">
@@ -55,7 +58,7 @@ export default function Inquiry() {
                       id="country"
                       name="country"
                       autoComplete="country-name"
-                      className="w-full border-b-2 border-gray-300 p-2 outline-none"
+                      className="w-full border-b border-gray-300 p-2 outline-none text-[15px]"
                     >
                       <option>Select Services</option>
                       <option>Custom Web Application development</option>
@@ -75,7 +78,10 @@ export default function Inquiry() {
                   </div>
                 </div>
                 <div className="w-full flex flex-col gap-2">
-                  <label htmlFor="country" className="text-gray-500">
+                  <label
+                    htmlFor="country"
+                    className="text-gray-500 text-[15px]"
+                  >
                     Project Budget
                   </label>
                   <div className="w-full">
@@ -83,7 +89,7 @@ export default function Inquiry() {
                       id="country"
                       name="country"
                       autoComplete="country-name"
-                      className="w-full  outline-none border-b-2 border-gray-300 p-2 "
+                      className="w-full  outline-none border-b border-gray-300 p-2 text-[15px]"
                     >
                       <option>$200k - $500k</option>
                       <option>$500k Above</option>
@@ -98,7 +104,7 @@ export default function Inquiry() {
                 <textarea
                   placeholder="Message"
                   rows="4"
-                  className="outline-none border-b-2 border-gray-300 p-2"
+                  className="outline-none border-b border-gray-300 p-2 text-[15px]"
                 ></textarea>
                 <div className="grid place-items-center">
                   <Button url="#" title="Send Message" button="button" />

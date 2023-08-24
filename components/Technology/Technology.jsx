@@ -9,7 +9,7 @@ export default function Technology() {
   return (
     <>
       <div className="technologyIcons">
-        <div className="container m-auto py-12">
+        <div className="container m-auto sm:py-14 py-7">
           <h2 className="text-pink-600 text-center text-[16px]">
             # IT TECHNOLOGY
           </h2>
@@ -28,7 +28,7 @@ export default function Technology() {
                       className="images_tech"
                     />
                   </div>
-                  <p className="text-center py-3 lg:text-sm text-[9px] ">
+                  <p className="text-center py-3 lg:text-sm text-[10px] ">
                     {item.title}
                   </p>
                 </Link>

@@ -14,8 +14,8 @@ import Button from "../Button/Button";
 export default function Portfolio() {
   return (
     <>
-      <div className="portfolio py-4 text-white">
-        <div className="container m-auto my-12">
+      <div className="portfolio text-white">
+        <div className="container m-auto sm:py-14 py-7">
           <h2 className="text-center pb-5"> # RECENTLY COMPLETED WORK </h2>
           <h1 className="text-center lg:pb-12 md:pb-8 pb-4 md:text-3xl sm:text-2xl text-xl font-semibold">
             Improve & Enhance the Tech Projects
@@ -48,7 +48,7 @@ export default function Portfolio() {
             {portfolioSlider.map((item) => (
               <SwiperSlide key={item.id}>
                 <Link href="#">
-                  <div className="relative w-[100%] h-[200px]">
+                  <div className="relative w-[100%] md:h-[200px] h-[170px]">
                     <Image src={item.img} alt={item.title} fill={true} />
                   </div>
 

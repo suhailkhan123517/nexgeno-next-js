@@ -1,11 +1,48 @@
+"use client";
 import Link from "next/link";
-import Button from "../Button/Button";
 import "./contact.css";
+import { useState } from "react";
+import { toast } from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 export default function Contact() {
+  const router = useRouter();
+
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    number: "",
+    companyName: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setData({
+      ...data,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const res = await fetch("api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      toast.success("Thank You For Send Message");
+      setData("");
+    }
+  };
+
   return (
     <>
-      <div className="contact py-12  md:mt-36 mt-0">
+      <div className="contact sm:py-14 py-7 md:mt-36 mt-0">
         <div className="container m-auto">
           <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
             <div className="content text-white flex flex-col gap-10 md:pr-16 pr-5">
@@ -48,7 +85,10 @@ export default function Contact() {
               </div>
             </div>
             <div className="formContainer xl:pl-20 lg:pl-15 ">
-              <form className="bg-white flex flex-col gap-10 py-8 w-full lg:px-12 px-6 rounded-xl">
+              <form
+                className="bg-white flex flex-col gap-10 py-8 w-full lg:px-12 px-6 rounded-xl"
+                onSubmit={handleSubmit}
+              >
                 <h1 className="text-center lg:text-4xl text-2xl font-semibold text-blue-950">
                   Get in Touch
                 </h1>
@@ -56,30 +96,55 @@ export default function Contact() {
                   type="text"
                   placeholder="Your Name *"
                   className="text-[14px]"
+                  name="name"
+                  value={data.name}
+                  onChange={handleChange}
+                  required
                 />
+
                 <input
                   type="email"
                   placeholder="Your Email *"
                   className="text-[14px]"
+                  name="email"
+                  value={data.email}
+                  onChange={handleChange}
+                  required
                 />
                 <input
                   type="number"
                   placeholder="Mobile No *"
                   className="text-[14px]"
+                  name="number"
+                  value={data.number}
+                  onChange={handleChange}
+                  required
                 />
                 <input
                   type="text"
                   placeholder="Company Name*"
                   className="text-[14px]"
+                  name="companyName"
+                  value={data.companyName}
+                  onChange={handleChange}
+                  required
                 />
                 <textarea
                   rows="3"
                   placeholder="Message*"
                   className="text-[14px]"
+                  name="message"
+                  value={data.message}
+                  onChange={handleChange}
                 ></textarea>
 
                 <div className="grid place-items-center pt-5">
-                  <Button url="#" title="Send Message" button="button" />
+                  <button
+                    type="submit"
+                    className="button no-underline relative border-none text-lg font-medium text-white py-2 px-6 rounded-md"
+                  >
+                    Send Message
+                  </button>
                 </div>
               </form>
             </div>
