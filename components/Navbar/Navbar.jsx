@@ -7,7 +7,7 @@ import Button from "../Button/Button";
 export default function Navbar() {
   return (
     <>
-      <header className="header block w-full relative z-1">
+      <header className="header block w-full relative ">
         <div className="container mx-auto">
           <div className="row items-center flex  justify-between">
             <div className="header_item item_left">
@@ -472,9 +472,9 @@ export default function Navbar() {
                       <div className="list_item text-center">
                         <h4 className="title">Case Study</h4>
                         <Link href="/casestudy">
-                          <div className="relative h-52 w-72">
+                          <div className="relative hover:scale-95 transition duration-300 ease-in-out h-[230px] w-[100%]">
                             <Image
-                              src="/images/casestudy.png"
+                              src="/images/navcase.jpg"
                               fill={true}
                               alt="Nexgeno CaseStudy"
                             />
@@ -485,7 +485,7 @@ export default function Navbar() {
                       <div className="list_item text-center">
                         <h4 className="title">Portfolio</h4>
                         <Link href="/portfolio">
-                          <div className="relative h-52 w-72">
+                          <div className="relative hover:scale-95 transition duration-300 ease-in-out h-[230px] w-[100%]">
                             <Image
                               src="/images/portfolio.png"
                               fill={true}

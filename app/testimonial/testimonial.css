@@ -1,0 +1,6 @@
+.cardCon:nth-child(even) .card .avtar {
+  background: rgb(16, 209, 223);
+}
+.cardCon:nth-child(odd) .card .avtar {
+  background: rgb(197, 20, 168);
+}

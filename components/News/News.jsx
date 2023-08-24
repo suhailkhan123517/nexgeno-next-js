@@ -1,19 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import "./news.css";
 
 export default function News() {
   return (
     <>
       <h2 className="text-center  text-pink-600 pt-10"># INSIGHT & NEWS </h2>
-      <h1 className="text-center md:text-3xl  text-xl font-semibold text-blue-950 pt-5 pb-9">
+      <h1 className="text-center md:text-[30px]  text-xl font-semibold text-blue-950 pt-5 pb-9">
         Stay ahead of technology paradigm shift
       </h1>
-      <div className="news text-[#444] py-20">
+      <div className="news text-[#444] md:py-20 py-10">
         <div className="container m-auto">
           <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
-            <div className="relative w-full h-[520px]">
+            <div className="relative w-full lg:h-[520px] sm:h-[900px] h-[440px]">
               <Image
                 src="/images/blog.jpg"
                 fill={true}
@@ -22,7 +21,7 @@ export default function News() {
               />
             </div>
             <div className="content col-span-2 grid sm:grid-cols-2 grid-cols-1 gap-4">
-              <div className="bg-white rounded-md p-6 flex flex-col gap-[10px]">
+              <div className="bg-white rounded-md p-6 flex flex-col gap-[10px] z-10">
                 <p className="btn_title rounded-sm text-white inline-block text-[13px] font-semibold py-1 px-4 w-max">
                   Career
                 </p>
@@ -40,7 +39,7 @@ export default function News() {
                   Read More
                 </Link>
               </div>
-              <div className="bg-white rounded-md p-6 flex flex-col gap-[10px]">
+              <div className="bg-white rounded-md p-6 flex flex-col gap-[10px] z-10">
                 <p className="btn_title rounded-sm text-white inline-block text-[13px] font-semibold py-1 px-4 w-max">
                   Solution
                 </p>
@@ -57,7 +56,7 @@ export default function News() {
                   Read More
                 </Link>
               </div>
-              <div className="bg-white rounded-md p-6 flex flex-col gap-[10px]">
+              <div className="bg-white rounded-md p-6 flex flex-col gap-[10px] z-10">
                 <p className="btn_title rounded-sm text-white inline-block text-[13px] font-semibold py-1 px-4 w-max">
                   Hire Developers
                 </p>
@@ -75,7 +74,7 @@ export default function News() {
                   Read More
                 </Link>
               </div>
-              <div className="bg-white rounded-md p-6 flex flex-col gap-[10px]">
+              <div className="bg-white rounded-md p-6 flex flex-col gap-[10px] z-10">
                 <p className="btn_title rounded-sm text-white inline-block text-[13px] font-semibold py-1 px-4 w-max">
                   Blog
                 </p>

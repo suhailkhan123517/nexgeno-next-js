@@ -47,7 +47,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <div className="formContainer pl-20">
+            <div className="formContainer xl:pl-20 lg:pl-15 ">
               <form className="bg-white flex flex-col gap-10 py-8 w-full lg:px-12 px-6 rounded-xl">
                 <h1 className="text-center lg:text-4xl text-2xl font-semibold text-blue-950">
                   Get in Touch

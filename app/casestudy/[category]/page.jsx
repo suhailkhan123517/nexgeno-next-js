@@ -48,13 +48,13 @@ export default function Category({ params }) {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-3 grid-cols-1 pt-10">
+            <div className="grid md:grid-cols-3 grid-cols-1 md:pt-10 pt-3">
               <div>
                 <div>
                   <h1 className="md:text-4xl text-2xl font-semibold">
                     Introduction
                   </h1>
-                  <p className="py-5 text-sm md:text-base">
+                  <p className="pb-5 text-sm md:text-base">
                     {item.Introduction}
                   </p>
                 </div>
@@ -62,10 +62,10 @@ export default function Category({ params }) {
                   <h1 className="md:text-4xl text-2xl font-semibold">
                     Challenge
                   </h1>
-                  <p className="py-5 text-sm md:text-base">{item.Challenge}</p>
+                  <p className="pb-5 text-sm md:text-base">{item.Challenge}</p>
                 </div>
               </div>
-              <div className="col-span-2 pl-20 ">
+              <div className="col-span-2 pl-20 md:mt-0 mt-7 ">
                 <div className="relative max-md:hidden  w-full h-[350px] ">
                   <Image src={item.img2} alt="Abayadesigner" fill={true} />
                 </div>
@@ -79,21 +79,21 @@ export default function Category({ params }) {
               </div>
               <div>
                 <div>
-                  <h1 className="md:text-4xl text-2xl font-semibold md:mt-0 mt-5">
+                  <h1 className="md:text-4xl text-2xl font-semibold md:mt-0 mt-3">
                     Results
                   </h1>
-                  <p className="py-5 text-sm md:text-base">{item.Results}</p>
+                  <p className="pb-5 text-sm md:text-base">{item.Results}</p>
                 </div>
                 <div>
                   <h1 className="md:text-4xl text-2xl font-semibold">
                     Solution
                   </h1>
-                  <p className="py-5 text-sm md:text-base">{item.Solution}</p>
+                  <p className="pb-5 text-sm md:text-base">{item.Solution}</p>
                 </div>
               </div>
             </div>
             <div>
-              <div className="relative w-full xl:h-[500px] lg:h-[450px] md:h-[350px] sm:h-[300px] h-[200px] ">
+              <div className="relative mt-10 md:mt-0 w-full xl:h-[500px] lg:h-[450px] md:h-[350px] sm:h-[300px] h-[200px] ">
                 <Image src={item.img4} alt="abayadesigner" fill={true} />
               </div>
             </div>

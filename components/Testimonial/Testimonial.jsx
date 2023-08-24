@@ -50,8 +50,8 @@ export default function Testimonial() {
                 <div className="py-8">
                   <div className="card p-5 rounded-xl shadow-xl">
                     <div className="head flex flex-row justify-between items-center pb-2">
-                      <div className="flex flex-row gap-2 ">
-                        <div className="flex items-center gap-2">
+                      <div className="flex flex-row gap-2">
+                        <div className="flex  md:items-center gap-2 md:flex-row flex-col">
                           <div className="w-8 h-8 rounded-full avtar  text-white flex justify-center items-center">
                             <p className="text-2xl font-semibold ">{avtar}</p>
                           </div>
@@ -80,7 +80,7 @@ export default function Testimonial() {
           })}
         </Swiper>
         <div className="grid place-items-center pt-2">
-          <Button url="#" title="View More" button="button" />
+          <Button url="/testimonial" title="View More" button="button" />
         </div>
       </div>
     </>

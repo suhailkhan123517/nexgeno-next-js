@@ -6,3 +6,9 @@
   background-image: url("/procces_line.png");
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 767px) {
+  .process {
+    background-image: none;
+  }
+}

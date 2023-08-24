@@ -14,7 +14,7 @@ export default function About() {
             <p className="text-[#e60072] text-[16px] font-normal mb-[15px]">
               WE ARE NEXGENO TECHNOLOGY
             </p>
-            <h1 className="text-[#050748] text-[30px] leading-[43px] mb-[20px] font-semibold ">
+            <h1 className="text-[#050748] lg:text-[30px] sm:text-[25px] text-[20px] leading-[32px] sm:leading-[43px] mb-[20px] font-semibold ">
               Offshore Software Development & IT Consulting Company
             </h1>
             <p className="text-[15px] leading-[28px] mb-[1rem]">

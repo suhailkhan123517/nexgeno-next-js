@@ -2,6 +2,7 @@ import Button from "@/components/Button/Button";
 import Image from "next/image";
 import Link from "next/link";
 import "./portfolio.css";
+import { PortfolioList } from "@/utils/data";
 
 export default function Portfolio() {
   return (
@@ -20,32 +21,30 @@ export default function Portfolio() {
             <Button url="/portfolios" title="View More" button="button" />
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-            <div className="img_hover mb-5 relative sm:pr-20">
-              <Link href="#">
-                <div className="relative w-full xl:h-[360px] lg:h-[280px] h-[250px]">
-                  <Image
-                    src="/images/lawtendo.jpg"
-                    alt="lawdento"
-                    fill={true}
-                  />
-                </div>
-                <div className="absolute xl:top-32 lg:top-20 top-10 sm:right-10 -right-3">
-                  <div className="relative w-[100px] lg:h-[200px] h-[190px] mob_img">
-                    <Image
-                      src="/images/lawtendo_mob.jpg"
-                      alt="lawdento"
-                      fill={true}
-                      className="rounded-lg"
-                    />
+            {PortfolioList.map((item) => (
+              <div key={item.id} className="img_hover mb-5 relative sm:pr-20">
+                <Link href="#">
+                  <div className="relative w-full xl:h-[320px] lg:h-[250px] md:h-[181px] sm:h-[250px] h-[200px]">
+                    <Image src={item.deskIMG} alt="lawdento" fill={true} />
                   </div>
-                </div>
+                  <div className="absolute xl:top-24 lg:top-10 sm:top-16 top-8 lg:right-8 sm:right-12 -right-3">
+                    <div className="relative lg:w-[100px] lg:h-[200px] md:w-[50px] md:h-[90px] sm:w-[90px] sm:h-[180px]  w-[70px] h-[140px]  mob_img">
+                      <Image
+                        src={item.mobImg}
+                        alt="lawdento"
+                        fill={true}
+                        className="rounded-lg"
+                      />
+                    </div>
+                  </div>
 
-                <h1 className="text-2xl heading_underline inline-block mb-2 relative font-medium pt-4">
-                  Lawtendo
-                </h1>
-                <p>Portlal / CodeIgniter</p>
-              </Link>
-            </div>
+                  <h1 className="text-2xl heading_underline inline-block mb-2 relative font-medium pt-4">
+                    {item.title}
+                  </h1>
+                  <p>{item.desc}</p>
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </div>
