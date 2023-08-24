@@ -51,7 +51,7 @@ export default function WhyChoose() {
               </h1>
               <p className="leading-[26px] text-[14px] text-gray-700 line-clamp-2">
                 At Nexgeno, we understand that every business has unique needs.
-                That's why we take the time to understand your business and
+                That&apos;s why we take the time to understand your business and
                 develop customized web solutions that are tailored to your
                 specific requirements. Our agile development methodology ensures
                 that we can quickly iterate on our solutions to ensure that they
@@ -71,8 +71,8 @@ export default function WhyChoose() {
                 Quality and Attention to Detail
               </h1>
               <p className="leading-[26px] text-[14px] text-gray-700 line-clamp-2">
-                We believe that quality should never be compromised. That's why
-                we pay meticulous attention to detail throughout the web
+                We believe that quality should never be compromised. That&apos;s
+                why we pay meticulous attention to detail throughout the web
                 application development process to ensure that our solutions are
                 of the highest quality. We follow industry-standard security
                 protocols to ensure that your web application is always
@@ -95,7 +95,7 @@ export default function WhyChoose() {
               </h1>
               <p className="leading-[26px] text-[14px] text-gray-700 line-clamp-2">
                 We believe that communication and collaboration are key to the
-                success of any project. That's why we work closely with our
+                success of any project. That&apos;s why we work closely with our
                 clients to ensure that we are always on the same page. We
                 provide regular updates and feedback throughout the development
                 process to ensure that our solutions meet your needs.
@@ -114,11 +114,11 @@ export default function WhyChoose() {
                 Customer Satisfaction
               </h1>
               <p className="leading-[26px] text-[14px] text-gray-700 line-clamp-2">
-                At Nexgeno, we are committed to our clients' success. We believe
-                that our success is tied to yours, which is why we always go
-                above and beyond to ensure that our clients are satisfied with
-                our services. We take pride in our work and are dedicated to
-                providing exceptional customer service.
+                At Nexgeno, we are committed to our client&apos;s success. We
+                believe that our success is tied to yours, which is why we
+                always go above and beyond to ensure that our clients are
+                satisfied with our services. We take pride in our work and are
+                dedicated to providing exceptional customer service.
               </p>
             </div>
           </div>
