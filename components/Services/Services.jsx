@@ -8,7 +8,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 export default function Services() {
   return (
     <>
-      <div className="service sm:py-14 py-7  text-center relative">
+      <div className="service sm:py-14 py-10  text-center relative">
         <div className="container m-auto ">
           <h2 className="font-normal   lg:text-[16px] md:text-[14px] text-[12px] mb-4">
             # SERVICES WE ARE PROVIDED
@@ -23,8 +23,14 @@ export default function Services() {
                 key={item.id}
                 className="card flex justify-between py-[25px] px-[10px] items-center shadow-lg bg-white text-[#444] text-center flex-col  gap-4 rounded-xl"
               >
-                <div className="servicesImg">
-                  <Image src={item.icon} alt={item.title} fill={true} />
+                <div className="relative h-[80px] w-[80px]">
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    sizes="80px"
+                    className="object-contain"
+                    fill={true}
+                  />
                 </div>
 
                 <h1 className="font-semibold text-[18px] leading-[25px] ">

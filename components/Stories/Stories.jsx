@@ -6,12 +6,12 @@ import Link from "next/link";
 export default function Stories() {
   return (
     <>
-      <div className="stories bg-black text-white py-10">
+      <div className="stories bg-black text-white sm:py-14 py-10">
         <div className="container m-auto">
-          <h1 className="text-center text-3xl font-semibold py-5">
+          <h1 className="text-center text-3xl font-semibold pb-5">
             Success Stories
           </h1>
-          <div className="grid md:grid-cols-3 place-items-center grid-cols-1 gap-5">
+          <div className="grid md:grid-cols-3 place-items-center grid-cols-1 sm:gap-5">
             <div className="hover_img py-5 relative">
               <Link href="#">
                 <Image

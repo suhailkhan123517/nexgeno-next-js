@@ -12,7 +12,7 @@ export default function Counter() {
         onEnter={() => setCounterOn(true)}
         onExit={() => setCounterOn(false)}
       >
-        <div className="container m-auto sm:py-14 py-7">
+        <div className="container m-auto sm:py-14 py-10">
           <h1 className="lg:text-3xl sm:text-3xl text-xl sm:my-14 my-5 font-semibold text-blue-950 text-center">
             Our Agency in Numbers
           </h1>

@@ -5,10 +5,17 @@ import "./about.css";
 export default function About() {
   return (
     <>
-      <div className="container m-auto text-[#444] sm:py-14  py-7 hero_bg">
+      <div className="container m-auto text-[#444] sm:py-14  py-10 hero_bg">
         <div className="grid lg:grid-cols-2 lg:gap-0 grid-cols-1 gap-5">
-          <div className="relative w-full xl:h-[370px] lg:h-[305px] md:h-[475px] h-[220px] pr-6">
-            <Image src="/images/about.jpeg" fill={true} alt="Nexgeno Image" />
+          <div className="relative w-full  xl:h-[370px] lg:h-[305px] md:h-[475px] h-[220px] pr-6">
+            <Image
+              src="/images/about.jpeg"
+              fill
+              priority
+              alt="Nexgeno Image"
+              sizes="(max-width: 768px) 100vw"
+              className="object-contain"
+            />
           </div>
           <div>
             <p className="text-[#e60072] text-[16px] font-normal mb-[15px]">

@@ -4,6 +4,11 @@ import Link from "next/link";
 import "./portfolio.css";
 import { PortfolioList } from "@/utils/data";
 
+export const metadata = {
+  title: "Nexgeno | Portfolio",
+  description: "Nexgeno Technology Private Limited Company Portfolio",
+};
+
 export default function Portfolio() {
   return (
     <>

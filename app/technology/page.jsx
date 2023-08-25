@@ -1,9 +1,13 @@
 import { technology } from "@/utils/data";
 import Image from "next/image";
-import React from "react";
 import Link from "next/link";
 import "./tech.css";
 import Button from "@/components/Button/Button";
+
+export const metadata = {
+  title: "Nexgeno | Technology",
+  description: "Nexgeno Technology Private Limited Company Technology",
+};
 
 export default function Technology() {
   return (

@@ -1,5 +1,11 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Nexgeno | Career",
+  description:
+    "Elevate Your Career in IT with Nexgeno  Discover Exciting Opportunities in Software Development and More. Join Our Innovative Team Today!",
+};
+
 const Career = () => {
   return (
     <>

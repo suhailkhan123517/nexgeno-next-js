@@ -1,5 +1,11 @@
 import { testimonialReview } from "@/utils/data";
 import "./testimonial.css";
+
+export const metadata = {
+  title: "Nexgeno | Testimonial",
+  description: "Nexgeno Technology Private Limited Company Terms & Testimonial",
+};
+
 const Testimonial = () => {
   return (
     <>

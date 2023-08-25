@@ -36,13 +36,20 @@ export default function Contact() {
 
     if (res.ok) {
       toast.success("Thank You For Send Message");
-      setData("");
+      setData({
+        name: "",
+        email: "",
+        number: "",
+        companyName: "",
+        message: "",
+      });
+      router.push("/thankyou");
     }
   };
 
   return (
     <>
-      <div className="contact sm:py-14 py-7 md:mt-36 mt-0">
+      <div className="contact sm:py-14 py-10 md:mt-36 mt-0">
         <div className="container m-auto">
           <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
             <div className="content text-white flex flex-col gap-10 md:pr-16 pr-5">

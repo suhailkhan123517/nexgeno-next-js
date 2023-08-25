@@ -4,8 +4,8 @@ import "./Process.css";
 export default function Process() {
   return (
     <>
-      <div className="container text-blue-950  relative m-auto py-10 text-center ">
-        <h1 className="md:text-3xl text-[20px] font-semibold  py-5 ">
+      <div className="container text-blue-950  relative m-auto sm:py-14 py-10 text-center ">
+        <h1 className="md:text-3xl text-[20px] font-semibold  pb-5 ">
           Process&apos;s
         </h1>
         <p className="text-[14px] leading-[26px]">

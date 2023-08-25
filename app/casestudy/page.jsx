@@ -1,8 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import "./case.css";
 import { caseStudy } from "@/utils/data";
+
+export const metadata = {
+  title: "Nexgeno | Case Study",
+  description:
+    "Exploring Success Stories: Discover how Nexgeno has empowered businesses through tailored solutions. Dive into our compelling case studies showcasing innovation, problem-solving, and tangible results across industries.",
+};
 
 export default function CaseStudy() {
   return (

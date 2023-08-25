@@ -15,7 +15,7 @@ export default function Portfolio() {
   return (
     <>
       <div className="portfolio text-white">
-        <div className="container m-auto sm:py-14 py-7">
+        <div className="container m-auto sm:py-14 py-10">
           <h2 className="text-center pb-5"> # RECENTLY COMPLETED WORK </h2>
           <h1 className="text-center lg:pb-12 md:pb-8 pb-4 md:text-3xl sm:text-2xl text-xl font-semibold">
             Improve & Enhance the Tech Projects
@@ -49,7 +49,13 @@ export default function Portfolio() {
               <SwiperSlide key={item.id}>
                 <Link href="#">
                   <div className="relative w-[100%] md:h-[200px] h-[170px]">
-                    <Image src={item.img} alt={item.title} fill={true} />
+                    <Image
+                      src={item.img}
+                      alt={item.title}
+                      fill={true}
+                      sizes="300px"
+                      className="object-contain"
+                    />
                   </div>
 
                   <h1 className="lg:text-2xl  text-lg font-medium lg:pt-4 pt-2">

@@ -1,5 +1,10 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Nexgeno | Certificate",
+  description: "Nexgeno Technology Private Limited Company Certificate",
+};
+
 export default function Certificate() {
   return (
     <>

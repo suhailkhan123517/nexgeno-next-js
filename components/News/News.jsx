@@ -5,12 +5,12 @@ import "./news.css";
 export default function News() {
   return (
     <>
-      <div className="sm:pt-14 pt-7">
+      <div className="sm:pt-14 pt-10">
         <h2 className="text-center  text-pink-600"># INSIGHT & NEWS </h2>
         <h1 className="text-center md:text-[30px]  text-xl font-semibold text-blue-950 py-5">
           Stay ahead of technology paradigm shift
         </h1>
-        <div className="news text-[#444] sm:py-14 py-7">
+        <div className="news text-[#444] sm:py-14 py-10">
           <div className="container m-auto">
             <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
               <div className="relative w-full lg:h-[520px] sm:h-[900px] h-[440px]">
@@ -18,7 +18,8 @@ export default function News() {
                   src="/images/blog.jpg"
                   fill={true}
                   alt="Nexgeno Blog Image"
-                  className="image"
+                  sizes="520px"
+                  className="image object-contain"
                 />
               </div>
               <div className="content col-span-2 grid sm:grid-cols-2 grid-cols-1 gap-4">

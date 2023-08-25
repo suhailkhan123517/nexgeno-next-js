@@ -6,7 +6,7 @@ import Button from "../Button/Button";
 export default function Industries() {
   return (
     <>
-      <div className="container m-auto sm:py-14 py-7">
+      <div className="container m-auto sm:py-14 py-10">
         <h2 className="text-center text-pink-600 py-3 text-[16px]">
           # INDUSTRIES
         </h2>
@@ -22,10 +22,11 @@ export default function Industries() {
             >
               <div className="relative lg:w-[50px] lg:h-[50px] w-[50px] h-[46px] ">
                 <Image
-                  className="hover:scale-125 ease-in-out duration-300"
+                  className="hover:scale-125 ease-in-out duration-300 object-contain"
                   src={item.img}
                   alt={item.title}
                   fill={true}
+                  sizes="50px"
                 />
               </div>
 

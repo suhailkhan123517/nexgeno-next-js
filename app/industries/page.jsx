@@ -1,9 +1,13 @@
 import Image from "next/image";
-import React from "react";
 import Link from "next/link";
 import { industries } from "@/utils/data";
 import Button from "@/components/Button/Button";
 import "./industries.css";
+
+export const metadata = {
+  title: "Nexgeno | Industries",
+  description: "Nexgeno Technology Private Limited Company Industries",
+};
 
 export default function Industries() {
   return (

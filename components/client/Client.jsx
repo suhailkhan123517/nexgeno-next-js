@@ -11,7 +11,13 @@ export default function Client() {
               key={item.id}
               className="relative xl:h-24 xl:w-36 lg:h-20 lg:w-28 h-16 w-24 md:mt-0 mt-8"
             >
-              <Image src={item.img} alt={item.alt} fill={true} />
+              <Image
+                src={item.img}
+                alt={item.alt}
+                fill={true}
+                sizes="96px"
+                className="object-contain"
+              />
             </div>
           ))}
         </div>

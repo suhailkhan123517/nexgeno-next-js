@@ -1,5 +1,3 @@
-"use client";
-import React from "react";
 import "./portfolios.css";
 import { AiOutlineSearch } from "react-icons/ai";
 import Link from "next/link";
@@ -9,6 +7,11 @@ import {
   filterServices,
   filterTechnology,
 } from "@/utils/data";
+
+export const metadata = {
+  title: "Nexgeno | Portfolios",
+  description: "Nexgeno Technology Private Limited Company Portfolios",
+};
 
 export default function Portfolios() {
   return (

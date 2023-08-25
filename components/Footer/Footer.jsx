@@ -421,7 +421,13 @@ export default function Footer() {
             </p>
           </div>
           <div className="relative sm:w-[200px] w-[150px] sm:h-[50px] h-[37px]">
-            <Image src="/images/logo.png" alt="Nexgeno Logo" fill={true} />
+            <Image
+              src="/images/logo.png"
+              alt="Nexgeno Logo"
+              fill={true}
+              sizes="200px"
+              className="object-contain"
+            />
           </div>
           <div className="flex gap-5">
             <Link className="sm:text-[15px] text-[13px]" href="/privacy">

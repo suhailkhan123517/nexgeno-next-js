@@ -12,7 +12,13 @@ export default function MobileNav() {
           <nav>
             <Link href="/">
               <div className="logo relative w-[170px] h-[43px]">
-                <Image src="/images/logo.png" fill={true} alt="Nexgeno Logo" />
+                <Image
+                  src="/images/logo.png"
+                  fill={true}
+                  sizes="170px"
+                  className="object-contain"
+                  alt="Nexgeno Logo"
+                />
               </div>
             </Link>
 

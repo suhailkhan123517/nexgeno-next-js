@@ -19,7 +19,11 @@ export async function POST(req) {
 
   const mailOptions = {
     from: body.email,
-    to: "skhan282290@gmail.com",
+    to: [
+      "skhan282290@gmail.com",
+      "suhail.makent@gmail.com",
+      "mehtab.makent@gmail.com",
+    ],
     subject: "Submission Nexgeno Form",
     text:
       "Name " +

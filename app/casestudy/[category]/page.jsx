@@ -16,10 +16,11 @@ const getData = (cat) => {
 
 export default function Category({ params }) {
   const data = getData(params.category);
+
   return (
     <>
       {data.map((item) => (
-        <div key={item.id} className="case_inner text-white my-16">
+        <div key={item.id} className="case_inner text-white mt-16">
           <div className="container  py-10 m-auto">
             <h1 className="md:text-5xl text-3xl font-normal text-center">
               {item.title}

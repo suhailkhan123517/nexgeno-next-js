@@ -1,6 +1,11 @@
 import { faq } from "@/utils/data";
-import React from "react";
 import "@/components/Faq/faq.css";
+
+export const metadata = {
+  title: "Nexgeno | Faq",
+  description:
+    "NexGeno Technology specializes in web designing and development services. This includes creating and building websites, designing user interfaces and experiences, and optimizing websites for search engines (SEO)",
+};
 
 export default function FaqMain() {
   return (

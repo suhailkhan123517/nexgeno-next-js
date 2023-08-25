@@ -18,6 +18,8 @@ export default function Navbar() {
                       src="/images/logo.png"
                       alt="Nexgeno Logo"
                       fill={true}
+                      sizes="200px"
+                      className="object-contain"
                     />
                   </div>
                 </Link>
@@ -456,12 +458,16 @@ export default function Navbar() {
                       <div className="list_item">
                         <h4 className="title">Clients Testimonial</h4>
                         <Link className="" href="#">
-                          <Image
-                            src="/images/quote.webp"
-                            height={50}
-                            width={50}
-                            alt="Nexgeno Testimonial "
-                          />
+                          <div className="relative w-[50px] h-[50px]">
+                            <Image
+                              src="/images/quote.webp"
+                              fill
+                              sizes="(min-width: 768px) 5vw"
+                              className="object-contain"
+                              alt="Nexgeno Testimonial "
+                            />
+                          </div>
+
                           <p className="leading-normal pt-3 pr-5">
                             It has been great working with Nexgeno over the
                             years on our website and online marketing
@@ -477,6 +483,8 @@ export default function Navbar() {
                               src="/images/navcase.jpg"
                               fill={true}
                               alt="Nexgeno CaseStudy"
+                              sizes="(min-width: 768px) 20vw"
+                              className="object-contain"
                             />
                           </div>
                         </Link>
@@ -490,6 +498,8 @@ export default function Navbar() {
                               src="/images/portfolio.png"
                               fill={true}
                               alt="Nexgeno Portfolio"
+                              sizes="(min-width: 768px) 20vw"
+                              className="object-contain"
                             />
                           </div>
                         </Link>
@@ -546,6 +556,8 @@ export default function Navbar() {
                               src="/images/certificate.png"
                               fill={true}
                               alt="Nexgeno Portfolio"
+                              sizes="(min-width: 768px) 30vw"
+                              className="object-contain"
                             />
                           </div>
                         </Link>

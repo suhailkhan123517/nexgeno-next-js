@@ -5,7 +5,7 @@ import "./connect.css";
 export default function Connect() {
   return (
     <>
-      <div className="connect sm:py-16 py-8  text-white">
+      <div className="connect sm:py-14 py-10  text-white">
         <div className="container m-auto">
           <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
             <div className="col-span-2 ">

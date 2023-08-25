@@ -1,5 +1,9 @@
 import Link from "next/link";
-import React from "react";
+
+export const metadata = {
+  title: "Nexgeno | Privacy",
+  description: "Nexgeno Technology Private Limited Company Privacy",
+};
 
 const Privacy = () => {
   return (

@@ -2,6 +2,12 @@ import Image from "next/image";
 import React from "react";
 import "./about.css";
 
+export const metadata = {
+  title: "Nexgeno | About",
+  description:
+    "At Nexgeno Technology Pvt Ltd, we are dedicated to providingprofessional web designing and development services to businessesof all sizes. Founded in 2022, our company has quickly establisheditself as a leading provider of web solutions.",
+};
+
 export default function About() {
   return (
     <>

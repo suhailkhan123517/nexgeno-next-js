@@ -10,6 +10,11 @@ import Client from "@/components/client/Client";
 import Image from "next/image";
 import "./meth.css";
 
+export const metadata = {
+  title: "Nexgeno | DevMethodology",
+  description: "Nexgeno Technology Private Limited Company DevMethodology",
+};
+
 export default function Methodology() {
   return (
     <>

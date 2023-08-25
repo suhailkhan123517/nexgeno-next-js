@@ -1,6 +1,10 @@
 import Button from "@/components/Button/Button";
 import Image from "next/image";
-import React from "react";
+
+export const metadata = {
+  title: "Nexgeno | Terms & Condition",
+  description: "Nexgeno Technology Private Limited Company Terms & Condition",
+};
 
 const Terms = () => {
   return (

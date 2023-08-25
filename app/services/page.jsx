@@ -1,9 +1,13 @@
 import { allServices } from "@/utils/data";
 import Image from "next/image";
-import React from "react";
 import "./servicePage.css";
 import Link from "next/link";
 import Button from "@/components/Button/Button";
+
+export const metadata = {
+  title: "Nexgeno | Services",
+  description: "Nexgeno Technology Private Limited Company Services",
+};
 
 export default function Services() {
   return (

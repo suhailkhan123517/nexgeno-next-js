@@ -1,9 +1,13 @@
 import Image from "next/image";
-import React from "react";
 import Link from "next/link";
 import "./solution.css";
 import { solution } from "@/utils/data";
 import Button from "@/components/Button/Button";
+
+export const metadata = {
+  title: "Nexgeno | Solution",
+  description: "Nexgeno Technology Private Limited Company Solution",
+};
 
 export default function Solution() {
   return (

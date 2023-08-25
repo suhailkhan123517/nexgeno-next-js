@@ -1,9 +1,13 @@
 import Image from "next/image";
-import React from "react";
 import "./hire.css";
 import Link from "next/link";
 import { hireDeveloper } from "@/utils/data";
 import Button from "@/components/Button/Button";
+
+export const metadata = {
+  title: "Nexgeno | Hire Developer",
+  description: "Nexgeno Technology Private Limited Company Hire Developer",
+};
 
 export default function Hiredeveloper() {
   return (

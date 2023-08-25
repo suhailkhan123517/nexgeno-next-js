@@ -5,7 +5,7 @@ import "./whyChoose.css";
 export default function WhyChoose() {
   return (
     <>
-      <div className="whyChoose my-10 sm:py-10">
+      <div className="whyChoose my-10 sm:py-14">
         <div className="container m-auto">
           <h1 className="text-center lg:text-[30px] sm:text-[25px] text-[20px] font-semibold text-blue-950 py-5 ">
             Why Choose Nexgeno For Web Application Development Services?

@@ -12,6 +12,13 @@ const poppins = Poppins({
   display: "swap",
 });
 
+export const metadata = {
+  title:
+    "Offshore Software Development & IT Consulting Company in mumbai india",
+  description:
+    "Offshore Software Development & IT Consulting Company in mumbai india",
+};
+
 export default function RootLayout({ children }) {
   function canonicalTag() {
     return {
@@ -53,14 +60,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>
-          Offshore Software Development & IT Consulting Company in mumbai india
-        </title>
-        <meta
-          name="description"
-          content="Offshore Software Development & IT Consulting Company in mumbai india"
-          key="desc"
-        />
         {/* <!-- Open Graph meta tags --> */}
         <meta
           property="og:title"
