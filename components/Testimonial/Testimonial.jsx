@@ -8,15 +8,14 @@ import { FreeMode } from "swiper/modules";
 
 import { testimonialReview } from "@/utils/data";
 import "./testimonial.css";
-import Link from "next/link";
 import Button from "../Button/Button";
 
 export default function Testimonial() {
   return (
     <>
       <div className="container m-auto sm:py-14 py-10">
-        <h2 className="text-center text-pink-600 pb-3"># OUR TESTIMONIAL</h2>
-        <h1 className="text-center sm:text-3xl  text-xl font-semibold text-blue-950 ">
+        <h2 className="text-center redHeading pb-3"># OUR TESTIMONIAL</h2>
+        <h1 className="text-center heading">
           Clients Happy with Our IT Solutions.
         </h1>
         <Swiper

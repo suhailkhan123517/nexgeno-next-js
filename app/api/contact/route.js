@@ -12,18 +12,14 @@ export async function POST(req) {
     port: "465",
     secure: true,
     auth: {
-      user: "skhan282290@gmail.com",
-      pass: "lwuwviteuzhidbya",
+      user: "sales@nexgeno.in",
+      pass: "eheylhdxiawvhxxk",
     },
   });
 
   const mailOptions = {
     from: body.email,
-    to: [
-      "skhan282290@gmail.com",
-      "suhail.makent@gmail.com",
-      "mehtab.makent@gmail.com",
-    ],
+    to: ["tamir@nexgeno.in", "arif@nexgeno.in", "sales@nexgeno.in"],
     subject: "Submission Nexgeno Form",
     text:
       "Name " +
@@ -35,7 +31,11 @@ export async function POST(req) {
       "\nCompany Name :" +
       body.companyName +
       "\nMessage :" +
-      body.message,
+      body.message +
+      "\nServices: " +
+      body.services +
+      "\nProject Budget :" +
+      body.projectBudget,
   };
 
   transporter.sendMail(mailOptions, function (error, info) {

@@ -6,8 +6,8 @@ export default function News() {
   return (
     <>
       <div className="sm:pt-14 pt-10">
-        <h2 className="text-center  text-pink-600"># INSIGHT & NEWS </h2>
-        <h1 className="text-center md:text-[30px]  text-xl font-semibold text-blue-950 py-5">
+        <h2 className="text-center redHeading"># INSIGHT & NEWS </h2>
+        <h1 className="text-center heading pt-3 pb-6">
           Stay ahead of technology paradigm shift
         </h1>
         <div className="news text-[#444] sm:py-14 py-10">
@@ -30,7 +30,7 @@ export default function News() {
                   <h1 className="text-[20px] leading-[32px]">
                     Join Our Team and Build Your Career in Tech
                   </h1>
-                  <p className="text-gray-700 line-clamp-2 leading-[28px] text-[15px]">
+                  <p className="desc line-clamp-2 ">
                     Discover exciting career opportunities in tech with our
                     dynamic team...
                   </p>
@@ -48,7 +48,7 @@ export default function News() {
                   <h1 className="text-[20px] leading-[32px]">
                     Cloud-Based Solutions for Modern Businesses
                   </h1>
-                  <p className="text-gray-700 line-clamp-2 leading-[28px] text-[15px]">
+                  <p className="desc line-clamp-2 ">
                     Revolutionize your business with our cloud-based
                     solutions...
                   </p>
@@ -66,7 +66,7 @@ export default function News() {
                   <h1 className="text-[20px] leading-[32px]">
                     Build Your Dream Team with Our Expert Developers
                   </h1>
-                  <p className="text-gray-700 line-clamp-2 leading-[28px] text-[15px]">
+                  <p className="desc line-clamp-2 ">
                     Get access to a range of skilled developers, including web,
                     mobile...
                   </p>
@@ -84,7 +84,7 @@ export default function News() {
                   <h1 className="text-[20px] leading-[32px]">
                     Stay Ahead of the Curve with Our Tech Blog
                   </h1>
-                  <p className="text-gray-700 line-clamp-2 leading-[28px] text-[15px]">
+                  <p className="desc line-clamp-2 ">
                     Our tech blog offers the latest insights, trends, and best
                     practices in the industry...
                   </p>

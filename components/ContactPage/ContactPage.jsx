@@ -2,8 +2,11 @@
 import { useState } from "react";
 import "./ContactPage.css";
 import Link from "next/link";
+import { toast } from "react-hot-toast";
 
 export default function ContactPage() {
+  const [submitting, setSubmitting] = useState(false);
+
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -20,9 +23,34 @@ export default function ContactPage() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(data);
+    setSubmitting(true);
+
+    try {
+      const res = await fetch("api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        toast.success("Thanks For Send Message");
+        setData({
+          name: "",
+          email: "",
+          number: "",
+          companyName: "",
+          message: "",
+        });
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -125,7 +153,7 @@ export default function ContactPage() {
                   ></textarea>
                 </div>
                 <button className="button no-underline relative border-none text-lg font-medium text-white py-2 px-6 rounded-md">
-                  Send Message
+                  {submitting ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </div>

@@ -55,15 +55,13 @@ export default function Category({ params }) {
                   <h1 className="md:text-4xl text-2xl font-semibold">
                     Introduction
                   </h1>
-                  <p className="pb-5 text-sm md:text-base">
-                    {item.Introduction}
-                  </p>
+                  <p className="pb-5 desc">{item.Introduction}</p>
                 </div>
                 <div>
                   <h1 className="md:text-4xl text-2xl font-semibold">
                     Challenge
                   </h1>
-                  <p className="pb-5 text-sm md:text-base">{item.Challenge}</p>
+                  <p className="pb-5 desc">{item.Challenge}</p>
                 </div>
               </div>
               <div className="col-span-2 pl-20 md:mt-0 mt-7 ">
@@ -83,13 +81,13 @@ export default function Category({ params }) {
                   <h1 className="md:text-4xl text-2xl font-semibold md:mt-0 mt-3">
                     Results
                   </h1>
-                  <p className="pb-5 text-sm md:text-base">{item.Results}</p>
+                  <p className="pb-5 desc">{item.Results}</p>
                 </div>
                 <div>
                   <h1 className="md:text-4xl text-2xl font-semibold">
                     Solution
                   </h1>
-                  <p className="pb-5 text-sm md:text-base">{item.Solution}</p>
+                  <p className="pb-5 desc">{item.Solution}</p>
                 </div>
               </div>
             </div>

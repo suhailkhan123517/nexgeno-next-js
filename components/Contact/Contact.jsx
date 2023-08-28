@@ -8,6 +8,8 @@ import { useRouter } from "next/navigation";
 export default function Contact() {
   const router = useRouter();
 
+  const [submitting, setIsSubmitting] = useState(false);
+
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -26,24 +28,32 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch("api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    setIsSubmitting(true);
 
-    if (res.ok) {
-      toast.success("Thank You For Send Message");
-      setData({
-        name: "",
-        email: "",
-        number: "",
-        companyName: "",
-        message: "",
+    try {
+      const res = await fetch("api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
       });
-      router.push("/thankyou");
+
+      if (res.ok) {
+        toast.success("Thanks For Send Message");
+        setData({
+          name: "",
+          email: "",
+          number: "",
+          companyName: "",
+          message: "",
+        });
+        router.push("/thankyou");
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -96,9 +106,7 @@ export default function Contact() {
                 className="bg-white flex flex-col gap-10 py-8 w-full lg:px-12 px-6 rounded-xl"
                 onSubmit={handleSubmit}
               >
-                <h1 className="text-center lg:text-4xl text-2xl font-semibold text-blue-950">
-                  Get in Touch
-                </h1>
+                <h1 className="text-center heading">Get in Touch</h1>
                 <input
                   type="text"
                   placeholder="Your Name *"
@@ -148,9 +156,10 @@ export default function Contact() {
                 <div className="grid place-items-center pt-5">
                   <button
                     type="submit"
+                    disabled={submitting}
                     className="button no-underline relative border-none text-lg font-medium text-white py-2 px-6 rounded-md"
                   >
-                    Send Message
+                    {submitting ? `Sending...` : "Send Message"}
                   </button>
                 </div>
               </form>

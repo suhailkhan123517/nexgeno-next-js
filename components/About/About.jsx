@@ -18,19 +18,17 @@ export default function About() {
             />
           </div>
           <div>
-            <p className="text-[#e60072] text-[16px] font-normal mb-[15px]">
-              WE ARE NEXGENO TECHNOLOGY
-            </p>
-            <h1 className="text-[#050748] lg:text-[30px] sm:text-[25px] text-[20px] leading-[32px] sm:leading-[43px] mb-[20px] font-semibold ">
+            <p className="redHeading mb-[15px]">WE ARE NEXGENO TECHNOLOGY</p>
+            <h1 className="heading mb-[20px]">
               Offshore Software Development & IT Consulting Company
             </h1>
-            <p className="text-[15px] leading-[28px] mb-[1rem]">
+            <p className="desc mb-[1rem]">
               At Nexgeno Technology Pvt Ltd, we are dedicated to providing
               professional web designing and development services to businesses
               of all sizes. Founded in 2022, our company has quickly established
               itself as a leading provider of web solutions.
             </p>
-            <p className="text-[15px] leading-[28px] mb-[1rem]">
+            <p className="desc mb-[1rem]">
               NexGeno Technology: Empowering Innovation, Building Solutions.
               Transform your business with our web and mobile application
               development, digital transformation, and cloud solutions, all

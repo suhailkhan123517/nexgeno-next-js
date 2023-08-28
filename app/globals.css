@@ -7,3 +7,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  color: #444;
+}
+
+.heading {
+  @apply text-[#050748] lg:text-[30px] sm:text-[25px] text-[20px] leading-[32px] sm:leading-[43px] font-semibold;
+}
+
+.redHeading {
+  @apply text-[#e60072] text-[16px] font-normal;
+}
+
+.desc {
+  @apply text-[14px] leading-[24px];
+}

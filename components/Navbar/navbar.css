@@ -44,17 +44,16 @@
 .header .menu > ul > li .sub_menu {
   position: absolute;
   z-index: 5;
-  background-color: #fff;
-  box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
+  background-color: #fffbfd;
   padding: 20px 30px;
   transition: all 0.3s ease;
-  margin-top: 25px;
+  margin-top: 8px;
   visibility: hidden;
   opacity: 0;
 }
 
 .header .menu > ul > li.children:hover .sub_menu {
-  margin-top: 0;
+  /* margin-top: 0; */
   visibility: visible;
   opacity: 1;
 }
@@ -94,7 +93,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 15px;
+  padding: 0px 15px;
 }
 
 .header .menu > ul > li .sub_menu.column_4 > .list_item {

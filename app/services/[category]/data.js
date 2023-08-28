@@ -72,6 +72,30 @@ export const items = {
       ans2: " Cloud management is the process of managing and monitoring cloud resources to ensure optimal performance and security.",
     },
   ],
+  consulting: [
+    {
+      id: 7,
+      title: "Expert Web Consulting Services",
+      desc: "In a digitally-driven world, your online presence is paramount to success. Our Web Consulting services offer strategic guidance tailored to your business, ensuring your website aligns with your goals. From user experience (UX) enhancements and SEO optimization to content strategy and performance analysis, we provide comprehensive insights to maximize your website's effectiveness. Partner with us to navigate the complexities of the web and achieve a commanding online presence.",
+      img: "/images/web_consulting.jpg",
+      faq1: " What is Web Consulting?",
+      ans1: "Web Consulting involves the expert analysis and guidance provided by professionals to optimize your website's performance, user experience, and overall effectiveness. It encompasses areas such as design, content strategy, SEO, analytics, and more..",
+      faq2: "Why do I need Web Consulting for my website?",
+      ans2: " Web Consulting helps you leverage industry best practices and cutting-edge strategies to ensure your website meets its objectives. Whether you're looking to increase traffic, improve user engagement, or boost conversions, consulting services provide insights and actionable recommendations to achieve these goals effectively.",
+    },
+  ],
+  security: [
+    {
+      id: 7,
+      title: "Ensuring Website Security",
+      desc: "In an era of digital interactions, safeguarding your online presence is paramount. Our Website Security services offer robust solutions to protect your website from cyber threats, ensuring data integrity, user privacy, and business continuity. From proactive measures like firewalls and encryption to regular audits and vulnerability assessments, we provide comprehensive security strategies tailored to your needs. Partner with us to shield your digital assets and establish trust among your users.",
+      img: "/images/web_security.jpg",
+      faq1: "Why does my website need security measures?",
+      ans1: "Website security is essential to safeguard sensitive user data, prevent unauthorized access, and maintain your reputation. Cyberattacks can lead to data breaches, downtime, and loss of trust, potentially harming both your users and your business.",
+      faq2: "What are the risks of neglecting website security?",
+      ans2: "Neglecting website security exposes you to various risks, including data breaches, malware infections, defacement, and compromised user accounts. These incidents can lead to financial losses, legal consequences, and damage to your brand's credibility.",
+    },
+  ],
   mobile: [
     {
       id: 7,

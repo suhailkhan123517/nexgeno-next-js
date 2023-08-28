@@ -24,10 +24,6 @@
   transform-origin: bottom left;
 }
 
-.service {
-  color: white;
-}
-
 .service:before {
   -webkit-animation: service 5s ease infinite;
   animation: service 5s ease infinite;

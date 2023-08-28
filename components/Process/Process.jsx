@@ -4,11 +4,9 @@ import "./Process.css";
 export default function Process() {
   return (
     <>
-      <div className="container text-blue-950  relative m-auto sm:py-14 py-10 text-center ">
-        <h1 className="md:text-3xl text-[20px] font-semibold  pb-5 ">
-          Process&apos;s
-        </h1>
-        <p className="text-[14px] leading-[26px]">
+      <div className="container   relative m-auto sm:py-14 py-10 text-center ">
+        <h1 className="heading  p4-5 ">Process&apos;s</h1>
+        <p className="desc">
           At Nexgeno, we believe that this custom web application development
           process allows us to deliver high-quality, user-friendly web solutions
           that meet our client&apos;s unique needs.
@@ -29,7 +27,7 @@ export default function Process() {
             <h1 className="text-[20px] font-medium mb-1">
               Discovery and Planning
             </h1>
-            <p className="line-clamp-2 text-[15px] leading-28px">
+            <p className="line-clamp-2 desc">
               We begin every web application development project with a
             </p>
           </div>
@@ -37,7 +35,7 @@ export default function Process() {
             <h1 className="text-[20px] font-medium mb-1">
               Design and Prototyping
             </h1>
-            <p className="line-clamp-2 text-[15px] leading-28px mb-8">
+            <p className="line-clamp-2 desc mb-8">
               Once we have a clear understanding of your
             </p>
             <div className="imgConPro lg:w-36 lg:h-36 w-28 h-28 grid place-items-center mx-auto mb-5 bg-white rounded-full relative z-1">
@@ -62,7 +60,7 @@ export default function Process() {
             <h1 className="text-[20px] font-medium mb-1">
               Design and Prototyping
             </h1>
-            <p className="line-clamp-2 text-[15px] leading-28px mb-8">
+            <p className="line-clamp-2 desc mb-8">
               Once we have a clear understanding of your
             </p>
           </div>
@@ -81,7 +79,7 @@ export default function Process() {
             <h1 className="text-[20px] font-medium mb-1">
               Development and Testing
             </h1>
-            <p className="line-clamp-2 text-[15px] leading-28px">
+            <p className="line-clamp-2 desc">
               Once the design and prototype have been approved, we move on
             </p>
           </div>
@@ -89,7 +87,7 @@ export default function Process() {
             <h1 className="text-[20px] font-medium mb-1">
               Iteration & Improvement
             </h1>
-            <p className="line-clamp-2 text-[15px] leading-28px mb-4">
+            <p className="line-clamp-2 desc mb-4">
               Finally, we believe that a web application is never truly
               finished.
             </p>
@@ -115,7 +113,7 @@ export default function Process() {
             <h1 className="text-[20px] font-medium mb-1">
               Iteration & Improvement
             </h1>
-            <p className="line-clamp-2 text-[15px] leading-28px mb-4">
+            <p className="line-clamp-2 desc mb-4">
               Finally, we believe that a web application is never truly
               finished.
             </p>

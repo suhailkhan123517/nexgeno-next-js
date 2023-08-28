@@ -11,6 +11,7 @@ import Testimonial from "@/components/Testimonial/Testimonial";
 import Contact from "@/components/Contact/Contact";
 import Video from "@/components/video/Video";
 import Head from "next/head";
+import Seo from "@/components/Seo/Seo";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Counter />
       <Technology />
       <Portfolio />
+      <Seo />
       <Industries />
       <News />
       <Testimonial />

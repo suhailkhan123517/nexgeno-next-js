@@ -32,10 +32,11 @@ export default function Navbar() {
                     <Link href="/services">
                       Services <i className="fa fa-chevron-down" />
                     </Link>
+
                     <div className="sub_menu mega column_4">
                       <div className="list_item">
-                        <h4 className="title">Offering</h4>
-                        <ul>
+                        <h4 className="title border-b">Offering</h4>
+                        <ul className=" pt-3">
                           <li>
                             <Link href="/services/web">
                               Application Development
@@ -74,15 +75,19 @@ export default function Navbar() {
                             </Link>
                           </li>
                           <li>
-                            <Link href="/services">Web Consulting</Link>
+                            <Link href="/services/consulting">
+                              Web Consulting
+                            </Link>
                           </li>
                           <li>
-                            <Link href="/services">Website Security</Link>
+                            <Link href="/services/security">
+                              Website Security
+                            </Link>
                           </li>
                         </ul>
                       </div>
                       <div className="list_item">
-                        <h4 className="title">Industries</h4>
+                        <h4 className="title border-b">Industries</h4>
                         <ul>
                           <li>
                             <Link href="/services/education">
@@ -126,7 +131,7 @@ export default function Navbar() {
                         </ul>
                       </div>
                       <div className="list_item">
-                        <h4 className="title">Industries</h4>
+                        <h4 className="title border-b">Industries</h4>
                         <ul>
                           <li>
                             <Link href="/services/restaurants">
@@ -176,7 +181,7 @@ export default function Navbar() {
                         </ul>
                       </div>
                       <div className="list_item">
-                        <h4 className="title">Service Models</h4>
+                        <h4 className="title border-b">Service Models</h4>
                         <ul>
                           <li>
                             <Link href="/services/deliverymodel">
@@ -207,7 +212,7 @@ export default function Navbar() {
                     </Link>
                     <div className="sub_menu mega column_4">
                       <div className="list_item">
-                        <h4 className="title">Hire Web Developers</h4>
+                        <h4 className="title border-b">Hire Web Developers</h4>
                         <ul>
                           <li>
                             <Link href="/hiredeveloper/php">
@@ -234,7 +239,9 @@ export default function Navbar() {
                             </Link>
                           </li>
                         </ul>
-                        <h4 className="title">Hire Frontend Developers</h4>
+                        <h4 className="title border-b">
+                          Hire Frontend Developers
+                        </h4>
                         <ul>
                           <li>
                             <Link href="/hiredeveloper/angular">
@@ -251,7 +258,9 @@ export default function Navbar() {
                         </ul>
                       </div>
                       <div className="list_item">
-                        <h4 className="title">Hire Open Source Developers</h4>
+                        <h4 className="title border-b">
+                          Hire Open Source Developers
+                        </h4>
                         <ul>
                           <li>
                             <Link href="/hiredeveloper/wordpress">
@@ -280,7 +289,7 @@ export default function Navbar() {
                         </ul>
                       </div>
                       <div className="list_item">
-                        <h4 className="title">
+                        <h4 className="title border-b">
                           Hire Cross-Platform Developers
                         </h4>
                         <ul>
@@ -305,7 +314,9 @@ export default function Navbar() {
                         </ul>
                       </div>
                       <div className="list_item">
-                        <h4 className="title">Hire Mobile Developers</h4>
+                        <h4 className="title border-b">
+                          Hire Mobile Developers
+                        </h4>
                         <ul>
                           <li>
                             <Link href="/hiredeveloper/ios">
@@ -342,7 +353,9 @@ export default function Navbar() {
                     </Link>
                     <div className="sub_menu mega column_4">
                       <div className="list_item">
-                        <h4 className="title">Customized Solutions</h4>
+                        <h4 className="title  border-b">
+                          Customized Solutions
+                        </h4>
                         <ul>
                           <li>
                             <Link href="/solution/school">
@@ -367,7 +380,7 @@ export default function Navbar() {
                         </ul>
                       </div>
                       <div className="list_item">
-                        <h4 className="title">Customized Solutions</h4>
+                        <h4 className="title border-b">Customized Solutions</h4>
                         <ul>
                           <li>
                             <Link href="/solution/billing">
@@ -393,7 +406,7 @@ export default function Navbar() {
                         </ul>
                       </div>
                       <div className="list_item">
-                        <h4 className="title">Customized Solutions</h4>
+                        <h4 className="title border-b">Customized Solutions</h4>
                         <ul>
                           <li>
                             <Link href="/solution/hrms">
@@ -419,7 +432,7 @@ export default function Navbar() {
                         </ul>
                       </div>
                       <div className="list_item">
-                        <h4 className="title">Customized Solutions</h4>
+                        <h4 className="title border-b">Customized Solutions</h4>
                         <ul>
                           <li>
                             <Link href="/solution/lawyer">
@@ -457,7 +470,7 @@ export default function Navbar() {
                     <div className="sub_menu mega column_3">
                       <div className="list_item">
                         <h4 className="title">Clients Testimonial</h4>
-                        <Link className="" href="#">
+                        <Link className="" href="/testimonial">
                           <div className="relative w-[50px] h-[50px]">
                             <Image
                               src="/images/quote.webp"
@@ -514,7 +527,7 @@ export default function Navbar() {
                     </Link>
                     <div className="sub_menu mega column_3">
                       <div className="list_item">
-                        <h4 className="title">Overview</h4>
+                        <h4 className="title border-b">Overview</h4>
                         <ul>
                           <li>
                             <Link href="/about"> About Us </Link>
@@ -534,7 +547,7 @@ export default function Navbar() {
                         </ul>
                       </div>
                       <div className="list_item">
-                        <h4 className="title">Insights</h4>
+                        <h4 className="title border-b">Insights</h4>
                         <ul>
                           <li>
                             <Link href="/faq"> FAQs </Link>
@@ -571,7 +584,7 @@ export default function Navbar() {
               </nav>
             </div>
             <div className="header_item item_right flex justify-end">
-              <Button url="/inquiry" title="Let's Talk" button="button" />
+              <Button url="/contact" title="Let's Talk" button="button" />
             </div>
           </div>
         </div>

@@ -4,6 +4,8 @@ import { inquiry } from "@/utils/data";
 import Client from "@/components/client/Client";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import { useState } from "react";
+import { toast } from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 export const metadata = {
   title: "Nexgeno | Inquiry",
@@ -11,6 +13,10 @@ export const metadata = {
 };
 
 export default function InquiryPage() {
+  const [submitting, setSubmitting] = useState(false);
+
+  const router = useRouter();
+
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -28,9 +34,37 @@ export default function InquiryPage() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(data);
+    setSubmitting(true);
+
+    try {
+      const res = await fetch("api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        toast.success("Thanks For Send Message");
+        setData({
+          name: "",
+          email: "",
+          number: "",
+          services: "",
+          projectBudget: "",
+          message: "",
+        });
+
+        router.push("/thankyou");
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -162,7 +196,7 @@ export default function InquiryPage() {
                     type="submit"
                     className="button no-underline relative border-none text-lg font-medium text-white py-2 px-6 rounded-md "
                   >
-                    Send Message
+                    {submitting ? `Sending...` : "Send Message"}
                   </button>
                 </div>
               </form>

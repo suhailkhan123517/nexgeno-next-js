@@ -11,9 +11,7 @@ const Testimonial = () => {
     <>
       <div className="testimonial mt-16">
         <div className="container mx-auto">
-          <h1 className="text-[32px] font-bold  text-center text-[#333] py-10">
-            Review
-          </h1>
+          <h1 className="heading text-center py-10">Review</h1>
           <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
             {testimonialReview.map((item) => {
               const { id, name, desc } = item;

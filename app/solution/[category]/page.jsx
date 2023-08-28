@@ -12,6 +12,7 @@ import Image from "next/image";
 import React from "react";
 import { items } from "./data";
 import { notFound } from "next/navigation";
+import Seo from "@/components/Seo/Seo";
 
 const getData = (cat) => {
   const data = items[cat];
@@ -51,6 +52,8 @@ export default function Category({ params }) {
       <Technology />
       <Counter />
       <Stories />
+      <Seo />
+
       <Industries />
       <Connect />
       <Process />

@@ -13,9 +13,7 @@ export default function Solution() {
   return (
     <>
       <div className="container m-auto py-20">
-        <h1 className="text-center text-4xl text-gray-700 font-medium py-5">
-          Solution
-        </h1>
+        <h1 className="text-center heading py-5">Solution</h1>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 place-items-center gap-5">
           {solution.map((item) => (
             <div
@@ -29,7 +27,7 @@ export default function Solution() {
                 <h1 className="xl:text-2xl text-xl font-semibold py-5">
                   {item.title}
                 </h1>
-                <p className="line-clamp-3">{item.desc}</p>
+                <p className="line-clamp-3 desc">{item.desc}</p>
               </Link>
               <div className="py-5">
                 <Button url={item.url} title="Learn More" button="button" />

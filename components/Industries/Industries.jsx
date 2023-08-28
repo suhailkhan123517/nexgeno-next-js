@@ -7,10 +7,8 @@ export default function Industries() {
   return (
     <>
       <div className="container m-auto sm:py-14 py-10">
-        <h2 className="text-center text-pink-600 py-3 text-[16px]">
-          # INDUSTRIES
-        </h2>
-        <h1 className="text-center lg:text-[30px] md:text-[25px] text-[20px] leading-[30px] font-semibold text-blue-950 pb-3">
+        <h2 className="text-center redHeading"># INDUSTRIES</h2>
+        <h1 className="text-center heading  py-3">
           Serving Our Clients Across Diverse Industries
         </h1>
         <div className="industries  grid sm:grid-cols-6 grid-cols-4 place-items-center sm:gap-6 gap-2 sm:py-7 py-3">

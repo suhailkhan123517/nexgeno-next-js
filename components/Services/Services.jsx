@@ -8,12 +8,12 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 export default function Services() {
   return (
     <>
-      <div className="service sm:py-14 py-10  text-center relative">
+      <div className="service  sm:py-14 py-10  text-center relative">
         <div className="container m-auto ">
-          <h2 className="font-normal   lg:text-[16px] md:text-[14px] text-[12px] mb-4">
+          <h2 className="font-normal  text-white  lg:text-[16px] md:text-[14px] text-[12px] mb-4">
             # SERVICES WE ARE PROVIDED
           </h2>
-          <h1 className="lg:text-[30px] sm:text-[25px] text-[20px]  sm:leading-0 leading-[30px]  font-semibold mb-[30px] ">
+          <h1 className="lg:text-[30px] text-white sm:text-[25px] text-[20px]   sm:leading-0 leading-[30px]  font-semibold mb-[30px] ">
             Our Design Development Services
           </h1>
 
@@ -36,9 +36,7 @@ export default function Services() {
                 <h1 className="font-semibold text-[18px] leading-[25px] ">
                   {item.title}
                 </h1>
-                <p className="line-clamp-4 text-[14px] leading-[24px]">
-                  {item.desc}...
-                </p>
+                <p className="line-clamp-4 desc">{item.desc}...</p>
                 <Link href={item.url} className="link_learn ">
                   <span className="flex items-center font-normal gap-3 text-[#333]">
                     Learn More <AiOutlineArrowRight />
