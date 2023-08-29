@@ -21,6 +21,7 @@ export default function Contact() {
     number: "",
     companyName: "",
     message: "",
+    subject: "Contact From Nexgeno",
   });
 
   const handleChange = (e) => {
@@ -112,6 +113,7 @@ export default function Contact() {
                 onSubmit={handleSubmit}
               >
                 <h1 className="text-center heading">Get in Touch</h1>
+
                 <input
                   type="text"
                   placeholder="Your Name *"

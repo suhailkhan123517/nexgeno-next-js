@@ -861,7 +861,7 @@ export default function MobileNav() {
                 <li>
                   <a href="/contact">Contact</a>
                 </li>
-                <div className="mt-5 ml-3">
+                <div className="mt-5 ml-3 flex">
                   <Button url="/inquiry" title="Let's Talk" button="button" />
                 </div>
               </ul>

@@ -24,6 +24,7 @@ export default function InquiryPage() {
     services: "",
     projectBudget: "",
     message: "",
+    subject: "Inquiry From Nexgeno",
   });
 
   const handleChange = (e) => {

@@ -14,6 +14,7 @@ export default function ContactPage() {
     number: "",
     companyName: "",
     message: "",
+    subject: "Contact From Nexgeno",
   });
 
   const handleChange = (e) => {
