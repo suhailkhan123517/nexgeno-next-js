@@ -38,7 +38,7 @@ export default function Category({ params }) {
               <p className="sm:text-[18px] text-[16px] sm:leading-[34px] leading-[30px] text-gray-700 line-clamp-4 mb-2">
                 {item.desc}
               </p>
-              <div>
+              <div className="flex">
                 <Button url="/inquiry" title="Get In Touch" button="button" />
               </div>
             </div>

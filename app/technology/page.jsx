@@ -23,11 +23,13 @@ export default function Technology() {
               key={item.id}
             >
               <Link href={item.url}>
-                <div className="imgContainer">
+                <div className="relative w-[100%] xl:h-[250px] h-[180px]">
                   <Image src={item.img} alt={item.title} fill={true} />
                 </div>
-                <h1 className="text-2xl font-semibold py-5">{item.title}</h1>
-                <p className="line-clamp-3 leading-8">{item.desc}</p>
+                <h1 className="xl:text-2xl text-xl font-semibold py-5">
+                  {item.title}
+                </h1>
+                <p className="line-clamp-3  desc">{item.desc}</p>
               </Link>
               <div className="py-5">
                 <Button url={item.url} title="Learn More" button="button" />

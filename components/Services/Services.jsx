@@ -27,7 +27,6 @@ export default function Services() {
                   <Image
                     src={item.icon}
                     alt={item.title}
-                    sizes="80px"
                     className="object-contain"
                     fill={true}
                   />
@@ -45,7 +44,9 @@ export default function Services() {
               </div>
             ))}
           </div>
-          <Button title="View All Services" url="/services" button="button" />
+          <div className="w-full flex justify-center">
+            <Button title="View All Services" url="/services" button="button" />
+          </div>
         </div>
       </div>
     </>

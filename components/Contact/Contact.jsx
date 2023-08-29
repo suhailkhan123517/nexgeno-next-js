@@ -4,6 +4,11 @@ import "./contact.css";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
+import {
+  BsFillEnvelopeFill,
+  BsFillMapFill,
+  BsFillTelephoneFill,
+} from "react-icons/bs";
 
 export default function Contact() {
   const router = useRouter();
@@ -65,7 +70,7 @@ export default function Contact() {
             <div className="content text-white flex flex-col gap-10 md:pr-16 pr-5">
               <div className="flex content_row items-start gap-5">
                 <div className="iconContact">
-                  <i className="fa fa-map mt-2" aria-hidden="true"></i>
+                  <BsFillMapFill className="text-3xl mt-2" />
                 </div>
                 <div className="content_container">
                   <h1 className="sm:text-2xl text-xl font-semibold">
@@ -79,7 +84,7 @@ export default function Contact() {
               </div>
               <div className="flex content_row items-start gap-5">
                 <div className="iconContact">
-                  <i className="fa fa-envelope mt-2" aria-hidden="true"></i>
+                  <BsFillEnvelopeFill className="text-3xl mt-2" />
                 </div>
                 <div className="content_container">
                   <h1 className="sm:text-2xl text-xl font-semibold">Email:</h1>
@@ -90,7 +95,7 @@ export default function Contact() {
               </div>
               <div className="flex  items-start gap-5">
                 <div className="iconContact">
-                  <i className="fa fa-phone mt-2" aria-hidden="true"></i>
+                  <BsFillTelephoneFill className="text-3xl mt-2" />
                 </div>
                 <div className="content_container">
                   <h1 className="sm:text-2xl text-xl font-semibold">Call:</h1>

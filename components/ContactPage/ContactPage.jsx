@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./ContactPage.css";
 import Link from "next/link";
 import { toast } from "react-hot-toast";
+import { AiFillMobile } from "react-icons/ai";
 
 export default function ContactPage() {
   const [submitting, setSubmitting] = useState(false);
@@ -62,9 +63,9 @@ export default function ContactPage() {
               <h1 className="md:text-[60px] md:leading-[85px] sm:text-5xl text-3xl mt-10 leading-snug font-bold">
                 Together, Let&apos;s Make A Difference.
               </h1>
-              <div className="flex items-start gap-5 bg-black rounded-md p-5 my-5">
+              <div className="flex items-start gap-3 bg-black rounded-md p-5 my-5">
                 <div className="iconBox">
-                  <i className="fa fa-mobile" aria-hidden="true"></i>
+                  <AiFillMobile className="text-3xl" />
                 </div>
                 <div className="flex flex-col sm:gap-5 gap-1">
                   <p className="text-xl sm:text-[19px] font-semibold">

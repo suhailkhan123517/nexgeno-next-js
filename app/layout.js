@@ -101,11 +101,6 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtm.js?id=G-THRP956B8F`}
         />
-
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
       </head>
       <body className={poppins.className}>
         <noscript>

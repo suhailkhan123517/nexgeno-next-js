@@ -13,7 +13,6 @@ export default function About() {
               fill
               priority
               alt="Nexgeno Image"
-              sizes="(max-width: 768px) 100vw"
               className="object-contain"
             />
           </div>
@@ -37,7 +36,9 @@ export default function About() {
               commitment to empowering developers, make us the partner you need
               to succeed
             </p>
-            <Button url="/about" title="Read More" button="button" />
+            <div className="w-full flex">
+              <Button url="/about" title="Read More" button="button" />
+            </div>
           </div>
         </div>
       </div>

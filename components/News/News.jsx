@@ -18,7 +18,6 @@ export default function News() {
                   src="/images/blog.jpg"
                   fill={true}
                   alt="Nexgeno Blog Image"
-                  sizes="520px"
                   className="image object-contain"
                 />
               </div>

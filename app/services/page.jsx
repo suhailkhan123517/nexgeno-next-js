@@ -29,7 +29,7 @@ export default function Services() {
                 </h1>
                 <p className="line-clamp-3 desc">{item.des}</p>
               </Link>
-              <div className="py-5">
+              <div className="py-5 flex">
                 <Button url={item.url} title="Learn More" button="button" />
               </div>
             </div>

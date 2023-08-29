@@ -7,7 +7,7 @@ export default function WhyChoose() {
     <>
       <div className="whyChoose my-10 sm:py-14">
         <div className="container m-auto">
-          <h1 className="text-center heading py-5 ">
+          <h1 className="text-center heading pb-3 ">
             Why Choose Nexgeno For Web Application Development Services?
           </h1>
           <p className="text-center pb-5 desc">

@@ -23,7 +23,6 @@ export default function Technology() {
                       src={item.img}
                       alt={item.title}
                       fill={true}
-                      sizes="68px"
                       className="object-contain"
                     />
                   </div>

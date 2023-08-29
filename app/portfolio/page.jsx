@@ -15,7 +15,7 @@ export default function Portfolio() {
       <div className="portfolio_p bg-black text-white mt-16">
         <div className="container m-auto py-10">
           <div className="flex pb-8 justify-between sm:items-center items-start sm:flex-row flex-col">
-            <div className="max-md:hidden">
+            <div className="max-md:hidden flex">
               <Button
                 url="/inquiry"
                 title="Get a Free Quote Now"
@@ -23,7 +23,7 @@ export default function Portfolio() {
               />
             </div>
 
-            <Button url="/portfolios" title="View More" button="button" />
+            {/* <Button url="/portfolios" title="View More" button="button" /> */}
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
             {PortfolioList.map((item) => (

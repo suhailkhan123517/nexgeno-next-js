@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import "./navbar.css";
 import Button from "../Button/Button";
+import { BiChevronDown } from "react-icons/bi";
 
 export default function Navbar() {
   return (
@@ -18,7 +19,6 @@ export default function Navbar() {
                       src="/images/logo.png"
                       alt="Nexgeno Logo"
                       fill={true}
-                      sizes="200px"
                       className="object-contain"
                     />
                   </div>
@@ -28,9 +28,12 @@ export default function Navbar() {
             <div className="header_item item_center justify-center flex">
               <nav className="menu">
                 <ul className="menu_main">
-                  <li className="children">
+                  <li className="children group">
                     <Link href="/services">
-                      Services <i className="fa fa-chevron-down" />
+                      <span className="flex gap-1 items-center">
+                        Services{" "}
+                        <BiChevronDown className="group-hover:rotate-180 transition duration-300" />
+                      </span>
                     </Link>
 
                     <div className="sub_menu mega column_4">
@@ -195,7 +198,7 @@ export default function Navbar() {
                               Engagement Models{" "}
                             </Link>
                           </li>
-                          <div className="mt-10">
+                          <div className="mt-10 flex">
                             <Button
                               title="Enquire Now"
                               url="/inquiry"
@@ -206,9 +209,12 @@ export default function Navbar() {
                       </div>
                     </div>
                   </li>
-                  <li className="children">
+                  <li className="children group">
                     <Link href="/hiredeveloper">
-                      Hire Developer <i className="fa fa-chevron-down" />
+                      <span className="flex gap-1 items-center">
+                        Hire Developer
+                        <BiChevronDown className="group-hover:rotate-180 transition duration-300" />
+                      </span>
                     </Link>
                     <div className="sub_menu mega column_4">
                       <div className="list_item">
@@ -336,7 +342,7 @@ export default function Navbar() {
                               Hire Flutter Developers{" "}
                             </Link>
                           </li>
-                          <div className="mt-8">
+                          <div className="mt-8 flex">
                             <Button
                               title="Enquire Now"
                               url="/inquiry"
@@ -347,9 +353,12 @@ export default function Navbar() {
                       </div>
                     </div>
                   </li>
-                  <li className="children">
+                  <li className="children group">
                     <Link href="/solution">
-                      Solution <i className="fa fa-chevron-down" />
+                      <span className="flex gap-1 items-center">
+                        Solution
+                        <BiChevronDown className="group-hover:rotate-180 transition duration-300" />
+                      </span>
                     </Link>
                     <div className="sub_menu mega column_4">
                       <div className="list_item">
@@ -452,7 +461,7 @@ export default function Navbar() {
                               Hotel booking system{" "}
                             </Link>
                           </li>
-                          <div className="mt-4">
+                          <div className="mt-4 flex">
                             <Button
                               title="Enquire Now"
                               url="/inquiry"
@@ -463,9 +472,12 @@ export default function Navbar() {
                       </div>
                     </div>
                   </li>
-                  <li className="children">
+                  <li className="children group">
                     <Link href="#">
-                      Our Work <i className="fa fa-chevron-down" />
+                      <span className="flex gap-1 items-center">
+                        Our Work
+                        <BiChevronDown className="group-hover:rotate-180 transition duration-300" />
+                      </span>
                     </Link>
                     <div className="sub_menu mega column_3">
                       <div className="list_item">
@@ -496,12 +508,17 @@ export default function Navbar() {
                               src="/images/navcase.jpg"
                               fill={true}
                               alt="Nexgeno CaseStudy"
-                              sizes="(min-width: 768px) 20vw"
                               className="object-contain"
                             />
                           </div>
                         </Link>
-                        <Button title="View" url="/casestudy" button="button" />
+                        <div className="flex justify-center mt-2">
+                          <Button
+                            title="View"
+                            url="/casestudy"
+                            button="button"
+                          />
+                        </div>
                       </div>
                       <div className="list_item text-center">
                         <h4 className="title">Portfolio</h4>
@@ -511,19 +528,26 @@ export default function Navbar() {
                               src="/images/portfolio.png"
                               fill={true}
                               alt="Nexgeno Portfolio"
-                              sizes="(min-width: 768px) 20vw"
                               className="object-contain"
                             />
                           </div>
                         </Link>
-
-                        <Button title="View" url="/portfolio" button="button" />
+                        <div className="flex justify-center">
+                          <Button
+                            title="View"
+                            url="/portfolio"
+                            button="button"
+                          />
+                        </div>
                       </div>
                     </div>
                   </li>
-                  <li className="children">
+                  <li className="children group">
                     <Link href="#">
-                      Company <i className="fa fa-chevron-down" />
+                      <span className="flex gap-1 items-center">
+                        Company
+                        <BiChevronDown className="group-hover:rotate-180 transition duration-300" />
+                      </span>
                     </Link>
                     <div className="sub_menu mega column_3">
                       <div className="list_item">
@@ -552,7 +576,7 @@ export default function Navbar() {
                           <li>
                             <Link href="/faq"> FAQs </Link>
                           </li>
-                          <div className="mt-6">
+                          <div className="mt-6 flex">
                             <Button
                               title="Enquire Now"
                               url="/inquiry"
@@ -569,7 +593,6 @@ export default function Navbar() {
                               src="/images/certificate.png"
                               fill={true}
                               alt="Nexgeno Portfolio"
-                              sizes="(min-width: 768px) 30vw"
                               className="object-contain"
                             />
                           </div>

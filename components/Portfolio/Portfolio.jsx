@@ -53,7 +53,6 @@ export default function Portfolio() {
                       src={item.img}
                       alt={item.title}
                       fill={true}
-                      sizes="300px"
                       className="object-contain"
                     />
                   </div>

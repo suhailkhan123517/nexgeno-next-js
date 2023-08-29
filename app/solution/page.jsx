@@ -29,7 +29,7 @@ export default function Solution() {
                 </h1>
                 <p className="line-clamp-3 desc">{item.desc}</p>
               </Link>
-              <div className="py-5">
+              <div className="py-5 flex">
                 <Button url={item.url} title="Learn More" button="button" />
               </div>
             </div>

@@ -9,7 +9,7 @@ export default function Hero() {
         <h2 className="sm:text-[24px] text-[19px] leading-[33px] font-medium sm:p-[22px]  p-[5px] sm:mb-[28px] mb-[8px]">
           Connecting businesses to the digital world
         </h2>
-        <Button url="/contact" title="Get Started " button="button" />
+        <Button url="/contact" title="Get Started" button="button" />
       </div>
     </>
   );

@@ -93,7 +93,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 15px;
+  padding: 20px 15px;
 }
 
 .header .menu > ul > li .sub_menu.column_4 > .list_item {

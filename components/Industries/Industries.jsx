@@ -24,7 +24,6 @@ export default function Industries() {
                   src={item.img}
                   alt={item.title}
                   fill={true}
-                  sizes="50px"
                 />
               </div>
 
