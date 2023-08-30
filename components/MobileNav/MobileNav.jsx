@@ -13,7 +13,7 @@ export default function MobileNav() {
             <Link href="/">
               <div className="logo relative w-[170px] h-[43px]">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logo.webp"
                   fill={true}
                   sizes="170px"
                   className="object-contain"

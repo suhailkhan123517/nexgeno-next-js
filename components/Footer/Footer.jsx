@@ -834,7 +834,7 @@ export default function Footer() {
           </div>
           <div className="relative sm:w-[200px] w-[150px] sm:h-[50px] h-[37px]">
             <Image
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="Nexgeno Logo"
               fill={true}
               className="object-contain"

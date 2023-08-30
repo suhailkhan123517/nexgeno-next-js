@@ -1,7 +1,7 @@
 export const servicesCard = [
   {
     id: 1,
-    icon: "/images/app.png",
+    icon: "/images/app.webp",
     title: "Mobile Application",
     desc: "Application development refers to the process of designing, creating, and testing software applications for use on various platforms such as desktop computers, mobile devices, and the web. This process involves coding, debugging, and continuous improvement to meet user requirements and deliver optimal performance.",
     url: "/services/mobile",
@@ -9,7 +9,7 @@ export const servicesCard = [
 
   {
     id: 3,
-    icon: "/images/Digitalicon.png",
+    icon: "/images/Digitalicon.webp",
     title: "Digital Transformation",
     desc: "Digital transformation refers to the process of leveraging digital technologies and innovations to fundamentally change how organizations operate, interact with customers, and deliver value. It involves adopting new business models, redesigning processes, and embracing emerging technologies to enhance efficiency, productivity, and customer experiences while remaining agile and competitive in the digital age.",
     url: "/services/digital",
@@ -17,7 +17,7 @@ export const servicesCard = [
 
   {
     id: 2,
-    icon: "/images/front.png",
+    icon: "/images/front.webp",
     title: "Front-end Development",
     desc: "Front-end development is a crucial aspect of any modern digital project. It involves creating a user-friendly and engaging interface that enhances user experiences and drives business outcomes. Our team of experienced front-end developers can help you create a visually appealing and functional website or application using the latest technologies and best practices in the industry, ensuring your online presence is optimized for success.",
     url: "/services/web",
@@ -25,7 +25,7 @@ export const servicesCard = [
 
   {
     id: 4,
-    icon: "/images/producticon.png",
+    icon: "/images/producticon.webp",
     title: "Product Prototyping",
     desc: "Product prototyping is the process of creating a functional or non-functional model of a product, typically using low-cost materials or software. This allows designers and developers to test and refine the product's features and usability before investing in full-scale production. Prototyping can help identify flaws, improve functionality, and provide valuable feedback that can inform the final design and development stages, ultimately leading to a more successful product launch.",
     url: "/services/product",
@@ -35,32 +35,32 @@ export const servicesCard = [
 export const clientLogo = [
   {
     id: 1,
-    img: "/images/muncipal.png",
+    img: "/images/muncipal.webp",
     alt: "Muncipal Logo",
   },
   {
     id: 2,
-    img: "/images/geci.png",
+    img: "/images/geci.webp",
     alt: "GEC India Logo",
   },
   {
     id: 3,
-    img: "/images/lijjat.png",
+    img: "/images/lijjat.webp",
     alt: "Lijjat Logo",
   },
   {
     id: 4,
-    img: "/images/lehnaar.png",
+    img: "/images/lehnaar.webp",
     alt: "Lehnaar Logo",
   },
   {
     id: 5,
-    img: "/images/mda.png",
+    img: "/images/mda.webp",
     alt: "MDA Logo",
   },
   {
     id: 6,
-    img: "/images/euro_detnal.png",
+    img: "/images/euro_detnal.webp",
     alt: "Euro Dental Logo",
   },
 ];
@@ -68,122 +68,122 @@ export const clientLogo = [
 export const technologiesIcons = [
   {
     id: 1,
-    img: "/images/reacticon.png",
+    img: "/images/reacticon.webp",
     title: "React Js",
     url: "/technology/react",
   },
   {
     id: 2,
-    img: "/images/next.png",
+    img: "/images/next.webp",
     title: "Next Js",
     url: "/technology/next",
   },
   {
     id: 3,
-    img: "/images/nodeicon.png",
+    img: "/images/nodeicon.webp",
     title: "Node Js",
     url: "/technology/node",
   },
   {
     id: 4,
-    img: "/images/phpicon.png",
+    img: "/images/phpicon.webp",
     title: "PHP",
     url: "/technology/php",
   },
   {
     id: 5,
-    img: "/images/iosicon.png",
+    img: "/images/iosicon.webp",
     title: "IOS",
     url: "/technology/ios",
   },
   {
     id: 6,
-    img: "/images/andriodicon.png",
+    img: "/images/andriodicon.webp",
     title: "Android",
     url: "/technology/android",
   },
   {
     id: 7,
-    img: "/images/viewjsicon.png",
+    img: "/images/viewjsicon.webp",
     title: "Vue Js",
     url: "/technology/vue",
   },
 
   {
     id: 8,
-    img: "/images/fluttericon.png",
+    img: "/images/fluttericon.webp",
     title: "Flutter",
     url: "/technology/flutter",
   },
   {
     id: 9,
-    img: "/images/wordpressicon.png",
+    img: "/images/wordpressicon.webp",
     title: "Wordpress",
     url: "/technology/wordpress",
   },
   {
     id: 10,
-    img: "/images/magentoicon.png",
+    img: "/images/magentoicon.webp",
     title: "Magneto",
     url: "/technology/magento",
   },
   {
     id: 11,
-    img: "/images/woccomerceicon.png",
+    img: "/images/woccomerceicon.webp",
     title: "Wocommerce",
     url: "/technology/woocommerce",
   },
   {
     id: 12,
-    img: "/images/awsicon.png",
+    img: "/images/awsicon.webp",
     title: "AWS",
     url: "/technology/aws",
   },
   {
     id: 13,
-    img: "/images/azureicon.png",
+    img: "/images/azureicon.webp",
     title: "Azure",
     url: "/technology/azure",
   },
   {
     id: 14,
-    img: "/images/googlecloundicon.png",
+    img: "/images/googlecloundicon.webp",
     title: "Google Cloud",
     url: "/technology/googlecloud",
   },
   {
     id: 15,
-    img: "/images/mangoicon.png",
+    img: "/images/mangoicon.webp",
     title: "MongoDB",
     url: "/technology/mongodb",
   },
   {
     id: 16,
-    img: "/images/mysqlicon.png",
+    img: "/images/mysqlicon.webp",
     title: "MySQL",
     url: "/technology/mysql",
   },
   {
     id: 17,
-    img: "/images/sqlservericon.png",
+    img: "/images/sqlservericon.webp",
     title: "SQLServer",
     url: "/technology/sqlserver",
   },
   {
     id: 18,
-    img: "/images/postgresql.png",
+    img: "/images/postgresql.webp",
     title: "PostgreSQL",
     url: "/technology/postgresql",
   },
   {
     id: 19,
-    img: "/images/mariadbicon.png",
+    img: "/images/mariadbicon.webp",
     title: "MariaDB",
     url: "/technology/mariadb",
   },
   {
     id: 20,
-    img: "/images/dynamodbicon.png",
+    img: "/images/dynamodbicon.webp",
     title: "DynamoDB",
     url: "/technology/dynamodb",
   },
@@ -192,37 +192,37 @@ export const technologiesIcons = [
 export const portfolioSlider = [
   {
     id: 1,
-    img: "/images/lawtendo.jpg",
+    img: "/images/lawtendo.webp",
     title: "Lawtendo",
     desc: "Portal / CodeIgniter",
   },
   {
     id: 2,
-    img: "/images/cancri.jpg",
+    img: "/images/cancri.webp",
     title: "Cancri Jewells",
     desc: "E-Commerce / CodeIgniter",
   },
   {
     id: 3,
-    img: "/images/octa.jpg",
+    img: "/images/octa.webp",
     title: "Octa Networks",
     desc: "Education / Yii Fremwork",
   },
   {
     id: 4,
-    img: "/images/attari.jpg",
+    img: "/images/attari.webp",
     title: "Lms Attari Classes",
     desc: "Education / CodeIgniter",
   },
   {
     id: 5,
-    img: "/images/geci.jpg",
+    img: "/images/geci2.webp",
     title: "Gecindia",
     desc: "Events / Wordpress",
   },
   {
     id: 6,
-    img: "/images/maymart.jpg",
+    img: "/images/maymart.webp",
     title: "Maay Mart",
     desc: "Ecommerce /Laravel",
   },

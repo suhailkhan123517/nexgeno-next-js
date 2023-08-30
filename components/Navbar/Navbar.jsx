@@ -16,7 +16,7 @@ export default function Navbar() {
                 <Link href="/">
                   <div className="logo">
                     <Image
-                      src="/images/logo.png"
+                      src="/images/logo.webp"
                       alt="Nexgeno Logo"
                       fill={true}
                       className="object-contain"
@@ -505,7 +505,7 @@ export default function Navbar() {
                         <Link href="/casestudy">
                           <div className="relative hover:scale-95 transition duration-300 ease-in-out h-[230px] w-[100%]">
                             <Image
-                              src="/images/navcase.jpg"
+                              src="/images/navcase.webp"
                               fill={true}
                               alt="Nexgeno CaseStudy"
                               className="object-contain"
@@ -525,7 +525,7 @@ export default function Navbar() {
                         <Link href="/portfolio">
                           <div className="relative hover:scale-95 transition duration-300 ease-in-out h-[230px] w-[100%]">
                             <Image
-                              src="/images/portfolio.png"
+                              src="/images/portfolio.webp"
                               fill={true}
                               alt="Nexgeno Portfolio"
                               className="object-contain"
