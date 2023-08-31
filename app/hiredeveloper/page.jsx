@@ -12,7 +12,7 @@ export const metadata = {
 export default function Hiredeveloper() {
   return (
     <>
-      <div className="container m-auto py-20">
+      <div className="container m-auto by-20">
         <h1 className="text-center heading py-5">Hire Developer</h1>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 place-items-center gap-5">
           {hireDeveloper.map((item) => (

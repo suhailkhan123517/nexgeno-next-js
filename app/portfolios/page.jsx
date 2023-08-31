@@ -16,7 +16,7 @@ export const metadata = {
 export default function Portfolios() {
   return (
     <>
-      <div className="portfolios text-white mt-16 py-10">
+      <div className="portfolios text-white  py-10">
         <div className="container m-auto">
           <h1 className="text-center text-4xl font-medium  pb-3">
             Nexgeno Portfolios

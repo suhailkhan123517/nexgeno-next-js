@@ -12,7 +12,7 @@ export const metadata = {
 export default function Portfolio() {
   return (
     <>
-      <div className="portfolio_p bg-black text-white mt-16">
+      <div className="portfolio_p bg-black text-white">
         <div className="container m-auto py-10">
           <div className="flex pb-8 justify-between sm:items-center items-start sm:flex-row flex-col">
             <div className="max-md:hidden flex">

@@ -15,7 +15,7 @@ export default function Stories() {
             <div className="hover_img py-5 relative">
               <Link href="#">
                 <Image
-                  src="/images/lawtendo.jpg"
+                  src="/images/lawtendo.webp"
                   alt="lowtendo"
                   width={350}
                   height={300}
@@ -38,7 +38,7 @@ export default function Stories() {
             <div className="hover_img py-5 relative">
               <Link href="#">
                 <Image
-                  src="/images/geci.jpg"
+                  src="/images/geci2.webp"
                   alt="lowtendo"
                   width={350}
                   height={300}
@@ -61,7 +61,7 @@ export default function Stories() {
             <div className="hover_img py-5 relative">
               <Link href="#">
                 <Image
-                  src="/images/octa.jpg"
+                  src="/images/octa.webp"
                   alt="lowtendo"
                   width={350}
                   height={300}

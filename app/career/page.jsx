@@ -9,7 +9,7 @@ export const metadata = {
 const Career = () => {
   return (
     <>
-      <div className="relative w-[100%] md:h-[250px] h-[160px]">
+      <div className="relative w-[100%] md:h-[150px] h-[160px]">
         <Image
           src="/images/about_bg.jpg"
           alt="about background images Nexgeno"

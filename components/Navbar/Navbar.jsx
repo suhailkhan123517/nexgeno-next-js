@@ -499,6 +499,13 @@ export default function Navbar() {
                           </p>
                           <h3 className="text-xl font-bold pt-3">Anil Garg</h3>
                         </Link>
+                        <div className="flex text-center mt-16">
+                          <Button
+                            title="View"
+                            url="/testimonial"
+                            button="button"
+                          />
+                        </div>
                       </div>
                       <div className="list_item text-center">
                         <h4 className="title">Case Study</h4>

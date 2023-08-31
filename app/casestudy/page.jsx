@@ -12,7 +12,7 @@ export const metadata = {
 export default function CaseStudy() {
   return (
     <>
-      <div className="caseStudy text-white mt-16 sm:pt-14 pt-7">
+      <div className="caseStudy text-white sm:pt-14 pt-7">
         <div className="container m-auto ">
           <h1 className="text-center text-4xl font-normal">Work</h1>
           <div className="grid md:grid-cols-2 grid-cols-1 sm:py-14 py-7  gap-5">

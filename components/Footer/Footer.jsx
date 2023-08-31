@@ -19,7 +19,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/services/web"
                 >
-                  Application-development
+                  Application Development
                 </Link>
               </li>
               <li>
@@ -27,7 +27,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/services/digital"
                 >
-                  Digital-transformation
+                  Digital Transformation
                 </Link>
               </li>
               <li>
@@ -35,7 +35,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/services/frontend"
                 >
-                  Front-end-development
+                  Front End Development
                 </Link>
               </li>
               <li>
@@ -43,7 +43,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/services/product"
                 >
-                  Product-prototyping
+                  Product Prototyping
                 </Link>
               </li>
               <li>
@@ -51,7 +51,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/services/ecommerce"
                 >
-                  E-commerce-deployment
+                  E-commerce Deployment
                 </Link>
               </li>
               <li>
@@ -59,7 +59,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/services/cloud"
                 >
-                  Cloud-solutions{" "}
+                  Cloud Solutions{" "}
                 </Link>
               </li>
               <li>
@@ -67,7 +67,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/services/mobile"
                 >
-                  Mobile-app-development
+                  Mobile App Development
                 </Link>
               </li>
             </ul>
@@ -83,7 +83,7 @@ export default function Footer() {
                     className="hover:underline text-black font-medium"
                     href="/services/deliverymodel"
                   >
-                    Delivery-models
+                    Delivery Models
                   </Link>
                 </li>
                 <li>
@@ -91,7 +91,7 @@ export default function Footer() {
                     className="hover:underline text-black font-medium"
                     href="/services/engagement"
                   >
-                    Engagement-models
+                    Engagement Models
                   </Link>
                 </li>
               </ul>
@@ -129,7 +129,7 @@ export default function Footer() {
                     className="hover:underline text-black font-medium"
                     href="/about"
                   >
-                    About-us
+                    About Us
                   </Link>
                 </li>
                 <li>
@@ -243,7 +243,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/solution/school"
                 >
-                  School-management
+                  School Management
                 </Link>
               </li>
 
@@ -252,7 +252,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/solution/tailor"
                 >
-                  Tailor-billing-application
+                  Tailor Billing Application
                 </Link>
               </li>
 
@@ -261,7 +261,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/solution/recruitment"
                 >
-                  Recruitment-billing
+                  Recruitment Billing
                 </Link>
               </li>
 
@@ -279,7 +279,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/solution/billing"
                 >
-                  Billing-application
+                  Billing Application
                 </Link>
               </li>
 
@@ -306,7 +306,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/solution/car"
                 >
-                  Car-rental-system
+                  Car Rental System
                 </Link>
               </li>
 
@@ -315,7 +315,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/solution/hrms"
                 >
-                  Hrms-payroll-system
+                  Hrms Payroll System
                 </Link>
               </li>
 
@@ -324,7 +324,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/solution/onlinefood"
                 >
-                  Online-food-ordering-system
+                  Online Food Ordering System
                 </Link>
               </li>
 
@@ -333,7 +333,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/solution/hospital"
                 >
-                  Hospital-management-system
+                  Hospital Management System
                 </Link>
               </li>
 

@@ -23,7 +23,7 @@ export default function Connect() {
               </p>
             </div>
             <div className="flex items-center md:justify-end justify-start">
-              <Button url="#" title="Get Connect" bgblack="bg-black" />
+              <Button url="/contact" title="Get Connect" bgblack="bg-black" />
             </div>
           </div>
         </div>

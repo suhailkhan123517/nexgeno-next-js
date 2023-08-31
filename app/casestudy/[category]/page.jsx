@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import "../case.css";
 import { items } from "./data";
 import { notFound } from "next/navigation";
@@ -20,7 +19,7 @@ export default function Category({ params }) {
   return (
     <>
       {data.map((item) => (
-        <div key={item.id} className="case_inner text-white mt-16">
+        <div key={item.id} className="case_inner text-white">
           <div className="container  py-10 m-auto">
             <h1 className="md:text-5xl text-3xl font-normal text-center">
               {item.title}

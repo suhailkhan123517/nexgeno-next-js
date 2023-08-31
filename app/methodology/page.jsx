@@ -18,7 +18,7 @@ export const metadata = {
 export default function Methodology() {
   return (
     <>
-      <div className="container m-auto lg:my-20 my-10">
+      <div className="container m-auto ">
         <div className="grid lg:grid-cols-2 grid-cols-1 grid-5  py-10 place-items-center">
           <div className="flex order-last lg:order-first flex-col md:gap-6 gap-4 mt-10  lg:mt-0 lg:pr-20">
             <h1 className="text-[41px] leading-[62px] font-semibold text-blue-950">
@@ -30,11 +30,11 @@ export default function Methodology() {
               processes that software development teams use to manage the
               software development life cycle (SDLC).
             </p>
-            <div>
+            <div className="flex">
               <Button url="/inquiry" title="Get In Touch" button="button" />
             </div>
           </div>
-          <div className="imgMeth">
+          <div className="imgMeth ">
             <Image src="/images/metho.jpg" alt="Methodology" fill={true} />
           </div>
         </div>

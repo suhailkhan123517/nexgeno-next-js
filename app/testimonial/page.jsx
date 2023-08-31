@@ -9,7 +9,7 @@ export const metadata = {
 const Testimonial = () => {
   return (
     <>
-      <div className="testimonial mt-16">
+      <div className="testimonial">
         <div className="container mx-auto">
           <h1 className="heading text-center py-10">Review</h1>
           <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">

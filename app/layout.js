@@ -6,6 +6,7 @@ import Footer from "@/components/Footer/Footer";
 import Script from "next/script";
 import { ToasterProvider } from "@/providers/toast-providers";
 import Nav from "@/components/Nav/Nav";
+import Pathname from "@/components/Pathname/Pathname";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -115,6 +116,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {/* <Nav /> */}
         <MobileNav />
+        <Pathname />
         {children}
         <Footer />
       </body>

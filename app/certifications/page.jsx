@@ -8,11 +8,12 @@ export const metadata = {
 export default function Certificate() {
   return (
     <>
-      <div className="relative w-[100%] h-[160px] md:h-[250px]">
+      <div className="relative w-[100%] md:h-[150px] h-[160px]">
         <Image
           src="/images/about_bg.jpg"
-          alt="Certificate background images Nexgeno"
+          alt="about background images Nexgeno"
           fill={true}
+          className="object-cover"
         />
       </div>
       <div className="container  sm:mt-10 grid place-items-center m-auto">

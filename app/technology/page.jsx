@@ -12,7 +12,7 @@ export const metadata = {
 export default function Technology() {
   return (
     <>
-      <div className="container m-auto py-20">
+      <div className="container m-auto ">
         <h1 className="text-center text-4xl text-gray-700 font-medium py-5">
           Technology
         </h1>
@@ -31,7 +31,7 @@ export default function Technology() {
                 </h1>
                 <p className="line-clamp-3  desc">{item.desc}</p>
               </Link>
-              <div className="py-5">
+              <div className="py-5 flex">
                 <Button url={item.url} title="Learn More" button="button" />
               </div>
             </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import "./MobileNav.css";
 import Image from "next/image";
 import Button from "../Button/Button";

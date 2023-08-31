@@ -12,7 +12,7 @@ export const metadata = {
 export default function Solution() {
   return (
     <>
-      <div className="container m-auto py-20">
+      <div className="container m-auto pb-20">
         <h1 className="text-center heading py-5">Solution</h1>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 place-items-center gap-5">
           {solution.map((item) => (

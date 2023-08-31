@@ -29,7 +29,7 @@ export default function Category({ params }) {
   return (
     <>
       {data.map((item) => (
-        <div key={item.id} className="container m-auto lg:my-20 my-10">
+        <div key={item.id} className="container m-auto lg:mb-20 mb-10">
           <div className="grid lg:grid-cols-2 grid-cols-1 grid-5  py-10 place-items-center">
             <div className="flex order-last lg:order-first flex-col md:gap-10 gap-5 mt-10  lg:mt-0 lg:pr-10">
               <h1 className="sm:text-[41px] sm:leading-[62px] text-[27px] leading-[40px] font-semibold text-blue-950">
