@@ -12,7 +12,7 @@ export const metadata = {
 export default function Services() {
   return (
     <>
-      <div className="container m-auto pb-20">
+      <div className="container m-auto">
         <h1 className="text-center heading py-5">Services</h1>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 place-items-center gap-5">
           {allServices.map((item) => (

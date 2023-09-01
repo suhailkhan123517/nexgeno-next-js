@@ -3,11 +3,17 @@ import React from "react";
 import "./footer.css";
 import Image from "next/image";
 import Whatsapp from "../Whatsapp/Whatsapp";
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillTwitterSquare,
+} from "react-icons/ai";
 
 export default function Footer() {
   return (
     <>
-      <div className="container m-auto md:mb-20 border-t border-gray-100 sm:pt-14 pt-7 ">
+      <div className="container m-auto md:mb-10 border-t border-gray-100 sm:pt-14 pt-7 ">
         <div className="grid sm:grid-cols-4 grid-cols-1 gap-4 ">
           <div className="footer_head">
             <h1 className="title_footer text-xl font-semibold ">
@@ -112,7 +118,7 @@ export default function Footer() {
                 <li>
                   <Link
                     className="hover:underline text-black font-medium"
-                    href="demystifying"
+                    href="/services/demystifying"
                   >
                     AI/ML
                   </Link>
@@ -143,7 +149,7 @@ export default function Footer() {
                 <li>
                   <Link
                     className="hover:underline text-black font-medium"
-                    href="/certification"
+                    href="/certifications"
                   >
                     Certifications
                   </Link>
@@ -342,7 +348,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/solution/job"
                 >
-                  Job-portal
+                  Job Portal
                 </Link>
               </li>
 
@@ -351,7 +357,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/solution/lawyer"
                 >
-                  Lawyer-booking-solution
+                  Lawyer Booking Solution
                 </Link>
               </li>
 
@@ -360,7 +366,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/solution/chat"
                 >
-                  Chat-application
+                  Chat Application
                 </Link>
               </li>
 
@@ -369,7 +375,7 @@ export default function Footer() {
                   className="hover:underline text-black font-medium"
                   href="/solution/hotel"
                 >
-                  Hotel-booking-system
+                  Hotel Booking System
                 </Link>
               </li>
             </ul>
@@ -483,7 +489,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/technology/googlecloud"
               >
-                Google-cloud
+                Google Cloud
               </Link>
             </li>
 
@@ -492,7 +498,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/technology/sqlserver"
               >
-                SQL-Server
+                SQL Server
               </Link>
             </li>
 
@@ -571,7 +577,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/hiredeveloper/php"
               >
-                Hire-PHP-developers
+                Hire PHP Developers
               </Link>
             </li>
 
@@ -580,7 +586,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/hiredeveloper/codeIgniter"
               >
-                Hire-codeigniter-developers
+                Hire Codeigniter Developers
               </Link>
             </li>
 
@@ -589,7 +595,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/hiredeveloper/express"
               >
-                Hire-nodeJs-developers
+                Hire NodeJs Developers
               </Link>
             </li>
 
@@ -598,7 +604,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/hiredeveloper/wordpress"
               >
-                Hire-wordPress-developers
+                Hire WordPress Developers
               </Link>
             </li>
 
@@ -607,7 +613,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/hiredeveloper/ios"
               >
-                Hire-IOS-developers
+                Hire IOS Developers
               </Link>
             </li>
 
@@ -616,7 +622,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/hiredeveloper/android"
               >
-                Hire-android-developers
+                Hire Android Developers
               </Link>
             </li>
 
@@ -625,7 +631,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/hiredeveloper/angular"
               >
-                Hire-angular-developers
+                Hire Angular Developers
               </Link>
             </li>
 
@@ -634,7 +640,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/hiredeveloper/react"
               >
-                Hire-reactjs-developers
+                Hire Reactjs Developers
               </Link>
             </li>
 
@@ -643,7 +649,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/hiredeveloper/magento"
               >
-                Hire-magento-developers
+                Hire Magento Developers
               </Link>
             </li>
 
@@ -652,7 +658,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/hiredeveloper/opencart"
               >
-                Hire-openCart-developers
+                Hire OpenCart Developers
               </Link>
             </li>
 
@@ -661,7 +667,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/hiredeveloper/ionic"
               >
-                Hire-ionic-developers
+                Hire Ionic Developers
               </Link>
             </li>
 
@@ -670,7 +676,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/hiredeveloper/reactnative"
               >
-                Hire-react-native-developers
+                Hire React Native Developers
               </Link>
             </li>
 
@@ -679,7 +685,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/hiredeveloper/pwa"
               >
-                Hire-PWA-developers
+                Hire PWA Developers
               </Link>
             </li>
           </ul>
@@ -711,7 +717,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/industries/logistics"
               >
-                Logistics-&-distribution
+                Logistics & Distribution
               </Link>
             </li>
 
@@ -756,7 +762,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/industries/realestate"
               >
-                Real-estate
+                Real Estate
               </Link>
             </li>
 
@@ -765,7 +771,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/industries/healthcare"
               >
-                Health-care
+                Health Care
               </Link>
             </li>
 
@@ -801,7 +807,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/industries/travel"
               >
-                Travel-&-tours
+                Travel & Tours
               </Link>
             </li>
 
@@ -810,7 +816,7 @@ export default function Footer() {
                 className="hover:underline text-black font-medium"
                 href="/industries/serviceprovider"
               >
-                Service-provider
+                Service Provider
               </Link>
             </li>
 
@@ -823,6 +829,27 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
+        </div>
+
+        <div className="flex items-center gap-2 mt-10">
+          <Link
+            href="https://in.linkedin.com/company/nexgenotechnologypvtltd"
+            target="_blank"
+          >
+            <AiFillLinkedin className="text-4xl hover:scale-125 transition duration-300 ease-in-out" />
+          </Link>
+          <Link
+            href="https://instagram.com/nexgenotechnology?igshid=MzRlODBiNWFlZA=="
+            target="_blank"
+          >
+            <AiFillInstagram className="text-4xl hover:scale-125 transition duration-300 ease-in-out" />
+          </Link>
+          <Link
+            href="https://www.facebook.com/nexgenotechnology"
+            target="_blank"
+          >
+            <AiFillFacebook className="text-4xl hover:scale-125  transition duration-300 ease-in-out" />
+          </Link>
         </div>
       </div>
       <div className="bottom_footer border-t border-gray-100">
@@ -848,7 +875,7 @@ export default function Footer() {
               Privacy Policy
             </Link>
             <Link
-              className="sm:selection:text-[15px] text-[13px] hover:underline text-black font-medium"
+              className="sm:text-[15px] text-[13px] hover:underline text-black font-medium"
               href="/terms"
             >
               Terms & Condition

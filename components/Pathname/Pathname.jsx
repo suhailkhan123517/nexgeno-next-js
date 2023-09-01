@@ -27,12 +27,14 @@ export default function Pathname() {
                 <>
                   <li>/</li>
 
-                  <li className="cursor-pointer">{capitals} </li>
+                  <li key={index} className="cursor-pointer">
+                    {capitals}{" "}
+                  </li>
                 </>
               ) : (
                 <>
                   <li>/</li>
-                  <li key={index}>
+                  <li key={capitals}>
                     <Link
                       href={`/${pathSegments.slice(0, index + 1).join("/")}`}
                       className="hover:underline text-blue-700"

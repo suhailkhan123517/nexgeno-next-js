@@ -7,7 +7,7 @@ export default function Whatsapp() {
       <div className="floating-whatsapp">
         <FloatingWhatsApp
           phoneNumber="7045772660"
-          accountName="Nexgeno Technology PVT LTD"
+          accountName="Nexgeno Technology Pvt Ltd"
           allowEsc
           notification="true"
           notificationSound

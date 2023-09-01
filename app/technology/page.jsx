@@ -12,11 +12,9 @@ export const metadata = {
 export default function Technology() {
   return (
     <>
-      <div className="container m-auto ">
-        <h1 className="text-center text-4xl text-gray-700 font-medium py-5">
-          Technology
-        </h1>
-        <div className="grid grid-cols-3 place-items-center gap-5 ">
+      <div className="container m-auto">
+        <h1 className="text-center heading py-5">Technology</h1>
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 place-items-center gap-5 ">
           {technology.map((item) => (
             <div
               className="flex rounded-xl my-3  shadow-xl p-5 flex-col gap-5 "

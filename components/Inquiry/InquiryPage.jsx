@@ -71,7 +71,7 @@ export default function InquiryPage() {
   return (
     <>
       <div className="inquiry ">
-        <div className="container py-10 mx-auto">
+        <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 grid-cols-1 sm:px-10 py-5   gap-4">
             <div className="text-[#444]">
               <h1 className="text-center text-4xl font-medium py-5">

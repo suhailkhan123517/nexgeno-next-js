@@ -14,7 +14,7 @@ const Nav = () => {
               <Link href="/">
                 <div className="relative w-[200px] h-[50px]">
                   <Image
-                    src="/images/logo.png"
+                    src="/images/logo.webp"
                     alt="Nexgeno Logo"
                     fill={true}
                     className="object-contain"
@@ -29,32 +29,39 @@ const Nav = () => {
                     Services
                     <BiChevronDown className="group-hover/item:rotate-180 transition duration-300" />
                   </span>
-                  <div className="absolute bg-[#fffbfd] mt-3 opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible hover:visible transition duration-500 w-full left-1/2 -translate-x-1/2 border py-8">
+                  <div className="absolute bg-[#fffbfd] mt-2 opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible hover:visible transition duration-500 w-full left-1/2 -translate-x-1/2 border py-8">
                     <div className="container mx-auto">
                       <Link href="/" className="">
-                        <h1 className="group/edit text-2xl font-semibold border border-transparent hover:border-gray-200  w-max py-2 px-3 hover:text-black rounded-xl mb-5 hover:bg-white">
+                        <h1 className="group/edit text-2xl font-semibold border border-transparent hover:border-gray-200  w-max py-2 px-3 hover:text-black rounded-xl mb-3 hover:bg-white">
                           <span className="flex gap-2 items-center after:content-['']  after:border-[1px] after:w-6 after:h-6 after:rounded-full after:absolute after:top-[4px] after:border-transparent after:right-0 relative group-hover/edit:after:border-black">
                             Nexgeno Services
                             <BsArrowRight className="group-hover/edit:translate-x-3 relative transition duration-500 " />
                           </span>
                         </h1>
                       </Link>
-                      <Link href="/">
-                        <h1 className="group/edit text-xl font-semibold border border-transparent hover:border-gray-200  w-max py-2 px-3 hover:text-black rounded-xl  hover:bg-white">
-                          <span className="flex gap-2 items-center after:content-['']  after:border-[1px] after:w-5 after:h-5 after:rounded-full after:absolute after:top-[4px] after:border-transparent after:right-0 relative group-hover/edit:after:border-black">
-                            Nexgeno Services
-                            <BsArrowRight className="group-hover/edit:translate-x-3 relative transition duration-500 " />
-                          </span>
-                        </h1>
-                      </Link>
+
                       <div className="grid grid-cols-4">
-                        <ul>
-                          <li>Home Services</li>
-                          <li>Home Services</li>
-                          <li>Home Services</li>
-                          <li>Home Services</li>
-                          <li>Home Services</li>
-                        </ul>
+                        <div className="pr-5">
+                          <div className="border-b">
+                            <Link href="/" className="">
+                              <h1 className="group/edit text-xl font-semibold border border-transparent mb-3 hover:border-gray-200  w-max py-2 px-3 hover:text-black rounded-xl  hover:bg-white ">
+                                <span className="flex gap-2 items-center after:content-['']  after:border-[1px] after:w-5 after:h-5 after:rounded-full after:absolute after:top-[4px] after:border-transparent after:right-0 relative group-hover/edit:after:border-black">
+                                  Offering
+                                  <BsArrowRight className="group-hover/edit:translate-x-3 relative transition duration-500 " />
+                                </span>
+                              </h1>
+                            </Link>
+                          </div>
+
+                          <ul>
+                            <li>Home Services</li>
+                            <li>Home Services</li>
+                            <li>Home Services</li>
+                            <li>Home Services</li>
+                            <li>Home Services</li>
+                          </ul>
+                        </div>
+
                         <ul>
                           <li>Home Services</li>
                           <li>Home Services</li>
@@ -82,7 +89,7 @@ const Nav = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="flex">
               <Button button="button" url="/contact" title="Let's Talk" />
             </div>
           </div>

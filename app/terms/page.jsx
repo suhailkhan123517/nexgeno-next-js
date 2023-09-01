@@ -14,13 +14,13 @@ const Terms = () => {
           <div className="grid lg:grid-cols-2 grid-cols-1 grid-5  py-10 place-items-center">
             <div className="flex order-last lg:order-first flex-col md:gap-6 gap-4 mt-10  lg:mt-0 lg:pr-10">
               <h1 className="sm:text-[41px] sm:leading-[62px] text-[27px] leading-[40px] font-semibold text-blue-950">
-                Service Provider Website
+                Term & Condition
               </h1>
               <p className="sm:text-[18px] text-[16px] sm:leading-[34px] leading-[30px] text-gray-700 line-clamp-4 mb-2">
                 Certainly! Here are the updated terms and conditions for Nexgeno
                 Technology Pvt Ltd:
               </p>
-              <div>
+              <div className="flex">
                 <Button url="/inquiry" title="Get In Touch" button="button" />
               </div>
             </div>
