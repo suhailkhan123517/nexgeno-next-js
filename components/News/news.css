@@ -1,5 +1,5 @@
 .news {
-  background-image: url("/news_bg.png");
+  background-image: url("/news_bg.webp");
   background-size: cover;
   box-shadow: inset 1000px 1000px 1000px 1000px #f4f4f4f7;
   position: relative;

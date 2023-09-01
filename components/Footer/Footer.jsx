@@ -13,7 +13,7 @@ import {
 export default function Footer() {
   return (
     <>
-      <div className="container m-auto md:mb-10 border-t border-gray-100 sm:pt-14 pt-7 ">
+      <div className="container m-auto md:mb-10 mb-5 border-t border-gray-100 sm:pt-14 pt-7 ">
         <div className="grid sm:grid-cols-4 grid-cols-1 gap-4 ">
           <div className="footer_head">
             <h1 className="title_footer text-xl font-semibold ">
@@ -831,7 +831,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="flex items-center gap-2 mt-10">
+        <div className="flex items-center gap-2 md:mt-10 mt-5">
           <Link
             href="https://in.linkedin.com/company/nexgenotechnologypvtltd"
             target="_blank"
