@@ -23,7 +23,7 @@ export default function Portfolio() {
               />
             </div>
 
-            {/* <Button url="/portfolios" title="View More" button="button" /> */}
+            <Button url="/portfolios" title="View More" button="button" />
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
             {PortfolioList.map((item) => (

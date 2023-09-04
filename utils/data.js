@@ -1076,6 +1076,10 @@ export const caseStudy = [
 
 export const filterServices = [
   {
+    id: 1,
+    name: "Services",
+  },
+  {
     id: 3,
     name: "E-Commerce",
   },
@@ -1135,6 +1139,10 @@ export const filterServices = [
 ];
 
 export const filterIndustries = [
+  {
+    id: 1,
+    name: "Industries",
+  },
   {
     id: 2,
     name: "Education / E-Learning",
@@ -1222,6 +1230,10 @@ export const filterIndustries = [
 ];
 
 export const filterTechnology = [
+  {
+    id: 0,
+    name: "Technology",
+  },
   {
     id: 1,
     name: "Next Js",
