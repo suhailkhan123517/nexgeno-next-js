@@ -1497,7 +1497,7 @@ export const PortfolioList = [
     // desc: "Catalog / Wordpress",
   },
   {
-    id: 27,
+    id: 28,
     link: "https://vrajplastics.com/",
     deskIMG: "/images/desktop/vraj_plactic_d.jpg",
     mobImg: "/images/mob/vraj_plactic_m.jpg",

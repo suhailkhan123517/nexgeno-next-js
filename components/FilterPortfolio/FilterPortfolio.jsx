@@ -19,10 +19,9 @@ export const metadata = {
 };
 
 export default function FilterPortfolio() {
-  const [query, setQuery] = useState("");
-  const handleChange = (e) => {
-    setQuery(e.target.value);
-  };
+  const [search, setSearch] = useState("");
+  console.log(search);
+
   return (
     <>
       <div className="portfolios text-white  py-10">
@@ -36,7 +35,7 @@ export default function FilterPortfolio() {
               <input
                 type="text"
                 placeholder="Search..."
-                onchange={handleChange}
+                onChange={(e) => setSearch(e.target.value)}
                 className=" border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md"
               />
 
@@ -50,7 +49,11 @@ export default function FilterPortfolio() {
           </div>
 
           <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-10">
-            {PortfolioList.map((item) => (
+            {PortfolioList.filter((item) => {
+              return search.toLowerCase() === ""
+                ? item
+                : item.title.toLowerCase().includes(search);
+            }).map((item) => (
               <div
                 className="img_hover_port mb-5 relative md:pr-20 pr-5"
                 key={item.id}
