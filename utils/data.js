@@ -1284,6 +1284,7 @@ export const PortfolioList = [
     mobImg: "/images/mob/lawtendo_mobile_stories.jpg",
     title: "Lawtendo",
     desc: " Portlal / CodeIgniter",
+    category: "web design",
   },
 
   {

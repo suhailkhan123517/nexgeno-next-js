@@ -36,15 +36,32 @@ export default function FilterPortfolio() {
                 type="text"
                 placeholder="Search..."
                 onChange={(e) => setSearch(e.target.value)}
-                className=" border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md"
+                className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md"
               />
 
-              <AiOutlineSearch className="text-gray-800 text-xl" />
+              <AiOutlineSearch className="text-gray-800 text-xl absolute top-2 right-2" />
             </div>
             <div className="flex items-center md:justify-center max-md:flex-col gap-3">
-              <div className="services"></div>
-              <div className="industries"></div>
-              <div className="technology"></div>
+              <div className="services">
+                <select className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md">
+                  <option value="">Services</option>
+                  {filterServices.map((item) => (
+                    <option key={item.id} value={item.name}>
+                      {item.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className="industries">
+                <select className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md">
+                  <option value="">Industries</option>
+                </select>
+              </div>
+              <div className="technology">
+                <select className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md">
+                  <option value="">Technology</option>
+                </select>
+              </div>
             </div>
           </div>
 

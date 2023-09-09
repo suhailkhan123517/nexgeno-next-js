@@ -13,6 +13,8 @@ import React from "react";
 import { items } from "./data";
 import { notFound } from "next/navigation";
 import Seo from "@/components/Seo/Seo";
+import { BsArrowRightShort } from "react-icons/bs";
+import Link from "next/link";
 
 const getData = (cat) => {
   const data = items[cat];
@@ -50,10 +52,54 @@ export default function Category({ params }) {
       <Client />
       <WhyChoose />
       <Technology />
+
+      {data.map((item) => (
+        <div
+          key={item.id}
+          className="container mx-auto py-10 lg:px-14 sm:px-5 px-3"
+        >
+          <div className="border border-gray-200 shadow-xl sm:py-8  py-3 lg:px-20 sm:px-10 px-4 rounded-3xl hover:border-gradient-to-r from-pink-500 to-purple-600">
+            <h1 className="xl:text-5xl  lg:text-4xl md:text-3xl text-2xl   xl:leading-[66px] md:leading-[52px] leading-[40px] font-medium py-4 ">
+              {item.title}
+            </h1>
+
+            <p className="lg:text-xl md:text-lg sm:text-base text-sm  sm:leading-8 leading-6 my-5">
+              {item.desc}
+            </p>
+            <p className="lg:text-xl md:text-lg sm:text-base text-sm  sm:leading-8 leading-6 my-5">
+              {item.shortDesc1}
+            </p>
+            <p className="lg:text-xl md:text-lg sm:text-base text-sm  sm:leading-8 leading-6 my-5">
+              {item.shortDesc2}
+            </p>
+            <p className="lg:text-xl md:text-lg sm:text-base text-sm  sm:leading-8 leading-6 my-5">
+              {item.shortDesc3}
+            </p>
+            <p className="lg:text-xl md:text-lg sm:text-base text-sm  sm:leading-8 leading-6 my-5">
+              {item.shortDesc4}
+            </p>
+            <div className="flex sm:flex-row flex-col my-5 py-5 sm:gap-9 gap-3">
+              <Button
+                url="/inquiry"
+                title="Get In Touch"
+                button="button"
+                className="max-w-max"
+              />
+              <Link
+                href="/about"
+                className="group border border-pink-700 max-w-max  px-7 py-2  flex gap-5 rounded-lg hover:bg-gradient-to-r from-pink-500 to-purple-800 hover:text-white hover:border-transparent font-medium duration-200 transition"
+              >
+                About Us
+                <BsArrowRightShort className="text-2xl group-hover:translate-x-2 duration-200 transition font-extrabold" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      ))}
+
       <Counter />
       <Stories />
       <Seo />
-
       <Industries />
       <Connect />
       <Process />

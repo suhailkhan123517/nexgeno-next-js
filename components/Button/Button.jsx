@@ -6,7 +6,7 @@ export default function Button({ url, bgblack, title, button }) {
   return (
     <>
       <Link
-        className={`${button} ${bgblack} group  no-underline relative border-none text-lg font-medium text-white py-2 px-6 rounded-md`}
+        className={`${button} ${bgblack} group max-w-max  no-underline relative border-none text-lg font-medium text-white py-2 px-6 rounded-md`}
         href={url}
       >
         <span className="flex items-center">

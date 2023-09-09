@@ -14,14 +14,14 @@
 }
 
 .header .item_left {
-  flex: 0 0 17%;
+  flex: 0 0 14%;
 }
 .header .item_center {
-  flex: 0 0 66%;
+  flex: 0 0 50%;
 }
 
 .header .item_right {
-  flex: 0 0 17%;
+  flex: 0 0 36%;
 }
 
 .header .menu > ul > li {

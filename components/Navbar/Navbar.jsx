@@ -4,6 +4,7 @@ import React from "react";
 import "./navbar.css";
 import Button from "../Button/Button";
 import { BiChevronDown } from "react-icons/bi";
+import { BsArrowRightShort } from "react-icons/bs";
 
 export default function Navbar() {
   return (
@@ -209,7 +210,7 @@ export default function Navbar() {
                       </div>
                     </div>
                   </li>
-                  <li className="children group">
+                  {/* <li className="children group">
                     <Link href="/hiredeveloper">
                       <span className="flex gap-1 items-center">
                         Hire Developer
@@ -352,11 +353,11 @@ export default function Navbar() {
                         </ul>
                       </div>
                     </div>
-                  </li>
+                  </li> */}
                   <li className="children group">
                     <Link href="/solution">
                       <span className="flex gap-1 items-center">
-                        Solution
+                        Solutions
                         <BiChevronDown className="group-hover:rotate-180 transition duration-300" />
                       </span>
                     </Link>
@@ -480,7 +481,7 @@ export default function Navbar() {
                       </span>
                     </Link>
                     <div className="sub_menu mega column_3">
-                      <div className="list_item">
+                      <div className="list_item hover:bg-white rounded-lg hover:shadow-lg">
                         <h4 className="title">Clients Testimonial</h4>
                         <Link className="" href="/testimonial">
                           <div className="relative w-[50px] h-[50px]">
@@ -499,15 +500,8 @@ export default function Navbar() {
                           </p>
                           <h3 className="text-xl font-bold pt-3">Anil Garg</h3>
                         </Link>
-                        <div className="flex text-center mt-16">
-                          <Button
-                            title="View"
-                            url="/testimonial"
-                            button="button"
-                          />
-                        </div>
                       </div>
-                      <div className="list_item text-center">
+                      <div className="list_item text-center hover:bg-white rounded-lg hover:shadow-lg">
                         <h4 className="title">Case Study</h4>
                         <Link href="/casestudy">
                           <div className="relative hover:scale-95 transition duration-300 ease-in-out h-[230px] w-[100%]">
@@ -519,15 +513,8 @@ export default function Navbar() {
                             />
                           </div>
                         </Link>
-                        <div className="flex justify-center mt-2">
-                          <Button
-                            title="View"
-                            url="/casestudy"
-                            button="button"
-                          />
-                        </div>
                       </div>
-                      <div className="list_item text-center">
+                      <div className="list_item text-center hover:bg-white rounded-lg hover:shadow-lg">
                         <h4 className="title">Portfolio</h4>
                         <Link href="/portfolio">
                           <div className="relative hover:scale-95 transition duration-300 ease-in-out h-[230px] w-[100%]">
@@ -539,13 +526,6 @@ export default function Navbar() {
                             />
                           </div>
                         </Link>
-                        <div className="flex justify-center">
-                          <Button
-                            title="View"
-                            url="/portfolio"
-                            button="button"
-                          />
-                        </div>
                       </div>
                     </div>
                   </li>
@@ -574,6 +554,9 @@ export default function Navbar() {
                           </li>
                           <li>
                             <Link href="/career"> Career </Link>
+                          </li>
+                          <li>
+                            <Link href="/contact"> Contact Us </Link>
                           </li>
                         </ul>
                       </div>
@@ -607,13 +590,17 @@ export default function Navbar() {
                       </div>
                     </div>
                   </li>
-                  <li>
-                    <Link href="/contact">Contact Us</Link>
-                  </li>
                 </ul>
               </nav>
             </div>
-            <div className="header_item item_right flex justify-end">
+            <div className="header_item item_right flex justify-end gap-3">
+              <Link
+                href="/hiredeveloper"
+                className="group border border-gray-600  px-5 py-2  flex  rounded-lg hover:bg-gradient-to-r from-[#4158d0] to-[#f441a5] hover:text-white hover:border-transparent font-medium duration-200 transition"
+              >
+                Hire Developer
+                <BsArrowRightShort className="text-2xl group-hover:translate-x-2 duration-200 transition font-extrabold" />
+              </Link>
               <Button url="/contact" title="Let's Talk" button="button" />
             </div>
           </div>

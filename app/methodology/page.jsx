@@ -8,7 +8,6 @@ import Technology from "@/components/Technology/Technology";
 import WhyChoose from "@/components/WhyChoose/WhyChoose";
 import Client from "@/components/client/Client";
 import Image from "next/image";
-import "./meth.css";
 
 export const metadata = {
   title: "Nexgeno | DevMethodology",
@@ -34,7 +33,7 @@ export default function Methodology() {
               <Button url="/inquiry" title="Get In Touch" button="button" />
             </div>
           </div>
-          <div className="imgMeth ">
+          <div className="w-full h-[400px] relative ">
             <Image src="/images/metho.jpg" alt="Methodology" fill={true} />
           </div>
         </div>

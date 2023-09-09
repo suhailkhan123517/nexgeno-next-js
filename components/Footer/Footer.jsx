@@ -8,6 +8,7 @@ import {
   AiFillInstagram,
   AiFillLinkedin,
   AiFillTwitterSquare,
+  AiTwotoneStar,
 } from "react-icons/ai";
 
 export default function Footer() {
@@ -830,7 +831,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-
+        {/* --------------------------footer social links--------------------------- */}
         <div className="flex items-center gap-2 md:mt-10 mt-5">
           <Link
             href="https://in.linkedin.com/company/nexgenotechnologypvtltd"
@@ -851,6 +852,10 @@ export default function Footer() {
             <AiFillFacebook className="text-4xl hover:scale-125  transition duration-300 ease-in-out" />
           </Link>
         </div>
+
+        {/* ------------------------------logo google ----------------------------- */}
+
+        {/* ------------------------------logo google ----------------------------- */}
       </div>
       <div className="bottom_footer border-t border-gray-100">
         <div className="container m-auto py-2 sm:py-5 grid sm:grid-cols-3 grid-cols-1 place-items-center sm:gap-5 gap-2">
