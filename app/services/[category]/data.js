@@ -276,7 +276,7 @@ export const items = {
       ans2: "An upgraded travel & Tour website can include a range of features, such as a responsive design that works on all devices, advanced search and filter options, booking and reservation systems, personalized recommendations, interactive maps and galleries, customer reviews and ratings, social media integration, and more.",
     },
   ],
-  serviceprovider: [
+  provider: [
     {
       id: 22,
       title: "Service Provider Website",

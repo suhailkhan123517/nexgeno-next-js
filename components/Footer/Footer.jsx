@@ -875,13 +875,13 @@ export default function Footer() {
           <div className="flex gap-5">
             <Link
               className="sm:text-[15px] text-[13px] hover:underline text-black font-medium"
-              href="/privacy"
+              href="/privacy-policy"
             >
               Privacy Policy
             </Link>
             <Link
               className="sm:text-[15px] text-[13px] hover:underline text-black font-medium"
-              href="/terms"
+              href="/terms-conditions"
             >
               Terms & Condition
             </Link>

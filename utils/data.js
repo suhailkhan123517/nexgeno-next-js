@@ -1058,19 +1058,19 @@ export const caseStudy = [
     id: 1,
     title: "AbayaDesigner",
     img: "/images/website/abaya_desk_1.png",
-    url: "/casestudy/abayadesigner",
+    url: "/case-study/abayadesigner",
   },
   {
     id: 2,
     title: "V2 Technologies",
     img: "/images/website/v_desk_1.png",
-    url: "/casestudy/thev2technologies",
+    url: "/case-study/thev2technologies",
   },
   {
     id: 3,
     title: "KUC Edibles",
     img: "/images/website/krips_desk_1.png",
-    url: "/casestudy/kucedibles",
+    url: "/case-study/kucedibles",
   },
 ];
 
@@ -1504,5 +1504,97 @@ export const PortfolioList = [
     mobImg: "/images/mob/vraj_plactic_m.jpg",
     title: "Vraj Plastics",
     // desc: "Catalog / Wordpress",
+  },
+];
+
+export const servicesLinks = [
+  {
+    title: "Offering",
+    links: [
+      { title: "Application Development", url: "/services/web" },
+      { title: "Digital Transformation", url: "/services/digital" },
+      { title: "Front-end Development", url: "/services/frontend" },
+      { title: "Product Prototyping", url: "/services/product" },
+      { title: "E-Commerce Deployment", url: "/services/ecommerce" },
+      { title: "Cloud Solutions", url: "/services/cloud" },
+      { title: "Mobile App Development", url: "/services/mobile" },
+      { title: "Web Consulting", url: "/services/consulting" },
+      { title: "Website Security", url: "/services/security" },
+    ],
+  },
+  {
+    title: "Industries",
+    links: [
+      { title: "Education / E-Learning", url: "/services/education" },
+      { title: "Retail", url: "/services/retail" },
+      { title: "Logistics & Distribution", url: "/services/logistics" },
+      { title: "FinTech", url: "/services/fintech" },
+      { title: "Manufacturing", url: "/services/manufacturing" },
+      { title: "Events", url: "/services/events" },
+      { title: "Recruitment", url: "/services/recruitment" },
+      { title: "Real Estate", url: "/services/realestate" },
+    ],
+  },
+  {
+    title: "Industries",
+    links: [
+      { title: "Restaurant", url: "/services/restaurants" },
+      { title: "Health Care", url: "/services/healthcare" },
+      { title: "Hospitality", url: "/services/hospitality" },
+      { title: "Pharmaceutical", url: "/services/pharmaceutical" },
+      { title: "Electronics", url: "/services/electronics" },
+      { title: "Travel & Tours", url: "/services/travel" },
+      { title: "Service Provider", url: "/services/provider" },
+      { title: "Hospitals", url: "/services/hospitals" },
+    ],
+  },
+  {
+    title: "Service Models",
+    links: [
+      { title: "Delivery Models", url: "/services/deliverymodel" },
+      { title: "Engagement Models", url: "/services/engagement" },
+    ],
+  },
+];
+export const solutionsLinks = [
+  {
+    title: "Customized Solutions",
+    links: [
+      { title: "School management", url: "/solutions/school" },
+      { title: "Tailor Billing Application", url: "/solutions/tailor" },
+      {
+        title: "Recruitment billing application",
+        url: "/solutions/recruitment",
+      },
+      { title: "CRM application", url: "/solutions/crm" },
+    ],
+  },
+  {
+    title: "Customized Solutions",
+    links: [
+      { title: "Billing application", url: "/solutions/billing" },
+      { title: "Point of Sale", url: "/solutions/pos" },
+      { title: "Multi restaurant management", url: "/solutions/restaurant" },
+      { title: "Car rental system", url: "/solutions/car" },
+      { title: "School", url: "/solutions/school" },
+    ],
+  },
+  {
+    title: "Customized Solutions",
+    links: [
+      { title: "Hrms payroll system", url: "/solutions/hrms" },
+      { title: "Online food ordering system", url: "/solutions/onlinefood" },
+      { title: "Hospital management system", url: "/solutions/hospital" },
+      { title: "Job portal", url: "/solutions/job" },
+      { title: "School", url: "/solutions/school" },
+    ],
+  },
+  {
+    title: "Customized Solutions",
+    links: [
+      { title: "Lawyer booking solution", url: "/solutions/lawyer" },
+      { title: "Chat application", url: "/solutions/chat" },
+      { title: "Hotel booking system", url: "/solutions/hotel" },
+    ],
   },
 ];

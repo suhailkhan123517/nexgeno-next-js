@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import MobileNav from "@/components/MobileNav/MobileNav";
@@ -113,8 +112,7 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
         <ToasterProvider />
-        <Navbar />
-        {/* <Nav /> */}
+        <Nav />
         <MobileNav />
         <Pathname />
         {children}

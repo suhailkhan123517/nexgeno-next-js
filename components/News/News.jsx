@@ -70,7 +70,7 @@ export default function News() {
                     mobile...
                   </p>
                   <Link
-                    href="/hiredeveloper"
+                    href="/hire-developer"
                     className="font-semibold text-[#937dc1] readLink"
                   >
                     Read More

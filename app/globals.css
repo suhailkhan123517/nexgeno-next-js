@@ -23,3 +23,9 @@ body {
 .desc {
   @apply text-[14px] leading-[24px];
 }
+
+@media screen and (max-width: 1279px) {
+  #headers {
+    display: none;
+  }
+}

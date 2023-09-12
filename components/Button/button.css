@@ -2,7 +2,7 @@
   background-size: 300%;
   cursor: pointer;
   z-index: 1;
-  background: linear-gradient(90deg, #4158d0, #f441a5);
+  background: linear-gradient(90deg, #3d9ec5, #cf67be);
 }
 
 .button:hover {
@@ -28,7 +28,7 @@
   right: -5px;
   bottom: -5px;
   z-index: -1;
-  background: linear-gradient(90deg, #4158d0, #f441a5, #ffcc70, #4158d0);
+  background: linear-gradient(90deg, #3d9ec5, #cf67be, #ffcc70, #4158d0);
   background-size: 400%;
   transition: 1s;
   visibility: hidden;
@@ -36,7 +36,7 @@
 }
 
 .button:hover::before {
-  filter: blur(10px);
+  filter: blur(8px);
   visibility: visible;
   opacity: 1;
 }

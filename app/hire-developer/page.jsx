@@ -1,6 +1,5 @@
 import Image from "next/image";
 import "./hire.css";
-import Link from "next/link";
 import { hireDeveloper } from "@/utils/data";
 import Button from "@/components/Button/Button";
 import Client from "@/components/client/Client";
@@ -11,7 +10,6 @@ import Connect from "@/components/Connect/Connect";
 import Process from "@/components/Process/Process";
 import Technology from "@/components/Technology/Technology";
 import Industries from "@/components/Industries/Industries";
-import Hirenow from "@/components/Hirenow/Hirenow";
 
 export const metadata = {
   title: "Nexgeno | Hire Developer",
@@ -68,7 +66,6 @@ export default function Hiredeveloper() {
           </div>
         </div>
       </div>
-      <Hirenow />
       <div className="mb-20">
         <Client />
       </div>

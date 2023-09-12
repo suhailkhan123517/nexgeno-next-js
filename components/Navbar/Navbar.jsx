@@ -503,7 +503,7 @@ export default function Navbar() {
                       </div>
                       <div className="list_item text-center hover:bg-white rounded-lg hover:shadow-lg">
                         <h4 className="title">Case Study</h4>
-                        <Link href="/casestudy">
+                        <Link href="/case-study">
                           <div className="relative hover:scale-95 transition duration-300 ease-in-out h-[230px] w-[100%]">
                             <Image
                               src="/images/navcase.webp"
@@ -595,8 +595,8 @@ export default function Navbar() {
             </div>
             <div className="header_item item_right flex justify-end gap-3">
               <Link
-                href="/hiredeveloper"
-                className="group border border-gray-600  px-5 py-2  flex  rounded-lg hover:bg-gradient-to-r from-[#4158d0] to-[#f441a5] hover:text-white hover:border-transparent font-medium duration-200 transition"
+                href="/hire-developer"
+                className="group border border-gray-600  px-5 py-2  flex  rounded-lg hover:bg-gradient-to-r from-[#3d9ec5] to-[#cf67be] hover:text-white hover:border-transparent font-medium duration-200 transition"
               >
                 Hire Developer
                 <BsArrowRightShort className="text-2xl group-hover:translate-x-2 duration-200 transition font-extrabold" />

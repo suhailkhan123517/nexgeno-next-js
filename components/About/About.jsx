@@ -5,7 +5,10 @@ import "./about.css";
 export default function About() {
   return (
     <>
-      <div className="container m-auto text-[#444] sm:py-14  py-10 hero_bg">
+      <div
+        className="container m-auto text-[#444] sm:py-14  py-10 hero_bg"
+        id="about"
+      >
         <div className="grid lg:grid-cols-2 lg:gap-0 grid-cols-1 gap-5">
           <div className="relative w-full  xl:h-[370px] lg:h-[305px] md:h-[475px] h-[220px] pr-6">
             <Image

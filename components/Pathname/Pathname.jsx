@@ -1,12 +1,13 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { HiChevronDoubleRight } from "react-icons/hi";
 export default function Pathname() {
   const pathname = usePathname();
   const pathSegments = pathname.split("/").filter((segment) => segment !== "");
   return (
     <>
-      <div className="container mx-auto mt-16">
+      <div className="container mx-auto mt-16 pt-2 pb-0">
         <nav className="bg-transparent pl-0">
           <ul className="flex items-center gap-3">
             {pathname === "/" ? (
@@ -20,12 +21,17 @@ export default function Pathname() {
             )}
 
             {pathSegments.map((segment, index) => {
+              const rname = segment.replace(/\..*/g, "$'");
+              const newName = rname.replace(/-/g, " ");
               const capitals =
-                segment.charAt(0).toUpperCase() + segment.slice(1);
+                newName.charAt(0).toUpperCase() + newName.slice(1);
               const isLast = index === pathSegments.length - 1;
               return isLast ? (
                 <>
-                  <li>/</li>
+                  <li>
+                    {" "}
+                    <HiChevronDoubleRight />
+                  </li>
 
                   <li key={index} className="cursor-pointer">
                     {capitals}{" "}
@@ -33,7 +39,9 @@ export default function Pathname() {
                 </>
               ) : (
                 <>
-                  <li>/</li>
+                  <li>
+                    <HiChevronDoubleRight />
+                  </li>
                   <li key={capitals}>
                     <Link
                       href={`/${pathSegments.slice(0, index + 1).join("/")}`}
