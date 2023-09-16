@@ -33,7 +33,7 @@ export default function Pathname() {
                     <HiChevronDoubleRight />
                   </li>
 
-                  <li key={index} className="cursor-pointer">
+                  <li key={segment} className="cursor-pointer">
                     {capitals}{" "}
                   </li>
                 </>

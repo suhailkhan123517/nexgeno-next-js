@@ -1576,7 +1576,6 @@ export const solutionsLinks = [
       { title: "Point of Sale", url: "/solutions/pos" },
       { title: "Multi restaurant management", url: "/solutions/restaurant" },
       { title: "Car rental system", url: "/solutions/car" },
-      { title: "School", url: "/solutions/school" },
     ],
   },
   {
@@ -1586,7 +1585,6 @@ export const solutionsLinks = [
       { title: "Online food ordering system", url: "/solutions/onlinefood" },
       { title: "Hospital management system", url: "/solutions/hospital" },
       { title: "Job portal", url: "/solutions/job" },
-      { title: "School", url: "/solutions/school" },
     ],
   },
   {
@@ -1596,5 +1594,14 @@ export const solutionsLinks = [
       { title: "Chat application", url: "/solutions/chat" },
       { title: "Hotel booking system", url: "/solutions/hotel" },
     ],
+  },
+];
+
+export const hireAboutS = [
+  {
+    id: 1,
+    title:
+      "We are your digital partner to create inspirational design and robust solution for Web, Mobile & Cloud.",
+    desc: "MIndInventory is a web and mobile app development company dedicated to providing innovative and custom solutions to businesses of all sizes. We are a team of creative designers and expert developers who design, develop, and deliver digital products to enhance user engagement, improve brand awareness, and drive business growth. From digital product design to development, our on-demand Agile product team will ensure that your digital product stands out in today's competitive market.",
   },
 ];

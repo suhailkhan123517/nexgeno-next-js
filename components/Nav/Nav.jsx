@@ -55,7 +55,7 @@ const Nav = () => {
                               </div>
                               {item.links.map((link) => (
                                 <ul key={link.title}>
-                                  <li className="text-lg border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
+                                  <li className="text-base leading-8 border group/link hover:border-gray-200 hover:bg-white hover:text-black  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
                                     <a href={link.url}>{link.title}</a>
                                     <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
                                   </li>
@@ -98,7 +98,7 @@ const Nav = () => {
                               </div>
                               {item.links.map((link) => (
                                 <ul key={link.title}>
-                                  <li className="text-lg border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
+                                  <li className="text-base leading-10 border group/link hover:border-gray-200 hover:bg-white hover:text-black  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
                                     <a href={link.url}>{link.title}</a>
                                     <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
                                   </li>
@@ -139,7 +139,7 @@ const Nav = () => {
                               </a>
                             </div>
                             <ul>
-                              <li className="text-lg border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
+                              <li className="text-lg border group/link hover:border-gray-200 hover:bg-white hover:text-black  p-3 border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
                                 <a className="" href="/testimonial">
                                   <div className="relative w-[50px] h-[50px]">
                                     <Image
@@ -161,6 +161,14 @@ const Nav = () => {
                                   </h3>
                                 </a>
                               </li>
+                              <a href="/" className="">
+                                <h1 className="group/edit mt-5 bg-gray-200 text-xl font-semibold border border-transparent hover:border-gray-200  w-max py-2 px-3 hover:text-black rounded-xl mb-3 hover:bg-white">
+                                  <span className="flex gap-2 items-center after:content-['']  after:border-[1px] after:w-6 after:h-6 after:rounded-full after:absolute after:top-[4px] after:border-transparent after:right-0 relative group-hover/edit:after:border-black">
+                                    View More
+                                    <BsArrowRight className="group-hover/edit:translate-x-3 relative transition duration-500 " />
+                                  </span>
+                                </h1>
+                              </a>
                             </ul>
                           </div>
                           <div className="pr-5">
@@ -248,25 +256,25 @@ const Nav = () => {
                               </a>
                             </div>
                             <ul>
-                              <li className="text-lg border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
+                              <li className="text-base hover:text-black leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
                                 <a href="/about">About Us</a>
                                 <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
                               </li>
-                              <li className="text-lg border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
+                              <li className="text-base hover:text-black leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
                                 <a href="/methodology">
                                   Development Methodology
                                 </a>
                                 <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
                               </li>
-                              <li className="text-lg border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
+                              <li className="text-base hover:text-black leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
                                 <a href="/certifications">Certifications</a>
                                 <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
                               </li>
-                              <li className="text-lg border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
+                              <li className="text-base hover:text-black leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
                                 <a href="/career">Career</a>
                                 <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
                               </li>
-                              <li className="text-lg border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
+                              <li className="text-base hover:text-black leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
                                 <a href="/contact">Contact Us</a>
                                 <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
                               </li>
@@ -284,7 +292,7 @@ const Nav = () => {
                               </a>
                             </div>
                             <ul>
-                              <li className="text-lg border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
+                              <li className="text-base hover:text-black leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
                                 <a href="/faq">FAQs</a>
                                 <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
                               </li>
