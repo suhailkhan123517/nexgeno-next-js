@@ -1,8 +1,6 @@
 "use client";
 import "./filterPortfolio.css";
-import { Fragment, useState } from "react";
-import { Combobox, Listbox, Transition } from "@headlessui/react";
-import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
+import { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
@@ -19,8 +17,26 @@ export const metadata = {
 };
 
 export default function FilterPortfolio() {
+  const [selectedServices, setSelectedServices] = useState(""); // Selected Services
+  const [selectedIndustries, setSelectedIndustries] = useState(""); // Selected Services
+  const [selectedTechnology, setSelectedTechnology] = useState(""); // Selected Services
   const [search, setSearch] = useState("");
-  console.log(search);
+
+  const filteredData = PortfolioList.filter((item) => {
+    const servicesFilter =
+      selectedServices === "" || item.services.includes(selectedServices);
+    const industriesFilter =
+      selectedIndustries === "" || item.industries.includes(selectedIndustries);
+    const technologyFilter =
+      selectedTechnology === "" || item.technology.includes(selectedTechnology);
+
+    const searchFilter =
+      search === "" || item.title.toLowerCase().includes(search.toLowerCase());
+
+    return (
+      servicesFilter && industriesFilter && technologyFilter && searchFilter
+    );
+  });
 
   return (
     <>
@@ -35,6 +51,7 @@ export default function FilterPortfolio() {
               <input
                 type="text"
                 placeholder="Search..."
+                value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md"
               />
@@ -43,7 +60,11 @@ export default function FilterPortfolio() {
             </div>
             <div className="flex items-center md:justify-center max-md:flex-col gap-3">
               <div className="services">
-                <select className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md">
+                <select
+                  value={selectedServices}
+                  onChange={(e) => setSelectedServices(e.target.value)}
+                  className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md"
+                >
                   <option value="">Services</option>
                   {filterServices.map((item) => (
                     <option key={item.id} value={item.name}>
@@ -53,24 +74,38 @@ export default function FilterPortfolio() {
                 </select>
               </div>
               <div className="industries">
-                <select className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md">
+                <select
+                  value={selectedIndustries}
+                  onChange={(e) => setSelectedIndustries(e.target.value)}
+                  className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md"
+                >
                   <option value="">Industries</option>
+                  {filterIndustries.map((item) => (
+                    <option key={item.id} value={item.name}>
+                      {item.name}
+                    </option>
+                  ))}
                 </select>
               </div>
               <div className="technology">
-                <select className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md">
+                <select
+                  value={selectedTechnology}
+                  onChange={(e) => setSelectedTechnology(e.target.value)}
+                  className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md"
+                >
                   <option value="">Technology</option>
+                  {filterTechnology.map((item) => (
+                    <option key={item.id} value={item.name}>
+                      {item.name}
+                    </option>
+                  ))}
                 </select>
               </div>
             </div>
           </div>
 
           <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-10">
-            {PortfolioList.filter((item) => {
-              return search.toLowerCase() === ""
-                ? item
-                : item.title.toLowerCase().includes(search);
-            }).map((item) => (
+            {filteredData.map((item) => (
               <div
                 className="img_hover_port mb-5 relative md:pr-20 pr-5"
                 key={item.id}

@@ -1076,10 +1076,6 @@ export const caseStudy = [
 
 export const filterServices = [
   {
-    id: 1,
-    name: "Services",
-  },
-  {
     id: 3,
     name: "E-Commerce",
   },
@@ -1139,10 +1135,6 @@ export const filterServices = [
 ];
 
 export const filterIndustries = [
-  {
-    id: 1,
-    name: "Industries",
-  },
   {
     id: 2,
     name: "Education / E-Learning",
@@ -1231,10 +1223,6 @@ export const filterIndustries = [
 
 export const filterTechnology = [
   {
-    id: 0,
-    name: "Technology",
-  },
-  {
     id: 1,
     name: "Next Js",
   },
@@ -1284,7 +1272,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/lawtendo_mobile_stories.jpg",
     title: "Lawtendo",
     desc: " Portlal / CodeIgniter",
-    category: "web design",
+    services: ["E-Commerce", "Application Development"],
+    industries: ["Education / E-Learning", "Retail"],
+    technology: "Next Js",
   },
 
   {
@@ -1294,6 +1284,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/octa_mobile_stories.jpg",
     title: "Octa Networks",
     desc: "Education / Yii Framework",
+    services: "E-Commerce",
+    industries: "Education / E-Learning",
+    technology: "Next Js",
   },
   {
     id: 3,
@@ -1302,6 +1295,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/cancari_portfolio_mobile.jpg",
     title: "Cancri Jewells",
     desc: " E-commerce / CodeIgniter",
+    services: "E-Commerce",
+    industries: "Education / E-Learning",
+    technology: "Next Js",
   },
   {
     id: 4,
@@ -1310,6 +1306,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/maaymart_portfolio_mobile.jpg",
     title: "Maay Mart",
     desc: "E-commerce / Laravel",
+    services: "E-Commerce",
+    industries: "Education / E-Learning",
+    technology: "Next Js",
   },
   {
     id: 5,
@@ -1318,6 +1317,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/responsive_escrove.jpg",
     title: "Escrowv",
     desc: "Portlal / CodeIgniter ",
+    services: "E-Commerce",
+    industries: "Education / E-Learning",
+    technology: "Next Js",
   },
   {
     id: 6,
@@ -1326,6 +1328,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/5.6.jpg",
     title: "Lms Attari Classes",
     desc: "Education / CodeIgniter ",
+    services: "E-Commerce",
+    industries: "Education / E-Learning",
+    technology: "Next Js",
   },
   {
     id: 7,
@@ -1334,6 +1339,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/POST .jpg",
     title: "Attari Classes",
     desc: "Education / Wordpress",
+    services: "E-Commerce",
+    industries: "Education / E-Learning",
+    technology: "Next Js",
   },
   {
     id: 8,
@@ -1342,6 +1350,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/alabaya_responsive_portfolio.jpg",
     title: "Abayadesigner ",
     desc: "E-commerce / Wordpress",
+    services: "E-Commerce",
+    industries: "Education / E-Learning",
+    technology: "Next Js",
   },
   {
     id: 9,
@@ -1350,6 +1361,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/greenhabits_portfolio_mobile.jpg",
     title: "Green Habit",
     desc: "E-commerce  / Wordpress",
+    services: "Application Development",
+    industries: "Education / E-Learning",
+    technology: "Next Js",
   },
 
   {
@@ -1359,6 +1373,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/gcie_mobile_stories.jpg",
     title: "Gecindia",
     desc: "Events  / Wordpress",
+    services: "Application Development",
+    industries: "Education / E-Learning",
+    technology: "Next Js",
   },
   {
     id: 11,
@@ -1367,6 +1384,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/4521.jpg",
     title: "Vmarsh Healthcare",
     desc: "Service / Wordpress",
+    services: "Application Development",
+    industries: "Education / E-Learning",
+    technology: "Next Js",
   },
   {
     id: 12,
@@ -1375,6 +1395,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/ringnetworks_mobile_portfolio.jpg",
     title: "Ring Networks",
     desc: "Service / Wordpress",
+    services: "Application Development",
+    industries: "Education / E-Learning",
+    technology: "Next Js",
   },
 
   {
@@ -1384,6 +1407,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/44.jpg",
     title: "The V2technologies ",
     desc: "Service / Wordpress",
+    services: "Application Development",
+    industries: "Education / E-Learning",
+    technology: "Next Js",
   },
   {
     id: 14,
@@ -1392,6 +1418,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/thelastbite_mobile_portfolio.jpg",
     title: "The Last Bite",
     desc: " E-commerce / Wordpress",
+    services: "Application Development",
+    industries: "Education / E-Learning",
+    technology: "Next Js",
   },
   {
     id: 15,
@@ -1400,6 +1429,9 @@ export const PortfolioList = [
     mobImg: "/images/mob/POST 1.jpg",
     title: "Krisp Urban Cutlery Pvt Ltd",
     desc: "Catalog / Wordpress",
+    services: "Portal Website",
+    industries: "Retail",
+    technology: "Next Js",
   },
   {
     id: 16,
@@ -1407,7 +1439,10 @@ export const PortfolioList = [
     deskIMG: "/images/desktop/litle_hart_d.jpg",
     mobImg: "/images/mob/litle_hart_m.jpg",
     title: "Dhrishti Foundation",
-    // desc: "Catalog / Wordpress",
+    desc: "Catalog / Wordpress",
+    services: "Portal Website",
+    industries: "Retail",
+    technology: "Next Js",
   },
   {
     id: 17,
@@ -1415,7 +1450,10 @@ export const PortfolioList = [
     deskIMG: "/images/desktop/party_prince_d.png",
     mobImg: "/images/mob/party_prince_m.jpg",
     title: "Party Princess India",
-    // desc: "Catalog / Wordpress",
+    desc: "Catalog / Wordpress",
+    services: "Portal Website",
+    industries: "Retail",
+    technology: "MERN Stack",
   },
   {
     id: 18,
@@ -1423,7 +1461,10 @@ export const PortfolioList = [
     deskIMG: "/images/desktop/kaamps_d.jpg",
     mobImg: "/images/mob/kaamps_m.jpg",
     title: "Kaampz Consulting",
-    // desc: "Catalog / Wordpress",
+    desc: "Catalog / Wordpress",
+    services: "Portal Website",
+    industries: "Retail",
+    technology: "MERN Stack",
   },
   {
     id: 19,
@@ -1431,7 +1472,10 @@ export const PortfolioList = [
     deskIMG: "/images/desktop/epicswp_d.jpg",
     mobImg: "/images/mob/epicswp_m.jpg",
     title: "Epicswp",
-    // desc: "Catalog / Wordpress",
+    desc: "Catalog / Wordpress",
+    services: "Portal Website",
+    industries: "Retail",
+    technology: "MERN Stack",
   },
   {
     id: 20,
@@ -1439,7 +1483,10 @@ export const PortfolioList = [
     deskIMG: "/images/desktop/cart_d.jpg",
     mobImg: "/images/mob/cart_m.jpg",
     title: "Cert Community",
-    // desc: "Catalog / Wordpress",
+    desc: "Catalog / Wordpress",
+    services: "Portal Website",
+    industries: "Retail",
+    technology: "MERN Stack",
   },
   {
     id: 21,
@@ -1447,7 +1494,10 @@ export const PortfolioList = [
     deskIMG: "/images/desktop/scood_d.jpg",
     mobImg: "/images/mob/scood_m.jpg",
     title: "Scoot Realty",
-    // desc: "Catalog / Wordpress",
+    desc: "Catalog / Wordpress",
+    services: "Portal Website",
+    industries: "Retail",
+    technology: "MERN Stack",
   },
   {
     id: 22,
@@ -1455,7 +1505,10 @@ export const PortfolioList = [
     deskIMG: "/images/desktop/cons_d.jpg",
     mobImg: "/images/mob/cons_m.jpg",
     title: "Construction Architecture Update",
-    // desc: "Catalog / Wordpress",
+    desc: "Catalog / Wordpress",
+    services: "Portal Website",
+    industries: "Retail",
+    technology: "MERN Stack",
   },
   {
     id: 23,
@@ -1463,7 +1516,10 @@ export const PortfolioList = [
     deskIMG: "/images/desktop/ahaliya_d.jpg",
     mobImg: "/images/mob/ahaliya_m.jpg",
     title: "Aahilya Property",
-    // desc: "Catalog / Wordpress",
+    desc: "Catalog / Wordpress",
+    services: "Portal Website",
+    industries: "Retail",
+    technology: "MERN Stack",
   },
   {
     id: 24,
@@ -1471,7 +1527,10 @@ export const PortfolioList = [
     deskIMG: "/images/desktop/radeeb_d.jpg",
     mobImg: "/images/mob/radeeb_m.jpg",
     title: "Raqeeb Enterprises",
-    // desc: "Catalog / Wordpress",
+    desc: "Catalog / Wordpress",
+    services: "Portal Website",
+    industries: "Retail",
+    technology: "MERN Stack",
   },
   {
     id: 25,
@@ -1479,7 +1538,10 @@ export const PortfolioList = [
     deskIMG: "/images/desktop/mumbai_d.jpg",
     mobImg: "/images/mob/mumbai_m.jpg",
     title: "Heritage Home Associates",
-    // desc: "Catalog / Wordpress",
+    desc: "Catalog / Wordpress",
+    services: "Portal Website",
+    industries: "Retail",
+    technology: "MERN Stack",
   },
   {
     id: 26,
@@ -1487,7 +1549,10 @@ export const PortfolioList = [
     deskIMG: "/images/desktop/nayasa_d.jpg",
     mobImg: "/images/mob/nayasa_m.jpg",
     title: "Nyasa Realtors",
-    // desc: "Catalog / Wordpress",
+    desc: "Catalog / Wordpress",
+    services: "Portal Website",
+    industries: "Retail",
+    technology: "MERN Stack",
   },
   {
     id: 27,
@@ -1495,7 +1560,10 @@ export const PortfolioList = [
     deskIMG: "/images/desktop/fbe_d.jpg",
     mobImg: "/images/mob/fbe_m.jpg",
     title: "Fbexpo",
-    // desc: "Catalog / Wordpress",
+    desc: "Catalog / Wordpress",
+    services: "Portal Website",
+    industries: "Retail",
+    technology: "MERN Stack",
   },
   {
     id: 28,
@@ -1503,7 +1571,10 @@ export const PortfolioList = [
     deskIMG: "/images/desktop/vraj_plactic_d.jpg",
     mobImg: "/images/mob/vraj_plactic_m.jpg",
     title: "Vraj Plastics",
-    // desc: "Catalog / Wordpress",
+    desc: "Catalog / Wordpress",
+    services: "Portal Website",
+    industries: "Retail",
+    technology: "MERN Stack",
   },
 ];
 
@@ -1603,5 +1674,66 @@ export const hireAboutS = [
     title:
       "We are your digital partner to create inspirational design and robust solution for Web, Mobile & Cloud.",
     desc: "MIndInventory is a web and mobile app development company dedicated to providing innovative and custom solutions to businesses of all sizes. We are a team of creative designers and expert developers who design, develop, and deliver digital products to enhance user engagement, improve brand awareness, and drive business growth. From digital product design to development, our on-demand Agile product team will ensure that your digital product stands out in today's competitive market.",
+  },
+];
+
+export const hireCards = [
+  {
+    id: 1,
+    img: "/website-codes.webp",
+    title: "Hire Web Developers",
+    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    links: [
+      { title: "PHP Developer", url: "/hire-developer/php" },
+      { title: "CodeIgniter Developer", url: "/hire-developer/codeIgniter" },
+      { title: "Laravel Developer", url: "/hire-developer/laravel" },
+      { title: "ExpressJS Developer", url: "/hire-developer/express" },
+    ],
+  },
+  {
+    id: 2,
+    img: "/mobile-coding.webp",
+    title: "Hire Mobile Developers",
+    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    links: [
+      { title: "IOS Developer", url: "/hire-developer/ios" },
+      { title: "Android Developer", url: "/hire-developer/android" },
+      { title: "Flutter Developer", url: "/hire-developer/flutter" },
+      { title: "React Native Developer", url: "/hire-developer/reactnative" },
+    ],
+  },
+  {
+    id: 3,
+    img: "/ux.webp",
+    title: "UX / UI Developer",
+    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    links: [
+      { title: "Next Js Developer", url: "/hire-developer/next" },
+      { title: "React Js Developer", url: "/hire-developer/react" },
+      { title: "Angular Developer", url: "/hire-developer/angular" },
+      { title: "Vue Js Developer", url: "/hire-developer/vue" },
+    ],
+  },
+  {
+    id: 4,
+    img: "/development.webp",
+    title: "Hire Open Source Developers",
+    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    links: [
+      { title: "WordPress Developer", url: "/hire-developer/wordpress" },
+      { title: "Shopify Developer", url: "/hire-developer/shopify" },
+      { title: "Magento Developer", url: "/hire-developer/magento" },
+      { title: "OpenCart Developer", url: "/hire-developer/opencart" },
+    ],
+  },
+  {
+    id: 5,
+    img: "/code.webp",
+    title: "Hire Cross-Platform Developers",
+    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    links: [
+      { title: "Ionic Developer", url: "/hire-developer/ionic" },
+      { title: "PWA Developer", url: "/hire-developer/pwa" },
+    ],
   },
 ];

@@ -193,4 +193,28 @@ export const items = {
       ans2: "Yes, you can hire PWA developers on a project basis. We offer flexible engagement models to meet your specific project requirements.",
     },
   ],
+  next: [
+    {
+      id: 17,
+      title: "Next js Developers",
+      desc: "At Nexgeno Technology Pvt Ltd, Next.js is a popular and powerful open-source framework for building server-rendered React applications. It is built on top of React and Node.js and provides many features to simplify and enhance the development of modern web applications.",
+      img: "/images/next_t.webp",
+      faq1: "What is the difference between Server-Side Rendering (SSR) and Static Site Generation (SSG) in Next.js?",
+      ans1: "Server-Side Rendering (SSR): With SSR, the server renders the React components on each incoming request and sends back fully rendered HTML to the client. This means that every time a user accesses a page, up-to-date information on each request.",
+      faq2: "How does Next.js handle data fetching?",
+      ans2: "Next.js provides multiple approaches for data fetching depending on your use case:",
+    },
+  ],
+  vue: [
+    {
+      id: 18,
+      title: "Hire Vue js Developers",
+      desc: "Nexgeno Technology is a top-notch Vue.js development company based in India, providing exceptional custom Vue.js development services. We specialize in developing real-time and dynamic applications using Vue.js, which seamlessly integrates with other JavaScript libraries",
+      img: "/images/vue_t.webp",
+      faq1: "What is Vue.js?",
+      ans1: "Vue.js is an open-source JavaScript framework used for building user interfaces and single-page applications. It's easy to learn, highly performant, and offers features like reactive data binding, components, and virtual DOM.",
+      faq2: "Why should I choose Vue.js for my next project?",
+      ans2: "Vue.js offers several advantages, including its simplicity, flexibility, and versatility. It's easy to learn, offers a small footprint, and can be integrated into existing projects. Additionally, Vue.js offers excellent performance and scalability, making it a great choice for large-scale applications.",
+    },
+  ],
 };

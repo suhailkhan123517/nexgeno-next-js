@@ -28,18 +28,17 @@ export default function Pathname() {
               const isLast = index === pathSegments.length - 1;
               return isLast ? (
                 <>
-                  <li>
-                    {" "}
+                  <li key={segment}>
                     <HiChevronDoubleRight />
                   </li>
 
                   <li key={segment} className="cursor-pointer">
-                    {capitals}{" "}
+                    {capitals}
                   </li>
                 </>
               ) : (
                 <>
-                  <li>
+                  <li key={capitals}>
                     <HiChevronDoubleRight />
                   </li>
                   <li key={capitals}>

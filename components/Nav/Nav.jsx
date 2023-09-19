@@ -55,9 +55,14 @@ const Nav = () => {
                               </div>
                               {item.links.map((link) => (
                                 <ul key={link.title}>
-                                  <li className="text-base leading-8 border group/link hover:border-gray-200 hover:bg-white hover:text-black  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
-                                    <a href={link.url}>{link.title}</a>
-                                    <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
+                                  <li>
+                                    <a
+                                      href={link.url}
+                                      className="text-base leading-8 border group/link hover:border-gray-200 hover:bg-white hover:text-black  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between"
+                                    >
+                                      <span>{link.title}</span>
+                                      <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
+                                    </a>
                                   </li>
                                 </ul>
                               ))}
@@ -98,9 +103,14 @@ const Nav = () => {
                               </div>
                               {item.links.map((link) => (
                                 <ul key={link.title}>
-                                  <li className="text-base leading-10 border group/link hover:border-gray-200 hover:bg-white hover:text-black  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
-                                    <a href={link.url}>{link.title}</a>
-                                    <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
+                                  <li>
+                                    <a
+                                      href={link.url}
+                                      className="text-base leading-10 border group/link hover:border-gray-200 hover:bg-white hover:text-black  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between"
+                                    >
+                                      <span>{link.title}</span>
+                                      <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
+                                    </a>
                                   </li>
                                 </ul>
                               ))}
@@ -163,7 +173,7 @@ const Nav = () => {
                               </li>
                               <a href="/" className="">
                                 <h1 className="group/edit mt-5 bg-gray-200 text-xl font-semibold border border-transparent hover:border-gray-200  w-max py-2 px-3 hover:text-black rounded-xl mb-3 hover:bg-white">
-                                  <span className="flex gap-2 items-center after:content-['']  after:border-[1px] after:w-6 after:h-6 after:rounded-full after:absolute after:top-[4px] after:border-transparent after:right-0 relative group-hover/edit:after:border-black">
+                                  <span className="flex gap-2 items-center after:content-['']  after:border-[1px] after:w-6 after:h-6 after:rounded-full after:absolute after:top-[2px] after:border-transparent after:right-0 relative group-hover/edit:after:border-black">
                                     View More
                                     <BsArrowRight className="group-hover/edit:translate-x-3 relative transition duration-500 " />
                                   </span>
@@ -234,14 +244,14 @@ const Nav = () => {
                     </span>
                     <div className="absolute bg-[#fffbfd] mt-2 opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible hover:visible transition duration-500 w-full left-1/2 -translate-x-1/2 border py-8">
                       <div className="container mx-auto">
-                        <Link href="/" className="">
+                        <a href="/" className="">
                           <h1 className="group/edit text-2xl font-semibold border border-transparent hover:border-gray-200  w-max py-2 px-3 hover:text-black rounded-xl mb-3 hover:bg-white">
                             <span className="flex gap-2 items-center after:content-['']  after:border-[1px] after:w-6 after:h-6 after:rounded-full after:absolute after:top-[4px] after:border-transparent after:right-0 relative group-hover/edit:after:border-black">
                               Nexgeno Company
                               <BsArrowRight className="group-hover/edit:translate-x-3 relative transition duration-500 " />
                             </span>
                           </h1>
-                        </Link>
+                        </a>
 
                         <div className="grid grid-cols-4">
                           <div className="pr-5">
@@ -256,27 +266,50 @@ const Nav = () => {
                               </a>
                             </div>
                             <ul>
-                              <li className="text-base hover:text-black leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
-                                <a href="/about">About Us</a>
-                                <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
-                              </li>
-                              <li className="text-base hover:text-black leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
-                                <a href="/methodology">
-                                  Development Methodology
+                              <li>
+                                <a
+                                  href="/about"
+                                  className="text-base hover:text-black leading-9 hover:bg-white border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between"
+                                >
+                                  <span>About Us</span>
+                                  <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
                                 </a>
-                                <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
                               </li>
-                              <li className="text-base hover:text-black leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
-                                <a href="/certifications">Certifications</a>
-                                <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
+                              <li>
+                                <a
+                                  href="/methodology"
+                                  className="text-base hover:text-black hover:bg-white leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between"
+                                >
+                                  <span>Development Methodology</span>
+                                  <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
+                                </a>
                               </li>
-                              <li className="text-base hover:text-black leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
-                                <a href="/career">Career</a>
-                                <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
+                              <li>
+                                <a
+                                  href="/certifications"
+                                  className="text-base hover:text-black  hover:bg-white leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between"
+                                >
+                                  <span>Certifications</span>
+                                  <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
+                                </a>
                               </li>
-                              <li className="text-base hover:text-black leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
-                                <a href="/contact">Contact Us</a>
-                                <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
+                              <li>
+                                <a
+                                  href="/career"
+                                  className="text-base hover:text-black hover:bg-white leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between"
+                                >
+                                  <span>Career</span>
+                                  <BsArrowRight className="group-hover/link:translate-x-2  relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="/contact"
+                                  className="text-base hover:text-black leading-9 hover:bg-white border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between"
+                                >
+                                  <span>Contact Us</span>
+                                  <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
+                                </a>
                               </li>
                             </ul>
                           </div>
@@ -292,9 +325,14 @@ const Nav = () => {
                               </a>
                             </div>
                             <ul>
-                              <li className="text-base hover:text-black leading-9 border group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between">
-                                <a href="/faq">FAQs</a>
-                                <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
+                              <li>
+                                <a
+                                  href="/faq"
+                                  className="text-base hover:text-black leading-9 border hover:bg-white group/link hover:border-gray-200  px-3 py-[2px] border-transparent hover:font-semibold rounded-lg flex items-center justify-between"
+                                >
+                                  <span>FAQs</span>
+                                  <BsArrowRight className="group-hover/link:translate-x-2 relative transition duration-300 opacity-0 group-hover/link:opacity-100" />
+                                </a>
                               </li>
                             </ul>
                           </div>
