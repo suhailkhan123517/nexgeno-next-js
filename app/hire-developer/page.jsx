@@ -51,7 +51,6 @@ export default function Hiredeveloper() {
       <Stories />
       <Hire />
       <Engage />
-      <Stories />
       <Process />
       {hireAboutS.map((item) => (
         <WhoWeAre key={item.id} title={item.title} desc={item.desc} />

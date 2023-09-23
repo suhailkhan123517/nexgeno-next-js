@@ -31,14 +31,14 @@ const Nav = () => {
                     </span>
                     <div className="absolute bg-[#fffbfd] mt-2 opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible hover:visible transition duration-500 w-full left-1/2 -translate-x-1/2 border py-8 ">
                       <div className="container mx-auto">
-                        <Link href="/" className="">
+                        <a href="/services" className="">
                           <h1 className="group/edit text-2xl font-semibold border border-transparent hover:border-gray-200  w-max py-2 px-3 hover:text-black rounded-xl mb-3 hover:bg-white">
                             <span className="flex gap-2 items-center after:content-['']  after:border-[1px] after:w-6 after:h-6 after:rounded-full after:absolute after:top-[4px] after:border-transparent after:right-0 relative group-hover/edit:after:border-black">
                               Nexgeno Services
                               <BsArrowRight className="group-hover/edit:translate-x-3 relative transition duration-500 " />
                             </span>
                           </h1>
-                        </Link>
+                        </a>
 
                         <div className="grid grid-cols-4">
                           {servicesLinks.map((item) => (

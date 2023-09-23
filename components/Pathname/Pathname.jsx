@@ -7,7 +7,7 @@ export default function Pathname() {
   const pathSegments = pathname.split("/").filter((segment) => segment !== "");
   return (
     <>
-      <div className="container mx-auto mt-16 pt-2 pb-0">
+      <div className="container mx-auto md:mt-16 mt-14 pt-2 pb-0">
         <nav className="bg-transparent pl-0">
           <ul className="flex items-center gap-3">
             {pathname === "/" ? (
@@ -28,7 +28,7 @@ export default function Pathname() {
               const isLast = index === pathSegments.length - 1;
               return isLast ? (
                 <>
-                  <li key={segment}>
+                  <li>
                     <HiChevronDoubleRight />
                   </li>
 
@@ -38,7 +38,7 @@ export default function Pathname() {
                 </>
               ) : (
                 <>
-                  <li key={capitals}>
+                  <li>
                     <HiChevronDoubleRight />
                   </li>
                   <li key={capitals}>

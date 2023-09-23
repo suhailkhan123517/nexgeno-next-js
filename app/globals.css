@@ -16,12 +16,20 @@ body {
   @apply text-[#050748] lg:text-[30px] sm:text-[25px] text-[20px] leading-[32px] sm:leading-[43px] font-semibold;
 }
 
+.small_heading {
+  @apply text-black lg:text-[24px] sm:text-[20px] text-[18px] leading-[32px] sm:leading-[43px] font-semibold;
+}
+
 .redHeading {
   @apply text-[#e60072] text-[16px] font-normal;
 }
 
 .desc {
   @apply text-[14px] leading-[24px];
+}
+
+.blog_translate {
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 1279px) {

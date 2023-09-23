@@ -21,6 +21,11 @@ export default function FilterPortfolio() {
   const [selectedIndustries, setSelectedIndustries] = useState(""); // Selected Services
   const [selectedTechnology, setSelectedTechnology] = useState(""); // Selected Services
   const [search, setSearch] = useState("");
+  const [toggle, setToggle] = useState(false);
+
+  const toggleDropdown = () => {
+    setToggle(!toggle);
+  };
 
   const filteredData = PortfolioList.filter((item) => {
     const servicesFilter =
@@ -41,29 +46,46 @@ export default function FilterPortfolio() {
   return (
     <>
       <div className="portfolios text-white  py-10">
-        <div className="container m-auto">
-          <h1 className="text-center md:text-4xl text-2xl font-medium  md:pb-3">
+        <div className="container m-auto ">
+          <button
+            onClick={toggleDropdown}
+            className="bg-white text-black px-5 py-2 rounded-md absolute top-28 right-2 md:hidden "
+          >
+            Filter
+          </button>
+
+          <h1 className="text-center md:text-4xl text-2xl font-medium max-md:mt-5  md:pb-3">
             Nexgeno Portfolios
           </h1>
 
-          <div className="flex lg:justify-between max-lg:flex-col  lg:items-center items-start gap-5 md:my-12 my-6">
-            <div className="flex justify-start items-center relative gap-2 ">
+          <div
+            className={`flex lg:justify-between lg:flex-row flex-col z-10 lg:items-center items-start gap-5 md:my-12 my-6  max-md:absolute max-md:bg-black max-md:h-full ${
+              toggle ? "max-md:top-[0%]" : "max-md:top-[-100%]"
+            }  max-md:left-0 max-md:w-full transition duration-200`}
+          >
+            <button
+              onClick={toggleDropdown}
+              className="bg-white text-black px-5 py-2 rounded-md  max-md:mt-14 md:hidden ml-3"
+            >
+              Back
+            </button>
+            <div className="flex justify-start items-center relative gap-2  max-md:w-full max-md:px-3">
               <input
                 type="text"
                 placeholder="Search..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md"
+                className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md max-md:w-full"
               />
 
-              <AiOutlineSearch className="text-gray-800 text-xl absolute top-2 right-2" />
+              <AiOutlineSearch className="text-gray-800 text-xl absolute top-2 md:right-2 right-4" />
             </div>
-            <div className="flex items-center md:justify-center max-md:flex-col gap-3">
+            <div className="flex md:items-center md:justify-center md:flex-row flex-col gap-3 max-md:w-full max-md:px-3">
               <div className="services">
                 <select
                   value={selectedServices}
                   onChange={(e) => setSelectedServices(e.target.value)}
-                  className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md"
+                  className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md max-md:w-full "
                 >
                   <option value="">Services</option>
                   {filterServices.map((item) => (
@@ -77,7 +99,7 @@ export default function FilterPortfolio() {
                 <select
                   value={selectedIndustries}
                   onChange={(e) => setSelectedIndustries(e.target.value)}
-                  className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md"
+                  className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md max-md:w-full"
                 >
                   <option value="">Industries</option>
                   {filterIndustries.map((item) => (
@@ -91,7 +113,7 @@ export default function FilterPortfolio() {
                 <select
                   value={selectedTechnology}
                   onChange={(e) => setSelectedTechnology(e.target.value)}
-                  className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md"
+                  className="border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0 outline-none rounded-md max-md:w-full"
                 >
                   <option value="">Technology</option>
                   {filterTechnology.map((item) => (
@@ -101,6 +123,12 @@ export default function FilterPortfolio() {
                   ))}
                 </select>
               </div>
+              <button
+                onClick={toggleDropdown}
+                className="bg-white text-black px-5 py-2 rounded-md  md:hidden mt-6"
+              >
+                Apply Filter
+              </button>
             </div>
           </div>
 

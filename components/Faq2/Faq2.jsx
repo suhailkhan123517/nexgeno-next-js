@@ -3,7 +3,7 @@ import { faq } from "@/utils/data";
 const Faq2 = () => {
   return (
     <>
-      <div className="">
+      <div className="mt-20">
         <div className="container m-auto md:py-10 sm:pt-10 md:pt-0">
           <h1 className="text-center text-blue-950 md:text-3xl text-xl font-bold">
             Frequently Asked Questions

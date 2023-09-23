@@ -1591,6 +1591,7 @@ export const servicesLinks = [
       { title: "Mobile App Development", url: "/services/mobile" },
       { title: "Web Consulting", url: "/services/consulting" },
       { title: "Website Security", url: "/services/security" },
+      { title: "UI/UX Design", url: "/services/design" },
     ],
   },
   {
@@ -1673,7 +1674,7 @@ export const hireAboutS = [
     id: 1,
     title:
       "We are your digital partner to create inspirational design and robust solution for Web, Mobile & Cloud.",
-    desc: "MIndInventory is a web and mobile app development company dedicated to providing innovative and custom solutions to businesses of all sizes. We are a team of creative designers and expert developers who design, develop, and deliver digital products to enhance user engagement, improve brand awareness, and drive business growth. From digital product design to development, our on-demand Agile product team will ensure that your digital product stands out in today's competitive market.",
+    desc: "Nexgeno is a web and mobile app development company dedicated to providing innovative and custom solutions to businesses of all sizes. We are a team of creative designers and expert developers who design, develop, and deliver digital products to enhance user engagement, improve brand awareness, and drive business growth. From digital product design to development, our on-demand Agile product team will ensure that your digital product stands out in today's competitive market.",
   },
 ];
 
@@ -1734,6 +1735,217 @@ export const hireCards = [
     links: [
       { title: "Ionic Developer", url: "/hire-developer/ionic" },
       { title: "PWA Developer", url: "/hire-developer/pwa" },
+    ],
+  },
+];
+
+export const frontDevelopment = [
+  {
+    id: 1,
+    img: "/images/next.webp",
+    title: "Next Js",
+  },
+  {
+    id: 1,
+    img: "/images/reacticon.webp",
+    title: "React Js",
+  },
+  {
+    id: 1,
+    img: "/images/viewjsicon.webp",
+    title: "Vue Js",
+  },
+  {
+    id: 1,
+    img: "/images/javascript.png",
+    title: "Javascript",
+  },
+];
+export const backDevelopment = [
+  {
+    id: 1,
+    img: "/images/nodeicon.webp",
+    title: "Node Js",
+  },
+  {
+    id: 1,
+    img: "/images/php.png",
+    title: "PHP",
+  },
+  {
+    id: 1,
+    img: "/images/laravelicon.png",
+    title: "Laraval",
+  },
+  {
+    id: 1,
+    img: "/images/codeignetr.png",
+    title: "Codigneter",
+  },
+];
+export const appDevelopment = [
+  {
+    id: 1,
+    img: "/images/iosicon.webp",
+    title: "IOS",
+  },
+  {
+    id: 1,
+    img: "/images/andriodicon.webp",
+    title: "Android",
+  },
+  {
+    id: 1,
+    img: "/images/fluttericon.webp",
+    title: "Flutter",
+  },
+  {
+    id: 1,
+    img: "/images/reacticon.webp",
+    title: "React Navtive",
+  },
+];
+
+export const cloudMarketingSolution = [
+  {
+    id: 1,
+    title: "Cloud Computing",
+    points: [
+      {
+        title: "Cloud App Development",
+      },
+      {
+        title: "Cloud Configuration",
+      },
+      {
+        title: "Cloud Integration",
+      },
+      {
+        title: "Cloud Server Solutions",
+      },
+      {
+        title: "Cloud Migration",
+      },
+      {
+        title: "Cloud Security",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Digital Marketing",
+    points: [
+      {
+        title: "Search Engine Optimization (SEO)",
+      },
+      {
+        title: "Pay Per Click (PPC) Advertisement",
+      },
+      {
+        title: "Social Media Marketing (SMM)",
+      },
+      {
+        title: "Social Media Advertising",
+      },
+      {
+        title: "Content Writing and Marketing",
+      },
+      {
+        title: "App Store Optimization (ASO)",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Solutions We Provide",
+    points: [
+      {
+        title: "CRM Application",
+      },
+      {
+        title: "Billing Application",
+      },
+      {
+        title: "Hrms payroll system",
+      },
+      {
+        title: "Recruitment Billing",
+      },
+      {
+        title: "Tailor Billing Application",
+      },
+      {
+        title: "School management",
+      },
+    ],
+  },
+];
+
+export const servicesIndustries = [
+  {
+    id: 1,
+    title: "Digital Solutions For Different Services",
+    points: [
+      {
+        title: "Application Development",
+      },
+      {
+        title: "Digital Transformation",
+      },
+      {
+        title: "Front-end Development",
+      },
+      {
+        title: "Product Prototyping",
+      },
+      {
+        title: "E-Commerce Deployment",
+      },
+      {
+        title: "Mobile App Development",
+      },
+      {
+        title: "Web Consulting",
+      },
+      {
+        title: "Website Security",
+      },
+      {
+        title: "UI/UX Design",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Digital Solutions For Different Industries",
+    points: [
+      {
+        title: "Education / E-Learning",
+      },
+      {
+        title: "Retail",
+      },
+      {
+        title: "Logistics & Distribution",
+      },
+      {
+        title: "FinTech",
+      },
+      {
+        title: "Manufacturing",
+      },
+      {
+        title: "Events",
+      },
+      {
+        title: "Recruitment",
+      },
+      {
+        title: "Real Estate",
+      },
+      {
+        title: "Restaurant",
+      },
     ],
   },
 ];
