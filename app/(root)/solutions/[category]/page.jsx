@@ -68,7 +68,7 @@ export default function Category({ params }) {
 
       <Counter />
       <Stories />
-      <Seo />
+      {/* <Seo /> */}
       <Industries />
       <Connect />
       <Process />

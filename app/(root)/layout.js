@@ -1,17 +1,11 @@
-import "./globals.css";
-import { Poppins } from "next/font/google";
+import "../globals.css";
 import MobileNav from "@/components/MobileNav/MobileNav";
 import Footer from "@/components/Footer/Footer";
 import Script from "next/script";
 import { ToasterProvider } from "@/providers/toast-providers";
 import Nav from "@/components/Nav/Nav";
 import Pathname from "@/components/Pathname/Pathname";
-
-const poppins = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-  display: "swap",
-});
+import { AuthProvider } from "../Providers";
 
 export const metadata = {
   title:
@@ -102,7 +96,7 @@ export default function RootLayout({ children }) {
           src={`https://www.googletagmanager.com/gtm.js?id=G-THRP956B8F`}
         />
       </head>
-      <body className={poppins.className}>
+      <body>
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=G-THRP956B8F`}
@@ -111,12 +105,14 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        <ToasterProvider />
-        <Nav />
-        <MobileNav />
-        <Pathname />
-        {children}
-        <Footer />
+        <AuthProvider>
+          <ToasterProvider />
+          <Nav />
+          <MobileNav />
+          <Pathname />
+          {children}
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );
