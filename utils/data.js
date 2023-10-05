@@ -1949,3 +1949,40 @@ export const servicesIndustries = [
     ],
   },
 ];
+
+export const sidebarLinks = [
+  {
+    id: 1,
+    label: "Dashboard",
+    url: "/dashboard",
+  },
+  {
+    id: 2,
+    label: "Blog",
+    url: "/dashboard/blog",
+  },
+  {
+    id: 3,
+    label: "Admin",
+    url: "/dashboard/admin",
+  },
+];
+
+export const catagoriesBlog = [
+  {
+    id: 1,
+    title: "Mobile",
+  },
+  {
+    id: 2,
+    title: "Web Development",
+  },
+  {
+    id: 3,
+    title: "Bussiness",
+  },
+  {
+    id: 4,
+    title: "Selse",
+  },
+];

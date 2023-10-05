@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 
@@ -9,38 +10,40 @@ const page = () => {
         <div className="container mx-auto mt-5 mb-20">
           <div className="grid grid-cols-2 gap-10 ">
             <div>
-              <div className="relative w-full h-[450px] rounded-lg">
-                <Image
-                  src="/blog_banner.webp"
-                  fill={true}
-                  alt="blog Banner"
-                  className="rounded-lg"
-                />
-              </div>
-              <div className="mt-5 ">
-                <h2 className="text-xl font-semibold text-black">
-                  How To Hire Mobile App Developers: A Detailed Guide for 2023
-                </h2>
-                <p className="desc mt-3">
-                  In the world that debates about whether AI will replace the
-                  human workforce, the extensive adoption and use of...
-                </p>
-                <div className="flex items-center gap-2 mt-2">
-                  <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                    Beantsingh Duggal
-                  </span>
-                  <span className="text-gray-300">in</span>
-                  <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                    Mobile
-                  </span>
+              <Link href="/blog/123">
+                <div className="relative w-full h-[350px] rounded-lg">
+                  <Image
+                    src="/blog_banner.webp"
+                    fill={true}
+                    alt="blog Banner"
+                    className="rounded-lg"
+                  />
                 </div>
-                <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                  <span>Sep 18</span>
-                  <span>.</span>
-                  <span>17 min read</span>
-                  <AiFillStar />
+                <div className="mt-5 ">
+                  <h2 className="text-xl font-semibold text-black">
+                    How To Hire Mobile App Developers: A Detailed Guide for 2023
+                  </h2>
+                  <p className="desc mt-3">
+                    In the world that debates about whether AI will replace the
+                    human workforce, the extensive adoption and use of...
+                  </p>
+                  <div className="flex items-center gap-2 mt-2">
+                    <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
+                      Beantsingh Duggal
+                    </span>
+                    <span className="text-gray-300">in</span>
+                    <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
+                      Mobile
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
+                    <span>Sep 18</span>
+                    <span>.</span>
+                    <span>17 min read</span>
+                    <AiFillStar />
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div>
               <div className="flex items-center gap-5 mb-4">

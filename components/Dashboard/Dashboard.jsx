@@ -1,9 +1,9 @@
 const Dashboard = () => {
   return (
     <>
-      <div>
-        <h1>Dashboard</h1>
-      </div>
+      <section className="grid place-items-center">
+        <h1 className="text-4xl font-bold">Welcome to Nexgeno Dashboard</h1>
+      </section>
     </>
   );
 };
