@@ -3,12 +3,9 @@ import React from "react";
 
 const getBlogById = async (id) => {
   try {
-    const res = await fetch(
-      `https://nexgeno-next-js.vercel.app/api/blog/${id}`,
-      {
-        cache: "no-store",
-      }
-    );
+    const res = await fetch(`http://localhost:3000/api/blog/${id}`, {
+      cache: "no-store",
+    });
 
     if (!res.ok) {
       throw new Error("Failed to fetch Blog");

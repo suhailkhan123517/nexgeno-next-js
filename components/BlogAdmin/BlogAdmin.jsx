@@ -4,7 +4,7 @@ import DeleteBlog from "../DeleteBlog/DeleteBlog";
 
 const getBlogs = async () => {
   try {
-    const res = await fetch("https://nexgeno-next-js.vercel.app/api/blog", {
+    const res = await fetch("http://localhost:3000/api/blog", {
       cache: "no-store",
     });
 

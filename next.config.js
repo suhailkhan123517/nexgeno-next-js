@@ -12,9 +12,6 @@ const nextConfig = {
       delete modularizeImports["@headlessui/react"];
     return config;
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
 };
 
 module.exports = nextConfig;
