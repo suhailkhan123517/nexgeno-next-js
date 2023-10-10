@@ -46,10 +46,7 @@ const EditPost = ({
   const [newSeoTitle, setNewSeoTitle] = useState(seoTitle);
   const [newMetaDescription, setNewMetaDescription] = useState(metaDescription);
   const [loading, setLoading] = useState(false);
-  const ReactQuill = useMemo(
-    () => dynamic(() => import("react-quill"), { ssr: false }),
-    []
-  );
+  const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
   const router = useRouter();
 

@@ -39,10 +39,7 @@ const BlogWrite = ({ categories }) => {
   const [metaDescription, setMetaDescription] = useState("");
   const [blogDate, setBlogDate] = useState("");
   const [loading, setLoading] = useState(false);
-  const ReactQuill = useMemo(
-    () => dynamic(() => import("react-quill"), { ssr: false }),
-    []
-  );
+  const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
   const router = useRouter();
 
