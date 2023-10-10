@@ -3,9 +3,14 @@ import React from "react";
 
 const getBlogById = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/blog/${id}`, {
-      cache: "no-store",
-    });
+    const res = await fetch(
+      window.location.origin.includes("localhost")
+        ? `http://localhost:3000/api/blog/${id}`
+        : `${window.location.origin}/api/blog/${id}`,
+      {
+        cache: "no-store",
+      }
+    );
 
     if (!res.ok) {
       throw new Error("Failed to fetch Blog");

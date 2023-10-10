@@ -79,10 +79,15 @@ const EditPost = ({
       data.set("newSeoTitle", newSeoTitle);
       data.set("newMetaDescription", newMetaDescription);
 
-      const res = await fetch(`http://localhost:3000/api/blog/${id}`, {
-        method: "PUT",
-        body: data,
-      });
+      const res = await fetch(
+        window.location.origin.includes("localhost")
+          ? `http://localhost:3000/api/blog/${id}`
+          : `${window.location.origin}/api/blog/${id}`,
+        {
+          method: "PUT",
+          body: data,
+        }
+      );
 
       if (res.ok) {
         toast.success("Blog Successfully Update");

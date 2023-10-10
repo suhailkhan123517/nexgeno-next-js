@@ -3,22 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiFillStar } from "react-icons/ai";
 import { useEffect, useState } from "react";
-
-// const getBlogs = async () => {
-//   try {
-//     const res = await fetch("http://localhost:3000/api/blog", {
-//       cache: "no-store",
-//     });
-
-//     if (!res.ok) {
-//       throw new Error("Failed to fetch Blogs");
-//     }
-
-//     return res.json();
-//   } catch (error) {
-//     console.log("Error loading Blogs :", error);
-//   }
-// };
+7303095361;
 
 const BlogPage = () => {
   const [blogs, setBlogs] = useState(null);
@@ -26,7 +11,11 @@ const BlogPage = () => {
   useEffect(() => {
     const getBlogs = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/blog");
+        const res = await fetch(
+          window.location.origin.includes("localhost")
+            ? `http://localhost:3000/api/blog`
+            : `${window.location.origin}/api/blog`
+        );
 
         if (!res.ok) {
           throw new Error("Failed to fetch Blogs");
