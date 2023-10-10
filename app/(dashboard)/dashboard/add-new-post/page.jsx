@@ -1,24 +1,28 @@
-import React from "react";
+"use client";
 import BlogWrite from "@/components/BlogWrite/BlogWrite";
+import React, { useEffect, useState } from "react";
 
-const getCategories = async () => {
-  try {
-    const res = await fetch("http://localhost:3000/api/categories", {
-      cache: "no-store",
-    });
+const BlogWritePage = () => {
+  const [categories, setCategories] = useState(null);
 
-    if (!res.ok) {
-      throw new Error("Failed to fetch Categories");
-    }
+  useEffect(() => {
+    const getCategories = async () => {
+      try {
+        const res = await fetch("http://localhost:3000/api/categories");
 
-    return res.json();
-  } catch (error) {
-    console.log("Error loading Categories :", error);
-  }
-};
+        if (!res.ok) {
+          throw new Error("Failed to fetch Categories");
+        }
 
-const BlogWritePage = async () => {
-  const { categories } = await getCategories();
+        const result = await res.json();
+        setCategories(result);
+      } catch (error) {
+        console.log("Error loading Categories :", error);
+      }
+    };
+    getCategories();
+  }, []);
+
   return (
     <>
       <BlogWrite categories={categories} />

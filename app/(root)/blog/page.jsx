@@ -1,68 +1,101 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { AiFillStar } from "react-icons/ai";
+import { useEffect, useState } from "react";
 
-const getBlogs = async () => {
-  try {
-    const res = await fetch("http://localhost:3000/api/blog", {
-      cache: "no-store",
-    });
+// const getBlogs = async () => {
+//   try {
+//     const res = await fetch("http://localhost:3000/api/blog", {
+//       cache: "no-store",
+//     });
 
-    if (!res.ok) {
-      throw new Error("Failed to fetch Blogs");
-    }
+//     if (!res.ok) {
+//       throw new Error("Failed to fetch Blogs");
+//     }
 
-    return res.json();
-  } catch (error) {
-    console.log("Error loading Blogs :", error);
-  }
-};
+//     return res.json();
+//   } catch (error) {
+//     console.log("Error loading Blogs :", error);
+//   }
+// };
 
-const BlogPage = async () => {
-  const { blogs } = await getBlogs();
-  const lastBlog = blogs[blogs.length - 1];
-  const lastFourObjects = blogs.slice(-5);
-  const remainingObjects = lastFourObjects.slice(0, lastFourObjects.length - 1);
-  const reversedCatagoriesBlog = [...remainingObjects].reverse();
-  const reversedBlogs = [...blogs].reverse();
+const BlogPage = () => {
+  const [blogs, setBlogs] = useState(null);
+
+  useEffect(() => {
+    const getBlogs = async () => {
+      try {
+        const res = await fetch("http://localhost:3000/api/blog");
+
+        if (!res.ok) {
+          throw new Error("Failed to fetch Blogs");
+        }
+
+        const result = await res.json();
+        console.log(result);
+        if (typeof result !== "undefined") {
+          setBlogs(result);
+        }
+      } catch (error) {
+        console.log("Error loading Blogs :", error);
+      }
+    };
+    getBlogs();
+  }, []);
+  console.log(blogs);
+
+  const lastBlog = blogs && blogs.blogs[blogs.blogs.length - 1];
+  console.log(lastBlog);
+  const lastFourObjects = blogs ? blogs.blogs.slice(-5) : [];
+  const remainingObjects = blogs
+    ? lastFourObjects.slice(0, lastFourObjects.length - 1)
+    : [];
+  const reversedCatagoriesBlog = blogs ? [...remainingObjects].reverse() : [];
+  const reversedBlogs = blogs ? [...blogs.blogs].reverse() : [];
   return (
     <>
       <section>
         <div className="container mx-auto mt-5 mb-20">
           <div className="grid grid-cols-2 gap-10 ">
             <div>
-              <Link href={`/blog/${lastBlog._id}`}>
-                <div className="relative w-full h-[350px] rounded-lg">
-                  <Image
-                    src={`/${lastBlog.image}`}
-                    fill={true}
-                    alt="blog Banner"
-                    className="rounded-lg"
-                  />
-                </div>
-                <div className="mt-5 ">
-                  <h2 className="text-xl font-semibold text-black">
-                    {lastBlog.title}
-                  </h2>
-                  <p className="desc mt-3">{lastBlog.description}</p>
-                  <div className="flex items-center gap-2 mt-2">
-                    <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                      {lastBlog.writer}
-                    </span>
-                    <span className="text-gray-300">in</span>
-                    <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                      {lastBlog.catagoriesData}
-                    </span>
+              {lastBlog ? (
+                <Link href={`/blog/${lastBlog._id}`}>
+                  <div className="relative w-full h-[350px] rounded-lg">
+                    <Image
+                      src={`/${lastBlog.image}`}
+                      fill={true}
+                      alt="blog Banner"
+                      className="rounded-lg"
+                    />
                   </div>
-                  <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                    <span>{lastBlog.blogDate}</span>
-                    <span>.</span>
-                    <span>17 min read</span>
-                    <AiFillStar />
+                  <div className="mt-5 ">
+                    <h2 className="text-xl font-semibold text-black">
+                      {lastBlog.title}
+                    </h2>
+                    <p className="desc mt-3">{lastBlog.description}</p>
+                    <div className="flex items-center gap-2 mt-2">
+                      <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
+                        {lastBlog.writer}
+                      </span>
+                      <span className="text-gray-300">in</span>
+                      <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
+                        {lastBlog.catagoriesData}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
+                      <span>{lastBlog.blogDate}</span>
+                      <span>.</span>
+                      <span>17 min read</span>
+                      <AiFillStar />
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              ) : (
+                <>
+                  <div className="w-full bg-gray-300 animate-pulse h-[350px]"></div>
+                </>
+              )}
             </div>
             <div>
               {reversedCatagoriesBlog.map((item) => (

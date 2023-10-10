@@ -1,26 +1,29 @@
+"use client";
 import Link from "next/link";
-import React from "react";
-import { FaEdit, FaTrash } from "react-icons/fa";
+import React, { useEffect, useState } from "react";
+import { FaEdit } from "react-icons/fa";
 import DeleteButton from "../DeleteButton/DeleteButton";
 
-const getCategories = async () => {
-  try {
-    const res = await fetch("http://localhost:3000/api/categories", {
-      cache: "no-store",
-    });
+const Categories = () => {
+  const [categories, setCategories] = useState(null);
 
-    if (!res.ok) {
-      throw new Error("Failed to fetch Categories");
-    }
+  useEffect(() => {
+    const getCategories = async () => {
+      try {
+        const res = await fetch("http://localhost:3000/api/categories");
 
-    return res.json();
-  } catch (error) {
-    console.log("Error loading Categories :", error);
-  }
-};
+        if (!res.ok) {
+          throw new Error("Failed to fetch Categories");
+        }
 
-const Categories = async () => {
-  const { categories } = await getCategories();
+        const result = await res.json();
+        setCategories(result);
+      } catch (error) {
+        console.log("Error loading Categories :", error);
+      }
+    };
+    getCategories();
+  }, []);
 
   return (
     <>
@@ -34,31 +37,32 @@ const Categories = async () => {
           </tr>
         </thead>
         <tbody>
-          {categories.map((item) => (
-            <tr key={item._id} className="group ">
-              <td className="border border-slate-300 p-2 ">
-                <h1 className="text-xl font-semibold">{item.category}</h1>
-                <div className="opacity-0 group-hover:opacity-100 transition-all duration-200"></div>
-              </td>
-              <td className="border border-slate-300 p-2">
-                {item.description}
-              </td>
-              <td className="border border-slate-300 p-2">
-                {item.categoryDate}
-              </td>
-              <td className="border border-slate-300 p-2">
-                <div className="flex justify-center gap-3  ">
-                  <Link
-                    href={`/dashboard/edit-categories/${item._id}`}
-                    className="px-4 py-2 bg-blue-600 text-white hover:bg-blue-400 rounded-md"
-                  >
-                    <FaEdit />
-                  </Link>
-                  <DeleteButton id={item._id} />
-                </div>
-              </td>
-            </tr>
-          ))}
+          {categories &&
+            categories.categories.map((item) => (
+              <tr key={item._id} className="group ">
+                <td className="border border-slate-300 p-2 ">
+                  <h1 className="text-xl font-semibold">{item.category}</h1>
+                  <div className="opacity-0 group-hover:opacity-100 transition-all duration-200"></div>
+                </td>
+                <td className="border border-slate-300 p-2">
+                  {item.description}
+                </td>
+                <td className="border border-slate-300 p-2">
+                  {item.categoryDate}
+                </td>
+                <td className="border border-slate-300 p-2">
+                  <div className="flex justify-center gap-3  ">
+                    <Link
+                      href={`/dashboard/edit-categories/${item._id}`}
+                      className="px-4 py-2 bg-blue-600 text-white hover:bg-blue-400 rounded-md"
+                    >
+                      <FaEdit />
+                    </Link>
+                    <DeleteButton id={item._id} />
+                  </div>
+                </td>
+              </tr>
+            ))}
         </tbody>
       </table>
     </>
