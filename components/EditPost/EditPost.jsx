@@ -46,7 +46,10 @@ const EditPost = ({
   const [newSeoTitle, setNewSeoTitle] = useState(seoTitle);
   const [newMetaDescription, setNewMetaDescription] = useState(metaDescription);
   const [loading, setLoading] = useState(false);
-  const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
+  const ReactQuill = useMemo(
+    () => dynamic(() => import("react-quill"), { ssr: false }),
+    []
+  );
 
   const router = useRouter();
 
@@ -76,13 +79,10 @@ const EditPost = ({
       data.set("newSeoTitle", newSeoTitle);
       data.set("newMetaDescription", newMetaDescription);
 
-      const res = await fetch(
-        `https://nexgeno-next-js.vercel.app/api/blog/${id}`,
-        {
-          method: "PUT",
-          body: data,
-        }
-      );
+      const res = await fetch(`http://localhost:3000/api/blog/${id}`, {
+        method: "PUT",
+        body: data,
+      });
 
       if (res.ok) {
         toast.success("Blog Successfully Update");

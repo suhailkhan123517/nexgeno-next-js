@@ -39,7 +39,10 @@ const BlogWrite = ({ categories }) => {
   const [metaDescription, setMetaDescription] = useState("");
   const [blogDate, setBlogDate] = useState("");
   const [loading, setLoading] = useState(false);
-  const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
+  const ReactQuill = useMemo(
+    () => dynamic(() => import("react-quill"), { ssr: false }),
+    []
+  );
 
   const router = useRouter();
 
@@ -211,6 +214,7 @@ const BlogWrite = ({ categories }) => {
                     onChange={(e) => setCatagoriesData(e.target.value)}
                     className="w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
                   >
+                    <option>Select</option>
                     {categories.map((item) => (
                       <option key={item._id} value={item.category}>
                         {" "}
