@@ -2,30 +2,15 @@ import mongoose, { Schema, models } from "mongoose";
 
 const blogSchema = new Schema(
   {
-    image: {
-      type: String,
-      required: true,
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      required: true,
-    },
-    textEditor: {
-      type: String,
-      required: true,
-    },
-    createdAt: {
-      type: Date,
-      default: Date.now,
-    },
-    catagories: {
-      type: String,
-      required: true,
-    },
+    image: String,
+    title: String,
+    description: String,
+    textEditor: String,
+    catagoriesData: String,
+    writer: String,
+    seoTitle: String,
+    metaDescription: String,
+    blogDate: String,
   },
 
   { timestamps: true }

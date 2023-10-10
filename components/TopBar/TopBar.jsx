@@ -8,7 +8,13 @@ const TopBar = () => {
     <>
       <nav className="fixed top-0 z-30 flex w-full items-center justify-between bg-[#fffbfd] border-b  px-6 py-3">
         <Link href="/" className="flex items-center gap-4">
-          <Image src="/images/logo.webp" alt="logo" width={200} height={50} />
+          <Image
+            src="/images/logo.webp"
+            alt="logo"
+            priority
+            width={200}
+            height={50}
+          />
         </Link>
         <div className="flex items-center gap-5">
           <div>Search bar</div>

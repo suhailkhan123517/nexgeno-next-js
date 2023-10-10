@@ -1,10 +1,10 @@
-import EditBlogForm from "@/components/EditBlogForm/EditBlogForm";
+import Catagories from "@/components/Catagories/Catagories";
 import React from "react";
 
 const page = () => {
   return (
     <>
-      <EditBlogForm />
+      <Catagories />
     </>
   );
 };

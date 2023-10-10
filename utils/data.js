@@ -1958,11 +1958,26 @@ export const sidebarLinks = [
   },
   {
     id: 2,
-    label: "Blog",
-    url: "/dashboard/blog",
+    label: "All Post",
+    url: "/dashboard/all-post",
   },
   {
     id: 3,
+    label: "Add New Post",
+    url: "/dashboard/add-new-post",
+  },
+  {
+    id: 4,
+    label: "Catagories",
+    url: "/dashboard/catagories",
+  },
+  {
+    id: 5,
+    label: "Add Catagories",
+    url: "/dashboard/add-categories",
+  },
+  {
+    id: 6,
     label: "Admin",
     url: "/dashboard/admin",
   },

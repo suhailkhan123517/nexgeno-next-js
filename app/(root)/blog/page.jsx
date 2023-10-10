@@ -3,17 +3,39 @@ import Link from "next/link";
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 
-const page = () => {
+const getBlogs = async () => {
+  try {
+    const res = await fetch("https://nexgeno-next-js.vercel.app/api/blog", {
+      cache: "no-store",
+    });
+
+    if (!res.ok) {
+      throw new Error("Failed to fetch Blogs");
+    }
+
+    return res.json();
+  } catch (error) {
+    console.log("Error loading Blogs :", error);
+  }
+};
+
+const BlogPage = async () => {
+  const { blogs } = await getBlogs();
+  const lastBlog = blogs[blogs.length - 1];
+  const lastFourObjects = blogs.slice(-5);
+  const remainingObjects = lastFourObjects.slice(0, lastFourObjects.length - 1);
+  const reversedCatagoriesBlog = [...remainingObjects].reverse();
+  const reversedBlogs = [...blogs].reverse();
   return (
     <>
       <section>
         <div className="container mx-auto mt-5 mb-20">
           <div className="grid grid-cols-2 gap-10 ">
             <div>
-              <Link href="/blog/123">
+              <Link href={`/blog/${lastBlog._id}`}>
                 <div className="relative w-full h-[350px] rounded-lg">
                   <Image
-                    src="/blog_banner.webp"
+                    src={`/${lastBlog.image}`}
                     fill={true}
                     alt="blog Banner"
                     className="rounded-lg"
@@ -21,23 +43,20 @@ const page = () => {
                 </div>
                 <div className="mt-5 ">
                   <h2 className="text-xl font-semibold text-black">
-                    How To Hire Mobile App Developers: A Detailed Guide for 2023
+                    {lastBlog.title}
                   </h2>
-                  <p className="desc mt-3">
-                    In the world that debates about whether AI will replace the
-                    human workforce, the extensive adoption and use of...
-                  </p>
+                  <p className="desc mt-3">{lastBlog.description}</p>
                   <div className="flex items-center gap-2 mt-2">
                     <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                      Beantsingh Duggal
+                      {lastBlog.writer}
                     </span>
                     <span className="text-gray-300">in</span>
                     <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                      Mobile
+                      {lastBlog.catagoriesData}
                     </span>
                   </div>
                   <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                    <span>Sep 18</span>
+                    <span>{lastBlog.blogDate}</span>
                     <span>.</span>
                     <span>17 min read</span>
                     <AiFillStar />
@@ -46,122 +65,44 @@ const page = () => {
               </Link>
             </div>
             <div>
-              <div className="flex items-center gap-5 mb-4">
-                <Image
-                  src="/small_blog_post_1.webp"
-                  width={200}
-                  height={200}
-                  alt="Blog post"
-                  className="rounded-lg"
-                />
-                <div>
-                  <h2 className="text-xl font-semibold text-black">
-                    How To Hire Mobile App Developers: A Detailed Guide for 2023
-                  </h2>
-                  <div className="flex items-center gap-2 mt-2">
-                    <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                      Beantsingh Duggal
-                    </span>
-                    <span className="text-gray-300">in</span>
-                    <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                      Mobile
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                    <span>Sep 18</span>
-                    <span>.</span>
-                    <span>17 min read</span>
-                    <AiFillStar />
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center gap-5 mb-4">
-                <Image
-                  src="/small_blog_post_2.webp"
-                  width={200}
-                  height={200}
-                  alt="Blog post"
-                  className="rounded-lg"
-                />
-                <div>
-                  <h2 className="text-xl font-semibold text-black">
-                    How To Hire Mobile App Developers: A Detailed Guide for 2023
-                  </h2>
-                  <div className="flex items-center gap-2 mt-2">
-                    <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                      Beantsingh Duggal
-                    </span>
-                    <span className="text-gray-300">in</span>
-                    <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                      Mobile
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                    <span>Sep 18</span>
-                    <span>.</span>
-                    <span>17 min read</span>
-                    <AiFillStar />
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center gap-5 mb-4">
-                <Image
-                  src="/small_blog_post_3.webp"
-                  width={200}
-                  height={200}
-                  alt="Blog post"
-                  className="rounded-lg"
-                />
-                <div>
-                  <h2 className="text-xl font-semibold text-black">
-                    How To Hire Mobile App Developers: A Detailed Guide for 2023
-                  </h2>
-                  <div className="flex items-center gap-2 mt-2">
-                    <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                      Beantsingh Duggal
-                    </span>
-                    <span className="text-gray-300">in</span>
-                    <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                      Mobile
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                    <span>Sep 18</span>
-                    <span>.</span>
-                    <span>17 min read</span>
-                    <AiFillStar />
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center gap-5 mb-4">
-                <Image
-                  src="/small_blog_post.webp"
-                  width={200}
-                  height={200}
-                  alt="Blog post"
-                  className="rounded-lg"
-                />
-                <div>
-                  <h2 className="text-xl font-semibold text-black">
-                    How To Hire Mobile App Developers: A Detailed Guide for 2023
-                  </h2>
-                  <div className="flex items-center gap-2 mt-2">
-                    <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                      Beantsingh Duggal
-                    </span>
-                    <span className="text-gray-300">in</span>
-                    <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                      Mobile
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                    <span>Sep 18</span>
-                    <span>.</span>
-                    <span>17 min read</span>
-                    <AiFillStar />
-                  </div>
-                </div>
-              </div>
+              {reversedCatagoriesBlog.map((item) => (
+                <>
+                  <Link href={`/blog/${item._id}`}>
+                    <div
+                      key={item._id}
+                      className="flex items-center gap-5 mb-4"
+                    >
+                      <Image
+                        src={`/${item.image}`}
+                        width={200}
+                        height={200}
+                        alt="Blog post"
+                        className="rounded-lg"
+                      />
+                      <div>
+                        <h2 className="text-xl font-semibold text-black">
+                          {item.title}
+                        </h2>
+                        <div className="flex items-center gap-2 mt-2">
+                          <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
+                            {item.writer}
+                          </span>
+                          <span className="text-gray-300">in</span>
+                          <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
+                            {item.catagoriesData}
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
+                          <span>{item.blogDate}</span>
+                          <span>.</span>
+                          <span>17 min read</span>
+                          <AiFillStar />
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </>
+              ))}
             </div>
           </div>
         </div>
@@ -171,487 +112,51 @@ const page = () => {
         <div className="container mx-auto ">
           <div className="flex gap-10 relative h-auto">
             <div className="">
-              <h2 className="heading border-b pb-3">All Posts</h2>
-              <div className="mt-6">
-                <div className="flex gap-5 mb-4 ">
-                  <div className="flex-auto">
-                    <h2 className="text-2xl font-semibold text-black mb-3">
-                      How To Hire Mobile App Developers: A Detailed Guide for
-                      2023
-                    </h2>
-                    <p className="desc mb-3">
-                      In the current digitally-driven landscape, restaurants and
-                      food startups are undergoing a paradigm shift. Gone are
-                      the days when...
-                    </p>
-                    <div className="flex items-center gap-2 mt-2">
-                      <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                        Beantsingh Duggal
-                      </span>
-                      <span className="text-gray-300">in</span>
-                      <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                        Mobile
-                      </span>
+              <h2 className="heading border-b pb-3 mb-6">All Posts</h2>
+
+              {reversedBlogs.map((item) => (
+                <>
+                  <Link
+                    key={item._id}
+                    href={`/blog/${item._id}`}
+                    className="mt-6"
+                  >
+                    <div className="flex gap-5 mb-4 ">
+                      <div className="flex-auto">
+                        <h2 className="text-2xl font-semibold text-black mb-3">
+                          {item.title}
+                        </h2>
+                        <p className="desc mb-3">{item.description}</p>
+                        <div className="flex items-center gap-2 mt-2">
+                          <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
+                            {item.writer}
+                          </span>
+                          <span className="text-gray-300">in</span>
+                          <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
+                            {item.catagoriesData}
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
+                          <span>{item.blogDate}</span>
+                          <span>.</span>
+                          <span>17 min read</span>
+                          <AiFillStar />
+                        </div>
+                      </div>
+                      <div className="flex-auto">
+                        <div className="relative w-[350px] h-[220px]">
+                          <Image
+                            src={`/${item.image}`}
+                            fill={true}
+                            alt="Blog post"
+                            className="rounded-lg"
+                          />
+                        </div>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                      <span>Sep 18</span>
-                      <span>.</span>
-                      <span>17 min read</span>
-                      <AiFillStar />
-                    </div>
-                  </div>
-                  <div className="flex-auto">
-                    <div className="relative w-[350px] h-[220px]">
-                      <Image
-                        src="/all_post_1.webp"
-                        fill={true}
-                        alt="Blog post"
-                        className="rounded-lg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6">
-                <div className="flex gap-5 mb-4 ">
-                  <div className="flex-auto">
-                    <h2 className="text-2xl font-semibold text-black mb-3">
-                      How To Hire Mobile App Developers: A Detailed Guide for
-                      2023
-                    </h2>
-                    <p className="desc mb-3">
-                      In the current digitally-driven landscape, restaurants and
-                      food startups are undergoing a paradigm shift. Gone are
-                      the days when...
-                    </p>
-                    <div className="flex items-center gap-2 mt-2">
-                      <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                        Beantsingh Duggal
-                      </span>
-                      <span className="text-gray-300">in</span>
-                      <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                        Mobile
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                      <span>Sep 18</span>
-                      <span>.</span>
-                      <span>17 min read</span>
-                      <AiFillStar />
-                    </div>
-                  </div>
-                  <div className="flex-auto">
-                    <div className="relative w-[350px] h-[220px]">
-                      <Image
-                        src="/all_post_2.webp"
-                        fill={true}
-                        alt="Blog post"
-                        className="rounded-lg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6">
-                <div className="flex gap-5 mb-4 ">
-                  <div className="flex-auto">
-                    <h2 className="text-2xl font-semibold text-black mb-3">
-                      How To Hire Mobile App Developers: A Detailed Guide for
-                      2023
-                    </h2>
-                    <p className="desc mb-3">
-                      In the current digitally-driven landscape, restaurants and
-                      food startups are undergoing a paradigm shift. Gone are
-                      the days when...
-                    </p>
-                    <div className="flex items-center gap-2 mt-2">
-                      <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                        Beantsingh Duggal
-                      </span>
-                      <span className="text-gray-300">in</span>
-                      <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                        Mobile
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                      <span>Sep 18</span>
-                      <span>.</span>
-                      <span>17 min read</span>
-                      <AiFillStar />
-                    </div>
-                  </div>
-                  <div className="flex-auto">
-                    <div className="relative w-[350px] h-[220px]">
-                      <Image
-                        src="/all_post_3.webp"
-                        fill={true}
-                        alt="Blog post"
-                        className="rounded-lg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6">
-                <div className="flex gap-5 mb-4 ">
-                  <div className="flex-auto">
-                    <h2 className="text-2xl font-semibold text-black mb-3">
-                      How To Hire Mobile App Developers: A Detailed Guide for
-                      2023
-                    </h2>
-                    <p className="desc mb-3">
-                      In the current digitally-driven landscape, restaurants and
-                      food startups are undergoing a paradigm shift. Gone are
-                      the days when...
-                    </p>
-                    <div className="flex items-center gap-2 mt-2">
-                      <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                        Beantsingh Duggal
-                      </span>
-                      <span className="text-gray-300">in</span>
-                      <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                        Mobile
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                      <span>Sep 18</span>
-                      <span>.</span>
-                      <span>17 min read</span>
-                      <AiFillStar />
-                    </div>
-                  </div>
-                  <div className="flex-auto">
-                    <div className="relative w-[350px] h-[220px]">
-                      <Image
-                        src="/all_post_4.webp"
-                        fill={true}
-                        alt="Blog post"
-                        className="rounded-lg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6">
-                <div className="flex gap-5 mb-4 ">
-                  <div className="flex-auto">
-                    <h2 className="text-2xl font-semibold text-black mb-3">
-                      How To Hire Mobile App Developers: A Detailed Guide for
-                      2023
-                    </h2>
-                    <p className="desc mb-3">
-                      In the current digitally-driven landscape, restaurants and
-                      food startups are undergoing a paradigm shift. Gone are
-                      the days when...
-                    </p>
-                    <div className="flex items-center gap-2 mt-2">
-                      <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                        Beantsingh Duggal
-                      </span>
-                      <span className="text-gray-300">in</span>
-                      <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                        Mobile
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                      <span>Sep 18</span>
-                      <span>.</span>
-                      <span>17 min read</span>
-                      <AiFillStar />
-                    </div>
-                  </div>
-                  <div className="flex-auto">
-                    <div className="relative w-[350px] h-[220px]">
-                      <Image
-                        src="/all_post_1.webp"
-                        fill={true}
-                        alt="Blog post"
-                        className="rounded-lg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6">
-                <div className="flex gap-5 mb-4 ">
-                  <div className="flex-auto">
-                    <h2 className="text-2xl font-semibold text-black mb-3">
-                      How To Hire Mobile App Developers: A Detailed Guide for
-                      2023
-                    </h2>
-                    <p className="desc mb-3">
-                      In the current digitally-driven landscape, restaurants and
-                      food startups are undergoing a paradigm shift. Gone are
-                      the days when...
-                    </p>
-                    <div className="flex items-center gap-2 mt-2">
-                      <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                        Beantsingh Duggal
-                      </span>
-                      <span className="text-gray-300">in</span>
-                      <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                        Mobile
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                      <span>Sep 18</span>
-                      <span>.</span>
-                      <span>17 min read</span>
-                      <AiFillStar />
-                    </div>
-                  </div>
-                  <div className="flex-auto">
-                    <div className="relative w-[350px] h-[220px]">
-                      <Image
-                        src="/all_post_2.webp"
-                        fill={true}
-                        alt="Blog post"
-                        className="rounded-lg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6">
-                <div className="flex gap-5 mb-4 ">
-                  <div className="flex-auto">
-                    <h2 className="text-2xl font-semibold text-black mb-3">
-                      How To Hire Mobile App Developers: A Detailed Guide for
-                      2023
-                    </h2>
-                    <p className="desc mb-3">
-                      In the current digitally-driven landscape, restaurants and
-                      food startups are undergoing a paradigm shift. Gone are
-                      the days when...
-                    </p>
-                    <div className="flex items-center gap-2 mt-2">
-                      <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                        Beantsingh Duggal
-                      </span>
-                      <span className="text-gray-300">in</span>
-                      <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                        Mobile
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                      <span>Sep 18</span>
-                      <span>.</span>
-                      <span>17 min read</span>
-                      <AiFillStar />
-                    </div>
-                  </div>
-                  <div className="flex-auto">
-                    <div className="relative w-[350px] h-[220px]">
-                      <Image
-                        src="/all_post_3.webp"
-                        fill={true}
-                        alt="Blog post"
-                        className="rounded-lg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6">
-                <div className="flex gap-5 mb-4 ">
-                  <div className="flex-auto">
-                    <h2 className="text-2xl font-semibold text-black mb-3">
-                      How To Hire Mobile App Developers: A Detailed Guide for
-                      2023
-                    </h2>
-                    <p className="desc mb-3">
-                      In the current digitally-driven landscape, restaurants and
-                      food startups are undergoing a paradigm shift. Gone are
-                      the days when...
-                    </p>
-                    <div className="flex items-center gap-2 mt-2">
-                      <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                        Beantsingh Duggal
-                      </span>
-                      <span className="text-gray-300">in</span>
-                      <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                        Mobile
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                      <span>Sep 18</span>
-                      <span>.</span>
-                      <span>17 min read</span>
-                      <AiFillStar />
-                    </div>
-                  </div>
-                  <div className="flex-auto">
-                    <div className="relative w-[350px] h-[220px]">
-                      <Image
-                        src="/all_post_4.webp"
-                        fill={true}
-                        alt="Blog post"
-                        className="rounded-lg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6">
-                <div className="flex gap-5 mb-4 ">
-                  <div className="flex-auto">
-                    <h2 className="text-2xl font-semibold text-black mb-3">
-                      How To Hire Mobile App Developers: A Detailed Guide for
-                      2023
-                    </h2>
-                    <p className="desc mb-3">
-                      In the current digitally-driven landscape, restaurants and
-                      food startups are undergoing a paradigm shift. Gone are
-                      the days when...
-                    </p>
-                    <div className="flex items-center gap-2 mt-2">
-                      <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                        Beantsingh Duggal
-                      </span>
-                      <span className="text-gray-300">in</span>
-                      <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                        Mobile
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                      <span>Sep 18</span>
-                      <span>.</span>
-                      <span>17 min read</span>
-                      <AiFillStar />
-                    </div>
-                  </div>
-                  <div className="flex-auto">
-                    <div className="relative w-[350px] h-[220px]">
-                      <Image
-                        src="/all_post_1.webp"
-                        fill={true}
-                        alt="Blog post"
-                        className="rounded-lg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6">
-                <div className="flex gap-5 mb-4 ">
-                  <div className="flex-auto">
-                    <h2 className="text-2xl font-semibold text-black mb-3">
-                      How To Hire Mobile App Developers: A Detailed Guide for
-                      2023
-                    </h2>
-                    <p className="desc mb-3">
-                      In the current digitally-driven landscape, restaurants and
-                      food startups are undergoing a paradigm shift. Gone are
-                      the days when...
-                    </p>
-                    <div className="flex items-center gap-2 mt-2">
-                      <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                        Beantsingh Duggal
-                      </span>
-                      <span className="text-gray-300">in</span>
-                      <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                        Mobile
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                      <span>Sep 18</span>
-                      <span>.</span>
-                      <span>17 min read</span>
-                      <AiFillStar />
-                    </div>
-                  </div>
-                  <div className="flex-auto">
-                    <div className="relative w-[350px] h-[220px]">
-                      <Image
-                        src="/all_post_2.webp"
-                        fill={true}
-                        alt="Blog post"
-                        className="rounded-lg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6">
-                <div className="flex gap-5 mb-4 ">
-                  <div className="flex-auto">
-                    <h2 className="text-2xl font-semibold text-black mb-3">
-                      How To Hire Mobile App Developers: A Detailed Guide for
-                      2023
-                    </h2>
-                    <p className="desc mb-3">
-                      In the current digitally-driven landscape, restaurants and
-                      food startups are undergoing a paradigm shift. Gone are
-                      the days when...
-                    </p>
-                    <div className="flex items-center gap-2 mt-2">
-                      <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                        Beantsingh Duggal
-                      </span>
-                      <span className="text-gray-300">in</span>
-                      <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                        Mobile
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                      <span>Sep 18</span>
-                      <span>.</span>
-                      <span>17 min read</span>
-                      <AiFillStar />
-                    </div>
-                  </div>
-                  <div className="flex-auto">
-                    <div className="relative w-[350px] h-[220px]">
-                      <Image
-                        src="/all_post_3.webp"
-                        fill={true}
-                        alt="Blog post"
-                        className="rounded-lg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6">
-                <div className="flex gap-5 mb-4 ">
-                  <div className="flex-auto">
-                    <h2 className="text-2xl font-semibold text-black mb-3">
-                      How To Hire Mobile App Developers: A Detailed Guide for
-                      2023
-                    </h2>
-                    <p className="desc mb-3">
-                      In the current digitally-driven landscape, restaurants and
-                      food startups are undergoing a paradigm shift. Gone are
-                      the days when...
-                    </p>
-                    <div className="flex items-center gap-2 mt-2">
-                      <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                        Beantsingh Duggal
-                      </span>
-                      <span className="text-gray-300">in</span>
-                      <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                        Mobile
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                      <span>Sep 18</span>
-                      <span>.</span>
-                      <span>17 min read</span>
-                      <AiFillStar />
-                    </div>
-                  </div>
-                  <div className="flex-auto">
-                    <div className="relative w-[350px] h-[220px]">
-                      <Image
-                        src="/all_post_4.webp"
-                        fill={true}
-                        alt="Blog post"
-                        className="rounded-lg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+                  </Link>
+                </>
+              ))}
             </div>
             <div className="sticky top-16 h-screen">
               <div className="">
@@ -770,4 +275,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default BlogPage;
