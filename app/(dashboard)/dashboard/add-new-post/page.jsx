@@ -8,7 +8,9 @@ const BlogWritePage = () => {
   useEffect(() => {
     const getCategories = async () => {
       try {
-        const res = await fetch("/api/categories");
+        const res = await fetch(
+          "https://nexgeno-next-js.vercel.app/api/categories"
+        );
 
         if (!res.ok) {
           throw new Error("Failed to fetch Categories");
