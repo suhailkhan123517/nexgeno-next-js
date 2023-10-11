@@ -105,7 +105,7 @@ const BlogWrite = ({ categories }) => {
       data.set("metaDescription", metaDescription);
       data.set("blogDate", blogDate);
 
-      const res = await fetch("https://nexgeno-next-js.vercel.app/api/blog", {
+      const res = await fetch("/api/blog", {
         method: "POST",
         body: data,
       });
