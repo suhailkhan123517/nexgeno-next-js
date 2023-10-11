@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { writeFile } from "fs/promises";
+// import { writeFile } from "fs/promises";
 import { connectMongoDB } from "@/libs/mongodb";
 import Blog from "@/models/blog";
 
@@ -15,10 +15,10 @@ export async function PUT(req, { params }) {
     const seoTitle = data.get("newSeoTitle");
     const metaDescription = data.get("newMetaDescription");
     const image = file.name;
-    const byteData = await file.arrayBuffer();
-    const buffer = Buffer.from(byteData);
-    const path = `./public/${file.name}`;
-    await writeFile(path, buffer);
+    // const byteData = await file.arrayBuffer();
+    // const buffer = Buffer.from(byteData);
+    // const path = `./public/${file.name}`;
+    // await writeFile(path, buffer);
     await connectMongoDB();
     await Blog.findByIdAndUpdate(id, {
       image,
