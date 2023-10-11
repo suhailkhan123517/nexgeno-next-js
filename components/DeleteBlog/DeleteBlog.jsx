@@ -9,13 +9,16 @@ const DeleteBlog = ({ id }) => {
   const removeBlog = async () => {
     const confirmed = confirm("Are you sure ?");
     if (confirmed) {
-      const res = await fetch(`http://localhost:3000/api/blog?id=${id}`, {
-        method: "DELETE",
-      });
+      const res = await fetch(
+        `https://nexgeno-next-js.vercel.app/api/blog?id=${id}`,
+        {
+          method: "DELETE",
+        }
+      );
 
       if (res.ok) {
-        toast.success("Blog Deleted");
         router.refresh();
+        toast.success("Blog Deleted");
       }
     }
   };

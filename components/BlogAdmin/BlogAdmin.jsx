@@ -10,11 +10,7 @@ const BlogAdmin = () => {
   useEffect(() => {
     const getBlogs = async () => {
       try {
-        const res = await fetch(
-          window.location.origin.includes("localhost")
-            ? `http://localhost:3000/api/blog`
-            : `${window.location.origin}/api/blog`
-        );
+        const res = await fetch("/api/blog");
 
         if (!res.ok) {
           throw new Error("Failed to fetch Blogs");

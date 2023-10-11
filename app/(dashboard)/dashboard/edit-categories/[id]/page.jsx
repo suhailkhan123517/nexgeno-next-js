@@ -3,9 +3,7 @@ import EditCategories from "@/components/EditCategories/EditCategories";
 const getCategoryById = async (id) => {
   try {
     const res = await fetch(
-      window.location.origin.includes("localhost")
-        ? `http://localhost:3000/api/categories/${id}`
-        : `${window.location.origin}/api/categories/${id}`,
+      `https://nexgeno-next-js.vercel.app/api/categories/${id}`,
       {
         cache: "no-store",
       }

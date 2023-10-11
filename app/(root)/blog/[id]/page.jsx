@@ -4,9 +4,7 @@ import React from "react";
 const getBlogById = async (id) => {
   try {
     const res = await fetch(
-      window.location.origin.includes("localhost")
-        ? `http://localhost:3000/api/blog/${id}`
-        : `${window.location.origin}/api/blog/${id}`,
+      `https://nexgeno-next-js.vercel.app/api/blog/${id}`,
       {
         cache: "no-store",
       }
@@ -22,13 +20,13 @@ const getBlogById = async (id) => {
   }
 };
 
-export async function generateMetadata({ params }) {
-  const blogs = await getBlogById(params.id);
-  return {
-    title: blogs.seoTitle,
-    description: blogs.metaDescription,
-  };
-}
+// export async function generateMetadata({ params }) {
+//   const blogs = await getBlogById(params.id);
+//   return {
+//     title: blogs.seoTitle,
+//     description: blogs.metaDescription,
+//   };
+// }
 
 const BlogDetails = async ({ params }) => {
   const { blogs } = await getBlogById(params.id);

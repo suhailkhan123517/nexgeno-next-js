@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiFillStar } from "react-icons/ai";
 import { useEffect, useState } from "react";
-7303095361;
 
 const BlogPage = () => {
   const [blogs, setBlogs] = useState(null);
@@ -11,11 +10,7 @@ const BlogPage = () => {
   useEffect(() => {
     const getBlogs = async () => {
       try {
-        const res = await fetch(
-          window.location.origin.includes("localhost")
-            ? `http://localhost:3000/api/blog`
-            : `${window.location.origin}/api/blog`
-        );
+        const res = await fetch(`https://nexgeno-next-js.vercel.app/api/blog`);
 
         if (!res.ok) {
           throw new Error("Failed to fetch Blogs");

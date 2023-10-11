@@ -21,13 +21,13 @@ export async function PUT(req, { params }) {
     await writeFile(path, buffer);
     await connectMongoDB();
     await Blog.findByIdAndUpdate(id, {
-      image,
       title,
       description,
       textEditor,
       catagoriesData,
       seoTitle,
       metaDescription,
+      image,
     });
     return NextResponse.json({ message: "Blog Updated" }, { status: 200 });
   } catch (error) {

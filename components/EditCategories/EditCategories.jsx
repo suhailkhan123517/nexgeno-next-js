@@ -17,13 +17,16 @@ const EditCategories = ({ id, category, description }) => {
 
     try {
       setLoading(true);
-      const res = await fetch(`http://localhost:3000/api/categories/${id}`, {
-        method: "PUT",
-        headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify({ newCategory, newDescription }),
-      });
+      const res = await fetch(
+        `https://nexgeno-next-js.vercel.app/api/categories/${id}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify({ newCategory, newDescription }),
+        }
+      );
 
       if (res.ok) {
         toast.success("Categories Updated Successfully");

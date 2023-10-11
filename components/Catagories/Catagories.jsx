@@ -10,11 +10,7 @@ const Categories = () => {
   useEffect(() => {
     const getCategories = async () => {
       try {
-        const res = await fetch(
-          window.location.origin.includes("localhost")
-            ? `http://localhost:3000/api/categories`
-            : `${window.location.origin}/api/categories`
-        );
+        const res = await fetch("/api/categories");
 
         if (!res.ok) {
           throw new Error("Failed to fetch Categories");

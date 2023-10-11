@@ -1,5 +1,5 @@
 "use client";
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import "react-quill/dist/quill.snow.css";
 import toast from "react-hot-toast";
@@ -80,9 +80,7 @@ const EditPost = ({
       data.set("newMetaDescription", newMetaDescription);
 
       const res = await fetch(
-        window.location.origin.includes("localhost")
-          ? `http://localhost:3000/api/blog/${id}`
-          : `${window.location.origin}/api/blog/${id}`,
+        `https://nexgeno-next-js.vercel.app/api/blog/${id}`,
         {
           method: "PUT",
           body: data,

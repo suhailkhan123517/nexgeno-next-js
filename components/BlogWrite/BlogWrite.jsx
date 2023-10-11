@@ -198,7 +198,7 @@ const BlogWrite = ({ categories }) => {
             </div>
           </div>
           <div className="flex w-full mt-14">
-            <div>
+            <div className="w-full">
               <div className="w-full">
                 <label
                   for="country"

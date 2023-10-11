@@ -2,9 +2,7 @@ import EditPost from "@/components/EditPost/EditPost";
 const getCategories = async () => {
   try {
     const res = await fetch(
-      window.location.origin.includes("localhost")
-        ? `http://localhost:3000/api/categories`
-        : `${window.location.origin}/api/categories`,
+      `https://nexgeno-next-js.vercel.app/api/categories`,
       {
         cache: "no-store",
       }
@@ -23,9 +21,7 @@ const getCategories = async () => {
 const getBlogById = async (id) => {
   try {
     const res = await fetch(
-      window.location.origin.includes("localhost")
-        ? `http://localhost:3000/api/blog/${id}`
-        : `${window.location.origin}/api/blog/${id}`,
+      `https://nexgeno-next-js.vercel.app/api/blog/${id}`,
       {
         cache: "no-store",
       }
