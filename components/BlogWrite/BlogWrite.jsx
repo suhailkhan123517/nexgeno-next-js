@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { ImSpinner9 } from "react-icons/im";
 import dynamic from "next/dynamic";
 import UserList from "../UserList/UserList";
+import baseUrl from "@/utils/baseUrl";
 
 const modules = {
   toolbar: [
@@ -105,7 +106,7 @@ const BlogWrite = ({ categories }) => {
       data.set("metaDescription", metaDescription);
       data.set("blogDate", blogDate);
 
-      const res = await fetch("https://nexgeno-next-js.vercel.app/api/blog", {
+      const res = await fetch(`${baseUrl}/api/blog`, {
         method: "POST",
         body: data,
       });

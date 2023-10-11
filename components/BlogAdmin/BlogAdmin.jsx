@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaEdit } from "react-icons/fa";
 import DeleteBlog from "../DeleteBlog/DeleteBlog";
 import { useEffect, useState } from "react";
+import baseUrl from "@/utils/baseUrl";
 
 const BlogAdmin = () => {
   const [blogs, setBlogs] = useState(null);
@@ -10,7 +11,7 @@ const BlogAdmin = () => {
   useEffect(() => {
     const getBlogs = async () => {
       try {
-        const res = await fetch("/api/blog");
+        const res = await fetch(`${baseUrl}/api/blog`);
 
         if (!res.ok) {
           throw new Error("Failed to fetch Blogs");

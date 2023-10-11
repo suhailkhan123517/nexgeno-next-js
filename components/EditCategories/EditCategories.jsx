@@ -5,6 +5,7 @@ import toast from "react-hot-toast";
 import { ImSpinner9 } from "react-icons/im";
 import { useRouter } from "next/navigation";
 import { BiLeftArrowAlt } from "react-icons/bi";
+import baseUrl from "@/utils/baseUrl";
 
 const EditCategories = ({ id, category, description }) => {
   const [newCategory, setNewCategory] = useState(category);
@@ -17,16 +18,13 @@ const EditCategories = ({ id, category, description }) => {
 
     try {
       setLoading(true);
-      const res = await fetch(
-        `https://nexgeno-next-js.vercel.app/api/categories/${id}`,
-        {
-          method: "PUT",
-          headers: {
-            "Content-type": "application/json",
-          },
-          body: JSON.stringify({ newCategory, newDescription }),
-        }
-      );
+      const res = await fetch(`${baseUrl}/api/categories/${id}`, {
+        method: "PUT",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({ newCategory, newDescription }),
+      });
 
       if (res.ok) {
         toast.success("Categories Updated Successfully");

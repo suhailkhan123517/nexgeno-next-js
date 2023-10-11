@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaEdit } from "react-icons/fa";
 import DeleteButton from "../DeleteButton/DeleteButton";
+import baseUrl from "@/utils/baseUrl";
 
 const Categories = () => {
   const [categories, setCategories] = useState(null);
@@ -10,7 +11,7 @@ const Categories = () => {
   useEffect(() => {
     const getCategories = async () => {
       try {
-        const res = await fetch("/api/categories");
+        const res = await fetch(`${baseUrl}/api/categories`);
 
         if (!res.ok) {
           throw new Error("Failed to fetch Categories");

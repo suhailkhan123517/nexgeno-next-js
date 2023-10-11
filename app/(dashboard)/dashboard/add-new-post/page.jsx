@@ -1,6 +1,7 @@
 "use client";
 import BlogWrite from "@/components/BlogWrite/BlogWrite";
 import React, { useEffect, useState } from "react";
+import baseUrl from "@/utils/baseUrl";
 
 const BlogWritePage = () => {
   const [categories, setCategories] = useState(null);
@@ -8,9 +9,7 @@ const BlogWritePage = () => {
   useEffect(() => {
     const getCategories = async () => {
       try {
-        const res = await fetch(
-          "https://nexgeno-next-js.vercel.app/api/categories"
-        );
+        const res = await fetch(`${baseUrl}/api/categories`);
 
         if (!res.ok) {
           throw new Error("Failed to fetch Categories");

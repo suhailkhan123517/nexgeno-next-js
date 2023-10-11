@@ -1,13 +1,11 @@
 import EditCategories from "@/components/EditCategories/EditCategories";
+import baseUrl from "@/utils/baseUrl";
 
 const getCategoryById = async (id) => {
   try {
-    const res = await fetch(
-      `https://nexgeno-next-js.vercel.app/api/categories/${id}`,
-      {
-        cache: "no-store",
-      }
-    );
+    const res = await fetch(`${baseUrl}/api/categories/${id}`, {
+      cache: "no-store",
+    });
 
     if (!res.ok) {
       throw new Error("Failed to fetch Category");

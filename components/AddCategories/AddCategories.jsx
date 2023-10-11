@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { ImSpinner9 } from "react-icons/im";
 import { useRouter } from "next/navigation";
+import baseUrl from "@/utils/baseUrl";
 
 const AddCategories = () => {
   const router = useRouter();
@@ -46,7 +47,7 @@ const AddCategories = () => {
 
     try {
       setLoading(true);
-      const res = await fetch("/api/categories", {
+      const res = await fetch(`${baseUrl}/api/categories`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",

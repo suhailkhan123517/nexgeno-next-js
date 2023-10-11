@@ -2,18 +2,16 @@
 import { FaTrash } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
+import baseUrl from "@/utils/baseUrl";
 
 const DeleteButton = ({ id }) => {
   const router = useRouter();
   const removeCategory = async () => {
     const confirmed = confirm("Are you sure ?");
     if (confirmed) {
-      const res = await fetch(
-        `https://nexgeno-next-js.vercel.app/api/categories?id=${id}`,
-        {
-          method: "DELETE",
-        }
-      );
+      const res = await fetch(`${baseUrl}/api/categories?id=${id}`, {
+        method: "DELETE",
+      });
 
       if (res.ok) {
         toast.success("Category Deleted");

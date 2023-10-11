@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import { ImSpinner9 } from "react-icons/im";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import baseUrl from "@/utils/baseUrl";
 
 const modules = {
   toolbar: [
@@ -79,13 +80,10 @@ const EditPost = ({
       data.set("newSeoTitle", newSeoTitle);
       data.set("newMetaDescription", newMetaDescription);
 
-      const res = await fetch(
-        `https://nexgeno-next-js.vercel.app/api/blog/${id}`,
-        {
-          method: "PUT",
-          body: data,
-        }
-      );
+      const res = await fetch(`${baseUrl}/api/blog/${id}`, {
+        method: "PUT",
+        body: data,
+      });
 
       if (res.ok) {
         toast.success("Blog Successfully Update");
