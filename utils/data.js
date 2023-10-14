@@ -1738,6 +1738,118 @@ export const hireCards = [
     ],
   },
 ];
+export const experties = [
+  {
+    id: 1,
+    img: "/website-codes.webp",
+    title: "Web Developers",
+    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    links: [
+      { title: "PHP Developer", url: "/hire-developer/php" },
+      { title: "CodeIgniter Developer", url: "/hire-developer/codeIgniter" },
+      { title: "Laravel Developer", url: "/hire-developer/laravel" },
+      { title: "ExpressJS Developer", url: "/hire-developer/express" },
+    ],
+  },
+  {
+    id: 2,
+    img: "/mobile-coding.webp",
+    title: "Mobile Developers",
+    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    links: [
+      { title: "IOS Developer", url: "/hire-developer/ios" },
+      { title: "Android Developer", url: "/hire-developer/android" },
+      { title: "Flutter Developer", url: "/hire-developer/flutter" },
+      { title: "React Native Developer", url: "/hire-developer/reactnative" },
+    ],
+  },
+  {
+    id: 3,
+    img: "/ux.webp",
+    title: "UX / UI Developer",
+    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    links: [
+      { title: "Next Js Developer", url: "/hire-developer/next" },
+      { title: "React Js Developer", url: "/hire-developer/react" },
+      { title: "Angular Developer", url: "/hire-developer/angular" },
+      { title: "Vue Js Developer", url: "/hire-developer/vue" },
+    ],
+  },
+];
+export const solutions = [
+  {
+    id: 1,
+    img: "/website-codes.webp",
+    title: "Website design for starup",
+    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    links: [
+      { title: "PHP Developer", url: "/hire-developer/php" },
+      { title: "CodeIgniter Developer", url: "/hire-developer/codeIgniter" },
+      { title: "Laravel Developer", url: "/hire-developer/laravel" },
+      { title: "ExpressJS Developer", url: "/hire-developer/express" },
+    ],
+  },
+  {
+    id: 2,
+    img: "/mobile-coding.webp",
+    title: "Software Solution for startup",
+    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    links: [
+      { title: "IOS Developer", url: "/hire-developer/ios" },
+      { title: "Android Developer", url: "/hire-developer/android" },
+      { title: "Flutter Developer", url: "/hire-developer/flutter" },
+      { title: "React Native Developer", url: "/hire-developer/reactnative" },
+    ],
+  },
+  {
+    id: 3,
+    img: "/ux.webp",
+    title: "Digital Tranformation",
+    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    links: [
+      { title: "Next Js Developer", url: "/hire-developer/next" },
+      { title: "React Js Developer", url: "/hire-developer/react" },
+      { title: "Angular Developer", url: "/hire-developer/angular" },
+      { title: "Vue Js Developer", url: "/hire-developer/vue" },
+    ],
+  },
+  {
+    id: 4,
+    img: "/ux.webp",
+    title: "Product Prototype Solution",
+    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    links: [
+      { title: "Next Js Developer", url: "/hire-developer/next" },
+      { title: "React Js Developer", url: "/hire-developer/react" },
+      { title: "Angular Developer", url: "/hire-developer/angular" },
+      { title: "Vue Js Developer", url: "/hire-developer/vue" },
+    ],
+  },
+  {
+    id: 5,
+    img: "/ux.webp",
+    title: "On Demand Business Solutions",
+    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    links: [
+      { title: "Next Js Developer", url: "/hire-developer/next" },
+      { title: "React Js Developer", url: "/hire-developer/react" },
+      { title: "Angular Developer", url: "/hire-developer/angular" },
+      { title: "Vue Js Developer", url: "/hire-developer/vue" },
+    ],
+  },
+  {
+    id: 6,
+    img: "/ux.webp",
+    title: "Enter Mobitly Solutions",
+    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    links: [
+      { title: "Next Js Developer", url: "/hire-developer/next" },
+      { title: "React Js Developer", url: "/hire-developer/react" },
+      { title: "Angular Developer", url: "/hire-developer/angular" },
+      { title: "Vue Js Developer", url: "/hire-developer/vue" },
+    ],
+  },
+];
 
 export const frontDevelopment = [
   {
@@ -1976,28 +2088,19 @@ export const sidebarLinks = [
     label: "Add Catagories",
     url: "/dashboard/add-categories",
   },
-  {
-    id: 6,
-    label: "Admin",
-    url: "/dashboard/admin",
-  },
 ];
 
-export const catagoriesBlog = [
+export const recentWork = [
   {
     id: 1,
-    title: "Mobile",
+    img: "./images/desktop/cancari_desktop.jpg",
   },
   {
     id: 2,
-    title: "Web Development",
+    img: "./images/desktop/thelastbite_desktop_portfolio.jpg",
   },
   {
     id: 3,
-    title: "Bussiness",
-  },
-  {
-    id: 4,
-    title: "Selse",
+    img: "./images/desktop/Passport-Lifestyle.jpg",
   },
 ];

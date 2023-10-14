@@ -1,17 +1,16 @@
 "use client";
-import Admin from "@/components/Admin/Admin";
-import React from "react";
-import { redirect } from "next/navigation";
+import Register from "@/components/Register/Register";
 import { useSession } from "next-auth/react";
+import { redirect } from "next/navigation";
 
-const AdminPage = () => {
+const RegisterPage = () => {
   const { data: session } = useSession();
   if (session?.user?.role === "user") redirect("/dashboard");
   return (
     <>
-      <Admin />
+      <Register />
     </>
   );
 };
 
-export default AdminPage;
+export default RegisterPage;

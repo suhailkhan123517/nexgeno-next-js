@@ -14,8 +14,8 @@ import {
 export default function Footer() {
   return (
     <>
-      <div className="container m-auto md:mb-10 mb-5 border-t border-gray-100 sm:pt-14 pt-7 ">
-        <div className="grid sm:grid-cols-4 grid-cols-1 gap-4 ">
+      <div className="container mx-auto  border-t border-gray-100">
+        {/* <div className="grid sm:grid-cols-4 grid-cols-1 gap-4 ">
           <div className="footer_head">
             <h1 className="title_footer text-xl font-semibold ">
               Development Services
@@ -830,9 +830,9 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
         {/* --------------------------footer social links--------------------------- */}
-        <div className="flex items-center gap-2 md:mt-10 mt-5">
+        {/* <div className="flex items-center gap-2 md:mt-10 mt-5">
           <Link
             href="https://in.linkedin.com/company/nexgenotechnologypvtltd"
             target="_blank"
@@ -851,7 +851,7 @@ export default function Footer() {
           >
             <AiFillFacebook className="text-4xl hover:scale-125  transition duration-300 ease-in-out" />
           </Link>
-        </div>
+        </div> */}
 
         {/* ------------------------------logo google ----------------------------- */}
 

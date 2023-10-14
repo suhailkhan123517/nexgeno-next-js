@@ -1,89 +1,84 @@
 import Image from "next/image";
-import React from "react";
 import "./stories.css";
 import Link from "next/link";
 
 export default function Stories() {
   return (
     <>
-      <div className="stories bg-black text-white sm:py-14 py-10">
-        <div className="container m-auto">
-          <h1 className="text-center text-3xl font-semibold pb-5">
-            Success Stories
-          </h1>
-          <div className="grid md:grid-cols-3 place-items-center grid-cols-1 sm:gap-5">
-            <div className="hover_img py-5 relative">
-              <Link href="#">
+      <section className="mb-24 bg-[#fffbfd] py-20">
+        <div className="container mx-auto">
+          <h1 className="heading mb-10">Client Success Stories</h1>
+          <div className="grid grid-cols-3 gap-5">
+            <div className="border-[1px] rounded-2xl bg-white hover:border-pink-600">
+              <div className="relative w-full h-[300px]  ">
                 <Image
-                  src="/images/lawtendo.webp"
-                  alt="lowtendo"
-                  width={350}
-                  height={300}
-                  className="deskImg"
+                  src="/images/desktop/cancari_desktop.jpg"
+                  alt="project image"
+                  fill={true}
+                  priority
+                  className="rounded-t-2xl"
                 />
-                {/* <Image
-                  src="/images/lawtendo_mob.jpg"
-                  alt="lowtendo"
-                  width={90}
-                  height={172}
-                  className="mobImg absolute top-8 right-4  rounded-md"
-                /> */}
-              </Link>
-
-              <h1 className="text-2xl heading_underline inline-block mb-4 relative font-medium pt-4">
-                Lawtendo
-              </h1>
-              <p>Website / Web Development</p>
+              </div>
+              <div className="py-14 px-10 ">
+                <h2 className="heading mb-5"> Cancri Jewels</h2>
+                <p className="desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio vitae non hic saepe dolorum libero facere porro
+                  minus ab labore.
+                </p>
+              </div>
             </div>
-            <div className="hover_img py-5 relative">
-              <Link href="#">
-                <Image
-                  src="/images/geci2.webp"
-                  alt="lowtendo"
-                  width={350}
-                  height={300}
-                  className="deskImg"
-                />
-                {/* <Image
-                  src="/images/gcie_mob.jpg"
-                  alt="GECI"
-                  width={90}
-                  height={172}
-                  className="mobImg absolute top-8 right-4  rounded-md"
-                /> */}
-              </Link>
-
-              <h1 className="text-2xl heading_underline inline-block mb-4 relative font-medium pt-4">
-                Gecindia
-              </h1>
-              <p>Website / Web Development</p>
-            </div>
-            <div className="hover_img py-5 relative">
-              <Link href="#">
-                <Image
-                  src="/images/octa.webp"
-                  alt="lowtendo"
-                  width={350}
-                  height={300}
-                  className="deskImg"
-                />
-                {/* <Image
-                  src="/images/octa_mob.jpg"
-                  alt="lowtendo"
-                  width={90}
-                  height={172}
-                  className="mobImg absolute top-8 right-4  rounded-md"
-                /> */}
-              </Link>
-
-              <h1 className="text-2xl heading_underline inline-block mb-4 relative font-medium pt-4">
-                Octa Networks
-              </h1>
-              <p>Website / Web Development</p>
+            <div className="col-span-2">
+              <div className="grid grid-cols-2 border-[1px] hover:border-pink-600 rounded-2xl bg-white">
+                <div>
+                  <div className="py-14 px-10 ">
+                    <h2 className="heading mb-5"> Cancri Jewels</h2>
+                    <p className="desc ">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Distinctio vitae non hic saepe dolorum libero facere porro
+                      minus ab labore.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div className="relative w-full h-[300px]  ">
+                    <Image
+                      src="/images/desktop/cancari_desktop.jpg"
+                      alt="project image"
+                      fill={true}
+                      priority
+                      className="rounded-r-2xl"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 border-[1px] hover:border-pink-600 rounded-2xl mt-5 bg-white">
+                <div>
+                  <div className="relative w-full h-[300px]  ">
+                    <Image
+                      src="/images/desktop/cancari_desktop.jpg"
+                      alt="project image"
+                      fill={true}
+                      priority
+                      className="rounded-l-2xl"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div className="py-14 px-10 ">
+                    <h2 className="heading mb-5"> Cancri Jewels</h2>
+                    <p className="desc ">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Distinctio vitae non hic saepe dolorum libero facere porro
+                      minus ab labore.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

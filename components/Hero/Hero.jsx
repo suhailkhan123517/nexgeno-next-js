@@ -1,16 +1,49 @@
-import Button from "../Button/Button";
+import Link from "next/link";
 export default function Hero() {
   return (
     <>
-      <div className="container text-[#222] text-center m-auto md:h-[85vh] h-auto md:mt-0 mt-16 flex justify-center items-center flex-col">
-        <h1 className="lg:text-[70px] md:text-[44px] text-[30px]  font-bold lg:leading-[91px] md:leading-[52px] leading-[42px]">
-          Innovative web solutions for modern businesses
-        </h1>
-        <h2 className="sm:text-[24px] text-[19px] leading-[33px] font-medium sm:p-[22px]  p-[5px] sm:mb-[28px] mb-[8px]">
-          Connecting businesses to the digital world
-        </h2>
-        <Button url="/contact" title="Get Started" button="button" />
-      </div>
+      <section className="mt-5 mb-24">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-4">
+            <div className="col-span-3 mt-5">
+              <h1 className="hero_heading">Innovative web solutions</h1>
+              <h1 className="black_heading">for modern businesses</h1>
+              <p className="text-2xl font-medium mt-5">
+                Connecting businesses to the digital world
+              </p>
+
+              <div className="flex flex-row gap-5 mt-10">
+                <Link href="/contact" className="btn">
+                  Contact Us
+                </Link>
+                <Link href="/contact" className="outline_btn">
+                  Enquire Now
+                </Link>
+              </div>
+            </div>
+            <div>
+              <form className="border-[1px] border-pink-600 flex flex-col px-6 py-10 gap-7 rounded-lg mt-5">
+                <input
+                  type="text"
+                  className="border-[1px] py-2 px-3  rounded-md  text-sm outline-none"
+                  placeholder="Contact Person Name"
+                />
+                <input
+                  type="text"
+                  className="border border-gray-300 py-2 px-3  rounded-md  text-sm outline-none"
+                  placeholder="Mobile / Phone No"
+                />
+                <input
+                  type="text"
+                  className="border border-gray-300 py-2 px-3  rounded-md  text-sm outline-none"
+                  placeholder="Email Address"
+                />
+                <button className="btn">Get Quick Quote</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

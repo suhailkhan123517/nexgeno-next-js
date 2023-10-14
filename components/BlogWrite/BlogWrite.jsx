@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { useDropzone } from "react-dropzone";
+import { useSession } from "next-auth/react";
 import "react-quill/dist/quill.snow.css";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
@@ -23,8 +24,8 @@ const modules = {
       { indent: "+1" },
     ],
     ["link", "image", "video"],
-    ["code"], // Code editor
-    [{ color: [] }], // Color picker
+    ["code"],
+    [{ color: [] }],
   ],
 };
 
@@ -40,6 +41,8 @@ const BlogWrite = ({ categories }) => {
   const [metaDescription, setMetaDescription] = useState("");
   const [blogDate, setBlogDate] = useState("");
   const [loading, setLoading] = useState(false);
+  const { data: session } = useSession();
+
   const ReactQuill = useMemo(
     () => dynamic(() => import("react-quill"), { ssr: false }),
     []
@@ -74,20 +77,17 @@ const BlogWrite = ({ categories }) => {
   }, []);
 
   const onDrop = useCallback((acceptedFiles) => {
-    // Keep only the latest dropped file
     const latest = acceptedFiles[acceptedFiles.length - 1];
     setLatestFile(latest);
 
-    // Create a Blob object from the latest file
     const blob = new Blob([latest]);
 
-    // Create a temporary URL for the Blob and set it as the image source
     setImageUrl(URL.createObjectURL(blob));
   }, []);
 
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
-    accept: "image/*", // Define accepted file types (e.g., images)
+    accept: "image/*",
     multiple: false,
   });
 
@@ -105,6 +105,7 @@ const BlogWrite = ({ categories }) => {
       data.set("seoTitle", seoTitle);
       data.set("metaDescription", metaDescription);
       data.set("blogDate", blogDate);
+      data.set("authorId", session?.user?._id);
 
       const res = await fetch(`${baseUrl}/api/blog`, {
         method: "POST",
@@ -201,19 +202,13 @@ const BlogWrite = ({ categories }) => {
           <div className="flex w-full mt-14">
             <div className="w-full">
               <div className="w-full">
-                <label
-                  for="country"
-                  class="block text-sm font-medium leading-6 text-gray-900"
-                >
+                <label className="block text-sm font-medium leading-6 text-gray-900">
                   Categories
                 </label>
-                <div class="w-full">
+                <div className="w-full">
                   <select
-                    id="country"
-                    name="country"
-                    autocomplete="country-name"
                     onChange={(e) => setCatagoriesData(e.target.value)}
-                    className="w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                    className="w-full rounded-md border border-black outline-indigo-600  py-1.5 text-gray-900 shadow-sm  sm:text-sm sm:leading-6"
                   >
                     <option>Select</option>
                     {categories &&

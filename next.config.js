@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    appDir: true,
+    serverComponentsExternalPackages: ["mongoose"],
+  },
+
   webpack: (config) => {
     let modularizeImports = null;
     config.module.rules.some((rule) =>
@@ -10,6 +15,11 @@ const nextConfig = {
     );
     if (modularizeImports?.["@headlessui/react"])
       delete modularizeImports["@headlessui/react"];
+
+    config.experiments = {
+      ...config.experiments,
+      topLevelAwait: true,
+    };
     return config;
   },
 };

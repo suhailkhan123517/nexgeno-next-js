@@ -1,11 +1,10 @@
 "use client";
 import { FaTrash } from "react-icons/fa";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import baseUrl from "@/utils/baseUrl";
 
 const DeleteButton = ({ id }) => {
-  const router = useRouter();
   const removeCategory = async () => {
     const confirmed = confirm("Are you sure ?");
     if (confirmed) {
@@ -15,7 +14,7 @@ const DeleteButton = ({ id }) => {
 
       if (res.ok) {
         toast.success("Category Deleted");
-        router.refresh();
+        window.location.reload();
       }
     }
   };

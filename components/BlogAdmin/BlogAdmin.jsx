@@ -4,19 +4,29 @@ import { FaEdit } from "react-icons/fa";
 import DeleteBlog from "../DeleteBlog/DeleteBlog";
 import { useEffect, useState } from "react";
 import baseUrl from "@/utils/baseUrl";
+import { useSession } from "next-auth/react";
 
 const BlogAdmin = () => {
   const [blogs, setBlogs] = useState(null);
+  const { data: session } = useSession();
 
   useEffect(() => {
     const getBlogs = async () => {
       try {
-        const res = await fetch(`${baseUrl}/api/blog`);
-
-        if (!res.ok) {
-          throw new Error("Failed to fetch Blogs");
+        let res;
+        if (session?.user?.role === "user") {
+          res = await fetch(
+            `${baseUrl}/api/user-blog?authorId=${session?.user?._id}`
+          );
+          if (!res.ok) {
+            throw new Error("Failed to fetch User Blogs");
+          }
+        } else if (session?.user?.role === "admin") {
+          res = await fetch(`${baseUrl}/api/blog/`);
+          if (!res.ok) {
+            throw new Error("Failed to fetch All Blogs");
+          }
         }
-
         const result = await res.json();
         setBlogs(result);
       } catch (error) {

@@ -6,6 +6,7 @@ import { ToasterProvider } from "@/providers/toast-providers";
 import Nav from "@/components/Nav/Nav";
 import Pathname from "@/components/Pathname/Pathname";
 import { AuthProvider } from "../Providers";
+import Navbar from "@/components/Navbar/Navbar";
 
 export const metadata = {
   title:
@@ -107,7 +108,7 @@ export default function RootLayout({ children }) {
         </noscript>
         <AuthProvider>
           <ToasterProvider />
-          <Nav />
+          <Navbar />
           <MobileNav />
           <Pathname />
           {children}

@@ -9,6 +9,11 @@ import {
   BsFillMapFill,
   BsFillTelephoneFill,
 } from "react-icons/bs";
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillLinkedin,
+} from "react-icons/ai";
 
 export default function Contact() {
   const router = useRouter();
@@ -104,6 +109,26 @@ export default function Contact() {
                     <Link href="#">+91 90044 66166</Link> /{" "}
                     <Link href="#"> +91 9773375525</Link>
                   </p>
+                  <div className="flex items-center gap-2">
+                    <Link
+                      href="https://in.linkedin.com/company/nexgenotechnologypvtltd"
+                      target="_blank"
+                    >
+                      <AiFillLinkedin className="text-4xl hover:scale-125 transition duration-300 ease-in-out" />
+                    </Link>
+                    <Link
+                      href="https://instagram.com/nexgenotechnology?igshid=MzRlODBiNWFlZA=="
+                      target="_blank"
+                    >
+                      <AiFillInstagram className="text-4xl hover:scale-125 transition duration-300 ease-in-out" />
+                    </Link>
+                    <Link
+                      href="https://www.facebook.com/nexgenotechnology"
+                      target="_blank"
+                    >
+                      <AiFillFacebook className="text-4xl hover:scale-125  transition duration-300 ease-in-out" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
