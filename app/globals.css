@@ -33,7 +33,7 @@ body {
   @apply lg:text-[60px] md:text-[44px] text-[30px]  font-semibold lg:leading-[70px] md:leading-[52px] leading-[42px] bg-gradient-to-r from-cyan-400 via-pink-500 to-pink-600 bg-clip-text text-transparent drop-shadow-md;
 }
 .gradient_heading {
-  @apply text-[60px] font-bold text-center leading-[70px] bg-gradient-to-b from-pink-600  to-pink-500 bg-clip-text text-transparent drop-shadow-md;
+  @apply text-[60px] font-bold text-center leading-[70px];
 }
 
 .heading {

@@ -84,7 +84,7 @@ export default function ContactPage() {
             <div className="relative col-span-2">
               <form
                 onSubmit={handleSubmit}
-                className="bg-white rounded-md shadow-lg w-full sm:my-10 my-5 py-8 px-5  flex flex-col gap-4 sm:gap-10 lg:absolute "
+                className="bg-white rounded-md shadow-lg w-full sm:my-10 my-5 py-8 px-8  flex flex-col gap-4 sm:gap-10 lg:absolute "
               >
                 <div className="form_field flex flex-col  sm:gap-2">
                   <label htmlFor="name" className="inline-block  mb-0">

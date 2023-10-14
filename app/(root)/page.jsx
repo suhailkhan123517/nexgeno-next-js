@@ -20,26 +20,24 @@ export default function Home() {
       <Hero />
       <Expertise />
       <Solutions />
-      <CallToAction
-        title="Want to hire resources to work with you?"
-        buttonTitle="Let's Discuss"
-      />
+
       <RecentWork />
       <CounterNew />
-      <Stories />
+      {/* <Stories /> */}
+
+      <WhoWeAre
+        title="We are your digital partner to create inspirational design and robust solution for Web, Mobile & Cloud."
+        desc="Nexgeno is a web and mobile app development company dedicated to providing innovative and custom solutions to businesses of all sizes. We are a team of creative designers and expert developers who design, develop, and deliver digital products to enhance user engagement, improve brand awareness, and drive business growth. From digital product design to development, our on-demand Agile product team will ensure that your digital product stands out in today's competitive market."
+      />
+      {/* <DigitalSolutions /> */}
+      <TestimonialClient />
+      <Client />
       <CallToAction
         title="Let's Discuss Your Project"
         desc="Let us know your project idea and Get free consultation to turn it
         into an amazing digital product."
         buttonTitle="Talk To Our Expert"
       />
-      <WhoWeAre
-        title="We are your digital partner to create inspirational design and robust solution for Web, Mobile & Cloud."
-        desc="Nexgeno is a web and mobile app development company dedicated to providing innovative and custom solutions to businesses of all sizes. We are a team of creative designers and expert developers who design, develop, and deliver digital products to enhance user engagement, improve brand awareness, and drive business growth. From digital product design to development, our on-demand Agile product team will ensure that your digital product stands out in today's competitive market."
-      />
-      <DigitalSolutions />
-      <TestimonialClient />
-      <Client />
       <Faq2 />
       <Contact />
     </>

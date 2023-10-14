@@ -17,12 +17,13 @@ export default function Hero() {
                   Contact Us
                 </Link>
                 <Link href="/contact" className="outline_btn">
-                  Enquire Now
+                  Call Us Now
                 </Link>
               </div>
             </div>
             <div>
               <form className="border-[1px] border-pink-600 flex flex-col px-6 py-10 gap-7 rounded-lg mt-5">
+                <p className="text-xl font-semibold text-center">Enquire Now</p>
                 <input
                   type="text"
                   className="border-[1px] py-2 px-3  rounded-md  text-sm outline-none"
@@ -38,7 +39,7 @@ export default function Hero() {
                   className="border border-gray-300 py-2 px-3  rounded-md  text-sm outline-none"
                   placeholder="Email Address"
                 />
-                <button className="btn">Get Quick Quote</button>
+                <button className="btn">Submit</button>
               </form>
             </div>
           </div>

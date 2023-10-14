@@ -35,7 +35,7 @@ const WhoWeAre = ({
               <div className="flex sm:flex-row flex-col my-5 pt-5 sm:gap-9 gap-3">
                 <button className="btn">Get In Touch</button>
               </div>
-              <div className="grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-5 py-8 ">
+              {/* <div className="grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-5 py-8 ">
                 <div className="group  border hover:border-pink-500 border-gray-200 rounded-xl bg-[#fffbfd]    py-8 px-4   hover:shadow-xl">
                   <h1 className="text-4xl font-bold">
                     {counterOn && (
@@ -63,7 +63,7 @@ const WhoWeAre = ({
                   </h1>
                   <h4 className="heading">Website Deliver</h4>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

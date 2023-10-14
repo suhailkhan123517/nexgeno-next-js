@@ -18,22 +18,26 @@ const Expertise = () => {
                 key={item.id}
                 className="border hover:shadow-xl transition duration-200 rounded-2xl   flex items-center flex-col"
               >
-                <div className=" bg-[#fffbfd] border-b w-full py-5 rounded-t-2xl flex justify-center items-center">
-                  <div className="w-24 h-24 rounded-ful  relative">
-                    <Image
-                      src={item.img}
-                      alt="Hire Developer Icon"
-                      fill={true}
-                    />
+                <div className=" bg-[#fffbfd] border-b w-full py-5 px-5 rounded-2xl flex gap-4 items-center">
+                  <div className="w-28">
+                    <div className="w-24 h-24 rounded-ful  relative">
+                      <Image
+                        src={item.img}
+                        alt="Hire Developer Icon"
+                        fill={true}
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold text-black mb-2 px-2">
+                      {item.title}
+                    </h3>
+                    <p className="desc mb-4 px-2">{item.desc}</p>
                   </div>
                 </div>
 
-                <div className="px-6 py-5">
-                  <h3 className="text-xl font-semibold text-black mb-2 px-2">
-                    {item.title}
-                  </h3>
-                  <p className="desc mb-4 px-2">{item.desc}</p>
-
+                {/* <div className="px-6 py-5">
                   {item.links.map((link) => (
                     <ul key={link.title}>
                       <li>
@@ -49,7 +53,7 @@ const Expertise = () => {
                       </li>
                     </ul>
                   ))}
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

@@ -11,13 +11,13 @@ const RecentWork = () => {
         <div className="container mx-auto">
           <div className="flex justify-between items-center mb-10">
             <h2 className="heading">Our Recent Work</h2>
-            <Link
+            {/* <Link
               href="/portfolio"
               className="outline_btn flex items-center gap-2"
             >
               See All
               <BsArrowRightShort className="text-xl" />
-            </Link>
+            </Link> */}
           </div>
           <div className="grid grid-cols-3 gap-5">
             {recentWork.map((item) => (
