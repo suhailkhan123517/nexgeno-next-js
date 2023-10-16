@@ -1,13 +1,16 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
-import Button from "../Button/Button";
+import Popup from "../Popup/Popup";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 border-b " id="headers">
+      <nav className="fixed top-0 left-0 w-full z-40 border-b " id="headers">
         <div className="container  mx-auto">
           <div className="flex items-center  justify-between">
             <Link href="/">
@@ -24,12 +27,13 @@ export default function Navbar() {
               <ul>
                 <li className="text-xl font-semibold">+91 90044 66166 </li>
               </ul>
-              <Link href="/contact" className="btn">
+              <button onClick={() => setIsOpen(!isOpen)} className="btn">
                 Get Quick Quote
-              </Link>
+              </button>
             </div>
           </div>
         </div>
+        <Popup isOpen={isOpen} setIsOpen={setIsOpen} />
       </nav>
     </>
   );

@@ -1741,7 +1741,7 @@ export const hireCards = [
 export const experties = [
   {
     id: 1,
-    img: "/website-codes.webp",
+    img: "/ux.webp",
     title: "UX / UI Design",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     links: [
@@ -1753,7 +1753,7 @@ export const experties = [
   },
   {
     id: 2,
-    img: "/mobile-coding.webp",
+    img: "/website-codes.webp",
     title: "Web Designing",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     links: [
@@ -1765,7 +1765,7 @@ export const experties = [
   },
   {
     id: 3,
-    img: "/ux.webp",
+    img: "/online-marketing.png",
     title: "E-Commerce Website ",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     links: [
@@ -1777,7 +1777,7 @@ export const experties = [
   },
   {
     id: 4,
-    img: "/ux.webp",
+    img: "/hashtag.png",
     title: "Word Press Website ",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     links: [
@@ -1789,7 +1789,7 @@ export const experties = [
   },
   {
     id: 5,
-    img: "/ux.webp",
+    img: "/maintenance.png",
     title: "Website Maintance / AMC",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     links: [
@@ -1801,7 +1801,7 @@ export const experties = [
   },
   {
     id: 6,
-    img: "/ux.webp",
+    img: "/consulting-services.png",
     title: "Website Consulting",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     links: [
@@ -1815,7 +1815,7 @@ export const experties = [
 export const solutions = [
   {
     id: 1,
-    img: "/website-codes.webp",
+    img: "/launch.png",
     title: "Website design for starup",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     // links: [
@@ -1839,7 +1839,7 @@ export const solutions = [
   },
   {
     id: 3,
-    img: "/ux.webp",
+    img: "/engineering.png",
     title: "Digital Tranformation",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     // links: [
@@ -1851,7 +1851,7 @@ export const solutions = [
   },
   {
     id: 4,
-    img: "/ux.webp",
+    img: "/development.webp",
     title: "Product Prototype Solution",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     // links: [
@@ -1863,7 +1863,7 @@ export const solutions = [
   },
   {
     id: 5,
-    img: "/ux.webp",
+    img: "/computer.png",
     title: "On Demand Business Solutions",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     // links: [
@@ -1875,7 +1875,7 @@ export const solutions = [
   },
   {
     id: 6,
-    img: "/ux.webp",
+    img: "/puzzle.png",
     title: "Enter Mobitly Solutions",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     // links: [

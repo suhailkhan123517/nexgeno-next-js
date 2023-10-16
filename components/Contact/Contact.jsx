@@ -199,7 +199,7 @@ export default function Contact() {
           </div>
         </div>
       </div> */}
-      <div className="contact sm:py-10 py-8">
+      <div className="contact sm:py-10 py-8" id="contact">
         <div className="container m-auto">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
             <div className="col-span-3 lg:pr-10 text-white">

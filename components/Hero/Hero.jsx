@@ -1,28 +1,38 @@
-import Link from "next/link";
+"use client";
+import { Link } from "react-scroll";
 export default function Hero() {
   return (
     <>
       <section className="mt-5 mb-24">
         <div className="container mx-auto">
-          <div className="grid grid-cols-4">
-            <div className="col-span-3 mt-5">
+          <div className="grid lg:grid-cols-4 grid-cols-1">
+            <div className="col-span-3 lg:mt-14">
               <h1 className="hero_heading">Innovative web solutions</h1>
-              <h1 className="black_heading">for modern businesses</h1>
-              <p className="text-2xl font-medium mt-5">
+              <h1 className="black_heading lg:mt-0 md:mt-5 mt-3">
+                for modern businesses
+              </h1>
+              <p className="md:text-2xl font-medium md:mt-5 mt-3">
                 Connecting businesses to the digital world
               </p>
 
-              <div className="flex flex-row gap-5 mt-10">
-                <Link href="/contact" className="btn">
-                  Contact Us
+              <div className="flex flex-row gap-5 md:mt-10 mt-5">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  className="btn cursor-pointer"
+                >
+                  Contact
                 </Link>
-                <Link href="/contact" className="outline_btn">
+                <a href="tel:9760989370" className="outline_btn">
                   Call Us Now
-                </Link>
+                </a>
               </div>
             </div>
             <div>
-              <form className="border-[1px] border-pink-600 flex flex-col px-6 py-10 gap-7 rounded-lg mt-5">
+              <form className="border-[1px] border-pink-600 flex flex-col px-6 py-10 gap-7 rounded-lg lg:mt-5 md:mt-16 mt-10">
                 <p className="text-xl font-semibold text-center">Enquire Now</p>
                 <input
                   type="text"

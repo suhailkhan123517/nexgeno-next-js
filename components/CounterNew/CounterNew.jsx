@@ -1,7 +1,7 @@
 "use client";
-import Link from "next/link";
 import { useState } from "react";
 import CountUp from "react-countup";
+import { Link } from "react-scroll";
 import ScrollTrigger from "react-scroll-trigger";
 
 const CounterNew = () => {
@@ -14,7 +14,7 @@ const CounterNew = () => {
       >
         <section className="mb-20">
           <div className="container mx-auto">
-            <div className="grid lg:grid-cols-4 md:grid-cols-2  grid-cols-1 gap-5 my-10 py-10 ">
+            <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 my-10 py-10 ">
               <div className="group  border hover:border-pink-500 border-gray-200 rounded-xl bg-[#fffbfd]    p-8   hover:shadow-xl">
                 <h1 className="text-4xl font-bold">
                   {counterOn && (
@@ -52,7 +52,14 @@ const CounterNew = () => {
                 <h3 className="text-[#050748] lg:text-[25px] sm:text-[20px] text-[18px] leading-[32px] sm:leading-[43px] font-semibold text-center mb-6">
                   Want to Start Project
                 </h3>
-                <Link href="/contact" className="btn ">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  className="btn cursor-pointer"
+                >
                   Get Cost Estimation for Free
                 </Link>
               </div>

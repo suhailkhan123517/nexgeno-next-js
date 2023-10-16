@@ -16,9 +16,9 @@ const Expertise = () => {
             {experties.map((item) => (
               <div
                 key={item.id}
-                className="border hover:shadow-xl transition duration-200 rounded-2xl   flex items-center flex-col"
+                className="border-[1px] hover:border-pink-600 hover:shadow-xl transition duration-200 rounded-2xl   flex items-center flex-col"
               >
-                <div className=" bg-[#fffbfd] border-b w-full py-5 px-5 rounded-2xl flex gap-4 items-center">
+                <div className=" bg-[#fffbfd] border-b w-full py-5 px-5 rounded-2xl flex xl:flex-row flex-col gap-4 items-center">
                   <div className="w-28">
                     <div className="w-24 h-24 rounded-ful  relative">
                       <Image
@@ -30,7 +30,7 @@ const Expertise = () => {
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-semibold text-black mb-2 px-2">
+                    <h3 className="text-xl font-semibold text-black mb-2 px-2 line-clamp-1">
                       {item.title}
                     </h3>
                     <p className="desc mb-4 px-2">{item.desc}</p>
