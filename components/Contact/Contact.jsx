@@ -226,8 +226,9 @@ export default function Contact() {
             <div className="relative col-span-2">
               <form
                 onSubmit={handleSubmit}
-                className="bg-white rounded-md shadow-lg w-full sm:my-10 my-5 py-12 px-12  flex flex-col gap-4 sm:gap-10 lg:absolute "
+                className="bg-white rounded-md shadow-lg w-full sm:my-8 my-5 py-12 px-12  flex flex-col gap-4 sm:gap-10 lg:absolute "
               >
+                <h2 className="heading text-center">Enquire Now</h2>
                 <div className="form_field flex flex-col  sm:gap-2">
                   <label htmlFor="name" className="inline-block  mb-0">
                     Your Name <span className="text-red-600">*</span>

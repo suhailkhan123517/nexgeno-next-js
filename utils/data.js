@@ -1742,7 +1742,7 @@ export const experties = [
   {
     id: 1,
     img: "/ux.webp",
-    title: "UX / UI Design",
+    title: "UX/UI Design",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     links: [
       { title: "PHP Developer", url: "/hire-developer/php" },
@@ -1754,7 +1754,7 @@ export const experties = [
   {
     id: 2,
     img: "/website-codes.webp",
-    title: "Web Designing",
+    title: "Website Designing",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     links: [
       { title: "IOS Developer", url: "/hire-developer/ios" },
@@ -1778,7 +1778,7 @@ export const experties = [
   {
     id: 4,
     img: "/hashtag.png",
-    title: "Word Press Website ",
+    title: "Wordpress Website ",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     links: [
       { title: "Next Js Developer", url: "/hire-developer/next" },
@@ -1790,7 +1790,7 @@ export const experties = [
   {
     id: 5,
     img: "/maintenance.png",
-    title: "Website Maintance / AMC",
+    title: "Website Maintenance/AMC",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     links: [
       { title: "Next Js Developer", url: "/hire-developer/next" },
@@ -1828,7 +1828,7 @@ export const solutions = [
   {
     id: 2,
     img: "/mobile-coding.webp",
-    title: "Software Solution for startup",
+    title: "Software for startup",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     // links: [
     //   { title: "IOS Developer", url: "/hire-developer/ios" },
@@ -1852,7 +1852,7 @@ export const solutions = [
   {
     id: 4,
     img: "/development.webp",
-    title: "Product Prototype Solution",
+    title: "Product Prototype ",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     // links: [
     //   { title: "Next Js Developer", url: "/hire-developer/next" },
@@ -1864,7 +1864,7 @@ export const solutions = [
   {
     id: 5,
     img: "/computer.png",
-    title: "On Demand Business Solutions",
+    title: "On Demand Business ",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     // links: [
     //   { title: "Next Js Developer", url: "/hire-developer/next" },
@@ -1876,7 +1876,7 @@ export const solutions = [
   {
     id: 6,
     img: "/puzzle.png",
-    title: "Enter Mobitly Solutions",
+    title: "Enter Mobitly ",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     // links: [
     //   { title: "Next Js Developer", url: "/hire-developer/next" },

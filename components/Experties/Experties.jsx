@@ -9,7 +9,7 @@ const Expertise = () => {
       <section className="mb-24">
         <div className="container mx-auto">
           <h2 className="heading text-center ">
-            Unleash Digital Innovation <br /> with Our Technology Expertise
+            Unleash Digital Innovation <br /> with Our Technology
           </h2>
           <h1 className="gradient_heading">EXPERTISE</h1>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  place-items-start xl:gap-10 gap-3 my-14">

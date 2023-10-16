@@ -10,7 +10,7 @@ const Solutions = () => {
       <section className="mb-20 py-16   bg-[#fffbfd]">
         <div className="container mx-auto">
           <h2 className="heading text-center ">
-            Unleash Digital Innovation <br /> with Our Solutions
+            Unleash Digital Innovation <br /> with Our
           </h2>
           <h1 className="gradient_heading ">SOLUTIONS</h1>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  place-items-start xl:gap-10 gap-3 mt-14">
@@ -32,8 +32,8 @@ const Solutions = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-black mb-2 px-2 line-clamp-1">
-                      {item.title}
+                    <h3 className="text-xl font-semibold text-black mb-2 px-2 ">
+                      {item.title} <br /> Solutions
                     </h3>
                     <p className="desc mb-4 px-2">{item.desc}</p>
                   </div>
