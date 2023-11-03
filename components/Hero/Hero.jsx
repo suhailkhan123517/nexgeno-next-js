@@ -4,6 +4,7 @@ import toast from "react-hot-toast";
 import { Link } from "react-scroll";
 import { useRouter } from "next/navigation";
 import { ImSpinner9 } from "react-icons/im";
+
 export default function Hero() {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
@@ -42,16 +43,23 @@ export default function Hero() {
 
   return (
     <>
-      <section className="mt-5 mb-24">
+      <section className="hero_section xl:py-20 py-5  mb-16 h-full">
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-4 grid-cols-1">
-            <div className="col-span-3 lg:mt-14">
-              <h1 className="hero_heading">Innovative web solutions</h1>
+          <div className="grid lg:grid-cols-5 grid-cols-1 ">
+            <div className="col-span-3">
+              <h1 className="hero_heading mb-2">Innovative web solutions</h1>
               <h1 className="black_heading lg:mt-0 md:mt-5 mt-3">
                 for modern businesses
               </h1>
-              <p className="md:text-2xl font-medium md:mt-5 mt-3">
+              <p className="md:text-2xl font-medium  mt-2 md:mt-5">
                 Connecting businesses to the digital world
+              </p>
+              <p className="md:mt-5 mt-2 md:pr-28">
+                Are you ready to transform your online presence and captivate
+                your audience with stunning, user-friendly websites? At Nexgeno
+                Technology, we are your digital partners dedicated to delivering
+                innovative and customized website design solutions that can
+                elevate your business to new heights.
               </p>
 
               <div className="flex flex-row gap-5 md:mt-10 mt-5">
@@ -59,7 +67,7 @@ export default function Hero() {
                   to="contact"
                   spy={true}
                   smooth={true}
-                  offset={-100}
+                  offset={-50}
                   duration={500}
                   className="btn cursor-pointer"
                 >
@@ -70,27 +78,30 @@ export default function Hero() {
                 </a>
               </div>
             </div>
-            <div>
+            <div className="col-span-2 xl:px-10">
               <form
                 onSubmit={handleSubmit}
-                className="border-[1px] border-pink-600 flex flex-col px-6 py-10 gap-7 rounded-lg lg:mt-5 md:mt-16 mt-10"
+                className="shadow-2xl flex flex-col xl:px-14 md:px-10 px-5 xl:py-20 md:py-14 py-8 gap-7 rounded-lg  bg-white lg:mt-0 mt-10"
               >
-                <p className="text-xl font-semibold text-center">Enquire Now</p>
+                <p className="md:text-3xl text-2xl font-semibold leading-tight">
+                  {" "}
+                  Get a Free Enquire Now
+                </p>
                 <input
                   type="text"
-                  className="border-[1px] py-2 px-3  rounded-md  text-sm outline-none"
+                  className="border-b py-2 px-3 focus:border-b-blue-600    text-base outline-none"
                   placeholder="Contact Person Name"
                   onChange={(e) => setName(e.target.value)}
                 />
                 <input
                   type="number"
-                  className="border border-gray-300 py-2 px-3  rounded-md  text-sm outline-none"
+                  className="border-b py-2 px-3  focus:border-b-blue-600  text-base outline-none"
                   placeholder="Mobile / Phone No"
                   onChange={(e) => setNumber(e.target.value)}
                 />
                 <input
                   type="text"
-                  className="border border-gray-300 py-2 px-3  rounded-md  text-sm outline-none"
+                  className="border-b py-2 px-3  focus:border-b-blue-600  text-base outline-none"
                   placeholder="Email Address"
                   onChange={(e) => setEmail(e.target.value)}
                 />

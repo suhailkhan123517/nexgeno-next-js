@@ -98,9 +98,9 @@ const AddCategories = () => {
           <div className="flex items-center justify-between mt-10 mb-24">
             <button
               type="submit"
-              className="px-4 py-2 flex items-center justify-center bg-black text-white hover:bg-black/70 rounded-md "
+              className="px-4 py-2 bg-black text-white hover:bg-black/70 rounded-md"
             >
-              {loading ? "Submitting..." : "Submit"}
+              {loading ? <ImSpinner9 className="animate-spin" /> : "Submit"}
             </button>
           </div>
         </form>

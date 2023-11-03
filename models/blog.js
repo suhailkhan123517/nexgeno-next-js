@@ -2,7 +2,7 @@ import mongoose, { Schema, models } from "mongoose";
 
 const blogSchema = new Schema(
   {
-    image: {
+    imageUrl: {
       type: String,
       required: true,
     },
@@ -35,10 +35,6 @@ const blogSchema = new Schema(
       required: true,
     },
     blogDate: {
-      type: String,
-      required: true,
-    },
-    seoTitle: {
       type: String,
       required: true,
     },

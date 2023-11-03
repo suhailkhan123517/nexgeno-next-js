@@ -26,7 +26,7 @@ const Admin = () => {
     <>
       <section>
         <Link
-          href="/register"
+          href="/dashboard/register"
           className="px-4 py-2 bg-black text-white hover:bg-black/70 rounded-md"
         >
           Add User

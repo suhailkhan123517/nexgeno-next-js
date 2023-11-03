@@ -1,40 +1,54 @@
 "use client";
-
+import Image from "next/image";
 import { Link } from "react-scroll";
 
-const WhoWeAre = ({
-  title,
-  desc,
-  shortDesc1,
-  shortDesc2,
-  shortDesc3,
-  shortDesc4,
-}) => {
+const WhoWeAre = () => {
   return (
     <>
       <section className="mb-24">
-        <div className="container mx-auto py-10 lg:px-14 sm:px-5 px-3">
-          <div className="border border-gray-200 hover:border-pink-500 sm:py-8  py-3 lg:px-20 sm:px-10 px-4 rounded-3xl hover:border-gradient-to-r from-pink-500 to-purple-600">
-            <p className="text-pink-600 text-lg font-medium">Who We Are</p>
+        <div className="container mx-auto ">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
+            <div className="border border-gray-200 hover:border-pink-500 sm:py-8  py-5 lg:px-10 sm:px-10 px-4 rounded-3xl hover:border-gradient-to-r from-pink-500 to-purple-600">
+              <p className="text-pink-600 text-lg font-medium">Who We Are</p>
 
-            <h1 className="heading py-4 "> {title} </h1>
+              <h1 className="heading py-4 ">
+                We are your digital partner to create inspirational design and
+                robust solution for Web, Mobile & Cloud.
+              </h1>
 
-            <p className="desc my-5">{desc}</p>
-            <p className="desc my-5">{shortDesc1}</p>
-            <p className="desc my-5">{shortDesc2}</p>
-            <p className="desc my-5">{shortDesc3}</p>
-            <p className="desc my-5">{shortDesc4}</p>
-            <div className="flex sm:flex-row flex-col my-5 pt-5 sm:gap-9 gap-3">
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                className="btn cursor-pointer"
-              >
-                Get In Touch
-              </Link>
+              <p className="desc my-5">
+                Nexgeno is a web and mobile app development company dedicated to
+                providing innovative and custom solutions to businesses of all
+                sizes. We are a team of creative designers and expert developers
+                who design, develop, and deliver digital products to enhance
+                user engagement, improve brand awareness, and drive business
+                growth. From digital product design to development, our
+                on-demand Agile product team will ensure that your digital
+                product stands out in today&apos;s competitive market.
+              </p>
+
+              <div className="mt-10">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  className="btn cursor-pointer"
+                >
+                  Get In Touch
+                </Link>
+              </div>
+            </div>
+            <div className="rounded-3xl">
+              <div className="w-full md:h-[500px] h-[300px] relative rounded-3xl">
+                <Image
+                  src="/images/who.webp"
+                  alt="Who Are  WE Image"
+                  fill={true}
+                  className="object-cover rounded-3xl"
+                />
+              </div>
             </div>
           </div>
         </div>

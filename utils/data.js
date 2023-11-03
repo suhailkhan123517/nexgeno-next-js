@@ -1011,45 +1011,57 @@ export const faq = [
     id: 1,
     question: "What kind of services does NexGeno Technology offer?",
     answer:
-      "NexGeno Technology specializes in web designing and development services. This includes creating and building websites, designing user interfaces and experiences, and optimizing websites for search engines (SEO).",
+      "We specialize in website design, e-commerce solutions, WordPress development, and more. Explore our diverse services to meet your digital needs.",
   },
   {
     id: 2,
-    question: "Who can benefit from NexGeno Technology's services?",
+    question: "How long does it take to complete a web design project?",
     answer:
-      "Any individual or business that needs a website or wants to improve their online presence can benefit from NexGeno Technology's services. This includes startups, small and medium-sized businesses, as well as large corporations.",
+      "Project timelines vary depending on complexity. Smaller projects may take a few weeks, while larger ones can span several months. We work with you to determine the most suitable timeframe",
   },
   {
     id: 3,
-    question:
-      " What programming languages and technologies does NexGeno Technology use?",
+    question: "How much does it cost to develop a web application?",
     answer:
-      "NexGeno Technology uses a wide range of programming languages and technologies including HTML, CSS, JavaScript, PHP, React, Angular, Node.js, and more. The specific languages and technologies used depend on the project requirements and client needs.",
+      "Costs depend on the project's scope and requirements. We provide customized quotes based on your specific needs. Contact us for a free consultation",
   },
   {
     id: 4,
-    question:
-      "How long does it take to complete a project with NexGeno Technology?",
+    question: "What's the difference between a website and a web application?",
     answer:
-      "The time it takes to complete a project with NexGeno Technology varies depending on the complexity and scope of the project. Typically, smaller projects take a few weeks to complete, while larger projects can take several months. NexGeno Technology works closely with clients to determine a project timeline that meets their specific needs and deadlines.",
+      "A website typically offers information and content, while a web application has interactive features and functions, such as ecommerce platforms or user dashboards.",
   },
   {
     id: 5,
-    question: "How long does it take to develop a web application?",
+    question: "What programming languages and technologies do you use?",
     answer:
-      "The time it takes to develop a web application can vary depending on the complexity of the application, the technologies used, and the expertise of the development team. Simple web applications may be developed in a few weeks, while more complex applications may take several months or longer.",
+      "Our experts are proficient in various technologies, including HTML, CSS, JavaScript, PHP, and more. We choose the best tools for each project.",
   },
   {
     id: 6,
-    question: "How much does it cost to develop a web application?",
+    question: "Can you show examples of your previous work?",
     answer:
-      "The cost of developing a web application can vary widely depending on the scope of the project, the technologies used, and the expertise of the development team. Simple web applications may cost a few thousand dollars, while more complex applications may cost tens or even hundreds of thousands of dollars.",
+      "Absolutely! Explore our portfolio to see a range of projects we've successfully delivered to satisfied clients.",
   },
   {
     id: 7,
-    question: "What is the difference between a web application and a website?",
+    question: "Do you offer ongoing maintenance and support for websites?",
     answer:
-      " While a website is a collection of web pages that provide information or promote a business, a web application is a software application that runs on a web browser and provides interactive functionality. Web applications are typically more complex and require more advanced development skills than websites.",
+      "We follow industry best practices for e-commerce security, including secure payment gateways and data encryption to protect your customers and your business.",
+  },
+  {
+    id: 8,
+    question:
+      "What sets Nexgeno Technology apart from other web design companies?",
+    answer:
+      "We're not just web designers; we're strategic partners in your digital success. We offer tailored solutions, creative excellence, and a commitment to innovation.",
+  },
+  {
+    id: 9,
+    question:
+      "What's the first step to starting a project with Nexgeno Technology?",
+    answer:
+      "Contact us today by phone at +91 90044 66166 or through email at  info@nexgeno.in to initiate a discussion about your project's needs and objectives.",
   },
 ];
 
@@ -1816,8 +1828,8 @@ export const solutions = [
   {
     id: 1,
     img: "/launch.png",
-    title: "Website design for starup",
-    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    title: "Website Design",
+    desc: "Crafting visually appealing websites that leave a lasting impression on your visitors.",
     // links: [
     //   { title: "PHP Developer", url: "/hire-developer/php" },
     //   { title: "CodeIgniter Developer", url: "/hire-developer/codeIgniter" },
@@ -1828,8 +1840,8 @@ export const solutions = [
   {
     id: 2,
     img: "/mobile-coding.webp",
-    title: "Software for startup",
-    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    title: "E-commerce",
+    desc: "Building seamless and secure online stores for enhanced sales.",
     // links: [
     //   { title: "IOS Developer", url: "/hire-developer/ios" },
     //   { title: "Android Developer", url: "/hire-developer/android" },
@@ -1840,8 +1852,8 @@ export const solutions = [
   {
     id: 3,
     img: "/engineering.png",
-    title: "Digital Tranformation",
-    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    title: "WordPress Development",
+    desc: " Creating dynamic and manageable websites with the power of WordPress.",
     // links: [
     //   { title: "Next Js Developer", url: "/hire-developer/next" },
     //   { title: "React Js Developer", url: "/hire-developer/react" },
@@ -1852,8 +1864,8 @@ export const solutions = [
   {
     id: 4,
     img: "/development.webp",
-    title: "Product Prototype ",
-    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    title: "Digital Transformation",
+    desc: ": Navigating the digital landscape with  confidence and innovation.",
     // links: [
     //   { title: "Next Js Developer", url: "/hire-developer/next" },
     //   { title: "React Js Developer", url: "/hire-developer/react" },
@@ -1864,8 +1876,8 @@ export const solutions = [
   {
     id: 5,
     img: "/computer.png",
-    title: "On Demand Business ",
-    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    title: "Product Prototyping",
+    desc: "Transforming your ideas into tangible  product prototypes for testing and visualization.",
     // links: [
     //   { title: "Next Js Developer", url: "/hire-developer/next" },
     //   { title: "React Js Developer", url: "/hire-developer/react" },
@@ -1876,8 +1888,8 @@ export const solutions = [
   {
     id: 6,
     img: "/puzzle.png",
-    title: "Enter Mobitly ",
-    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    title: "On-Demand Solutions",
+    desc: "Tailored services to meet the unique needs of your business for increased efficiency",
     // links: [
     //   { title: "Next Js Developer", url: "/hire-developer/next" },
     //   { title: "React Js Developer", url: "/hire-developer/react" },
@@ -2110,19 +2122,9 @@ export const sidebarLinks = [
     url: "/dashboard/all-post",
   },
   {
-    id: 3,
-    label: "Add New Post",
-    url: "/dashboard/add-new-post",
-  },
-  {
     id: 4,
     label: "Catagories",
     url: "/dashboard/catagories",
-  },
-  {
-    id: 5,
-    label: "Add Catagories",
-    url: "/dashboard/add-categories",
   },
 ];
 

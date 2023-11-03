@@ -28,10 +28,16 @@ const Categories = () => {
 
   return (
     <>
+      <Link
+        href={`/dashboard/add-new-post/`}
+        className="px-4 py-2 bg-black text-white hover:bg-black/70 rounded-md mb-10"
+      >
+        Add New Categories
+      </Link>
       <table className="w-full  border-collapse border border-slate-400 mt-10">
         <thead>
           <tr>
-            <th className="border border-slate-300 p-2">Catagories</th>
+            <th className="border border-slate-300 p-2">Categories</th>
             <th className="border border-slate-300 p-2 ">Description</th>
             <th className="border border-slate-300 p-2">Date</th>
             <th className="border border-slate-300 p-2">Tools</th>

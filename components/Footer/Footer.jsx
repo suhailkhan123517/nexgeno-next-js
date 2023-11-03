@@ -10,6 +10,7 @@ import {
   AiFillTwitterSquare,
   AiTwotoneStar,
 } from "react-icons/ai";
+import GoToTop from "../GoToTop/GoToTop";
 
 export default function Footer() {
   return (

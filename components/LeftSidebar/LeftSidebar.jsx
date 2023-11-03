@@ -38,7 +38,7 @@ const LeftSidebar = () => {
                   isAdmin && "bg-white shadow-xl"
                 }`}
               >
-                <p className="text-light-1 ">Admin</p>
+                <p className="text-light-1 ">User Management</p>
               </Link>
             </>
           )}

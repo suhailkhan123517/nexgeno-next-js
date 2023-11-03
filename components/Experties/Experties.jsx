@@ -9,9 +9,9 @@ const Expertise = () => {
       <section className="mb-24">
         <div className="container mx-auto">
           <h2 className="heading text-center ">
-            Unleash Digital Innovation <br /> with Our Technology
+            Unleash Digital Innovation <br /> with Our Expertise
           </h2>
-          <h1 className="gradient_heading">EXPERTISE</h1>
+          {/* <h1 className="gradient_heading">EXPERTISE</h1> */}
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  place-items-start xl:gap-10 gap-3 my-14">
             {experties.map((item) => (
               <div
@@ -56,6 +56,11 @@ const Expertise = () => {
                 </div> */}
               </div>
             ))}
+          </div>
+          <div className="grid place-items-center">
+            <button className="btn flex items-center flex-row gap-3">
+              View All <BsArrowRight />{" "}
+            </button>
           </div>
         </div>
       </section>

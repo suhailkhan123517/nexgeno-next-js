@@ -66,11 +66,11 @@ const Register = () => {
     }
   };
   const showPasswordToggle = () => {
-    setShowPassword(!showPassword);
+    setShowPassword(!showPassword)
   };
   return (
     <>
-      <section className="w-full h-screen grid place-items-center bg-[#fffbfd]">
+      <section className="w-full">
         <div className="w-full max-w-lg relative">
           <div className="bg-white py-8 px-10 shadow-2xl  rounded-3xl">
             <Image

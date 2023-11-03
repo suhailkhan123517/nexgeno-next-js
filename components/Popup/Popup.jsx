@@ -29,16 +29,16 @@ const Popup = ({ setIsOpen, isOpen }) => {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <div className="relative mx-auto max-w-xl rounded-xl bg-white shadow-2xl ring-1 ring-black/5">
+            <div className="relative mx-auto max-w-xl py-10 rounded-xl bg-white shadow-2xl ring-1 ring-black/5">
               <GrFormClose
                 className="text-4xl absolute top-2 right-2 cursor-pointer"
                 onClick={() => setIsOpen(!isOpen)}
               />
-              <p className="py-5 text-center text-2xl font-semibold  text-pink-600">
-                Enquire Now
+              <p className="pb-5 text-center text-2xl font-semibold  text-pink-600">
+                Get Quick Quote
               </p>
 
-              <form className="flex items-center flex-col gap-5  max-w-sm mx-auto py-5">
+              <form className="flex items-center flex-col gap-5  max-w-md  mx-auto py-5 border border-pink-600 rounded-xl p-5">
                 <input
                   type="text"
                   placeholder="Your Name *"

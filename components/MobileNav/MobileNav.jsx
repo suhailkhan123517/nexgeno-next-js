@@ -1,14 +1,33 @@
+"use client";
 import "./MobileNav.css";
 import Image from "next/image";
 import Button from "../Button/Button";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function MobileNav() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
   return (
     <>
       <div className="mobilenav">
         <div className="wrapper">
-          <nav>
+          <nav className={`${isVisible && "bg-[#fffbfd]"}`}>
             <Link href="/">
               <div className="logo relative w-[170px] h-[43px]">
                 <Image

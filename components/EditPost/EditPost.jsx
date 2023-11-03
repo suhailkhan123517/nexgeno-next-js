@@ -22,15 +22,14 @@ const modules = {
       { indent: "+1" },
     ],
     ["link", "image", "video"],
-    ["code"], // Code editor
-    [{ color: [] }], // Color picker
+    [{ color: [] }],
   ],
 };
 
 const EditPost = ({
   categories,
   id,
-  image,
+  imageUrl,
   title,
   description,
   textEditor,
@@ -38,8 +37,8 @@ const EditPost = ({
   seoTitle,
   metaDescription,
 }) => {
-  const [newLatestFile, setNewLatestFile] = useState(null);
-  const [newImageUrl, setNewImageUrl] = useState(null);
+  const [newLatestFile, setNewLatestFile] = useState(imageUrl);
+  const [newImageUrl, setNewImageUrl] = useState(imageUrl);
   const [newTitle, setNewTitle] = useState(title);
   const [newDescription, setNewDescription] = useState(description);
   const [newTextEditor, setNewTextEditor] = useState(textEditor);
@@ -71,18 +70,21 @@ const EditPost = ({
     e.preventDefault();
     try {
       setLoading(true);
-      const data = new FormData();
-      data.set("newLatestFile", newLatestFile);
-      data.set("newTitle", newTitle);
-      data.set("newDescription", newDescription);
-      data.set("newTextEditor", newTextEditor);
-      data.set("newCatagoriesData", newCatagoriesData);
-      data.set("newSeoTitle", newSeoTitle);
-      data.set("newMetaDescription", newMetaDescription);
-
+      const imageUrl = await updateImage();
       const res = await fetch(`${baseUrl}/api/blog/${id}`, {
         method: "PUT",
-        body: data,
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({
+          imageUrl,
+          newTitle,
+          newDescription,
+          newTextEditor,
+          newCatagoriesData,
+          newSeoTitle,
+          newMetaDescription,
+        }),
       });
 
       if (res.ok) {
@@ -96,6 +98,37 @@ const EditPost = ({
       console.log(error);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const updateImage = async (publicId) => {
+    if (!newLatestFile) return;
+
+    const formData = new FormData();
+
+    formData.append("file", newLatestFile);
+    formData.append("upload_preset", process.env.UPLOAD_PRESET);
+
+    try {
+      const res = await fetch(
+        `https://api.cloudinary.com/v1_1/${process.env.CLOUD_NAME}/image/upload/${publicId}`,
+        {
+          method: "PUT",
+          body: formData,
+          headers: {
+            "Content-Type": "multipart/form-data",
+            "x-api-key": process.env.YOUR_CLOUDINARY_API_KEY,
+          },
+        }
+      );
+
+      const data = await res.json();
+
+      const imageUrl = data["secure_url"];
+
+      return imageUrl;
+    } catch (error) {
+      console.log(error);
     }
   };
 
@@ -140,7 +173,7 @@ const EditPost = ({
               <>
                 <div className="flex flex-col justify-center items-center h-[360px] border-dashed border-2  border-gray-800 hover:border-indigo-600 rounded-md gap-4 overflow-hidden">
                   <Image
-                    src={`/${image}`}
+                    src={`${imageUrl}`}
                     width={400}
                     height={400}
                     alt="blog image"

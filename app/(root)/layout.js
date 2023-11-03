@@ -7,6 +7,7 @@ import Nav from "@/components/Nav/Nav";
 import Pathname from "@/components/Pathname/Pathname";
 import { AuthProvider } from "../Providers";
 import Navbar from "@/components/Navbar/Navbar";
+import GoToTop from "@/components/GoToTop/GoToTop";
 
 export const metadata = {
   title:
@@ -113,6 +114,7 @@ export default function RootLayout({ children }) {
           <Pathname />
           {children}
           <Footer />
+          <GoToTop />
         </AuthProvider>
       </body>
     </html>

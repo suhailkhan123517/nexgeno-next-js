@@ -48,7 +48,7 @@ const BlogPage = () => {
                 <Link href={`/blog/${lastBlog._id}`}>
                   <div className="relative w-full h-[350px] rounded-lg">
                     <Image
-                      src={`/${lastBlog.image}`}
+                      src={`${lastBlog.imageUrl}`}
                       fill={true}
                       alt="blog Banner"
                       className="rounded-lg"
@@ -91,7 +91,7 @@ const BlogPage = () => {
                       className="flex items-center gap-5 mb-4"
                     >
                       <Image
-                        src={`/${item.image}`}
+                        src={`${item.imageUrl}`}
                         width={200}
                         height={200}
                         alt="Blog post"
@@ -164,7 +164,7 @@ const BlogPage = () => {
                       <div className="flex-auto">
                         <div className="relative w-[350px] h-[220px]">
                           <Image
-                            src={`/${item.image}`}
+                            src={`${item.imageUrl}`}
                             fill={true}
                             alt="Blog post"
                             className="rounded-lg"

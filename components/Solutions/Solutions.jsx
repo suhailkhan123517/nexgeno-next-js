@@ -10,14 +10,14 @@ const Solutions = () => {
       <section className="mb-20 py-16   bg-[#fffbfd]">
         <div className="container mx-auto">
           <h2 className="heading text-center ">
-            Unleash Digital Innovation <br /> with Our
+            Unleashing Innovation with <br /> Our Technology
           </h2>
-          <h1 className="gradient_heading ">SOLUTIONS</h1>
+          {/* <h1 className="gradient_heading ">SOLUTIONS</h1> */}
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  place-items-start xl:gap-10 gap-3 mt-14">
             {solutions.map((item) => (
               <div
                 key={item.id}
-                className="border bg-white hover:border-pink-600 hover:shadow-xl transition duration-200 rounded-2xl   flex  flex-col px-6 py-8"
+                className="border bg-white hover:border-pink-600 hover:shadow-xl transition duration-200 rounded-2xl   xl:h-[218px] lg:h-[330px] flex  flex-col xl:px-6 px-4 py-8"
               >
                 {/* <div className=" bg-[#fffbfd] border-b w-full py-5 rounded-t-2xl flex justify-center items-center"></div> */}
 

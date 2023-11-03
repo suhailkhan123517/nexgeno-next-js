@@ -36,7 +36,7 @@ const EditPostPage = async ({ params }) => {
   const { id } = params;
   const { blogs } = await getBlogById(id);
   const {
-    image,
+    imageUrl,
     title,
     description,
     textEditor,
@@ -50,7 +50,7 @@ const EditPostPage = async ({ params }) => {
     <>
       <EditPost
         id={id}
-        image={image}
+        imageUrl={imageUrl}
         categories={categories}
         title={title}
         description={description}

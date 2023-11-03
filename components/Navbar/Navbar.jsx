@@ -1,16 +1,38 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import Popup from "../Popup/Popup";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-40 border-b " id="headers">
+      <nav
+        className={`fixed top-0 left-0 w-full z-40 ${
+          isVisible && "bg-[#fffbfd]"
+        }`}
+        id="headers"
+      >
         <div className="container  mx-auto">
           <div className="flex items-center  justify-between">
             <Link href="/">

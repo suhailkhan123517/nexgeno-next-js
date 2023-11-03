@@ -52,7 +52,7 @@ const BlogDetails = async ({ params }) => {
             <div>
               <div className="relative w-full h-[350px] rounded-lg">
                 <Image
-                  src={`/${blogs.image}`}
+                  src={`${blogs.imageUrl}`}
                   fill={true}
                   alt="blog Banner"
                   className="rounded-lg hover:-translate-y-2 transition-all duration-200"
