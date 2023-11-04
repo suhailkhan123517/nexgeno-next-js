@@ -37,6 +37,10 @@ html {
   z-index: -1;
 }
 
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
 .btn {
   @apply bg-gradient-to-r hover:bg-gradient-to-r from-cyan-500  to-pink-500 py-2 hover:from-pink-500 hover:to-cyan-500 transition-all hover:duration-200 px-5 rounded-3xl text-white font-medium;
 }
@@ -45,16 +49,10 @@ html {
   @apply hover:bg-gradient-to-r  py-2 hover:from-pink-500 hover:to-cyan-500 transition-all hover:duration-200 px-5 rounded-3xl hover:text-white border border-black hover:border-gray-200 font-medium;
 }
 
-.black_heading {
-  @apply xl:text-5xl  md:text-4xl  text-2xl font-semibold;
-}
 .sub_heading {
   @apply text-[40px] font-semibold leading-[50px];
 }
 
-.hero_heading {
-  @apply xl:text-8xl  md:text-7xl  text-4xl font-semibold  bg-gradient-to-r from-cyan-400 via-pink-500 to-pink-600 bg-clip-text text-transparent drop-shadow-md;
-}
 .gradient_heading {
   @apply text-[60px] font-bold text-center leading-[70px];
 }

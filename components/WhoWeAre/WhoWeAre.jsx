@@ -5,9 +5,19 @@ import { Link } from "react-scroll";
 const WhoWeAre = () => {
   return (
     <>
-      <section className="mb-24">
+      <section className="md:mb-24 mb-12">
         <div className="container mx-auto ">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
+            <div className="rounded-3xl md:hidden">
+              <div className="w-full md:h-[500px] h-[300px] relative rounded-3xl">
+                <Image
+                  src="/images/who.webp"
+                  alt="Who Are  WE Image"
+                  fill={true}
+                  className="object-cover rounded-3xl"
+                />
+              </div>
+            </div>
             <div className="border border-gray-200 hover:border-pink-500 sm:py-8  py-5 lg:px-10 sm:px-10 px-4 rounded-3xl hover:border-gradient-to-r from-pink-500 to-purple-600">
               <p className="text-pink-600 text-lg font-medium">Who We Are</p>
 
@@ -40,7 +50,7 @@ const WhoWeAre = () => {
                 </Link>
               </div>
             </div>
-            <div className="rounded-3xl">
+            <div className="rounded-3xl max-md:hidden">
               <div className="w-full md:h-[500px] h-[300px] relative rounded-3xl">
                 <Image
                   src="/images/who.webp"

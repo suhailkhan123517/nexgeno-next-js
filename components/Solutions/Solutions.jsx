@@ -7,7 +7,7 @@ import { BsArrowRight } from "react-icons/bs";
 const Solutions = () => {
   return (
     <>
-      <section className="mb-20 py-16   bg-[#fffbfd]">
+      <section className="md:mb-20  mb-10 md:py-16 py-8   bg-[#fffbfd]">
         <div className="container mx-auto">
           <h2 className="heading text-center ">
             Unleashing Innovation with <br /> Our Technology
@@ -33,7 +33,7 @@ const Solutions = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-black mb-2 px-2 ">
-                      {item.title} <br /> Solutions
+                      {item.title} <br className="max-md:hidden" /> Solutions
                     </h3>
                     <p className="desc mb-4 px-2">{item.desc}</p>
                   </div>

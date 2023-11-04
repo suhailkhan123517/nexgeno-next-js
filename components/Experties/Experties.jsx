@@ -6,13 +6,13 @@ import { BsArrowRight } from "react-icons/bs";
 const Expertise = () => {
   return (
     <>
-      <section className="mb-24">
+      <section className="md:mb-24 mb-12">
         <div className="container mx-auto">
           <h2 className="heading text-center ">
             Unleash Digital Innovation <br /> with Our Expertise
           </h2>
           {/* <h1 className="gradient_heading">EXPERTISE</h1> */}
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  place-items-start xl:gap-10 gap-3 my-14">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  place-items-start xl:gap-10 gap-3 md:my-14 my-7">
             {experties.map((item) => (
               <div
                 key={item.id}
@@ -33,7 +33,7 @@ const Expertise = () => {
                     <h3 className="text-xl font-semibold text-black mb-2 px-2 line-clamp-1">
                       {item.title}
                     </h3>
-                    <p className="desc mb-4 px-2">{item.desc}</p>
+                    <p className="desc mb-4 px-2 line-clamp-3">{item.desc}</p>
                   </div>
                 </div>
 

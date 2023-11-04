@@ -1755,7 +1755,7 @@ export const experties = [
     id: 1,
     img: "/ux.webp",
     title: "UX/UI Design",
-    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    desc: "UX/UI design is the process of creating user-friendly and visually appealing digital interfaces for websites, applications, and other interactive experiences.",
     links: [
       { title: "PHP Developer", url: "/hire-developer/php" },
       { title: "CodeIgniter Developer", url: "/hire-developer/codeIgniter" },
@@ -1767,7 +1767,7 @@ export const experties = [
     id: 2,
     img: "/website-codes.webp",
     title: "Website Designing",
-    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    desc: "Website designing involves the creation and arrangement of visual and functional elements on web pages to create a user-friendly and visually appealing online presence.",
     links: [
       { title: "IOS Developer", url: "/hire-developer/ios" },
       { title: "Android Developer", url: "/hire-developer/android" },
@@ -1779,7 +1779,7 @@ export const experties = [
     id: 3,
     img: "/online-marketing.png",
     title: "E-Commerce Website ",
-    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    desc: "An e-commerce website is an online platform that enables businesses to sell products or services, ",
     links: [
       { title: "Next Js Developer", url: "/hire-developer/next" },
       { title: "React Js Developer", url: "/hire-developer/react" },
@@ -1791,7 +1791,7 @@ export const experties = [
     id: 4,
     img: "/hashtag.png",
     title: "Wordpress Website ",
-    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    desc: "A WordPress website is a site built using the WordPress content management system, which offers a user-friendly platform for creating ",
     links: [
       { title: "Next Js Developer", url: "/hire-developer/next" },
       { title: "React Js Developer", url: "/hire-developer/react" },
@@ -1802,7 +1802,7 @@ export const experties = [
   {
     id: 5,
     img: "/maintenance.png",
-    title: "Website Maintenance/AMC",
+    title: "Website Maintenance",
     desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
     links: [
       { title: "Next Js Developer", url: "/hire-developer/next" },
@@ -1815,7 +1815,7 @@ export const experties = [
     id: 6,
     img: "/consulting-services.png",
     title: "Website Consulting",
-    desc: "Looking for skilled to join at Nexgeno Technology! We are a growing software development",
+    desc: "Website maintenance involves ongoing tasks to keep a website functional, secure, and up-to-date",
     links: [
       { title: "Next Js Developer", url: "/hire-developer/next" },
       { title: "React Js Developer", url: "/hire-developer/react" },
@@ -2131,14 +2131,38 @@ export const sidebarLinks = [
 export const recentWork = [
   {
     id: 1,
-    img: "./images/desktop/cancari_desktop.jpg",
+    img: "./images/desktop/lawtendo_stories.jpg",
   },
   {
     id: 2,
-    img: "./images/desktop/thelastbite_desktop_portfolio.jpg",
+    img: "./images/desktop/octa_stories.jpg",
   },
   {
     id: 3,
     img: "./images/desktop/Passport-Lifestyle.jpg",
+  },
+  {
+    id: 4,
+    img: "./images/desktop/cancari_desktop.jpg",
+  },
+  {
+    id: 5,
+    img: "./images/desktop/thelastbite_desktop_portfolio.jpg",
+  },
+  {
+    id: 6,
+    img: "./images/desktop/attari_lmd.jpg",
+  },
+  {
+    id: 7,
+    img: "./images/desktop/greenhabits_portfolio_desktop.jpg",
+  },
+  {
+    id: 8,
+    img: "./images/desktop/thelastbite_desktop_portfolio.jpg",
+  },
+  {
+    id: 9,
+    img: "./images/desktop/maaymart_portfolio_desktop.jpg",
   },
 ];

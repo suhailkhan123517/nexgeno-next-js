@@ -1,37 +1,55 @@
+"use client";
 import { recentWork } from "@/utils/data";
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { BsArrowRightShort } from "react-icons/bs";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Autoplay } from "swiper/modules";
 
 const RecentWork = () => {
   return (
     <>
-      <section className="mb-20">
+      <section className="md:mb-20 mb-10">
         <div className="container mx-auto">
           <div className="flex justify-between items-center mb-10">
             <h2 className="heading">Our Recent Work</h2>
-            {/* <Link
-              href="/portfolio"
-              className="outline_btn flex items-center gap-2"
-            >
-              See All
-              <BsArrowRightShort className="text-xl" />
-            </Link> */}
           </div>
-          <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
-            {recentWork.map((item) => (
-              <>
-                <div
-                  key={item.id}
-                  style={{
-                    background: `url(${item.img})`,
-                    backgroundSize: "cover",
-                  }}
-                  className="h-52 md:h-96 rounded-xl shadow-lg"
-                ></div>
-              </>
-            ))}
+          <div className="">
+            <Swiper
+              breakpoints={{
+                640: {
+                  slidesPerView: 1.2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 1.8,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 2.3,
+                  spaceBetween: 50,
+                },
+              }}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay]}
+              className="mySwiper"
+            >
+              {recentWork.map((item) => (
+                <SwiperSlide key={item}>
+                  <div className="relative h-52 md:h-96 ">
+                    <Image
+                      src={`/${item.img}`}
+                      alt="Project Image"
+                      fill
+                      className="object-cover rounded-xl shadow-lg"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </section>

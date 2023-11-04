@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 const WhyUs = () => {
   return (
     <>
-      <section className="mb-24">
+      <section className="md:mb-24 mb-12">
         <div className="container mx-auto ">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
             <div className="rounded-3xl">

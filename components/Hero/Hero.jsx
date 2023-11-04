@@ -47,14 +47,16 @@ export default function Hero() {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-5 grid-cols-1 ">
             <div className="col-span-3">
-              <h1 className="hero_heading mb-2">Innovative web solutions</h1>
-              <h1 className="black_heading lg:mt-0 md:mt-5 mt-3">
+              <h1 className="xl:text-8xl  md:text-7xl  text-5xl font-semibold  bg-gradient-to-r from-cyan-400 via-pink-500 to-pink-600 bg-clip-text text-transparent drop-shadow-md md:mb-2 mb-5">
+                Innovative web solutions
+              </h1>
+              <h1 className="xl:text-5xl  md:text-4xl  text-2xl font-semibold lg:mt-0 md:mt-5 mt-3 max-md:mb-5">
                 for modern businesses
               </h1>
-              <p className="md:text-2xl font-medium  mt-2 md:mt-5">
+              <p className="md:text-2xl font-medium  mt-2 md:mt-5 max-md:mb-4">
                 Connecting businesses to the digital world
               </p>
-              <p className="md:mt-5 mt-2 md:pr-28">
+              <p className="md:mt-5 mt-2 md:pr-28 max-md:hidden">
                 Are you ready to transform your online presence and captivate
                 your audience with stunning, user-friendly websites? At Nexgeno
                 Technology, we are your digital partners dedicated to delivering

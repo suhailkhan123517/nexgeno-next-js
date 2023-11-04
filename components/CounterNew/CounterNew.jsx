@@ -12,7 +12,7 @@ const CounterNew = () => {
         onEnter={() => setCounterOn(true)}
         onExit={() => setCounterOn(false)}
       >
-        <section className="mb-20">
+        <section className="md:mb-20 mb-10">
           <div className="container mx-auto">
             <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 my-10 py-10 ">
               <div className="group  border hover:border-pink-500 border-gray-200 rounded-xl bg-[#fffbfd]    p-8   hover:shadow-xl">
