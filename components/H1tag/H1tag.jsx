@@ -22,9 +22,9 @@ const H1tag = () => {
               <p className="desc mt-3">
                 At Nexgeno, we prioritize your goals and needs. We take the time
                 to understand your business and its unique challenges, tailoring
-                our solutions to suit you perfectly. We're not just a service
-                provider; we're your digital partner. Your success is our
-                success, and we're dedicated to helping you achieve your online
+                our solutions to suit you perfectly. We are not just a service
+                provider; we are your digital partner. Your success is our
+                success, and we are dedicated to helping you achieve your online
                 objectives.
               </p>
             </div>
@@ -33,7 +33,7 @@ const H1tag = () => {
 
               <p className="desc mt-3">
                 In the rapidly evolving digital landscape, having a strong and
-                innovative online presence is imperative for success. That's
+                innovative online presence is imperative for success. That is
                 where we come in. At Nexgeno, we specialize in providing
                 cutting-edge web solutions that not only meet your needs but
                 exceed your expectations. Our mission is to empower businesses
@@ -44,7 +44,7 @@ const H1tag = () => {
                 From creating responsive and mobile-friendly websites that adapt
                 to any device to developing custom web applications that
                 streamline your business processes, our services cover a wide
-                spectrum of web solutions. Whether you're a small startup or a
+                spectrum of web solutions. Whether you are a small startup or a
                 well-established enterprise, we have the expertise to cater to
                 your specific needs. We also offer e-commerce solutions, content
                 management systems, and web hosting to ensure a comprehensive
