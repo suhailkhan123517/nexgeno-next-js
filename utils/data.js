@@ -2131,38 +2131,38 @@ export const sidebarLinks = [
 export const recentWork = [
   {
     id: 1,
-    img: "./images/desktop/lawtendo_stories.jpg",
+    img: "/images/desktop/lawtendo_stories.jpg",
   },
   {
     id: 2,
-    img: "./images/desktop/octa_stories.jpg",
+    img: "/images/desktop/octa_stories.jpg",
   },
   {
     id: 3,
-    img: "./images/desktop/Passport-Lifestyle.jpg",
+    img: "/images/desktop/Passport-Lifestyle.jpg",
   },
   {
     id: 4,
-    img: "./images/desktop/cancari_desktop.jpg",
+    img: "/images/desktop/cancari_desktop.jpg",
   },
   {
     id: 5,
-    img: "./images/desktop/thelastbite_desktop_portfolio.jpg",
+    img: "/images/desktop/thelastbite_desktop_portfolio.jpg",
   },
   {
     id: 6,
-    img: "./images/desktop/attari_lmd.jpg",
+    img: "/images/desktop/attari_lmd.jpg",
   },
   {
     id: 7,
-    img: "./images/desktop/greenhabits_portfolio_desktop.jpg",
+    img: "/images/desktop/greenhabits_portfolio_desktop.jpg",
   },
   {
     id: 8,
-    img: "./images/desktop/thelastbite_desktop_portfolio.jpg",
+    img: "/images/desktop/thelastbite_desktop_portfolio.jpg",
   },
   {
     id: 9,
-    img: "./images/desktop/maaymart_portfolio_desktop.jpg",
+    img: "/images/desktop/maaymart_portfolio_desktop.jpg",
   },
 ];

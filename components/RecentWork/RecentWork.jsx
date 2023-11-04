@@ -41,7 +41,7 @@ const RecentWork = () => {
                 <SwiperSlide key={item}>
                   <div className="relative h-52 md:h-96 ">
                     <Image
-                      src={`/${item.img}`}
+                      src={item.img}
                       alt="Project Image"
                       fill
                       className="object-cover rounded-xl shadow-lg"
