@@ -3,9 +3,9 @@ import Categories from "@/models/categories";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
-  const { category, description, categoryDate } = await request.json();
+  const { category } = await request.json();
   await connectMongoDB();
-  await Categories.create({ category, description, categoryDate });
+  await Categories.create({ category });
   return NextResponse.json({ message: "Categories Created" }, { status: 201 });
 }
 

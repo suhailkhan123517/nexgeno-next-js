@@ -1,11 +1,7 @@
-import Dashboard from "@/components/Dashboard/Dashboard";
-import { getServerSession } from "next-auth";
-import { redirect } from "next/navigation";
-import { handler } from "@/app/api/auth/[...nextauth]/route";
+import Dashboard from "@/app/(dashboard)/dashboard/components/Dashboard";
+import AllPosts from "./components/AllPost";
 
-const page = async () => {
-  const session = await getServerSession(handler);
-  if (!session) redirect("/sign-in");
+const DashboardPage = async () => {
   return (
     <>
       <Dashboard />
@@ -13,4 +9,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default DashboardPage;

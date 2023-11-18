@@ -109,3 +109,11 @@ html {
     height: 28vh;
   }
 }
+
+.sidebar {
+  flex: 1;
+}
+
+.content {
+  flex: 4;
+}

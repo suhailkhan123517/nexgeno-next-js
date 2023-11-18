@@ -2157,12 +2157,4 @@ export const recentWork = [
     id: 7,
     img: "/images/desktop/greenhabits_portfolio_desktop.jpg",
   },
-  {
-    id: 8,
-    img: "/images/desktop/thelastbite_desktop_portfolio.jpg",
-  },
-  {
-    id: 9,
-    img: "/images/desktop/maaymart_portfolio_desktop.jpg",
-  },
 ];

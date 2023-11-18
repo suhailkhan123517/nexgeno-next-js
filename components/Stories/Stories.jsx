@@ -53,7 +53,7 @@ export default function Stories() {
                       alt="project image"
                       fill={true}
                       priority
-                      className="md:rounded-r-2xl rounded-b-2xl object-cover"
+                      className="md:rounded-r-2xl max-md:rounded-b-2xl object-cover"
                     />
                   </div>
                 </div>
@@ -66,7 +66,7 @@ export default function Stories() {
                       alt="project image"
                       fill={true}
                       priority
-                      className="md:rounded-l-2xl rounded-t-2xl object-cover"
+                      className="md:rounded-l-2xl max-md:rounded-t-2xl object-cover"
                     />
                   </div>
                 </div>

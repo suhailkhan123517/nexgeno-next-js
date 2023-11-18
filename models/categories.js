@@ -1,10 +1,11 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose, { Schema, models } from "mongoose";
 
-const categoriesSchema = new Schema(
+const categorySchema = new Schema(
   {
-    category: String,
-    description: String,
-    categoryDate: String,
+    category: {
+      type: String,
+      unique: true,
+    },
   },
   {
     timestamps: true,
@@ -12,6 +13,6 @@ const categoriesSchema = new Schema(
 );
 
 const Categories =
-  mongoose.models.Categories || mongoose.model("Categories", categoriesSchema);
+  models.Categories || mongoose.model("Categories", categorySchema);
 
 export default Categories;

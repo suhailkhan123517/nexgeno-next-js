@@ -6,11 +6,22 @@ import bcrypt from "bcryptjs";
 export async function POST(req) {
   try {
     await connectMongoDB();
-    const { name, email, password: pass, role } = await req.json();
-    const hashedPassword = await bcrypt.hash(pass, 10);
-    const newUser = await User.create({
+    const {
+      imageUrl,
+      publicId,
       name,
       email,
+      title,
+      password: pass,
+      role,
+    } = await req.json();
+    const hashedPassword = await bcrypt.hash(pass, 10);
+    const newUser = await User.create({
+      imageUrl,
+      publicId,
+      name,
+      email,
+      title,
       password: hashedPassword,
       role,
     });
@@ -25,4 +36,10 @@ export async function GET() {
   await connectMongoDB();
   const user = await User.find();
   return NextResponse.json({ user });
+}
+
+export async function DELETE(request) {
+  const id = request.nextUrl.searchParams.get("id");
+  const user = await User.findByIdAndDelete(id);
+  return NextResponse.json(user);
 }

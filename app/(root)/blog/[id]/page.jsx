@@ -1,15 +1,16 @@
 import baseUrl from "@/utils/baseUrl";
 import Image from "next/image";
 import React from "react";
+import BlogId from "../components/BlogId";
 
 const getBlogById = async (id) => {
   try {
-    const res = await fetch(`${baseUrl}/api/blog/${id}`, {
+    const res = await fetch(`${baseUrl}/api/post/${id}`, {
       cache: "no-store",
     });
 
     if (!res.ok) {
-      throw new Error("Failed to fetch Blog");
+      throw new Error("Failed to fetch post");
     }
 
     return res.json();
@@ -18,53 +19,19 @@ const getBlogById = async (id) => {
   }
 };
 
-// export async function generateMetadata({ params }) {
-//   const blogs = await getBlogById(params.id);
-//   return {
-//     title: blogs.seoTitle,
-//     description: blogs.metaDescription,
-//   };
-// }
+export async function generateMetadata({ params }) {
+  const { post } = await getBlogById(params.id);
+  return {
+    title: post.metaTitle,
+    description: post.metaDescription,
+  };
+}
 
 const BlogDetails = async ({ params }) => {
-  const { blogs } = await getBlogById(params.id);
+  const { post } = await getBlogById(params.id);
   return (
     <>
-      <section>
-        <div className="container mx-auto">
-          <div className="grid grid-cols-2 gap-5">
-            <div className="mt-5 flex flex-col gap-6">
-              <h5 className="text-pink-600 text-xl font-medium">
-                {blogs.catagoriesData}
-              </h5>
-              <h2 className="font-semibold text-4xl leading-snug text-black">
-                {blogs.title}
-              </h2>
-              <p className="desc">{blogs.description}</p>
-              <div>
-                <h3>
-                  Written By{" "}
-                  <span className=" font-semibold">{blogs.writer}</span>
-                </h3>
-                <p>{blogs.blogDate}</p>
-              </div>
-            </div>
-            <div>
-              <div className="relative w-full h-[350px] rounded-lg">
-                <Image
-                  src={`${blogs.imageUrl}`}
-                  fill={true}
-                  alt="blog Banner"
-                  className="rounded-lg hover:-translate-y-2 transition-all duration-200"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="my-20">
-            <div dangerouslySetInnerHTML={{ __html: blogs.textEditor }} />
-          </div>
-        </div>
-      </section>
+      <BlogId post={post} />
     </>
   );
 };

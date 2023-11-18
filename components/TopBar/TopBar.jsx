@@ -1,31 +1,42 @@
 "use client";
-import { signOut } from "next-auth/react";
-import Image from "next/image";
-import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import {
+  MdNotifications,
+  MdOutlineChat,
+  MdPublic,
+  MdSearch,
+} from "react-icons/md";
 
 const TopBar = () => {
+  const pathname = usePathname();
+  const router = useRouter();
+
   return (
     <>
-      <nav className="fixed top-0 z-30 flex w-full items-center justify-between bg-[#fffbfd] border-b  px-6 py-3">
-        <Link href="/" className="flex items-center gap-4">
-          <Image
-            src="/images/logo.webp"
-            alt="logo"
-            priority
-            width={200}
-            height={50}
-          />
-        </Link>
-        <div className="flex items-center gap-5">
-          <div>Search bar</div>
-          <button
-            onClick={() => signOut({ callbackUrl: "/sign-in" })}
-            className="px-4 py-1 bg-black border border-black text-white rounded-full hover:bg-transparent transition-all duration-150 hover:text-black"
-          >
-            logout
-          </button>
+      <div className="p-5 rounded-lg bg-white shadow-lg flex items-center justify-between">
+        <div className="font-bold capitalize text-2xl">
+          {pathname.split("/").pop()}
         </div>
-      </nav>
+        <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 bg-gray-100 p-2 rounded-lg">
+            <MdSearch />
+            <input
+              type="text"
+              placeholder="Search..."
+              className="bg-transparent border-none outline-none"
+            />
+          </div>
+          <div className="flex gap-5">
+            <MdOutlineChat size={20} />
+            <MdNotifications size={20} />
+            <MdPublic
+              onClick={() => router.push("/blog")}
+              className="cursor-pointer"
+              size={20}
+            />
+          </div>
+        </div>
+      </div>
     </>
   );
 };

@@ -3,7 +3,6 @@ import { AuthProvider } from "../Providers";
 import "../globals.css";
 import { ToasterProvider } from "@/providers/toast-providers";
 import TopBar from "@/components/TopBar/TopBar";
-import LeftSidebar from "@/components/LeftSidebar/LeftSidebar";
 
 export const metadata = {
   title: "Nexgeno | Dashboard",
@@ -17,13 +16,15 @@ export default function DashboardLayout({ children }) {
       <body>
         <AuthProvider>
           <ToasterProvider />
-          <TopBar />
-          <main className="flex flex-row ">
-            <LeftSidebar />
-            <section className="flex min-h-screen flex-1 flex-col items-center  border-l px-6 pb-10 pt-28 max-md:pb-32 sm:px-5">
-              <div className="w-full max-w-6xl">{children}</div>
-            </section>
-          </main>
+          <div className="flex bg-[#f8f9fa]">
+            <div className="sidebar p-5 min-h-screen ">
+              <Sidebar />
+            </div>
+            <div className="content p-5">
+              <TopBar />
+              {children}
+            </div>
+          </div>
         </AuthProvider>
       </body>
     </html>

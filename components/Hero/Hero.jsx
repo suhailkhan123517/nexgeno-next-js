@@ -86,7 +86,7 @@ export default function Hero() {
                 className="shadow-xl flex flex-col xl:px-14 md:px-10 px-5 xl:py-20 md:py-14 py-8 gap-7 rounded-lg  bg-white lg:mt-0 mt-10"
               >
                 <p className="md:text-3xl text-2xl font-semibold leading-tight">
-                  {" "}
+                  
                   Get a Free Enquire Now
                 </p>
                 <input
