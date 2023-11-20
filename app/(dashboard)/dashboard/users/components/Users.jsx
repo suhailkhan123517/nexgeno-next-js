@@ -2,8 +2,12 @@
 import Image from "next/image";
 import Search from "../../../../../components/Search/Search";
 import { useEffect, useState } from "react";
+import { useSession } from "next-auth/react";
+import { redirect } from "next/navigation";
 
 const Users = () => {
+  const { data: session } = useSession();
+  if (!session) redirect("/sign-in");
   const [users, setUsers] = useState(null);
   const [query, setQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -58,13 +62,15 @@ const Users = () => {
                 <tr key={item._id} className="border-t">
                   <td className="p-3">
                     <div className="flex items-center gap-3">
-                      <Image
-                        src={item.imageUrl || "/noavatar.png"}
-                        alt=""
-                        width={40}
-                        height={40}
-                        className="object-cover rounded-full"
-                      />
+                      <div className="relative h-10 w-10">
+                        <Image
+                          src={item.imageUrl || "/noavatar.png"}
+                          alt=""
+                          fill={true}
+                          className="object-cover rounded-full"
+                        />
+                      </div>
+
                       {item.name}
                     </div>
                   </td>

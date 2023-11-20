@@ -8,13 +8,15 @@ import { FaTrash } from "react-icons/fa";
 import toast from "react-hot-toast";
 import Image from "next/image";
 import { useSession } from "next-auth/react";
+import { redirect } from "next/navigation";
 
 const Posts = () => {
+  const { data: session } = useSession();
+  if (!session) redirect("/sign-in");
   const [data, setData] = useState(null);
   const [query, setQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(10);
-  const { data: session } = useSession();
 
   useEffect(() => {
     const getPosts = async () => {

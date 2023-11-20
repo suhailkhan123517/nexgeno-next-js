@@ -87,40 +87,45 @@ const Blog = () => {
             <div>
               {remainingPosts.map((item) => (
                 <>
-                  <Link href={`/blog/${item._id}`}>
-                    <div
-                      key={item._id}
-                      className="flex items-center gap-5 mb-4"
-                    >
-                      <Image
-                        src={`${item.imageUrl}`}
-                        width={200}
-                        height={200}
-                        alt="Blog post"
-                        className="rounded-lg"
-                      />
-                      <div>
+                  <div key={item._id} className="grid grid-cols-3 gap-5 mb-3">
+                    <Link className="" href={`/blog/${item._id}`}>
+                      <div className="relative h-[130px] w-[200px]">
+                        <Image
+                          src={`${item.imageUrl}`}
+                          fill={true}
+                          alt="Blog post"
+                          className="rounded-lg object-cover"
+                        />
+                      </div>
+                    </Link>
+                    <div className="col-span-2 ">
+                      <Link href={`/blog/${item._id}`}>
                         <h2 className="text-xl font-semibold text-black">
                           {item.title}
                         </h2>
-                        <div className="flex items-center gap-2 mt-2">
-                          <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                            {item.authorId.name}
-                          </span>
-                          <span className="text-gray-300">in</span>
-                          <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                            {item.categoryId.category}
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                          <span>{item.createdAt.toString().split("T")[0]}</span>
-                          <span>.</span>
-                          <span>17 min read</span>
-                          <AiFillStar />
-                        </div>
+                      </Link>
+
+                      <div className="flex items-center gap-2 mt-2">
+                        <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
+                          {item.authorId.name}
+                        </span>
+                        <span className="text-gray-300">in</span>
+
+                        <Link
+                          href={`/blog/category/${item.categoryId._id}`}
+                          className="text-pink-600 hover:text-gray-600 transition-all duration-200"
+                        >
+                          {item.categoryId.category}
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
+                        <span>{item.createdAt.toString().split("T")[0]}</span>
+                        <span>.</span>
+                        <span>17 min read</span>
+                        <AiFillStar />
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 </>
               ))}
             </div>
@@ -136,45 +141,50 @@ const Blog = () => {
 
               {remainingObjects.map((item) => (
                 <>
-                  <Link
-                    key={item._id}
-                    href={`/blog/${item._id}`}
-                    className="mt-6"
-                  >
-                    <div className="flex gap-5 mb-4 ">
-                      <div className="flex-auto">
+                  <div className="flex gap-5 mb-4 ">
+                    <div className="flex-auto">
+                      <Link
+                        key={item._id}
+                        href={`/blog/${item._id}`}
+                        className="mt-6"
+                      >
                         <h2 className="text-2xl font-semibold text-black mb-3">
                           {item.title}
                         </h2>
                         <p className="desc mb-3">{item.description}</p>
-                        <div className="flex items-center gap-2 mt-2">
-                          <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
-                            {item.authorId.name}
-                          </span>
-                          <span className="text-gray-300">in</span>
-                          <span className="text-pink-600 hover:text-gray-600 transition-all duration-200">
-                            {item.categoryId.category}
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
-                          <span>{item.createdAt.toString().split("T")[0]}</span>
-                          <span>.</span>
-                          <span>17 min read</span>
-                          <AiFillStar />
-                        </div>
+                      </Link>
+                      <div className="flex items-center gap-2 mt-2">
+                        <span className="text-gray-600 hover:text-pink-600 transition-all duration-200 ">
+                          {item.authorId.name}
+                        </span>
+                        <span className="text-gray-300">in</span>
+                        <Link
+                          href={`/blog/category/${item.categoryId._id}`}
+                          className="text-pink-600 hover:text-gray-600 transition-all duration-200"
+                        >
+                          {item.categoryId.category}
+                        </Link>
                       </div>
-                      <div className="flex-auto">
+                      <div className="flex items-center gap-2 text-sm mt-1 text-gray-500">
+                        <span>{item.createdAt.toString().split("T")[0]}</span>
+                        <span>.</span>
+                        <span>17 min read</span>
+                        <AiFillStar />
+                      </div>
+                    </div>
+                    <div className="flex-auto">
+                      <Link href={`/blog/${item._id}`}>
                         <div className="relative w-[350px] h-[220px]">
                           <Image
                             src={`${item.imageUrl}`}
                             fill={true}
                             alt="Blog post"
-                            className="rounded-lg"
+                            className="rounded-lg object-cover"
                           />
                         </div>
-                      </div>
+                      </Link>
                     </div>
-                  </Link>
+                  </div>
                 </>
               ))}
             </div>

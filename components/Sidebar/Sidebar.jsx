@@ -87,14 +87,16 @@ const Sidebar = () => {
           {data &&
             data.user.map((item) => (
               <>
-                <Image
-                  className="rounded-full object-cover"
-                  src={item.imageUrl || "/noavatar.png"}
-                  alt=""
-                  width="50"
-                  height="50"
-                  key={item._id}
-                />
+                <div className="relative h-14 w-14">
+                  <Image
+                    className="rounded-full object-cover"
+                    src={item.imageUrl || "/noavatar.png"}
+                    alt={item.name}
+                    fill={true}
+                    key={item._id}
+                  />
+                </div>
+
                 <div className="flex flex-col">
                   <span className="font-medium">{item.name}</span>
                   <span className="text-xs">{item.title}</span>

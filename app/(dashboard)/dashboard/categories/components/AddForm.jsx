@@ -1,10 +1,13 @@
 "use client";
-import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
+import { redirect, useRouter } from "next/navigation";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { LuLoader2 } from "react-icons/lu";
 
 const AddForm = () => {
+  const { data: session } = useSession();
+  if (!session) redirect("/sign-in");
   const [category, setCategory] = useState();
   const [loading, setLoading] = useState(false);
   const router = useRouter();

@@ -1,6 +1,8 @@
 "use client";
 import Search from "@/components/Search/Search";
+import { useSession } from "next-auth/react";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { FaTrash } from "react-icons/fa";
@@ -8,6 +10,8 @@ import { IoMdAddCircle } from "react-icons/io";
 import { MdEditSquare } from "react-icons/md";
 
 const Categories = () => {
+  const { data: session } = useSession();
+  if (!session) redirect("/sign-in");
   const [data, setData] = useState(null);
   const [query, setQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);

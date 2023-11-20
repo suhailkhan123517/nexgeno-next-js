@@ -2,7 +2,7 @@
 import { CldUploadButton } from "next-cloudinary";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { BsImages } from "react-icons/bs";
@@ -10,6 +10,8 @@ import { FaTrash } from "react-icons/fa";
 import { LuLoader2 } from "react-icons/lu";
 
 const Profile = ({ id, user }) => {
+  const { data: session } = useSession();
+  if (!session) redirect("/sign-in");
   const [name, setName] = useState(user.name);
   const [email, setEmail] = useState(user.email);
   const [title, setTitle] = useState(user.title);
@@ -18,7 +20,6 @@ const Profile = ({ id, user }) => {
   const [publicId, setPublicId] = useState(user.publicId);
   const [loading, setLoading] = useState("");
   const router = useRouter();
-  const { data: session } = useSession();
 
   const handleImageUpload = (result) => {
     const info = result.info;
@@ -62,6 +63,7 @@ const Profile = ({ id, user }) => {
         body: JSON.stringify({
           name,
           title,
+          role,
           publicId,
           imageUrl,
         }),

@@ -20,9 +20,9 @@ const BlogId = ({ post }) => {
                   <Image
                     src={post.authorId.imageUrl || "/noavatar.png"}
                     alt="Profile Image"
-                    width={80}
-                    height={80}
-                    className="rounded-full"
+                    width={90}
+                    height={90}
+                    className="rounded-full object-cover"
                   />
                 </div>
                 <div>

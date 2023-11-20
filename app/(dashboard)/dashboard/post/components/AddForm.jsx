@@ -4,7 +4,7 @@ import "react-quill/dist/quill.snow.css";
 import dynamic from "next/dynamic";
 import { LuLoader2 } from "react-icons/lu";
 import toast from "react-hot-toast";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import { CldUploadButton } from "next-cloudinary";
 import { BsImages } from "react-icons/bs";
@@ -30,6 +30,8 @@ const modules = {
 };
 
 const AddForm = () => {
+  const { data: session } = useSession();
+  if (!session) redirect("/sign-in");
   const [data, setData] = useState(null);
   const [title, setTitle] = useState("");
   const [metaTitle, setMetaTitle] = useState("");
@@ -41,7 +43,6 @@ const AddForm = () => {
   const [textEditor, setTextEditor] = useState("");
   const [loading, setLoading] = useState(false);
   const router = useRouter();
-  const { data: session } = useSession();
 
   useEffect(() => {
     const getCategories = async () => {

@@ -1,16 +1,15 @@
 "use client";
 import { MdSupervisedUserCircle } from "react-icons/md";
-// import Users from "../../../../components/Users/Users";
 import React, { useEffect, useState } from "react";
 import AllPosts from "./AllPost";
 import { useSession } from "next-auth/react";
 
 const Dashboard = () => {
+  const { data: session } = useSession();
   const [users, setUsers] = useState(null);
   const [allPost, setAllPost] = useState(null);
   const [myPost, setMyPost] = useState(null);
   const [categories, setCategories] = useState(null);
-  const { data: session } = useSession();
 
   useEffect(() => {
     const getUsers = async () => {

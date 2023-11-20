@@ -13,9 +13,13 @@ import { MdEditSquare } from "react-icons/md";
 
 const Admin = () => {
   const { data: session } = useSession();
+  if (!session) redirect("/sign-in");
   if (session?.user?.role === "user") redirect("/dashboard");
 
   const [data, setData] = useState(null);
+  const [query, setQuery] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(10);
   useEffect(() => {
     const getUser = async () => {
       try {
@@ -59,11 +63,23 @@ const Admin = () => {
     });
   };
 
+  const filteredUsers = data
+    ? data.user.filter((item) =>
+        item.name.toLowerCase().includes(query.toLowerCase())
+      )
+    : [];
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredUsers.slice(indexOfFirstItem, indexOfLastItem);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <>
       <div className="bg-white shadow-lg p-5 rounded-lg mt-5">
         <div className="flex items-center justify-between">
-          <Search placeholder="Search for a Categories..." />
+          <Search setQuery={setQuery} placeholder="Search for a User..." />
           <Link
             className="py-2 px-4 bg-blue-600 rounded-lg text-white flex items-center gap-1"
             href="/dashboard/register"
@@ -84,52 +100,53 @@ const Admin = () => {
             </tr>
           </thead>
           <tbody>
-            {data &&
-              data.user.map((item) => (
-                <>
-                  <tr key={item._id} className="border-t">
-                    <td className="p-3">
-                      <div className="flex items-center gap-3">
+            {currentItems.map((item) => (
+              <>
+                <tr key={item._id} className="border-t">
+                  <td className="p-3">
+                    <div className="flex items-center gap-3">
+                      <div className="relative h-10 w-10">
                         <Image
                           src={item.imageUrl || "/noavatar.png"}
-                          alt=""
-                          width={40}
-                          height={40}
+                          alt={item.name}
+                          fill
                           className="object-cover rounded-full"
                         />
-                        {item.name}
                       </div>
-                    </td>
-                    <td className="p-3">{item.email}</td>
-                    <td className="p-3">{item.title}</td>
-                    <td className="p-3">{item.role}</td>
-                    <td className="p-3">
-                      <span className="bg-lime-500 text-white py-1 px-2 rounded-lg">
-                        Active
-                      </span>
-                    </td>
-                    <td>
-                      <div className="flex items-center gap-3">
-                        <Link
-                          className="bg-lime-500 text-white py-2 px-3 rounded-lg"
-                          href={`/dashboard/profile/${item._id}`}
-                        >
-                          <MdEditSquare />
-                        </Link>
-                        <button
-                          onClick={() => handleDelete(item._id)}
-                          className="bg-red-600 text-white py-2 px-3   rounded-lg"
-                        >
-                          <FaTrash />
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                </>
-              ))}
+
+                      {item.name}
+                    </div>
+                  </td>
+                  <td className="p-3">{item.email}</td>
+                  <td className="p-3">{item.title}</td>
+                  <td className="p-3">{item.role}</td>
+                  <td className="p-3">
+                    <span className="bg-lime-500 text-white py-1 px-2 rounded-lg">
+                      Active
+                    </span>
+                  </td>
+                  <td>
+                    <div className="flex items-center gap-3">
+                      <Link
+                        className="bg-lime-500 text-white py-2 px-3 rounded-lg"
+                        href={`/dashboard/profile/${item._id}`}
+                      >
+                        <MdEditSquare />
+                      </Link>
+                      <button
+                        onClick={() => handleDelete(item._id)}
+                        className="bg-red-600 text-white py-2 px-3   rounded-lg"
+                      >
+                        <FaTrash />
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </>
+            ))}
           </tbody>
         </table>
-        {/* <div className="flex justify-end mt-4">
+        <div className="flex justify-end mt-4">
           {Array.from({
             length: Math.ceil(filteredUsers.length / itemsPerPage),
           }).map((_, index) => (
@@ -145,7 +162,7 @@ const Admin = () => {
               {index + 1}
             </button>
           ))}
-        </div> */}
+        </div>
       </div>
     </>
   );
