@@ -16,12 +16,11 @@ const BlogId = ({ post }) => {
               </h2>
               <p className="desc">{post.description}</p>
               <div className="flex items-center gap-5">
-                <div>
+                <div className="relative w-24 h-24">
                   <Image
                     src={post.authorId.imageUrl || "/noavatar.png"}
                     alt="Profile Image"
-                    width={90}
-                    height={90}
+                    fill={true}
                     className="rounded-full object-cover"
                   />
                 </div>
