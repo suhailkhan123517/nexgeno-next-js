@@ -71,11 +71,6 @@ const Sidebar = () => {
           path: `/dashboard/profile/${session?.user?._id}`,
           icon: <MdOutlineSettings size={30} />,
         },
-        {
-          title: "Help",
-          path: "/dashboard/help",
-          icon: <MdHelpCenter size={30} />,
-        },
       ],
     },
   ];
@@ -132,13 +127,6 @@ const Sidebar = () => {
             </>
           )}
         </ul>
-        <button
-          onClick={() => signOut({ callbackUrl: "/sign-in" })}
-          className="p-5 my-1 flex items-center gap-2 cursor-pointer rounded-lg bg-none border-none w-full hover:bg-red-600 hover:text-white"
-        >
-          <MdLogout />
-          Logout
-        </button>
       </div>
     </>
   );

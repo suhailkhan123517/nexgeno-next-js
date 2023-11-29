@@ -113,13 +113,15 @@ const Posts = () => {
                   <td className="p-3">{item.title}</td>
                   <td className="p-3">
                     <div className="flex items-center gap-2">
-                      <Image
-                        src={item.authorId.imageUrl || "/noavatar.png"}
-                        width={35}
-                        height={35}
-                        alt="Author image"
-                        className="object-cover rounded-full"
-                      />
+                      <div className="relative h-10 w-10">
+                        <Image
+                          src={item.authorId.imageUrl || "/noavatar.png"}
+                          fill={true}
+                          alt="Author image"
+                          className="object-cover rounded-full"
+                        />
+                      </div>
+
                       {item.authorId.name}
                     </div>
                   </td>

@@ -1,6 +1,8 @@
 "use client";
+import { signOut } from "next-auth/react";
 import { usePathname, useRouter } from "next/navigation";
 import {
+  MdLogout,
   MdNotifications,
   MdOutlineChat,
   MdPublic,
@@ -27,13 +29,16 @@ const TopBar = () => {
             />
           </div>
           <div className="flex gap-5">
-            <MdOutlineChat size={20} />
-            <MdNotifications size={20} />
             <MdPublic
               onClick={() => router.push("/blog")}
               className="cursor-pointer"
               size={20}
             />
+            <MdOutlineChat size={20} />
+
+            <button onClick={() => signOut({ callbackUrl: "/sign-in" })}>
+              <MdLogout size={20} />
+            </button>
           </div>
         </div>
       </div>

@@ -4,13 +4,14 @@ import React from "react";
 import { AiFillStar } from "react-icons/ai";
 
 const CategoryPost = ({ post }) => {
+  const category = post && post.posts[0].categoryId.category;
   return (
     <>
       <section className="my-14">
         <div className="container mx-auto ">
           <div className="flex gap-10 relative h-auto">
             <div className="">
-              <h2 className="heading border-b pb-3 mb-6">All Category</h2>
+              <h2 className="border-b pb-3 mb-6 text-pink-600">{category}</h2>
 
               {post &&
                 post.posts.map((item) => (
