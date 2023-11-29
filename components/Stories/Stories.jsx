@@ -12,7 +12,7 @@ export default function Stories() {
             <div className="border-[1px] w-full rounded-2xl bg-white hover:border-pink-600">
               <div className="relative w-full h-[300px]  ">
                 <Image
-                  src="/images/desktop/POST 2.jpg"
+                  src="/POST 2.jpg"
                   alt="project image"
                   fill={true}
                   priority
@@ -49,7 +49,7 @@ export default function Stories() {
                 <div>
                   <div className="relative w-full h-[300px]  ">
                     <Image
-                      src="/images/desktop/Backup_of_POST 44.jpg"
+                      src="/Backup_of_POST 44.jpg"
                       alt="project image"
                       fill={true}
                       priority
@@ -62,7 +62,7 @@ export default function Stories() {
                 <div>
                   <div className="relative w-full h-[300px]  ">
                     <Image
-                      src="/images/desktop/POST .1.jpg"
+                      src="/POST .1.jpg"
                       alt="project image"
                       fill={true}
                       priority

@@ -11,7 +11,7 @@ const WhyUs = () => {
             <div className="rounded-3xl">
               <div className="w-full md:h-[500px] h-[300px] relative rounded-3xl">
                 <Image
-                  src="/images/why.webp"
+                  src="/why.webp"
                   alt="Why Choose Us Image"
                   fill={true}
                   className="object-cover rounded-3xl"

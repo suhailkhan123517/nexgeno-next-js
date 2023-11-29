@@ -35,32 +35,32 @@ export const servicesCard = [
 export const clientLogo = [
   {
     id: 1,
-    img: "/images/muncipal.webp",
+    img: "/muncipal.webp",
     alt: "Muncipal Logo",
   },
   {
     id: 2,
-    img: "/images/geci.webp",
+    img: "/geci.webp",
     alt: "GEC India Logo",
   },
   {
     id: 3,
-    img: "/images/lijjat.webp",
+    img: "/lijjat.webp",
     alt: "Lijjat Logo",
   },
   {
     id: 4,
-    img: "/images/lehnaar.webp",
+    img: "/lehnaar.webp",
     alt: "Lehnaar Logo",
   },
   {
     id: 5,
-    img: "/images/mda.webp",
+    img: "/mda.webp",
     alt: "MDA Logo",
   },
   {
     id: 6,
-    img: "/images/euro_detnal.webp",
+    img: "/euro_detnal.webp",
     alt: "Euro Dental Logo",
   },
 ];
@@ -2131,30 +2131,30 @@ export const sidebarLinks = [
 export const recentWork = [
   {
     id: 1,
-    img: "/images/desktop/lawtendo_stories.jpg",
+    img: "/lawtendo_stories.jpg",
   },
   {
     id: 2,
-    img: "/images/desktop/octa_stories.jpg",
+    img: "/octa_stories.jpg",
   },
   {
     id: 3,
-    img: "/images/desktop/Passport-Lifestyle.jpg",
+    img: "/Passport-Lifestyle.jpg",
   },
   {
     id: 4,
-    img: "/images/desktop/cancari_desktop.jpg",
+    img: "/cancari_desktop.jpg",
   },
   {
     id: 5,
-    img: "/images/desktop/thelastbite_desktop_portfolio.jpg",
+    img: "/thelastbite_desktop_portfolio.jpg",
   },
   {
     id: 6,
-    img: "/images/desktop/attari_lmd.jpg",
+    img: "/attari_lmd.jpg",
   },
   {
     id: 7,
-    img: "/images/desktop/greenhabits_portfolio_desktop.jpg",
+    img: "/greenhabits_portfolio_desktop.jpg",
   },
 ];

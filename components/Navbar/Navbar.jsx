@@ -38,7 +38,7 @@ export default function Navbar() {
             <Link href="/">
               <div className="relative w-[200px] h-[50px]">
                 <Image
-                  src="/images/logo.webp"
+                  src="/logo.webp"
                   alt="Nexgeno Logo"
                   fill={true}
                   className="object-contain"

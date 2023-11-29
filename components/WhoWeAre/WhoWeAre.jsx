@@ -11,7 +11,7 @@ const WhoWeAre = () => {
             <div className="rounded-3xl md:hidden">
               <div className="w-full md:h-[500px] h-[300px] relative rounded-3xl">
                 <Image
-                  src="/images/who.webp"
+                  src="/who.webp"
                   alt="Who Are  WE Image"
                   fill={true}
                   className="object-cover rounded-3xl"
@@ -53,7 +53,7 @@ const WhoWeAre = () => {
             <div className="rounded-3xl max-md:hidden">
               <div className="w-full md:h-[500px] h-[300px] relative rounded-3xl">
                 <Image
-                  src="/images/who.webp"
+                  src="/who.webp"
                   alt="Who Are  WE Image"
                   fill={true}
                   className="object-cover rounded-3xl"
