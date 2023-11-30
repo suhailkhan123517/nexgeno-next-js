@@ -1,5 +1,6 @@
 import { connectMongoDB } from "@/libs/mongodb";
 import Categories from "@/models/categories";
+import Post from "@/models/post";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
@@ -17,6 +18,11 @@ export async function GET() {
 
 export async function DELETE(request) {
   const id = request.nextUrl.searchParams.get("id");
+  await connectMongoDB();
+  const exitingCategoryPost = await Post.find({ categoryId: id });
+  if (exitingCategoryPost) {
+    return new NextResponse("Category Exists In Post", { status: 401 });
+  }
   await Categories.findByIdAndDelete(id);
   return NextResponse.json({ message: "Category  Deleted" }, { status: 200 });
 }

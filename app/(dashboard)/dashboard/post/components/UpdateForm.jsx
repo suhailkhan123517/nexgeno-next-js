@@ -123,8 +123,6 @@ const UpdateForm = ({ id, post }) => {
           publicId,
           imageUrl,
           textEditor,
-          authorId: session?.user?._id,
-          authorName: session?.user?.name,
         }),
       });
 
@@ -143,8 +141,9 @@ const UpdateForm = ({ id, post }) => {
   return (
     <>
       <div className="mt-10">
-        <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-2 gap-10">
+        <form className="flex flex-col gap-5 max-w-3xl" onSubmit={handleSubmit}>
+          <div className="flex flex-col gap-2">
+            <label htmlFor="">Title</label>
             <input
               type="text"
               placeholder="Enter Title Here..."
@@ -152,15 +151,9 @@ const UpdateForm = ({ id, post }) => {
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
-            <input
-              type="text"
-              placeholder="Enter Meta Title Here..."
-              className="p-3 rounded-lg border-[2px] border-black outline-indigo-600"
-              value={metaTitle}
-              onChange={(e) => setMetaTitle(e.target.value)}
-            />
           </div>
-          <div className="grid grid-cols-2 gap-10 mt-10">
+          <div className="flex flex-col gap-2">
+            <label htmlFor="">Description</label>
             <textarea
               rows="3"
               type="text"
@@ -169,67 +162,59 @@ const UpdateForm = ({ id, post }) => {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             />
-            <textarea
-              rows="3"
-              type="text"
-              placeholder="Enter Meta Description Here..."
-              className="p-3 rounded-lg border-[2px] border-black outline-indigo-600"
-              value={metaDescription}
-              onChange={(e) => setMetaDescription(e.target.value)}
-            />
           </div>
-          <div className="grid grid-cols-2 gap-10 mt-10">
-            <div>
-              <select
-                onChange={(e) => setCatId(e.target.value)}
-                className="p-3 rounded-lg border-[2px] border-black outline-indigo-600 w-full"
-                value={catId}
-              >
-                <option>Select Category</option>
-                {data &&
-                  data.categories.map((item) => (
-                    <>
-                      <option key={item._id} value={item._id}>
-                        {item.category}
-                      </option>
-                    </>
-                  ))}
-              </select>
-            </div>
-            <div className="flex gap-5 relative">
-              <CldUploadButton
-                uploadPreset={process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET}
-                className={` border-2 border-dotted grid place-items-center bg-slate-100 relative rounded-lg w-full ${
-                  imageUrl && "pointer-events-none h-40"
-                }`}
-                onUpload={handleImageUpload}
-              >
-                <div className="flex items-center gap-2  ">
-                  <BsImages />
-                  Upload Image
-                </div>
-                {imageUrl && (
-                  <Image
-                    src={imageUrl}
-                    fill
-                    className="absolute object-cover inset-0 rounded-lg"
-                    alt="Profile Image"
-                  />
-                )}
-              </CldUploadButton>
-              {publicId && (
-                <>
-                  <div>
-                    <button
-                      onClick={removeImage}
-                      className="bg-red-600 p-3 absolute top-2 left-2 cursor-pointer z-10 rounded-lg"
-                    >
-                      <FaTrash className="text-white " />
-                    </button>
-                  </div>
-                </>
+
+          <div className="flex flex-col gap-2">
+            <label htmlFor="">Select Category</label>
+            <select
+              onChange={(e) => setCatId(e.target.value)}
+              className="p-3 rounded-lg border-[2px] border-black outline-indigo-600 w-full"
+              value={catId}
+            >
+              <option>Select Category</option>
+              {data &&
+                data.categories.map((item) => (
+                  <>
+                    <option key={item._id} value={item._id}>
+                      {item.category}
+                    </option>
+                  </>
+                ))}
+            </select>
+          </div>
+          <div className="flex gap-5 relative">
+            <CldUploadButton
+              uploadPreset={process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET}
+              className={` border-2 border-dotted grid place-items-center bg-slate-100 relative rounded-lg w-full ${
+                imageUrl && "pointer-events-none h-40"
+              }`}
+              onUpload={handleImageUpload}
+            >
+              <div className="flex items-center gap-2  ">
+                <BsImages />
+                Upload Image
+              </div>
+              {imageUrl && (
+                <Image
+                  src={imageUrl}
+                  fill
+                  className="absolute object-cover inset-0 rounded-lg"
+                  alt="Profile Image"
+                />
               )}
-            </div>
+            </CldUploadButton>
+            {publicId && (
+              <>
+                <div>
+                  <button
+                    onClick={removeImage}
+                    className="bg-red-600 p-3 absolute top-2 left-2 cursor-pointer z-10 rounded-lg"
+                  >
+                    <FaTrash className="text-white " />
+                  </button>
+                </div>
+              </>
+            )}
           </div>
           <div className="mt-10">
             <ReactQuill
@@ -238,6 +223,27 @@ const UpdateForm = ({ id, post }) => {
               onChange={setTextEditor}
               placeholder="Tell Your Story..."
               modules={modules}
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <label htmlFor="">Meta Title</label>
+            <input
+              type="text"
+              placeholder="Enter Meta Title Here..."
+              className="p-3 rounded-lg border-[2px] border-black outline-indigo-600"
+              value={metaTitle}
+              onChange={(e) => setMetaTitle(e.target.value)}
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <label htmlFor="">Meta Description</label>
+            <textarea
+              rows="3"
+              type="text"
+              placeholder="Enter Meta Description Here..."
+              className="p-3 rounded-lg border-[2px] border-black outline-indigo-600"
+              value={metaDescription}
+              onChange={(e) => setMetaDescription(e.target.value)}
             />
           </div>
           <button

@@ -14,8 +14,6 @@ export async function PUT(request, { params }) {
     metaTitle,
     metaDescription,
     catId,
-    authorId,
-    authorName,
   } = await request.json();
   await connectMongoDB();
   await Post.findByIdAndUpdate(id, {
@@ -27,8 +25,6 @@ export async function PUT(request, { params }) {
     metaTitle,
     metaDescription,
     catId,
-    authorId,
-    authorName,
   });
 
   return NextResponse.json({ message: "Post Updated" }, { status: 200 });

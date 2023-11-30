@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { IoMdAddCircle } from "react-icons/io";
+import { FaEye } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { MdEditSquare } from "react-icons/md";
 import { FaTrash } from "react-icons/fa";
@@ -66,13 +67,6 @@ const AllPosts = ({ allPost }) => {
       <div className="bg-white shadow-lg p-5 rounded-lg mt-5">
         <div className="flex items-center justify-between">
           <Search setQuery={setQuery} placeholder="Search for a Post..." />
-          <Link
-            className="py-2 px-4 bg-blue-600 rounded-lg text-white flex items-center gap-1"
-            href="/dashboard/post/add"
-          >
-            <IoMdAddCircle />
-            New Post
-          </Link>
         </div>
         <table className="w-full">
           <thead>
@@ -81,11 +75,10 @@ const AllPosts = ({ allPost }) => {
               <td className="p-3">Author</td>
               <td className="p-3">Category</td>
               <td className="p-3">Date</td>
-              {session?.user?.role === "admin" && (
-                <>
-                  <td className="p-3">Tools</td>
-                </>
-              )}
+
+              <>
+                <td className="p-3">Tools</td>
+              </>
             </tr>
           </thead>
           <tbody>
@@ -112,10 +105,16 @@ const AllPosts = ({ allPost }) => {
                     {" "}
                     {item.createdAt.toString().split("T")[0]}
                   </td>
-                  {session?.user?.role === "admin" && (
-                    <>
-                      <td className="p-3">
-                        <div className="flex items-center gap-3">
+                  <td className="p-3">
+                    <div className="flex items-center gap-3">
+                      <Link
+                        className="bg-blue-500 text-white py-2 px-3 rounded-lg"
+                        href={`/blog/${item._id}`}
+                      >
+                        <FaEye />
+                      </Link>
+                      {session?.user?.role === "admin" && (
+                        <>
                           <Link
                             className="bg-lime-500 text-white py-2 px-3 rounded-lg"
                             href={`/dashboard/post/${item._id}`}
@@ -128,10 +127,10 @@ const AllPosts = ({ allPost }) => {
                           >
                             <FaTrash />
                           </button>
-                        </div>
-                      </td>
-                    </>
-                  )}
+                        </>
+                      )}
+                    </div>
+                  </td>
                 </tr>
               </>
             ))}

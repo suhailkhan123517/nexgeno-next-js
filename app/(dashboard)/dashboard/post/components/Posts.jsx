@@ -4,7 +4,7 @@ import Search from "../../../../../components/Search/Search";
 import { IoMdAddCircle } from "react-icons/io";
 import { useEffect, useState } from "react";
 import { MdEditSquare } from "react-icons/md";
-import { FaTrash } from "react-icons/fa";
+import { FaEye, FaTrash } from "react-icons/fa";
 import toast from "react-hot-toast";
 import Image from "next/image";
 import { useSession } from "next-auth/react";
@@ -56,11 +56,10 @@ const Posts = () => {
 
       if (res.ok) {
         const post = await res.json();
-        console.log(post);
         const { publicId } = post;
         console.log(publicId);
         await deleteImage(publicId);
-        toast.success("Category Deleted");
+        toast.success("Post Deleted");
         window.location.reload();
       }
     }
@@ -132,6 +131,12 @@ const Posts = () => {
                   </td>
                   <td className="p-3">
                     <div className="flex items-center gap-3">
+                      <Link
+                        className="bg-blue-500 text-white py-2 px-3 rounded-lg"
+                        href={`/blog/${item._id}`}
+                      >
+                        <FaEye />
+                      </Link>
                       <Link
                         className="bg-lime-500 text-white py-2 px-3 rounded-lg"
                         href={`/dashboard/post/${item._id}`}
