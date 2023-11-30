@@ -19,7 +19,7 @@ export async function GET() {
 export async function DELETE(request) {
   const id = request.nextUrl.searchParams.get("id");
   await connectMongoDB();
-  const exitingCategoryPost = await Post.find({ categoryId: id });
+  const exitingCategoryPost = await Post.findOne({ categoryId: id });
   if (exitingCategoryPost) {
     return new NextResponse("Category Exists In Post", { status: 401 });
   }
