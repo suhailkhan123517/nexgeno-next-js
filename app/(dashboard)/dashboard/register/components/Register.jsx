@@ -89,7 +89,7 @@ const Register = () => {
         <div className="w-full max-w-lg relative">
           <div className="bg-white py-8 px-10 shadow-2xl  rounded-3xl">
             <Image
-              src="/images/logo.webp"
+              src="/logo.webp"
               alt="logo"
               width={200}
               height={100}

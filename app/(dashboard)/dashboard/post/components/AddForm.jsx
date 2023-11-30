@@ -101,7 +101,14 @@ const AddForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!title || !description) {
+    if (
+      !title ||
+      !description ||
+      !imageUrl ||
+      !textEditor ||
+      !metaTitle ||
+      !metaDescription
+    ) {
       toast.error("All Field required");
       return;
     }

@@ -188,7 +188,7 @@ const Blog = () => {
                 </>
               ))}
             </div>
-            <div className="sticky top-16 h-screen">
+            {/* <div className="sticky top-16 h-screen">
               <div className="">
                 <h2 className="heading border-b pb-3 ">Popular Posts</h2>
                 <div className="flex mt-6 gap-2 mb-5">
@@ -297,7 +297,7 @@ const Blog = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
