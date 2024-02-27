@@ -110,6 +110,7 @@ export default function RootLayout({ children }) {
         <AuthProvider>
           <ToasterProvider />
           <Navbar />
+          {/* <Nav /> */}
           <MobileNav />
           <Pathname />
           {children}
